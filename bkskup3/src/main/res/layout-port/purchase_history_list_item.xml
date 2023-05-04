@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.bk.layout.CheckableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     android:id="@+id/openPurchasesListItem"
+                                     android:layout_width="fill_parent"
+                                     android:layout_height="wrap_content"
+                                     android:orientation="horizontal"
+                                     android:background="@drawable/checkable_background_red"
+                                     android:gravity="center_vertical"
+                                     android:minHeight="40sp">
+
+    <TextView
+            android:id="@+id/purchaseHerdCell"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            style="@style/list_cell"
+            />
+
+    <View android:id="@+id/divider1"
+          android:background="@drawable/white_divider"
+          android:layout_width="1dp"
+          android:layout_height="fill_parent"/>
+
+    <TextView
+            android:id="@+id/purchaseStartEndDtCell"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp" android:layout_weight="0.55"
+            android:lines="2"
+            style="@style/list_cell"
+            />
+
+    <View android:id="@+id/divider2"
+          android:background="@drawable/white_divider"
+          android:layout_width="1dp"
+          android:layout_height="fill_parent"/>
+
+
+    <TextView
+            android:id="@+id/purchaseCowAmountCell"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            style="@style/list_cell"
+            />
+
+    <View android:id="@+id/divider3"
+          android:background="@drawable/white_divider"
+          android:layout_width="1dp"
+          android:layout_height="fill_parent"/>
+
+
+    <ImageView
+            android:id="@+id/purchaseStateCell"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            />
+
+</com.bk.layout.CheckableLinearLayout>
+
+

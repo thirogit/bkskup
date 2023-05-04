@@ -1,0 +1,1 @@
+include ':bkskup3',':bksettings',':bkbands',":barcodeservice",":bkwidgets",":bluetoothcommon",":countries",":printservice", ":passportscanner"

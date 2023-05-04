@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bk.bkskup3.management.widget.DocumentOptionView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:saveEnabled="false">
+
+    <TextView android:id="@+id/optionTitle"
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:text="_option_label_"
+        style="@style/label"
+        android:saveEnabled="false"/>
+
+    <EditText android:id="@+id/optionValueBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        style="@style/input"
+        android:inputType="none"
+        android:saveEnabled="false"/>
+
+</com.bk.bkskup3.management.widget.DocumentOptionView>

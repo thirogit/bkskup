@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+        <TextView android:id="@+id/TextView01"
+                  android:layout_width="fill_parent"
+                  android:text="@string/hentNameLblCaption"
+                  style="@style/label"/>
+
+        <EditText android:id="@+id/hentNameEditBox"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:maxLength="@integer/MAX_HENTNAME"
+                  android:inputType="textCapCharacters"
+                  android:hint="@string/hintHentName"
+                  style="@style/input"/>
+
+        <TextView android:id="@+id/TextView03"
+                  android:layout_width="fill_parent"
+                  android:text="@string/hentAliasLblCaption"
+                  style="@style/label"/>
+
+        <EditText android:id="@+id/hentAliasEditBox"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:maxLength="@integer/MAX_ALIAS"
+                  android:inputType="textCapCharacters"
+                  android:hint="@string/hintHentAlias"
+                  style="@style/input"/>
+
+        <TextView android:id="@+id/TextView14"
+                  android:layout_width="fill_parent"
+                  android:text="@string/hentHentTypeLblCaption"
+                  android:layout_marginLeft="5dip"
+                  style="@style/label"
+                />
+
+        <com.bk.bkskup3.widgets.HentTypeButton
+            android:id="@+id/hentTypeBtn"
+                                               android:layout_width="fill_parent"
+                                               android:layout_height="wrap_content"
+                                               android:layout_gravity="center_vertical"/>
+
+
+        <TextView android:id="@+id/TextView05"
+                  android:layout_width="fill_parent"
+                  android:text="@string/hentStreetLblCaption"
+                  style="@style/label"/>
+
+
+        <EditText android:id="@+id/hentStreetEditBox"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:maxLength="@integer/MAX_STREET"
+                  android:inputType="textCapCharacters"
+                  android:hint="@string/hintHentStreetName"
+                  style="@style/input"/>
+
+        <TextView android:id="@+id/TextView07"
+                  android:layout_width="fill_parent"
+                  android:text="@string/hentPOBoxLblCaption"
+                  style="@style/label"/>
+
+        <EditText android:id="@+id/hentPOBoxEditBox"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:maxLength="@integer/MAX_POBOX"
+                  android:inputType="textPostalAddress"
+                  android:hint="@string/hintHentPoBox"
+                  style="@style/input"/>
+
+        <TextView android:id="@+id/TextView09"
+                  android:layout_width="fill_parent"
+                  android:text="@string/hentCityLblCaption"
+                  style="@style/label"/>
+
+        <EditText android:id="@+id/hentCityEditBox"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:maxLength="@integer/MAX_CITY"
+                  android:inputType="textCapCharacters"
+                  android:hint="@string/hintHentCityName"
+                  style="@style/input"/>
+
+        <TextView android:id="@+id/TextView11"
+                  android:layout_width="fill_parent"
+                  android:text="@string/hentZipLblCaption"
+                  style="@style/label"/>
+
+        <EditText android:id="@+id/hentZipEditBox"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:maxLength="@integer/MAX_ZIP"
+                  android:inputType="textPostalAddress"
+                  android:hint="@string/hintHentZipCode"
+                  style="@style/input"/>
+
+
+        <TextView android:id="@+id/TextView13"
+                  android:layout_width="fill_parent"
+                  android:text="@string/hentFarmNoLblCaption"
+                  style="@style/label"/>
+
+        <RelativeLayout android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                >
+
+
+            <com.bk.bkskup3.widgets.CalculatorEditText
+                android:id="@+id/hentHentNoEditBox"
+                                                       android:layout_width="match_parent"
+                                                       android:layout_height="wrap_content"
+                                                       android:hint="@string/hintHentNo"
+                                                       android:textSize="24sp"
+                                                       android:layout_centerVertical="true"
+                                                       android:layout_alignParentLeft="true"
+                                                       android:focusableInTouchMode="false"
+                                                       android:layout_toLeftOf="@id/bcServiceBtn"
+                                                       style="@style/calc_input_display_style"
+                    />
+
+
+            <com.bk.bkskup3.barcode.ServiceIndicatorButton
+                android:id="@+id/bcServiceBtn"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menuDownloadHents"
+          android:title="@string/menuDownloadBtnCaption"
+          android:icon="@drawable/download_hents"
+          android:showAsAction="ifRoom" />
+
+    <item android:id="@+id/menuEditHent"
+          android:title="@string/menuEditBtnCaption"
+          android:icon="@drawable/edit"
+          android:showAsAction="ifRoom" />
+
+    <item android:id="@+id/menuDelHent"
+          android:title="@string/menuDeleteBtnCaption"
+          android:icon="@drawable/hent_del"
+          android:showAsAction="ifRoom" />
+
+    <item android:id="@+id/menuAddHent"
+          android:title="@string/menuAddBtnCaption"
+          android:icon="@drawable/hent_add"
+          android:showAsAction="ifRoom" />
+</menu>
+

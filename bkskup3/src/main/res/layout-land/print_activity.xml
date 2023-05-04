@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/progress_container"
+        layout="@layout/loading_progress" />
+
+
+    <LinearLayout
+        android:id="@+id/content_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+
+            <com.bk.widgets.actionbar.ActionBar
+                android:id="@+id/documentsActionBar"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:orientation="horizontal"
+                app:title="@string/documents_to_print" />
+
+
+            <FrameLayout
+                android:id="@+id/docs_panel"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/white_divider" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <com.bk.widgets.actionbar.ActionBar
+                android:id="@+id/jobsActionBar"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:orientation="horizontal"
+                app:title="@string/printjobs_in_progress" />
+
+            <ListView android:id="@+id/jobs_list"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

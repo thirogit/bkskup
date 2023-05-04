@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<options>
+    <option title="Data wystawienia" code="CONTRACTDT" type="DAYDATE" default="2015-01-01"/>
+    <option title="Data od" code="CONTRACTFROMDT" type="DAYDATE" default="2015-01-01"/>
+    <option title="Data do" code="CONTRACTTODT" type="DAYDATE" default="2025-12-31"/>
+
+</options>

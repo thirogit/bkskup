@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/TableLayout01"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+    <TableRow android:id="@+id/TableRow10" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/TextView17"
+                  android:layout_width="0dp"
+                  android:text="@string/hentPhoneLblCaption"
+                  android:layout_weight="0.3"
+                  style="@style/label"/>
+
+
+            <EditText android:id="@+id/hentPhoneNoEditbox"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.7"
+                      android:maxLength="@integer/MAX_PHONE"
+                      android:inputType="phone"
+                      android:hint="@string/hintHentPhoneNo"
+                      style="@style/input"
+                    />
+
+
+    </TableRow>
+
+    <TableRow android:id="@+id/TableRow11" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+
+            <TextView android:id="@+id/TextView18"
+                      android:layout_width="0dp"
+                      android:text="@string/hentMobilePhoneLblCaption"
+                      android:layout_weight="0.3"
+                      style="@style/label"/>
+
+            <EditText android:id="@+id/hentCellPhoneNoEditbox"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.7"
+                      android:maxLength="@integer/MAX_CELLPHONE"
+                      android:inputType="phone"
+                      android:hint="@string/hintHentCellPhoneNo"
+                      style="@style/input"/>
+
+
+    </TableRow>
+
+
+    <TableRow android:id="@+id/TableRow12" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/TextView19"
+                  android:layout_width="0dp"
+                  android:text="@string/hentEmailAddrrLblCaption"
+                  android:layout_weight="0.3"
+                  style="@style/label"/>
+
+        <EditText android:id="@+id/hentEmailAddrEditbox"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="0.7"
+                  android:maxLength="@integer/MAX_EMAIL"
+                  android:inputType="textEmailAddress"
+                  android:hint="@string/hintHentEmailAddress"
+                  style="@style/input"/>
+
+
+    </TableRow>
+
+
+</TableLayout>
+
+

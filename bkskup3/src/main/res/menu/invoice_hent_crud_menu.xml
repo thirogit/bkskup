@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menuAddHent"
+          android:title="@string/menuAddBtnCaption"
+          android:icon="@drawable/hent_add"
+          android:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/menuEditHent"
+          android:title="@string/menuEditBtnCaption"
+          android:icon="@drawable/edit"
+          android:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/menuScanHent"
+          android:title="@string/menuScanBtnCaption"
+          android:icon="@drawable/barcode"
+          android:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/menuFindHent"
+          android:title="@string/menuFindBtnCaption"
+          android:icon="@drawable/search"
+          android:showAsAction="always"/>
+
+</menu>

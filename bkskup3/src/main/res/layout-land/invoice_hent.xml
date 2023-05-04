@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+    <TableLayout
+            android:id="@+id/TableLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/TextView01"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:text="@string/hentNameLblCaption"
+                      android:layout_weight="0.2"
+                      style="@style/label"/>
+
+            <com.bk.bkskup3.widgets.CalculatorEditText
+                android:id="@+id/hentNameEditBox"
+                                                       android:layout_width="0dp"
+                                                       android:layout_height="wrap_content"
+                                                       android:layout_weight="0.8"
+                                                       style="@style/input"
+                    />
+
+        </TableRow>
+
+
+        <TableRow android:id="@+id/TableRow03" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/TextView05"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.2"
+                      android:text="@string/hentStreetLblCaption"
+                      style="@style/label"/>
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_weight="0.8">
+
+                <com.bk.bkskup3.widgets.CalculatorEditText
+                    android:id="@+id/hentStreetEditBox"
+                                                           android:layout_width="0dp"
+                                                           android:layout_height="wrap_content"
+                                                           android:layout_weight="0.7"
+                                                           style="@style/input"
+                        />
+
+                <TextView android:id="@+id/TextView07"
+                          android:layout_width="0dp"
+                          android:text="@string/hentPOBoxLblCaption"
+                          android:layout_weight="0.1"
+                          android:layout_marginLeft="20dip"
+                          style="@style/label"/>
+
+                <com.bk.bkskup3.widgets.CalculatorEditText
+                    android:id="@+id/hentPOBoxEditBox"
+                                                           android:layout_width="0dp"
+                                                           android:layout_height="wrap_content"
+                                                           android:layout_weight="0.2"
+                                                           style="@style/input"
+                        />
+            </LinearLayout>
+
+        </TableRow>
+
+
+        <TableRow android:id="@+id/TableRow04" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/TextView09"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.2"
+                      android:text="@string/hentCityLblCaption"
+                      style="@style/label"/>
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_weight="0.8">
+
+                <com.bk.bkskup3.widgets.CalculatorEditText
+                    android:id="@+id/hentCityEditBox"
+                                                           android:layout_width="0dp"
+                                                           android:layout_height="wrap_content"
+                                                           android:layout_weight="0.7"
+                                                           style="@style/input"
+                        />
+
+                <TextView android:id="@+id/TextView11"
+                          android:layout_width="0dp"
+                          android:layout_weight="0.1"
+                          android:text="@string/hentZipLblCaption"
+                          android:layout_marginLeft="20dip"
+                          style="@style/label"/>
+
+                <com.bk.bkskup3.widgets.CalculatorEditText
+                    android:id="@+id/hentZipEditBox"
+                                                           android:layout_width="0dp"
+                                                           android:layout_height="wrap_content"
+                                                           android:layout_weight="0.2"
+                                                           style="@style/input"
+                        />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow android:id="@+id/TableRow06" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/TextView13"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.2"
+                      android:text="@string/hentFarmNoLblCaption"
+                      style="@style/label"/>
+
+
+            <com.bk.bkskup3.widgets.CalculatorEditText
+                android:id="@+id/hentHentNoEditBox"
+                                                       android:layout_width="0dp"
+                                                       android:layout_height="wrap_content"
+                                                       android:layout_weight="0.8"
+                                                       style="@style/input"
+                    />
+
+        </TableRow>
+
+        <TableRow android:id="@+id/TableRow10" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/TextView17"
+                      android:layout_width="0dp"
+                      android:text="@string/hentPhoneLblCaption"
+                      android:layout_weight="0.2"
+                      style="@style/label"/>
+
+
+            <com.bk.bkskup3.widgets.CalculatorEditText
+                android:id="@+id/hentPhoneNoEditbox"
+                                                       android:layout_width="0dp"
+                                                       android:layout_height="wrap_content"
+                                                       android:layout_weight="0.8"
+                                                       style="@style/input"
+                    />
+
+
+        </TableRow>
+
+        <TableRow android:id="@+id/TableRow11" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+
+            <TextView android:id="@+id/TextView18"
+                      android:layout_width="0dp"
+                      android:text="@string/hentMobilePhoneLblCaption"
+                      android:layout_weight="0.2"
+                      style="@style/label"/>
+
+            <com.bk.bkskup3.widgets.CalculatorEditText
+                android:id="@+id/hentCellPhoneNoEditbox"
+                                                       android:layout_width="0dp"
+                                                       android:layout_height="wrap_content"
+                                                       android:layout_weight="0.8"
+                                                       style="@style/input"/>
+
+
+        </TableRow>
+
+
+        <TableRow android:id="@+id/TableRow12" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/TextView19"
+                      android:layout_width="0dp"
+                      android:text="@string/hentEmailAddrrLblCaption"
+                      android:layout_weight="0.2"
+                      style="@style/label"/>
+
+            <com.bk.bkskup3.widgets.CalculatorEditText
+                android:id="@+id/hentEmailAddrEditbox"
+                                                       android:layout_width="0dp"
+                                                       android:layout_height="wrap_content"
+                                                       android:layout_weight="0.8"
+                                                       style="@style/input"/>
+
+
+        </TableRow>
+
+        <TableRow android:id="@+id/TableRow13" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/TextView20"
+                      android:layout_width="0dp"
+                      android:text="@string/hentAccountNoLblCaption"
+                      android:layout_weight="0.2"
+                      style="@style/label"
+                    />
+
+            <com.bk.bkskup3.widgets.AccountNoEditText
+                android:id="@+id/hentAccountNo"
+                                                      android:layout_width="0dp"
+                                                      android:layout_height="wrap_content"
+                                                      android:layout_weight="0.8"
+                                                      android:layout_gravity="center_vertical"
+                                                      style="@style/input"/>
+
+
+        </TableRow>
+
+
+        <TableRow android:id="@+id/TableRow14" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/TextView21"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.2"
+                      android:text="@string/hentBankNameLblCaption"
+                      style="@style/label"/>
+
+            <com.bk.bkskup3.widgets.CalculatorEditText
+                android:id="@+id/hentBankName"
+                                                       android:layout_width="0dp"
+                                                       android:layout_height="wrap_content"
+                                                       android:layout_weight="0.8"
+                                                       style="@style/input"/>
+        </TableRow>
+
+        <TableRow android:id="@+id/TableRow15" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/TextView22"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.2"
+                      android:text="@string/hentFiscalNoLblCaption"
+                      style="@style/label"/>
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_gravity="center_vertical"
+                          android:layout_weight="0.8">
+
+                <com.bk.bkskup3.widgets.CalculatorEditText
+                    android:id="@+id/hentFiscalNoBox"
+                                                           android:layout_width="0dp"
+                                                           android:layout_height="wrap_content"
+                                                           android:layout_weight="0.35"
+                                                           style="@style/input"/>
+
+                <TextView android:id="@+id/TextView24"
+                          android:layout_width="0dp"
+                          android:layout_weight="0.3"
+                          android:layout_marginLeft="20dip"
+                          android:text="@string/hentREGONLblCaption"
+                          style="@style/label"/>
+
+                <com.bk.bkskup3.widgets.CalculatorEditText
+                    android:id="@+id/hentREGON"
+                                                           android:layout_width="0dp"
+                                                           android:layout_height="wrap_content"
+                                                           android:layout_weight="0.35"
+                                                           style="@style/input"/>
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+        <TableRow android:id="@+id/TableRow08" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/TextView15"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.2"
+                      android:text="@string/hentWetLicNoLblCaption"
+                      style="@style/label"/>
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_weight="0.8"
+                          android:gravity="center">
+
+                <com.bk.bkskup3.widgets.CalculatorEditText
+                    android:id="@+id/hentWetLicenceNo"
+                                                           android:layout_width="0dp"
+                                                           android:layout_height="wrap_content"
+                                                           android:layout_weight="0.35"
+                                                           style="@style/input"/>
+
+                <TextView android:id="@+id/TextView16"
+                          android:layout_width="0dp"
+                          android:layout_weight="0.3"
+                          android:layout_marginLeft="20dip"
+                          android:text="@string/hentWetIdNoLblCaption"
+                          style="@style/label"/>
+
+                <com.bk.bkskup3.widgets.CalculatorEditText
+                    android:id="@+id/hentWetNoEditbox"
+                                                           android:layout_width="0dp"
+                                                           android:layout_height="wrap_content"
+                                                           android:layout_weight="0.35"
+                                                           style="@style/input"/>
+            </LinearLayout>
+
+        </TableRow>
+
+
+        <TableRow android:id="@+id/TableRow18" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/TextView25"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.2"
+                      android:text="@string/hentPersonalIdNoLblCaption"
+                      style="@style/label"/>
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_gravity="center_vertical"
+                          android:layout_weight="0.8">
+
+                <com.bk.bkskup3.widgets.CalculatorEditText
+                    android:id="@+id/hentIdNoEditbox"
+                                                           android:layout_width="0dp"
+                                                           android:layout_height="wrap_content"
+                                                           android:layout_gravity="center_vertical"
+                                                           android:layout_weight="0.35"
+                                                           style="@style/input"/>
+
+                <TextView android:id="@+id/TextView26"
+                          android:layout_width="0dp"
+                          android:layout_weight="0.3"
+                          android:layout_marginLeft="20dip"
+                          android:text="@string/hentIssueDateLblCaption"
+                          style="@style/label"/>
+
+                <com.bk.bkskup3.widgets.CalculatorEditText
+                    android:id="@+id/hentIdIssueDateEditbox"
+                                                           android:layout_width="0dp"
+                                                           android:layout_height="wrap_content"
+                                                           android:layout_gravity="center_vertical"
+                                                           android:layout_weight="0.35"
+                                                           style="@style/input"/>
+
+
+            </LinearLayout>
+        </TableRow>
+
+
+        <TableRow android:id="@+id/TableRow20" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/TextView27"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.2"
+                      android:text="@string/hentIssuedByLblCaption"
+                      style="@style/label"
+                    />
+
+            <com.bk.bkskup3.widgets.CalculatorEditText
+                android:id="@+id/hentIdIssuePostEditbox"
+                                                       android:layout_width="0dp"
+                                                       android:layout_height="wrap_content"
+                                                       android:layout_weight="0.8"
+                                                       style="@style/input"
+                    />
+
+        </TableRow>
+
+        <TableRow android:id="@+id/TableRow21" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/TextView28"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.2"
+                      android:text="@string/hentPersonalNoLblCaption"
+                      style="@style/label"/>
+
+            <com.bk.bkskup3.widgets.CalculatorEditText
+                android:id="@+id/hentPersonalNoBox"
+                                                       android:layout_width="0dp"
+                                                       android:layout_height="wrap_content"
+                                                       android:layout_weight="0.8"
+                                                       style="@style/input"/>
+
+        </TableRow>
+
+
+    </TableLayout>
+</ScrollView>

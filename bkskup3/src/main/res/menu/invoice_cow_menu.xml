@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menuCapturePassport"
+        android:title="@string/menuOCRBtnCaption"
+        android:icon="@drawable/ic_action_camera"
+        android:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/menuScanCow"
+          android:title="@string/menuScanBtnCaption"
+          android:icon="@drawable/barcode"
+          android:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/menuAddCow"
+          android:title="@string/menuAddBtnCaption"
+          android:icon="@drawable/cow"
+          android:showAsAction="ifRoom"/>
+
+</menu>
+
+

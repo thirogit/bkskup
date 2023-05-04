@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="AvailableLibraryUpdateStorage">
+    <library-updates>
+      <library-update>
+        <group-id>com.google.guava</group-id>
+        <name>guava</name>
+        <version>27.1-jre</version>
+        <repository>JCenter,Maven Central</repository>
+      </library-update>
+      <library-update>
+        <group-id>org.simpleframework</group-id>
+        <name>simple-xml</name>
+        <version>2.7.1</version>
+        <repository>JCenter</repository>
+      </library-update>
+      <library-update>
+        <group-id>io.reactivex.rxjava2</group-id>
+        <name>rxandroid</name>
+        <version>2.1.1</version>
+        <repository>Maven Central</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.crashlytics.sdk.android</group-id>
+        <name>crashlytics</name>
+        <version>2.10.1</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.android.support</group-id>
+        <name>exifinterface</name>
+        <version>28.0.0</version>
+        <repository>Google,Android Repository</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.squareup.dagger</group-id>
+        <name>dagger</name>
+        <version>1.2.5</version>
+        <repository>JCenter</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.squareup.retrofit2</group-id>
+        <name>converter-jackson</name>
+        <version>2.5.0</version>
+        <repository>JCenter,Maven Central</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.facebook.stetho</group-id>
+        <name>stetho</name>
+        <version>1.5.1</version>
+        <repository>JCenter</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.squareup.okhttp3</group-id>
+        <name>logging-interceptor</name>
+        <version>4.0.0-alpha02</version>
+        <repository>JCenter</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.squareup.retrofit2</group-id>
+        <name>retrofit</name>
+        <version>2.5.0</version>
+        <repository>JCenter,Maven Central</repository>
+      </library-update>
+      <library-update>
+        <group-id>io.reactivex.rxjava2</group-id>
+        <name>rxjava</name>
+        <version>2.2.9</version>
+        <repository>Maven Central</repository>
+      </library-update>
+      <library-update>
+        <group-id>org.glassfish</group-id>
+        <name>javax.annotation</name>
+        <version>10.0-b28</version>
+        <repository>JCenter,Maven Central</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.android.support</group-id>
+        <name>recyclerview-v7</name>
+        <version>28.0.0</version>
+        <repository>Google,Android Repository</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.google.firebase</group-id>
+        <name>firebase-crash</name>
+        <version>16.2.1</version>
+        <repository>Google,Google Repository</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.android.support</group-id>
+        <name>appcompat-v7</name>
+        <version>28.0.0</version>
+        <repository>Google,Android Repository</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.android.support</group-id>
+        <name>design</name>
+        <version>28.0.0</version>
+        <repository>Google,Android Repository</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.google.firebase</group-id>
+        <name>firebase-core</name>
+        <version>16.0.9</version>
+        <repository>Google,Google Repository</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.facebook.stetho</group-id>
+        <name>stetho-okhttp</name>
+        <version>1.5.1</version>
+        <repository>JCenter</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.squareup.dagger</group-id>
+        <name>dagger-compiler</name>
+        <version>1.2.5</version>
+        <repository>JCenter,Maven Central</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.google.firebase</group-id>
+        <name>firebase-ml-vision</name>
+        <version>20.0.0</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.android.support</group-id>
+        <name>support-v4</name>
+        <version>28.0.0</version>
+        <repository>Google,Android Repository</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.google.firebase</group-id>
+        <name>firebase-database</name>
+        <version>17.0.0</version>
+        <repository>Google,Google Repository</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.google.android.gms</group-id>
+        <name>play-services-vision</name>
+        <version>17.0.2</version>
+        <repository>Google,Google Repository</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.couchbase.lite</group-id>
+        <name>couchbase-lite-android</name>
+        <version>2.5.0</version>
+        <repository>Maven Central</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.google.zxing</group-id>
+        <name>core</name>
+        <version>3.4.0</version>
+        <repository>JCenter,Maven Central</repository>
+      </library-update>
+    </library-updates>
+    <last-search-timestamp>1559426332334</last-search-timestamp>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="883182f0-1c87-42e8-8a71-4b7d69048ea7" name="Default" comment="umowa o terminie platnoscie wsteczna - document option daydate">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/barcodeservice/barcodeservice.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkbands/bkbands.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bksettings/bksettings.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkskup3/bkskup3-bkskup3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkwidgets/bkwidgets.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluetoothcommon/bluetoothcommon.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/countries/countries.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-bkskup3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/passportscanner.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/printservice/printservice.iml" beforeDir="false" />
+    </list>
+    <list id="0fb91eea-005f-44d2-b29d-68e5df9e35cd" name="ignore" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/bkskup3">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bkskup3" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bkskup3" type="f1a62948:ProjectNode" />
+                <item name=":bkskup3" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bkskup3" type="f1a62948:ProjectNode" />
+                <item name=":bkskup3" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bkskup3" type="f1a62948:ProjectNode" />
+                <item name=":bkskup3" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="C:\DEV\my\bkskup3\bkskup.keystore" />
+    <option name="KEY_ALIAS" value="key0" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1lTr3chQq3IivwtqfxxUrzshckJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExportApk.ApkPath" value="C:\DEV\my\bkskup3\bkskup3" />
+    <property name="ExportApk.BuildType" value="release" />
+    <property name="ExportApk.BuildVariants" value="release" />
+    <property name="ExportApk.Flavors" value="" />
+    <property name="ExportApk.SignV1" value="true" />
+    <property name="ExportApk.SignV2" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android.profiler.active" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="device.picker.selection" value="ce09160969a7881601" />
+    <property name="last_opened_file_path" value="C:/devtools" />
+    <property name="project.structure.last.edited" value="Suggestions" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="instant.run" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bk.bkskup3.management.widget" />
+      <recent name="com.bk.bkskup3.management" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\DEV\my\bkskup3\bkskup3\src\main\res\raw" />
+      <recent name="C:\DEV\my\bkskup3\bkskup3\src\main\res\layout" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android App.bkskup3">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bkskup3-bkskup3" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="bkskup3-bkskup3" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bkskup3" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="bkskup.bkskup3" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bkskup3 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="bkskup3:bkskup3 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/bkskup3" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Android App.bkskup3-bkskup3" />
+      <item itemvalue="Android App.bkskup3" />
+      <item itemvalue="Gradle.bkskup3 [build]" />
+      <item itemvalue="Gradle.bkskup3:bkskup3 [build]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.bkskup3:bkskup3 [build]" />
+        <item itemvalue="Gradle.bkskup3 [build]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="883182f0-1c87-42e8-8a71-4b7d69048ea7" name="Default" comment="" />
+      <changelist id="0fb91eea-005f-44d2-b29d-68e5df9e35cd" name="ignore" comment="" />
+      <created>1530612230405</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1530612230405</updated>
+    </task>
+    <task id="LOCAL-00001" summary="kolczyk belgijski, crashlitics, poprawka printservice;">
+      <created>1530830935408</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1530830935408</updated>
+    </task>
+    <task id="LOCAL-00002" summary="lepsze print service">
+      <created>1532292918166</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1532292918166</updated>
+    </task>
+    <task id="LOCAL-00003" summary="poprawka błedu z drukarka zgloszonego przez Jacka z Agrostaru">
+      <created>1532295477660</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1532295477660</updated>
+    </task>
+    <task id="LOCAL-00004" summary="dodatkowe permisiony dla firebasejobdispacher'a; ustawianie daty paszporty wzgledem daty urodzienie i viceversa">
+      <created>1532381738774</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1532381738774</updated>
+    </task>
+    <task id="LOCAL-00005" summary="straczka 3% i 4%">
+      <created>1534155840057</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1534155840058</updated>
+    </task>
+    <task id="LOCAL-00006" summary="crash przy startService na androidzie 8.0">
+      <created>1537388700011</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1537388700011</updated>
+    </task>
+    <task id="LOCAL-00007" summary="poprawka sytułacji kiedy state skupu jest null, wersja 3.27">
+      <created>1537388858945</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1537388858945</updated>
+    </task>
+    <task id="LOCAL-00008" summary="przejscie na nowsza wersja android studio; poprawka umowy na dostarczenie produktów rolnych">
+      <created>1548836962925</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1548836962925</updated>
+    </task>
+    <task id="LOCAL-00009" summary="dorobienie daty badania przedubojowego na lancuchu zywiniowym">
+      <created>1548837977541</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1548837977541</updated>
+    </task>
+    <task id="LOCAL-00010" summary="przejscie na nowsza wersja android studio; umowa o terminie platnoscie wsteczna">
+      <created>1559428545668</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1559428545668</updated>
+    </task>
+    <task id="LOCAL-00011" summary="umowa o terminie platnoscie wsteczna - document option daydate">
+      <created>1559513195032</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1559513195033</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="bkskup3" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="kolczyk belgijski, crashlitics, poprawka printservice;" />
+    <MESSAGE value="lepsze print service" />
+    <MESSAGE value="poprawka błedu z drukarka zgloszonego przez Jacka z Agrostaru" />
+    <MESSAGE value="dodatkowe permisiony dla firebasejobdispacher'a; ustawianie daty paszporty wzgledem daty urodzienie i viceversa" />
+    <MESSAGE value="straczka 3% i 4%" />
+    <MESSAGE value="crash przy startService na androidzie 8.0" />
+    <MESSAGE value="poprawka sytułacji kiedy state skupu jest null, wersja 3.27" />
+    <MESSAGE value="przejscie na nowsza wersja android studio; poprawka umowy na dostarczenie produktów rolnych" />
+    <MESSAGE value="dorobienie daty badania przedubojowego na lancuchu zywiniowym" />
+    <MESSAGE value="przejscie na nowsza wersja android studio; umowa o terminie platnoscie wsteczna" />
+    <MESSAGE value="umowa o terminie platnoscie wsteczna - document option daydate" />
+    <option name="LAST_COMMIT_MESSAGE" value="umowa o terminie platnoscie wsteczna - document option daydate" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1690" height="560" key="GridCell.Tab.0.bottom" timestamp="1641838270676">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1690" height="560" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1641838270676" />
+    <state width="1690" height="560" key="GridCell.Tab.0.center" timestamp="1641838270676">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1690" height="560" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1641838270676" />
+    <state width="1690" height="560" key="GridCell.Tab.0.left" timestamp="1641838270675">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1690" height="560" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1641838270675" />
+    <state width="1690" height="560" key="GridCell.Tab.0.right" timestamp="1641838270676">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1690" height="560" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1641838270676" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1641844545440">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1641844545440" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1641854866217">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1641854866217" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/repo/purchases/UploadPurchaseTask.java</url>
+          <line>190</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/CowActivity.java</url>
+          <line>920</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.bk.layout.CheckableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/hentsListItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/checkable_background_red"
+        android:gravity="center_vertical"
+        android:minHeight="40sp">
+
+    <View android:id="@+id/hentTypeIndicator"
+          android:layout_width="0dp"
+          android:layout_height="fill_parent"
+          android:layout_weight="0.05"/>
+
+    <TextView
+            android:id="@+id/hentName"
+            android:layout_width="0dp"
+            android:layout_weight="0.65"
+            style="@style/list_cell"
+            android:layout_gravity="left|center_vertical"
+            />
+
+    <View android:id="@+id/divider1"
+          android:background="@drawable/white_divider"
+          android:layout_width="1dp"
+          android:layout_height="fill_parent"/>
+
+    <TextView
+            android:id="@+id/hentFarmNo"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            style="@style/list_cell"
+            />
+
+</com.bk.layout.CheckableLinearLayout>

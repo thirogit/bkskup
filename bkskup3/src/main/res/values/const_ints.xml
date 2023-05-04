@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="MAX_COMPANYNAME">280</integer>
+    <integer name="MAX_ALIAS">24</integer>
+    <integer name="MAX_HENTNAME">64</integer>
+    <integer name="MAX_ZIP">10</integer>
+    <integer name="MAX_CITY">48</integer>
+    <integer name="MAX_STREET">48</integer>
+    <integer name="MAX_POBOX">10</integer>
+    <integer name="MAX_NIP">10</integer>
+    <integer name="MAX_HENTNO">14</integer>
+    <integer name="MAX_WETNO">8</integer>
+    <integer name="MAX_PHONE">12</integer>
+    <integer name="MAX_PLATE">20</integer>
+    <integer name="MAX_EXTRAS">255</integer>
+    <integer name="MAX_ACCOUNTNO">26</integer>
+    <integer name="MAX_BANKNAME">50</integer>
+    <integer name="MAX_PESEL">11</integer>
+    <integer name="MAX_REGON">14</integer>
+    <integer name="MAX_IDNO">9</integer>
+    <integer name="MAX_ISSUEPOST">50</integer>
+    <integer name="MAX_CELLPHONE">16</integer>
+    <integer name="MAX_EMAIL">64</integer>
+    <integer name="MAX_WETLICENCENO">12</integer>
+    <integer name="MAX_TRANSACTIONPLACE">48</integer>
+    <integer name="MAX_SEASON_LENGTH_DAYS">187</integer>
+    <integer name="MIN_SEASON_LENGTH_DAYS">30</integer>
+    <integer name="MAX_HEALTHCERTNO">16</integer>
+    <integer name="MAX_COWBIRTHPLACE">32</integer>
+    <integer name="MAX_AGENTNAME">24</integer>
+    <integer name="MAX_AGENTCODE">8</integer>
+    <integer name="MAX_PASSPORTNO">10</integer>
+
+
+
+    <integer name="MAX_PASSWORD">16</integer>
+    <integer name="MIN_PASSWORD">4</integer>
+    <integer name="MAX_INVOICENO">15</integer>
+    <integer name="MAX_SETTING">70</integer>
+    <integer name="MAX_TEMPLATE">210</integer>
+    <integer name="MAX_CLASSNAME">64</integer>
+    <integer name="MAX_CLASSCODE">8</integer>
+    <integer name="MAX_STOCKNAME">64</integer>
+    <integer name="MAX_STOCKCODE">8</integer>
+
+    <integer name="MAX_DEDUCTIONCODE">10</integer>
+    <integer name="MAX_DEDUCTIONREASON">300</integer>
+
+</resources>
+

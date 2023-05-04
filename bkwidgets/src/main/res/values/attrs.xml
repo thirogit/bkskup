@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    <declare-styleable name="ActionBar">
+        <attr name="title" format="string" localization="suggested" />
+    </declare-styleable>
+
+	<attr name="switchStyle" format="reference" />
+    <declare-styleable name="Switch">
+        <attr name="thumb" format="reference"/>
+        <attr name="track" format="reference" />
+        <attr name="textOn" format="string"/>
+        <attr name="textOff" format="string"/>
+        <attr name="thumbTextPadding" format="dimension" />
+        <attr name="switchTextAppearance" format="reference" />
+        <attr name="switchMinWidth" format="dimension" />
+        <attr name="switchPadding" format="dimension" />
+	</declare-styleable>
+	
+    <attr name="textAppearance" format="reference" />
+
+  <declare-styleable name="TextAppearanceSwitch" >
+      	<attr name="textColor" format="color" /> 
+        <attr name="textSize" format="dimension"/>
+        <attr name="textStyle" format="reference"/>
+        <attr name="typeface" format="reference"/>
+        <attr name="textFontFamily" format="reference"/>
+        <attr name="textColorHighlight" format="color"/>
+        <attr name="textColorHint" format="color" />
+        <attr name="textColorLink" format="color" />
+        <!--<attr name="textAllCaps" format="boolean" />-->
+    </declare-styleable> 
+	
+	
+	
+	<attr name="entries" format="reference" />
+
+   <declare-styleable name="AbsSpinner">
+           <!-- Reference to an array resource that will populate the Spinner.  For static content,
+                this is simpler than populating the Spinner programmatically. -->
+           <attr name="entries" />
+       </declare-styleable>
+
+   <declare-styleable name="Spinner">
+             <!-- The prompt to display when the spinner's dialog is shown. -->
+             <attr name="prompt" format="reference" />
+             <!-- Display mode for spinner options. -->
+             <attr name="spinnerMode" format="enum">
+                 <!-- Spinner options will be presented to the user as a dialog window. -->
+                 <enum name="dialog" value="0" />
+                 <!-- Spinner options will be presented to the user as an inline dropdown
+                      anchored to the spinner widget itself. -->
+                 <enum name="dropdown" value="1" />
+             </attr>
+             <!-- List selector to use for spinnerMode="dropdown" display. -->
+             <attr name="android:dropDownSelector" />
+             <!-- Background drawable to use for the dropdown in spinnerMode="dropdown". -->
+             <attr name="android:popupBackground" />
+             <!-- Vertical offset from the spinner widget for positioning the dropdown in
+                  spinnerMode="dropdown". -->
+             <attr name="android:dropDownVerticalOffset" />
+             <!-- Horizontal offset from the spinner widget for positioning the dropdown
+                  in spinnerMode="dropdown". -->
+             <attr name="android:dropDownHorizontalOffset" />
+             <!-- Width of the dropdown in spinnerMode="dropdown". -->
+             <attr name="android:dropDownWidth"/>
+             <!-- Reference to a layout to use for displaying a prompt in the dropdown for
+                  spinnerMode="dropdown". This layout must contain a TextView with the id
+                  @android:id/text1 to be populated with the prompt text. -->
+             <attr name="popupPromptView" format="reference" />
+             <!-- Gravity setting for positioning the currently selected item. -->
+             <attr name="android:gravity" />
+             <!-- Whether this spinner should mark child views as enabled/disabled when
+                  the spinner itself is enabled/disabled. -->
+             <attr name="disableChildrenWhenDisabled" format="boolean" />
+         </declare-styleable>
+
+    <declare-styleable name="IconButton">
+        <attr name="iconPadding" format="dimension"/>
+    </declare-styleable>
+
+
+</resources>
+

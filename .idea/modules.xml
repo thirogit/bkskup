@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bkskup.iml" filepath="$PROJECT_DIR$/.idea/modules/bkskup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/barcodeservice/bkskup.barcodeservice.iml" filepath="$PROJECT_DIR$/.idea/modules/barcodeservice/bkskup.barcodeservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bkbands/bkskup.bkbands.iml" filepath="$PROJECT_DIR$/.idea/modules/bkbands/bkskup.bkbands.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bksettings/bkskup.bksettings.iml" filepath="$PROJECT_DIR$/.idea/modules/bksettings/bkskup.bksettings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bkskup3/bkskup.bkskup3.iml" filepath="$PROJECT_DIR$/.idea/modules/bkskup3/bkskup.bkskup3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bkwidgets/bkskup.bkwidgets.iml" filepath="$PROJECT_DIR$/.idea/modules/bkwidgets/bkskup.bkwidgets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bluetoothcommon/bkskup.bluetoothcommon.iml" filepath="$PROJECT_DIR$/.idea/modules/bluetoothcommon/bkskup.bluetoothcommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/countries/bkskup.countries.iml" filepath="$PROJECT_DIR$/.idea/modules/countries/bkskup.countries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/passportscanner/bkskup.passportscanner.iml" filepath="$PROJECT_DIR$/.idea/modules/passportscanner/bkskup.passportscanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/printservice/bkskup.printservice.iml" filepath="$PROJECT_DIR$/.idea/modules/printservice/bkskup.printservice.iml" />
+    </modules>
+  </component>
+</project>

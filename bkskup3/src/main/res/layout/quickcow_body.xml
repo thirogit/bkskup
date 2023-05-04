@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include android:id="@+id/progress_container" layout="@layout/loading_progress"/>
+
+    <LinearLayout android:id="@+id/content_container"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:orientation="vertical"
+                  android:visibility="gone">
+
+        <com.bk.widgets.actionbar.ActionBar
+                android:id="@+id/actionBar"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:orientation="horizontal"
+                />
+
+        <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                >
+
+            <LinearLayout android:layout_width="fill_parent"
+                          android:layout_height="fill_parent"
+                          android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/cowNoInputLblBox"
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/cowNoInputCaption"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textAllCaps="true"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                <RelativeLayout android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+
+                    <com.bk.bkskup3.barcode.ServiceIndicatorButton
+                            android:id="@+id/scanCowNoBtn"
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_alignParentRight="true"
+                            />
+
+                    <FrameLayout android:layout_height="50dp"
+                                 android:layout_width="match_parent"
+                                 android:layout_toLeftOf="@id/scanCowNoBtn"
+                            >
+                        <TextView
+                                android:id="@+id/cowNoView"
+                                android:layout_height="match_parent"
+                                android:layout_width="match_parent"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:textSize="26sp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/dark_gray"
+                                />
+                        <com.bk.widgets.LaserView
+                                android:id="@+id/cowNoLaser"
+                                android:layout_height="match_parent"
+                                android:layout_width="match_parent"
+                                android:visibility="invisible"
+                                />
+
+                    </FrameLayout>
+
+
+                </RelativeLayout>
+
+                <LinearLayout android:id="@+id/cowNoInputFeedbackPlaceholder"
+                              android:layout_width="fill_parent"
+                              android:layout_height="45dp"
+                              android:orientation="horizontal"
+                              android:visibility="gone"/>
+
+                <TextView
+                        android:id="@+id/classLblBox"
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/cowClassLblCaption"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textAllCaps="true"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                <com.bk.bkskup3.widgets.ToggleListView
+                        android:id="@+id/classToggleList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                <TextView
+                        android:id="@+id/sexLblBox"
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/sexInputCaption"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textAllCaps="true"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                <com.bk.bkskup3.widgets.CowSexButton
+                        android:id="@+id/sexBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                <TextView
+                        android:id="@+id/weightLblBox"
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/weightInputCaption"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textAllCaps="true"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                <EditText android:id="@+id/cowWeightBox"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:textSize="24sp"
+                          android:singleLine="true"
+                          android:inputType="none"
+                          android:focusableInTouchMode="false"/>
+
+                <TextView
+                        android:id="@+id/priceLblBox"
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/priceInputCaption"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textAllCaps="true"
+                        android:layout_marginLeft="10dp"
+                        />
+
+
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:gravity="center"
+                              android:baselineAligned="false">
+
+                    <LinearLayout android:id="@+id/netPriceSection"
+                                  android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                                  android:layout_weight="0.5"
+                                  android:gravity="center">
+
+                        <TextView android:layout_width="fill_parent"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/netPricePerKg"
+                                  android:textSize="18sp"
+                                  android:background="@color/netPrice"
+                                  android:textColor="@android:color/black"/>
+
+
+                        <EditText android:id="@+id/cowNetPricePerKgBox"
+                                  android:layout_width="fill_parent"
+                                  android:layout_height="wrap_content"
+                                  android:textSize="24sp"
+                                  android:singleLine="true"
+                                  android:inputType="none"
+                                  android:focusableInTouchMode="false"/>
+
+                        <TextView android:layout_width="fill_parent"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/totalNetPrice"
+                                  android:textSize="18sp"
+                                  android:background="@color/netPrice"
+                                  android:textColor="@android:color/black"/>
+
+                        <EditText android:id="@+id/cowNetTotalPriceBox"
+                                  android:layout_width="fill_parent"
+                                  android:layout_height="wrap_content"
+                                  android:textSize="24sp"
+                                  android:singleLine="true"
+                                  android:inputType="none"
+                                  android:focusableInTouchMode="false"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/grossPriceSection"
+                                  android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                                  android:layout_weight="0.5"
+                                  android:gravity="center">
+
+                        <TextView android:id="@+id/grossPricePerKgLabel"
+                                  android:layout_width="fill_parent"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/grossPricePerKg"
+                                  android:textSize="18sp"
+                                  android:background="@color/grossPrice"
+                                  android:textColor="@android:color/black"/>
+
+                        <EditText android:id="@+id/cowGrossPricePerKgBox"
+                                  android:layout_width="fill_parent"
+                                  android:layout_height="wrap_content"
+                                  android:textSize="24sp"
+                                  android:singleLine="true"
+                                  android:inputType="none"
+                                  android:focusableInTouchMode="false"/>
+
+                        <TextView android:id="@+id/grossPriceTotalLabel"
+                                  android:layout_width="fill_parent"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/totalGrossPrice"
+                                  android:textSize="18sp"
+                                  android:background="@color/grossPrice"
+                                  android:textColor="@android:color/black"/>
+
+                        <EditText android:id="@+id/cowGrossTotalPriceBox"
+                                  android:layout_width="fill_parent"
+                                  android:layout_height="wrap_content"
+                                  android:textSize="24sp"
+                                  android:singleLine="true"
+                                  android:inputType="none"
+                                  android:focusableInTouchMode="false"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</merge>

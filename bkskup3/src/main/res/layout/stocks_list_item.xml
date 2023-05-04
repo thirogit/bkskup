@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.bk.layout.CheckableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:id="@+id/stockListItem"
+                                             android:layout_width="fill_parent"
+                                             android:layout_height="wrap_content"
+                                             android:orientation="horizontal"
+                                             android:background="@drawable/checkable_background_red"
+                                             android:gravity="center_vertical"
+                                             android:minHeight="40sp"
+        >
+
+    <TextView
+            android:id="@+id/stockCode"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/list_cell"
+            />
+
+    <View android:id="@+id/divider2"
+          android:background="@drawable/white_divider"
+          android:layout_width="1dp"
+          android:layout_height="fill_parent"/>
+
+    <TextView
+            android:id="@+id/stockName"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            style="@style/list_cell"
+            />
+
+
+</com.bk.layout.CheckableLinearLayout>
+

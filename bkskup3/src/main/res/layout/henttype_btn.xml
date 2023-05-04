@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:orientation="horizontal"
+                  style="@style/SegmentedButtonContainer"
+
+            >
+
+        <com.bk.bkskup3.widgets.ToggleButton
+            android:id="@+id/individual_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hentTypeIndividual"
+                style="@style/SegmentedButton"
+                android:background="@drawable/btn_hent_individual"
+                />
+
+        <com.bk.bkskup3.widgets.ToggleButton
+            android:id="@+id/company_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hentTypeCompany"
+                style="@style/SegmentedButton"
+                android:background="@drawable/btn_hent_company"
+                />
+
+    </LinearLayout>
+
+</merge>

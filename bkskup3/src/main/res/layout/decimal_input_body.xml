@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.bk.widgets.actionbar.ActionBar
+            android:id="@+id/actionBar"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal"
+            />
+
+    <include layout="@layout/decimal_input_display"/>
+
+    <include layout="@layout/decimal_input_kb"/>
+
+</merge>

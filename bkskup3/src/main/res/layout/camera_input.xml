@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.bk.widgets.actionbar.ActionBar
+        android:id="@+id/actionBar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal" />
+
+
+    <FrameLayout
+        android:id="@+id/bcOutputFrame"
+        android:layout_width="fill_parent"
+        android:layout_height="240dp"
+        >
+
+
+        <com.wonderkiln.camerakit.CameraView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:ckCropOutput="false"
+            app:ckDoubleTapToToggleFacing="false"
+            app:ckFacing="back"
+            app:ckFlash="off"
+            app:ckFocus="continuous"
+            app:ckJpegQuality="100"
+            app:ckMethod="standard"
+            app:ckPinchToZoom="true"
+            app:ckVideoQuality="highest"
+            app:ckZoom="1.0" />
+
+        <com.bk.bkskup3.widgets.ViewfinderView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/ocrOkBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:text="@string/ok"
+                android:textSize="25sp"
+                />
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

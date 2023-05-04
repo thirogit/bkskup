@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget56"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/label_port"
+            android:text="@string/payWayLblCaption" />
+
+        <com.bk.bkskup3.widgets.PayWayButton
+            android:id="@+id/payWayBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            style="@style/label_port"
+            android:text="@string/payDueDaysLblCaption" />
+
+        <include
+            android:id="@+id/payDueDaysContainer"
+            layout="@layout/payduedays" />
+
+        <TextView
+            style="@style/label_port"
+            android:text="@string/transactionPlaceLblCaption" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/transactionPlaceBox"
+                style="@style/input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.45"
+                android:maxLength="@integer/MAX_TRANSACTIONPLACE" />
+
+            <LinearLayout
+                style="@style/SegmentedButtonContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.55"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/setTransactionPlaceFromHentBtn"
+                    style="@style/SegmentedButton"
+                    android:text="@string/setTransactionPlaceFromHentBtnCaption" />
+
+                <Button
+                    android:id="@+id/setTransactionPlaceFromHerdBtn"
+                    style="@style/SegmentedButton"
+                    android:text="@string/setTransactionPlaceFromHerdBtnCaption" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/label_port"
+            android:text="@string/transactionDateLblCaption" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/transactionDateBox"
+                style="@style/input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.45"
+                android:focusableInTouchMode="false"
+                android:inputType="none" />
+
+            <LinearLayout
+                style="@style/SegmentedButtonContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.55"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/setTransactionDtToNowBtn"
+                    style="@style/SegmentedButton"
+                    android:text="@string/nowBtnCaption" />
+
+                <Button
+                    android:id="@+id/changeTransactionDtBtn"
+                    style="@style/SegmentedButton"
+                    android:text="@string/chooseBtnCaption" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/label_port"
+            android:text="@string/invoiceDateLblCaption" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/invoiceDateBox"
+                style="@style/input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.45"
+                android:focusableInTouchMode="false"
+                android:inputType="none" />
+
+            <LinearLayout
+                style="@style/SegmentedButtonContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.55"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/setInvoiceDtToNowBtn"
+                    style="@style/SegmentedButton"
+                    android:text="@string/nowBtnCaption" />
+
+                <Button
+                    android:id="@+id/changeInvoiceDtBtn"
+                    style="@style/SegmentedButton"
+                    android:text="@string/chooseBtnCaption" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/label_port"
+            android:text="@string/customInvoiceNoLblCaption" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/customInvoiceNoValueBox"
+                style="@style/input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.45"
+                android:inputType="text"
+                android:maxLength="@integer/MAX_INVOICENO" />
+
+            <LinearLayout
+                style="@style/SegmentedButtonContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.55"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/takeNextInvoiceNumberBtn"
+                    style="@style/SegmentedButton"
+                    android:text="@string/takeBtnCaption" />
+
+
+                <Button
+                    android:id="@+id/showLastInvoicesBtn"
+                    style="@style/SegmentedButton"
+                    android:text="@string/showLastInvoicesBtnCaption" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/label_port"
+            android:text="@string/extrasLblCaption" />
+
+
+        <EditText
+            android:id="@+id/extrasBox"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:maxLength="@integer/MAX_EXTRAS"
+            android:maxLines="3"
+            android:minLines="3"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../BKSkup2.iml" filepath="$PROJECT_DIR$/../BKSkup2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../barcodeservice/barcodeservice.iml" filepath="$PROJECT_DIR$/../barcodeservice/barcodeservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../bkbands/bkbands.iml" filepath="$PROJECT_DIR$/../bkbands/bkbands.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../bksettings/bksettings.iml" filepath="$PROJECT_DIR$/../bksettings/bksettings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bkskup2.iml" filepath="$PROJECT_DIR$/bkskup2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../bkwidgets/bkwidgets.iml" filepath="$PROJECT_DIR$/../bkwidgets/bkwidgets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../bluetoothcommon/bluetoothcommon.iml" filepath="$PROJECT_DIR$/../bluetoothcommon/bluetoothcommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../countries/countries.iml" filepath="$PROJECT_DIR$/../countries/countries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../printservice/printservice.iml" filepath="$PROJECT_DIR$/../printservice/printservice.iml" />
+    </modules>
+  </component>
+</project>

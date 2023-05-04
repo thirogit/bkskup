@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:orientation="horizontal"
+                  android:weightSum="3"
+                  style="@style/SegmentedButtonContainer"
+
+            >
+
+        <com.bk.bkskup3.widgets.ToggleButton
+            android:id="@+id/sex_xx_btn"
+                                             android:layout_width="fill_parent"
+                                             android:layout_height="wrap_content"
+                                             android:text="@string/cowSexXX"
+                                             style="@style/SegmentedButton"
+                                             android:background="@drawable/btn_cowsex"
+                />
+
+        <com.bk.bkskup3.widgets.ToggleButton
+            android:id="@+id/sex_none_btn"
+                                             android:layout_width="fill_parent"
+                                             android:layout_height="wrap_content"
+                                             android:text="@string/cowSexNONE"
+                                             style="@style/SegmentedButton"
+                                             android:background="@drawable/btn_cowsex"
+                />
+
+        <com.bk.bkskup3.widgets.ToggleButton
+            android:id="@+id/sex_xy_btn"
+                                             android:layout_width="fill_parent"
+                                             android:layout_height="wrap_content"
+                                             android:text="@string/cowSexXY"
+                                             style="@style/SegmentedButton"
+                                             android:background="@drawable/btn_cowsex"
+                />
+
+
+    </LinearLayout>
+
+</merge>

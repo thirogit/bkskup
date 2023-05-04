@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout  android:id="@+id/openPurchasesHeader"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/listview_column_header_bkg">
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:text="@string/purchaseHerdLblCaption"
+            style="@style/list_header_label"
+            />
+
+    <View android:id="@+id/divider2"
+          android:background="@drawable/white_divider"
+          android:layout_width="1dp"
+          android:layout_height="fill_parent"/>
+
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:text="@string/purchaseStartEndDtLblCaption"
+            style="@style/list_header_label"
+            />
+
+    <View android:id="@+id/divider1"
+          android:background="@drawable/white_divider"
+          android:layout_width="1dp"
+          android:layout_height="fill_parent"/>
+
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:text="@string/cowAmountLblCaption"
+            style="@style/list_header_label"
+            />
+
+    <View android:id="@+id/divider3"
+          android:background="@drawable/white_divider"
+          android:layout_width="1dp"
+          android:layout_height="fill_parent"/>
+
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:text="@string/purchaseStateLblCaption"
+            style="@style/list_header_label"
+            />
+
+</LinearLayout>
+
+

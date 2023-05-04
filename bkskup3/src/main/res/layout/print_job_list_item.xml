@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.bk.layout.CheckableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/printJobItem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/checkable_background_red"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/list_row_height"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/printJobTitleLbl"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.66"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.34"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/jobActionNameLbl"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.3"
+            android:textSize="12sp" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.7">
+
+            <ProgressBar
+                android:id="@+id/printJobProgress"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:id="@+id/jobStatusMsgLbl"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textSize="12sp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</com.bk.layout.CheckableLinearLayout>

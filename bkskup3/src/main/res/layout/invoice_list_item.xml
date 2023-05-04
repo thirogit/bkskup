@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.bk.layout.CheckableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:id="@+id/invoicesListItem"
+                                             android:layout_width="fill_parent"
+                                             android:layout_height="wrap_content"
+                                             android:orientation="horizontal"
+                                             android:background="@drawable/checkable_background_red"
+                                             android:gravity="center_vertical"
+                                             android:minHeight="50sp"
+        >
+
+    <RelativeLayout android:layout_width="0dp"
+                  android:layout_height="fill_parent"
+                  android:layout_weight="0.2"
+                  >
+
+        <View android:id="@+id/invoiceTypeIndicator"
+              android:layout_width="15dp"
+              android:layout_height="fill_parent"
+              />
+
+        <TextView
+                android:id="@+id/invoiceCustomNoBox"
+                android:layout_width="fill_parent"
+                style="@style/list_cell"
+                android:layout_toRightOf="@id/invoiceTypeIndicator"
+                android:layout_centerVertical="true"
+                />
+    </RelativeLayout>
+
+    <View android:id="@+id/divider5"
+          android:background="@drawable/white_divider"
+          android:layout_width="1dp"
+          android:layout_height="fill_parent"/>
+
+
+    <!--<com.bk.widgets.actionbar.ScrollingTextView-->
+            <!--android:id="@+id/invoiceHentBox"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="0.3"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:lines="2"-->
+            <!--android:scrollHorizontally="true"-->
+            <!--android:ellipsize="marquee"-->
+            <!--android:marqueeRepeatLimit="marquee_forever"-->
+            <!--style="@style/list_cell"-->
+            <!--/>-->
+
+    <TextView
+            android:id="@+id/invoiceHentBox"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:lines="2"
+            style="@style/list_cell"
+            android:ellipsize="end"
+            />
+
+    <View android:id="@+id/divider6"
+          android:background="@drawable/white_divider"
+          android:layout_width="1dp"
+          android:layout_height="fill_parent"/>
+
+    <TextView
+            android:id="@+id/invoiceCowAmountBox"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            style="@style/list_cell"
+            />
+
+    <View android:id="@+id/divider7"
+          android:background="@drawable/white_divider"
+          android:layout_width="1dp"
+          android:layout_height="fill_parent"/>
+
+    <TextView
+            android:id="@+id/invoiceTotalNetBox"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            style="@style/list_cell"
+            />
+
+    <View android:id="@+id/divider8"
+          android:background="@drawable/white_divider"
+          android:layout_width="1dp"
+          android:layout_height="fill_parent"/>
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="0.2"
+                  android:orientation="vertical">
+        <TextView
+            android:id="@+id/invoiceTotalGrossBox"
+            android:layout_width="fill_parent"
+            style="@style/list_cell"
+            />
+        <TextView
+            android:id="@+id/deductedInvoiceTotalGrossBox"
+            android:layout_width="fill_parent"
+            style="@style/list_cell"
+            android:textColor="#FFF"
+            />
+    </LinearLayout>
+</com.bk.layout.CheckableLinearLayout>
+
+

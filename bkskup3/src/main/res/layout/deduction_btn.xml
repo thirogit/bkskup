@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<merge xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/SegmentedButtonContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:weightSum="8"
+        >
+        <com.bk.bkskup3.widgets.ToggleButton
+            android:id="@+id/deduction_3_btn"
+            style="@style/SegmentedButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_deduction"
+            android:text="-3%"
+            android:textColor="#000" />
+
+        <com.bk.bkskup3.widgets.ToggleButton
+            android:id="@+id/deduction_4_btn"
+            style="@style/SegmentedButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_deduction"
+            android:text="-4%"
+            android:textColor="#000" />
+
+        <com.bk.bkskup3.widgets.ToggleButton
+            android:id="@+id/deduction_5_btn"
+            style="@style/SegmentedButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_deduction"
+            android:text="-5%"
+            android:textColor="#000" />
+
+        <com.bk.bkskup3.widgets.ToggleButton
+            android:id="@+id/deduction_6_btn"
+            style="@style/SegmentedButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_deduction"
+            android:text="-6%"
+            android:textColor="#000" />
+
+        <com.bk.bkskup3.widgets.ToggleButton
+            android:id="@+id/deduction_7_btn"
+            style="@style/SegmentedButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_deduction"
+            android:text="-7%"
+            android:textColor="#000" />
+
+        <com.bk.bkskup3.widgets.ToggleButton
+            android:id="@+id/deduction_8_btn"
+            style="@style/SegmentedButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_deduction"
+            android:text="-8%"
+            android:textColor="#000"/>
+
+
+        <com.bk.bkskup3.widgets.ToggleButton
+            android:id="@+id/deduction_9_btn"
+            style="@style/SegmentedButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_deduction"
+            android:text="-9%"
+            android:textColor="#000"/>
+
+        <com.bk.bkskup3.widgets.ToggleButton
+            android:id="@+id/deduction_10_btn"
+            style="@style/SegmentedButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_deduction"
+            android:text="-10%"
+            android:textColor="#000"/>
+
+
+    </LinearLayout>
+
+<!--</merge>-->

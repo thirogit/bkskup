@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:gravity="center">
+
+        <com.bk.widgets.warningedittext.WarningEditText android:id="@+id/payDueDaysValueBox"
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_weight="0.15"
+                                                        android:clickable="false"
+                                                        android:cursorVisible="false"
+                                                        style="@style/input"/>
+
+
+        <LinearLayout android:layout_height="wrap_content"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.85"
+                      android:orientation="horizontal"
+                      android:gravity="center"
+                      style="@style/SegmentedButtonContainer"
+                      android:weightSum="6">
+
+            <Button android:id="@+id/payDueDays3Btn"
+                    android:text="@string/payDueDays3"
+                    style="@style/SegmentedButton"
+                    />
+
+            <Button android:id="@+id/payDueDays7Btn"
+                    android:text="@string/payDueDays7"
+                    style="@style/SegmentedButton"/>
+
+            <Button android:id="@+id/payDueDays14Btn"
+                    android:text="@string/payDueDays14"
+                    style="@style/SegmentedButton"/>
+
+            <Button android:id="@+id/payDueDays21Btn"
+                    android:text="@string/payDueDays21"
+                    style="@style/SegmentedButton"/>
+
+            <Button android:id="@+id/increasePayDueDaysBtn"
+                    android:text="+1"
+                    style="@style/SegmentedButton"/>
+
+            <Button android:id="@+id/dereasePayDueDaysBtn"
+                    android:text="-1"
+                    style="@style/SegmentedButton"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</merge>

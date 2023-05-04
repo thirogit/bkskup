@@ -1,0 +1,12 @@
+/bkskup3/build/**
+/.gradle/**
+/barcodeservice/build/**
+/bkbands/build/**
+/bksettings/build/**
+/bkwidgets/build/**
+/bluetoothcommon/build/**
+/countries/build/**
+/printservice/build/**
+/build/**
+/.idea/libraries/**
+/passportscanner/build/**

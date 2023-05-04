@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TableLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/TextView20"
+            style="@style/label_port"
+            android:layout_width="fill_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="@string/hentAccountNoLblCaption" />
+
+        <ImageButton
+            android:id="@+id/ocrAccountNoBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/TextView20"
+            android:src="@drawable/ic_action_camera_alt" />
+
+    </RelativeLayout>
+
+
+    <com.bk.bkskup3.widgets.AccountNoEditText
+        android:id="@+id/hentAccountNo"
+        style="@style/input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="false"
+        android:hint="@string/hintHentAccountNo"
+        android:inputType="none"
+
+        />
+
+
+    <TextView
+        android:id="@+id/TextView21"
+        style="@style/label"
+        android:layout_width="fill_parent"
+        android:text="@string/hentBankNameLblCaption" />
+
+    <EditText
+        android:id="@+id/hentBankName"
+        style="@style/input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hintHentBankName"
+        android:inputType="textCapCharacters"
+        android:maxLength="@integer/MAX_BANKNAME" />
+
+
+</LinearLayout>
+
+

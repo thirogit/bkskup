@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<resources>
+
+   <style name="SegmentedButtonContainer" parent="@android:style/Holo.SegmentedButton">
+           <item name="android:layout_width">match_parent</item>
+           <item name="android:layout_height">wrap_content</item>
+           <item name="android:weightSum">2</item>
+           <item name="android:dividerPadding">8dip</item>
+   </style>
+
+   <style name="SegmentedButton" parent="@android:style/Widget.Holo.Button.Borderless">
+           <item name="android:layout_width">0dip</item>
+           <item name="android:layout_weight">1</item>
+           <item name="android:layout_height">wrap_content</item>
+           <item name="android:ellipsize">marquee</item>
+           <item name="android:singleLine">true</item>
+   </style>
+
+    <style name="btn_clear">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="button_style">
+        <item name="android:textSize">40sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/btn_function</item>
+        <item name="android:layout_marginLeft">1dp</item>
+    </style>
+
+
+
+    <style name="digit_button_style" parent="button_style">
+        <item name="android:background">@drawable/btn_digit</item>
+    </style>
+
+    <style name="backspace_button_style" parent="button_style">
+        <item name="button_icon">@drawable/undo</item>
+    </style>
+
+    <style name="clear_button_style" parent="button_style">
+        <item name="button_icon">@drawable/remove</item>
+    </style>
+
+    <style name="calc_input_display_style">
+        <item name="android:background">@drawable/tw_textfield_multiline_default_holo_dark</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <!--<item name="android:paddingTop">8dp</item>-->
+        <!--<item name="android:paddingLeft">8dp</item>-->
+        <!--<item name="android:paddingRight">8dp</item>-->
+        <!--<item name="android:paddingBottom">0dp</item>-->
+        <item name="android:inputType">number</item>
+    </style>
+
+    <style name="label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="label_port" parent="label">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="input">
+        <item name="android:textSize">24sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+    <style name="summary_item">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+
+    </style>
+
+
+    <style name="purchase_summary_item_title" parent="purchase_summary_item">
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="purchase_summary_item_value" parent="purchase_summary_item">
+        <item name="android:textColor">#FFF</item>
+    </style>
+
+    <style name="purchase_summary_item">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="summary_item_title" parent="summary_item">
+    </style>
+
+    <style name="summary_item_value" parent="summary_item">
+    </style>
+
+    <style name="list_header_label">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/listview_column_header_txt</item>
+
+    </style>
+
+    <style name="list_cell">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="InputActivityInWindow" parent="Theme.mTheme">
+        <!--<item name="android:windowFrame">@null</item>-->
+        <!--<item name="android:windowTitleStyle">@style/WindowTitle</item>-->
+        <!--<item name="android:windowBackground">@android:color/black</item>-->
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <!--<item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>-->
+        <!--<item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>-->
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <!--<item name="android:windowActionModeOverlay">false</item>-->
+        <!--<item name="android:windowFullscreen">false</item>-->
+        <!--<item name="android:colorBackgroundCacheHint">@null</item>-->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="preference_section_header">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:background">@drawable/tw_list_section_divider_holo_dark</item>
+    </style>
+
+    <style name="preference_item">
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="weight_input_label">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="welcome_btn">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+
+    <style name="Theme.mTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:windowBackground">@drawable/background_holo_dark</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_action_arrow_back</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:editTextStyle">@style/MyEditText</item>
+        <item name="android:spinnerStyle">@style/MySpinner</item>
+        <item name="android:alertDialogTheme">@style/Theme_Sphinx_Dialog_Alert</item>
+        <item name="android:dialogTheme">@android:style/Theme.Holo.Dialog</item>
+        <!--<item name="android:actionDropDownStyle">@style/MyActionBar.MyDropDownNav</item>-->
+        <item name="android:popupMenuStyle">@style/MyPopupMenu</item>
+    </style>
+
+
+
+    <style name="MyPopupMenu" parent="@android:style/Widget.Holo.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/tw_menu_ab_dropdown_panel_holo_dark</item>
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/tw_ab_transparent_dark_holo</item>
+    </style>
+
+      <style name="MyEditText" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/tw_edit_text_holo_dark</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textCursorDrawable">@null</item>
+
+    </style>
+
+    <style name="Theme_Holo_Dialog_Alert" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle_Holo</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+    </style>
+
+    <!-- Local copy of android:DialogWindowTitle.Holo -->
+    <style name="DialogWindowTitle_Holo">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Holo.DialogWindowTitle</item>
+    </style>
+
+    <style name="Theme_Sphinx_Dialog_Alert" parent="@style/Theme_Holo_Dialog_Alert"/>
+
+    <style name="MySpinner" parent="@android:style/Widget.Spinner">
+        <item name="android:background">@drawable/tw_spinner_background_holo_dark</item>
+        <item name="android:popupBackground">@drawable/tw_spinner_dropdown_background</item>
+
+    </style>
+
+</resources>

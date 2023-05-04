@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        android:id="@+id/widget56"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+            >
+
+        <LinearLayout android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:gravity="center">
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.3"
+                      android:text="@string/payWayLblCaption"
+                      style="@style/label"/>
+
+            <com.bk.bkskup3.widgets.PayWayButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/payWayBtn"
+                    android:layout_weight="0.7"
+                    />
+
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:gravity="center"
+                >
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.3"
+                      android:text="@string/payDueDaysLblCaption"
+                      style="@style/label"/>
+
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="0.7">
+                <include android:id="@+id/payDueDaysContainer" layout="@layout/payduedays"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:gravity="center">
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.3"
+                      android:text="@string/transactionPlaceLblCaption"
+                      style="@style/label"/>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="0.7"
+                    android:gravity="center">
+
+                <EditText android:id="@+id/transactionPlaceBox"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="0.45"
+                          android:maxLength="@integer/MAX_TRANSACTIONPLACE"
+                          style="@style/input"/>
+
+                <LinearLayout android:layout_height="wrap_content"
+                              android:layout_width="0dp"
+                              android:layout_weight="0.55"
+                              android:weightSum="2"
+                              style="@style/SegmentedButtonContainer">
+
+                        <Button android:id="@+id/setTransactionPlaceFromHentBtn"
+                                android:text="@string/setTransactionPlaceFromHentBtnCaption"
+                                style="@style/SegmentedButton"/>
+
+                        <Button android:id="@+id/setTransactionPlaceFromHerdBtn"
+                            android:text="@string/setTransactionPlaceFromHerdBtnCaption"
+                            style="@style/SegmentedButton"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:gravity="center">
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.3"
+                      android:text="@string/transactionDateLblCaption"
+                      style="@style/label"/>
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_weight="0.7"
+                          android:gravity="center">
+
+                <EditText android:id="@+id/transactionDateBox"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="0.45"
+                          android:inputType="none"
+                          android:focusableInTouchMode="false"
+                          style="@style/input"
+                        />
+
+                <LinearLayout android:layout_height="wrap_content"
+                              android:layout_width="0dp"
+                              android:layout_weight="0.55"
+                              android:orientation="horizontal"
+                              android:gravity="center"
+                              style="@style/SegmentedButtonContainer">
+
+                    <Button android:id="@+id/setTransactionDtToNowBtn"
+                            android:text="@string/nowBtnCaption"
+                            style="@style/SegmentedButton"/>
+
+                    <Button android:id="@+id/changeTransactionDtBtn"
+                            android:text="@string/chooseBtnCaption"
+                            style="@style/SegmentedButton"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:gravity="center">
+
+            <TextView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="@string/invoiceDateLblCaption"
+                style="@style/label"/>
+
+            <LinearLayout android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="0.7"
+                android:gravity="center">
+
+                <EditText android:id="@+id/invoiceDateBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.45"
+                    android:inputType="none"
+                    android:focusableInTouchMode="false"
+                    style="@style/input"
+                    />
+
+                <LinearLayout android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.55"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    style="@style/SegmentedButtonContainer">
+
+                    <Button android:id="@+id/setInvoiceDtToNowBtn"
+                        android:text="@string/nowBtnCaption"
+                        style="@style/SegmentedButton"/>
+
+                    <Button android:id="@+id/changeInvoiceDtBtn"
+                        android:text="@string/chooseBtnCaption"
+                        style="@style/SegmentedButton"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:gravity="center">
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.3"
+                      android:text="@string/customInvoiceNoLblCaption"
+                      style="@style/label"/>
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_weight="0.7"
+                          android:gravity="center">
+
+                <EditText android:id="@+id/customInvoiceNoValueBox"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="0.45"
+                          android:maxLength="@integer/MAX_INVOICENO"
+                          android:inputType="text"
+                          style="@style/input"
+                        />
+
+                <LinearLayout android:layout_height="wrap_content"
+                              android:layout_width="0dp"
+                              android:layout_weight="0.55"
+                              android:orientation="horizontal"
+                              android:gravity="center"
+                              style="@style/SegmentedButtonContainer">
+
+
+                    <Button android:id="@+id/takeNextInvoiceNumberBtn"
+                            android:text="@string/takeBtnCaption"
+                            style="@style/SegmentedButton"/>
+
+
+                    <Button android:id="@+id/showLastInvoicesBtn"
+                            android:text="@string/showLastInvoicesBtnCaption"
+                            style="@style/SegmentedButton"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:gravity="center">
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.3"
+                      android:text="@string/extrasLblCaption"
+                      style="@style/label"/>
+
+
+            <EditText android:id="@+id/extrasBox"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.7"
+                      android:layout_height="100dp"
+                      android:inputType="textMultiLine"
+                      android:lines="3"
+                      android:minLines="3"
+                      android:gravity="top|left"
+                      android:maxLines="3"
+                      android:textSize="18sp"
+                      android:maxLength="@integer/MAX_EXTRAS"
+                    />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

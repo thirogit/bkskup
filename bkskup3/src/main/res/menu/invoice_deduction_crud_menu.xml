@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menuAddDeduction"
+          android:title="@string/menuAddBtnCaption"
+          android:icon="@drawable/add_deduction"
+          android:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/menuEditDeduction"
+          android:title="@string/menuEditBtnCaption"
+          android:icon="@drawable/edit"
+          android:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/menuDeleteDeduction"
+          android:title="@string/menuDeleteBtnCaption"
+          android:icon="@drawable/remove"
+          android:showAsAction="ifRoom"/>
+
+</menu>
+
+

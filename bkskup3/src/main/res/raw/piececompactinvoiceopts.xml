@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<options>
+    <option title="PKWiU" code="GOODSCATEGORY" type="STRING" default="01.42.11.0"/>
+    <option title="Format pozycji" code="ITEMNAMEFMT" type="STRING" default="${TOWAR} ${ILOŚĆ} ${WAGA}"/>
+    <option title="Liczebnik nazwy towaru (1)" code="GOODSDECLINATION_1" type="STRING" default="cielę"/>
+    <option title="Liczebnik nazwy towaru (2-4)" code="GOODSDECLINATION_2-4" type="STRING" default="cielęta"/>
+    <option title="Liczebnik nazwy towaru (5+)" code="GOODSDECLINATION_5+" type="STRING" default="cieląt"/>
+</options>
+

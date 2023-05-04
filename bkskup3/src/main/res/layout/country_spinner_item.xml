@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+   <ImageView
+      android:id="@+id/countryflagicon"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.25"
+      android:layout_gravity="center_vertical"/>
+
+   <View android:id="@+id/divider1"
+    android:background="@drawable/white_divider"
+    android:layout_width="1dp"
+    android:layout_height="fill_parent"/>
+
+   <TextView
+      android:id="@+id/countrycodealpha2text"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.15"
+      android:layout_gravity="center_vertical"
+      android:gravity="center_vertical|center_horizontal"/>
+
+   <View android:id="@+id/divider2"
+    android:background="@drawable/white_divider"
+    android:layout_width="1dp"
+    android:layout_height="fill_parent"/>
+
+   <TextView
+      android:id="@+id/countrycodealpha3text"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.2"
+      android:layout_gravity="center_vertical"
+      android:gravity="center_vertical|center_horizontal"/>
+
+   <View android:id="@+id/divider3"
+    android:background="@drawable/white_divider"
+    android:layout_width="1dp"
+    android:layout_height="fill_parent"/>
+
+   <TextView
+      android:id="@+id/countrynametext"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.4"
+      android:layout_gravity="center_vertical"
+      android:gravity="center_vertical|center_horizontal"/>
+</LinearLayout>

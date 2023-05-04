@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/TableLayout01"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+
+    <TableRow android:id="@+id/TableRow15" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/TextView22"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.25"
+                  android:text="@string/hentFiscalNoLblCaption"
+                  style="@style/label"/>
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_gravity="center_vertical"
+                      android:layout_weight="0.75">
+
+            <EditText android:id="@+id/hentFiscalNoBox"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.35"
+                      android:maxLength="@integer/MAX_NIP"
+                      android:inputType="number"
+                      android:hint="@string/hintHentFiscalNo"
+                      style="@style/input"/>
+
+            <TextView android:id="@+id/TextView24"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.3"
+                      android:text="@string/hentREGONLblCaption"
+                      style="@style/label"/>
+
+            <EditText android:id="@+id/hentREGON"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.35"
+                      android:maxLength="@integer/MAX_REGON"
+                      android:inputType="number"
+                      android:hint="@string/hintHentStatsNo"
+                      style="@style/input"/>
+
+        </LinearLayout>
+
+    </TableRow>
+
+
+    <TableRow android:id="@+id/TableRow08" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/TextView15"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.25"
+                  android:text="@string/hentWetLicNoLblCaption"
+                  style="@style/label"/>
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_weight="0.75"
+                      android:gravity="center">
+
+            <EditText android:id="@+id/hentWetLicenceNo"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.35"
+                      android:maxLength="@integer/MAX_WETLICENCENO"
+                      android:inputType="number"
+                      android:hint="@string/hintHentWetLicNo"
+                      style="@style/input"/>
+
+            <TextView android:id="@+id/TextView16"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.3"
+                      android:text="@string/hentWetIdNoLblCaption"
+                      style="@style/label"/>
+
+            <EditText android:id="@+id/hentWetNoEditbox"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.35"
+                      android:maxLength="@integer/MAX_WETNO"
+                      android:inputType="textCapCharacters"
+                      android:hint="@string/hintHentWetIdNo"
+                      style="@style/input"/>
+        </LinearLayout>
+
+    </TableRow>
+
+
+    <TableRow android:id="@+id/TableRow18" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/TextView25"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.25"
+                  android:text="@string/hentPersonalIdNoLblCaption"
+                  style="@style/label"/>
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_gravity="center_vertical"
+                      android:layout_weight="0.75">
+
+            <EditText android:id="@+id/hentIdNoEditbox"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_vertical"
+                      android:layout_weight="0.35"
+                      android:maxLength="@integer/MAX_IDNO"
+                      android:inputType="textCapCharacters"
+                      android:hint="@string/hintIdNo"
+                      style="@style/input"/>
+
+            <TextView android:id="@+id/TextView26"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.3"
+                      android:text="@string/hentIssueDateLblCaption"
+                      style="@style/label"/>
+
+            <EditText android:id="@+id/hentIdIssueDateEditbox"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_vertical"
+                      android:layout_weight="0.35"
+                      android:inputType="none"
+                      android:hint="@string/hintHentIdIssueDate"
+                      android:focusableInTouchMode="false"
+                      style="@style/input"/>
+
+
+        </LinearLayout>
+    </TableRow>
+
+
+    <TableRow android:id="@+id/TableRow20" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/TextView27"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.25"
+                  android:text="@string/hentIssuedByLblCaption"
+                  style="@style/label"
+                />
+
+        <EditText android:id="@+id/hentIdIssuePostEditbox"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="0.75"
+                  android:maxLength="@integer/MAX_ISSUEPOST"
+                  android:inputType="textCapCharacters"
+                  android:hint="@string/hintIssuePost"
+                  style="@style/input"
+                />
+
+    </TableRow>
+
+    <TableRow android:id="@+id/TableRow21" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/TextView28"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.25"
+                  android:text="@string/hentPersonalNoLblCaption"
+                  style="@style/label"/>
+
+        <EditText android:id="@+id/hentPersonalNoBox"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="0.75"
+                  android:maxLength="@integer/MAX_PESEL"
+                  android:inputType="number"
+                  android:hint="@string/hintPersonalNo"
+                  style="@style/input"/>
+
+    </TableRow>
+
+
+</TableLayout>
+
+
+

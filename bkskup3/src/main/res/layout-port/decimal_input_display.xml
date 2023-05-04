@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+                android:id="@+id/inputBox"
+                style="@style/calc_input_display_style"
+                android:layout_width="fill_parent"
+                android:textSize="36sp"
+
+                android:layout_height="0dp"
+                android:layout_weight="0.5"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+
+            <com.bk.bkskup3.widgets.MagicButton
+                    android:id="@+id/backspace"
+                    style="@style/backspace_button_style"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"/>
+
+            <com.bk.bkskup3.widgets.MagicButton
+                    android:id="@+id/clear"
+                    style="@style/clear_button_style"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</merge>

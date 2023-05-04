@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/progress_container"
+        layout="@layout/loading_progress" />
+
+
+    <ScrollView android:id="@+id/content_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/companyNameLblCaption"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/companyNameEditBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|left"
+                    android:hint="@string/hintCompanyName"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:maxLength="@integer/MAX_COMPANYNAME"
+                    android:maxLines="3"
+                    android:minLines="3"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TextView05"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/streetLblCaption"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/companyStreetEditBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hintStreetName"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="@integer/MAX_STREET"
+                    android:singleLine="true"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TextView07"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:text="@string/poBoxLblCaption"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/companyPOBoxEditBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:hint="@string/hintPoBox"
+                    android:inputType="textPostalAddress"
+                    android:maxLength="@integer/MAX_POBOX"
+                    android:singleLine="true"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TextView09"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.15"
+                    android:text="@string/cityLblCaption"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/companyCityEditBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:hint="@string/hintCityName"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="@integer/MAX_CITY"
+                    android:singleLine="true"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TextView11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:text="@string/zipLblCaption"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/companyZipEditBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:hint="@string/hintZipCode"
+                    android:inputType="textPostalAddress"
+                    android:maxLength="@integer/MAX_ZIP"
+                    android:singleLine="true"
+                    android:textSize="24sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TextView12"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/farmNoLblCaption"
+                    android:textSize="20sp" />
+
+                <com.bk.bkskup3.widgets.CalculatorEditText
+                    android:id="@+id/farmNoEditBox"
+                    style="@style/calc_input_display_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/hintFarmNo"
+                    android:textSize="24sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TextView13"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cellPhoneNoLblCaption"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/cellPhoneNoEditBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hintCellPhoneNo"
+                    android:inputType="text|phone"
+                    android:maxLength="@integer/MAX_CELLPHONE"
+                    android:singleLine="true"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TextView14"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phoneNoLblCaption"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/phoneNoEditBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hintPhoneNo"
+                    android:inputType="text|phone"
+                    android:maxLength="@integer/MAX_PHONE"
+                    android:singleLine="true"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TextView15"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/emailLblCaption"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/emailEditBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hintEmail"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="@integer/MAX_EMAIL"
+                    android:singleLine="true"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TextView16"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fiscalLblCaption"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/fiscalNoEditBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hintFiscalNo"
+                    android:inputType="number"
+                    android:maxLength="@integer/MAX_NIP"
+                    android:singleLine="true"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <include android:id="@+id/progress_container" layout="@layout/loading_progress"/>
+
+
+    <ScrollView android:id="@+id/content_container"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone"
+            >
+
+        <TableLayout
+                android:id="@+id/TableLayout01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <TableRow android:id="@+id/TableRow02" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content">
+
+                <TextView android:id="@+id/TextView05"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:text="@string/repoLoginLblCaption"
+                          android:layout_weight="0.25"
+                          android:layout_gravity="center_vertical"
+                          android:textSize="20sp"/>
+
+                <EditText android:id="@+id/repoLoginEditBox"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="0.75"
+                          android:maxLength="@integer/MAX_SETTING"
+                          android:singleLine="true"
+                          android:inputType="text"
+                          android:hint="@string/hintRepoLogin"
+                          android:textSize="24sp"/>
+            </TableRow>
+
+            <TableRow android:id="@+id/TableRow03" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content">
+
+                <TextView android:id="@+id/TextView07"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:text="@string/repoPasswordLblCaption"
+                          android:layout_weight="0.25"
+                          android:textSize="20sp"/>
+
+                <EditText android:id="@+id/repoPasswordEditBox"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="0.75"
+                          android:maxLength="@integer/MAX_SETTING"
+                          android:singleLine="true"
+                          android:inputType="textPassword"
+                          android:hint="@string/hintRepoPassword"
+                          android:textSize="24sp"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+</FrameLayout>

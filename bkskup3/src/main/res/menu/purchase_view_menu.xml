@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menuViewInvoice"
+          android:title="@string/menuViewBtnCaption"
+          android:icon="@drawable/view"
+          android:showAsAction="always"
+            />
+
+    <item android:id="@+id/menuPrintInvoice"
+          android:title="@string/menuPrintBtnCaption"
+          android:icon="@drawable/print"
+          android:showAsAction="always"
+            />
+
+</menu>
+

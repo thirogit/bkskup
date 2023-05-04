@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="language">pl</string>
+    <string name="country">PL</string>
+
+    <string name="app_name">BKSkup3</string>
+    <string name="management">Zarządzanie</string>
+    <string name="herds_management">Stada</string>
+    <string name="new_herd">Nowe stado</string>
+    <string name="edit_herd">Edytuj stado</string>
+    <string name="edit_agent">Dane agenta</string>
+    <string name="edit_company">Dane firmy</string>
+    <string name="vat_rates">Stawki VAT</string>
+    <string name="choose_herd">Wybierz stado</string>
+    <string name="open_purchases">Otwarte skupy</string>
+    <string name="new_invoice">Nowa faktura</string>
+    <string name="edit_invoice">Edycja faktury</string>
+    <string name="hentno_input">Numer stada</string>
+    <string name="farmno_input">Numer gospodarstwa</string>
+    <string name="cowno_input">Numer kolczyka</string>
+    <string name="new_hent">Nowy kontrahent</string>
+    <string name="find_hent">Wyszukiwanie kontrahenta</string>
+    <string name="edit_hent">Edycja kontrahenta</string>
+    <string name="edit_cow">Edycja zwierzęcia</string>
+    <string name="new_cow">Nowe zwierzę</string>
+    <string name="manage_classes">Zarządzanie klasami</string>
+    <string name="manage_stocks">Zarządzanie rasami</string>
+    <string name="new_cowclass">Nowa klasa</string>
+    <string name="edit_cowclass">Edycja klasy</string>
+    <string name="new_stock">Nowa rasa</string>
+    <string name="edit_stock">Edycja rasy</string>
+    <string name="accountno_input">Numer konta</string>
+    <string name="manage_deductions">Odliczenia</string>
+    <string name="manage_hents">Kontrahenci</string>
+    <string name="new_deduction">Nowe odliczenie</string>
+    <string name="edit_deduction">Edycja odliczenia</string>
+    <string name="viewing_purchase">Skup na stado %03d</string>
+    <string name="scan_farmno">Numer gospodarstwa</string>
+    <string name="passport_scanner">Rozpoznawanie paszportów</string>
+    <string name="print_invoice">Drukowanie</string>
+    <string name="preference">Preferencje</string>
+    <string name="repo_management">Repozytorium</string>
+    <string name="purchase_history">Historia skupów</string>
+    <string name="print_preview">Podgląd wydruku</string>
+    <string name="quick_cow">Szybkie wprowadzanie</string>
+    <string name="choose_scanner">Wybierz skaner</string>
+    <string name="choose_printer">Wybierz drukarkę</string>
+    <string name="bcscan_service">Usługa skanowania</string>
+    <string name="view_invoice">Podgląd faktury</string>
+    <string name="view_cow">Podgląd zwierzęcia</string>
+    <string name="document_cfg">Konfiguracja dokumentów</string>
+    <string name="edit_profiles">Edycja profili</string>
+    <string name="invoice_settings">Ustawienia faktur</string>
+
+
+    <string name="menuSaveBtnCaption">Zapisz</string>
+    <string name="menuCancelBtnCaption">Anuluj</string>
+    <string name="menuContinueBtnCaption">Dalej</string>
+    <string name="menuFinishBtnCaption">Koniec</string>
+    <string name="menuAddBtnCaption">Dodaj</string>
+    <string name="menuScanBtnCaption">Skanuj</string>
+    <string name="menuOCRBtnCaption">Rozpoznaj</string>
+    <string name="menuSaveAndPrintBtnCaption">Zapisz i Drukuj</string>
+    <string name="menuManagementBtnCaption">Zarządzanie</string>
+    <string name="menuNewInvoiceBtnCaption">Nowy zakup</string>
+    <string name="menuDeleteBtnCaption">Usuń</string>
+    <string name="menuEditBtnCaption">Edytuj</string>
+    <string name="menuFindBtnCaption">Szukaj</string>
+    <string name="menuPrintBtnCaption">Drukuj</string>
+    <string name="menuDownloadBtnCaption">Pobierz</string>
+    <string name="menuFillBtnCaption">Uzupełnij</string>
+    <string name="menuViewBtnCaption">Pokaż</string>
+    <string name="menuCloseBtnCaption">Zamknij</string>
+    <string name="menuOpenBtnCaption">Otwórz</string>
+    <string name="menuEditProfilesBtnCaption">Edytuj profile</string>
+
+
+
+
+    <string name="ok">OK</string>
+    <string name="cancel">Anuluj</string>
+    <string name="continueBtnCaption">Dalej</string>
+    <string name="addBtnCaption">Dodaj</string>
+    <string name="newBtnCaption">Nowy</string>
+    <string name="copyBtnCaption">Przepisz</string>
+    <string name="changeBtnCaption">Zmień</string>
+    <string name="abortBtnCaption">Przerwij</string>
+    <string name="abandonBtnCaption">Porzuć</string>
+    <string name="retryBtnCaption">Ponów</string>
+
+    <string name="yesAllCaps">TAK</string>
+    <string name="noAllCaps">NIE</string>
+
+    <string name="purchaseHistoryBtnCaption">Historia skupów</string>
+    <string name="managementBtnCaption">Zarządzanie</string>
+    <string name="newPurchaseBtnCaption">Nowy skup</string>
+    <string name="settingsBtnCaption">Ustawienia</string>
+    <string name="editBtnCaption">Edytuj</string>
+    <string name="setBtnCaption">Wstaw</string>
+    <string name="nowBtnCaption">Teraz</string>
+    <string name="chooseBtnCaption">Wybierz</string>
+    <string name="takeBtnCaption">Pobierz</string>
+    <string name="findBtnCaption">Szukaj</string>
+
+    <string name="herdsManagementItemTitle">Konfiguracja stad</string>
+    <string name="agentManagementItemTitle">Dane agenta</string>
+    <string name="companyManagementItemTitle">Dane firmy</string>
+    <string name="accessManagementItemTitle">Hasło do \'Zarządzanie\'</string>
+    <string name="vatRatesManagementItemTitle">Stawki VAT</string>
+    <string name="stockManagementItemTitle">Rasy</string>
+    <string name="classesManagementItemTitle">Klasy</string>
+    <string name="deductionManagementItemTitle">Odliczenia</string>
+    <string name="hentsManagementItemTitle">Kontrahenci</string>
+    <string name="repoManagementItemTitle">Repozytorium</string>
+    <string name="docsCfgManagementItemTitle">Dokumenty</string>
+    <string name="invSettingsManagementItemTitle">Faktury</string>
+
+    <string name="enter_your_old_password_header" >"Wpisz stare hasło"</string>
+    <string name="enter_your_old_pin_header" >"Wpisz stary kod PIN"</string>
+    <string name="changePasswordActivityLbl" >"Zmiana hasła"</string>
+    <string name="changePINActivityLbl" >"Zmiana kodu PIN"</string>
+    <string name="choose_your_new_password_header" >"Wybierz nowe hasło"</string>
+    <string name="choose_your_new_pin_header" >"Wybierz nowy kod PIN"</string>
+    <string name="confirm_your_password_header" >"Potwierdź hasło"</string>
+    <string name="confirm_your_pattern_header" >"Potwierdź wzór"</string>
+    <string name="confirm_your_pin_header" >"Potwierdź kod PIN"</string>
+    <string name="confirm_passwords_dont_match" >"Hasła nie są identyczne"</string>
+    <string name="confirm_pins_dont_match" >"Kody PIN nie są identyczne"</string>
+    <string name="password_changed_toast" >"Hasło zostało zmienione"</string>
+    <string name="wrongPIN">Niewłaściwy PIN</string>
+    <string name="wrongPassword">Niewłaściwe hasło</string>
+    <string name="password_too_short" >"Liczba znaków w haśle musi wynosić co najmniej %d"</string>
+    <string name="pin_too_short" >"Liczba znaków w kodzie PIN musi wynosić co najmniej %d"</string>
+    <string name="press_continue" >"Po zakończeniu naciśnij Kontynuuj"</string>
+
+    <string name="hintCompanyName">Wpisz nazwę firmy</string>
+    <string name="herdNumberLblCaption">Numer</string>
+    <string name="herdAddressLblCaption">Adres</string>
+    <string name="streetLblCaption">Ulica</string>
+    <string name="hintStreetName">Wpisz ulice</string>
+    <string name="poBoxLblCaption">Nr domu</string>
+    <string name="hintPoBox">Wpisz numer domu</string>
+    <string name="cityLblCaption">Miasto</string>
+    <string name="hintCityName">Wpisz miasto</string>
+    <string name="zipLblCaption">Kod pocztowy</string>
+    <string name="hintZipCode">Wpisz kod pocztowy</string>
+
+    <string name="agentCodeLblCaption">Kod agenta</string>
+    <string name="hintAgentCode">Wpisz kod agenta</string>
+    <string name="agentNameLblCaption">Nazwa agenta</string>
+    <string name="hintAgentName">Wpisz nazwę agenta</string>
+    <string name="plateNoLblCaption">Nr rejestracyjny</string>
+    <string name="hintPlateNo">Wpisz numer rejestracyjny</string>
+    <string name="hintHerdNo">Wpisz numer stada 001-999</string>
+
+
+    <string name="errEnterStreet">Wpisz ulice</string>
+    <string name="errEnterPOBox">Wpisz numer domu</string>
+    <string name="errEnterCity">Wpisz miasto</string>
+    <string name="errEnterZip">Wpisz kod pocztowy</string>
+
+    <string name="errDuplicateHerdNo">Stado o numerze %03d juz istnieje</string>
+    <string name="errHerdNotSelected">Wybierz stado</string>
+    <string name="askDeleteHerd">Usunąć stado o numerze %03d?</string>
+
+    <string name="repoAddressLblCaption">Adres</string>
+    <string name="hintRepoAddress">Wpisz adres repozytorium</string>
+    <string name="repoLoginLblCaption">Login</string>
+    <string name="hintRepoLogin">Wpisz login do repozytorium</string>
+    <string name="repoPasswordLblCaption">Hasło</string>
+    <string name="hintRepoPassword">Wpisz hasło do repozytorium</string>
+    <string name="errEnterAgentPlateNo">Wpisz numer rejestracyjny samochodu agenta</string>
+    <string name="errEnterAgentCode">Wpisz kod agenta</string>
+
+
+    <string name="companyNameLblCaption">Nazwa firmy</string>
+    <string name="farmNoLblCaption">Nr gospodarstwa</string>
+    <string name="hintFarmNo">Wpisz numer gospodarstwa</string>
+    <string name="cellPhoneNoLblCaption">Nr tel. kom.</string>
+    <string name="hintCellPhoneNo">Wpisz nr tel. komórkowego</string>
+    <string name="phoneNoLblCaption">Nr telefonu</string>
+    <string name="hintPhoneNo">Wpisz numer telefonu</string>
+    <string name="emailLblCaption">Adres email</string>
+    <string name="hintEmail">Wpisz adres email</string>
+    <string name="fiscalLblCaption">NIP</string>
+    <string name="hintFiscalNo">Wpisz Numer Identyfikacji Podatkowej</string>
+
+    <string name="regInvVatRateLblCaption">Faktura VAT</string>
+    <string name="hintRegularInvVatRate">Podaj stawkę VAT dla Firmy</string>
+    <string name="lumpInvVatRateLblCaption">Faktura RR</string>
+    <string name="hintLumpInvVatRate">Podaj stawkę VAT dla Indywidualny</string>
+
+    <string name="lumpInvoiceExtrasTemplateLblCaption">Szablon adnotacji dla Faktur RR</string>
+    <string name="lumpInvoiceIndicator">RR</string>
+    <string name="hintLumpInvoiceExtrasTemplate">Wpisz szablon adnotacji dla Faktur RR</string>
+    <string name="regularInvoiceExtrasTemplateLblCaption">Szablon adnotacji dla Faktur VAT</string>
+    <string name="regularInvoiceIndicator">VAT</string>
+    <string name="hintRegularInvoiceExtrasTemplate">Wpisz szablon adnotacji dla Faktur VAT</string>
+
+    <string name="invoiceCustomNumberLblCaption">Numer</string>
+    <string name="invoiceHentAliasLblCaption">Kontrahent</string>
+    <string name="invoiceCowAmountLblCaption">Ilość</string>
+    <string name="invoiceTotalNetLblCaption">Wartość netto</string>
+    <string name="invoiceTotalGrossLblCaption">Wartość brutto</string>
+
+    <string name="docTabCaption">Faktura</string>
+    <string name="cowsTabCaption">Zwierzęta</string>
+    <string name="hentTabCaption">Kontrahent</string>
+    <string name="deductionsTabCaption">Odliczenia</string>
+
+    <string name="loading">Wczytywanie…</string>
+    <string name="searching">Wyszukiwanie…</string>
+
+    <!--<string name="newVatInvoiceBeamText">Nowa faktura VAT</string>-->
+    <!--<string name="newLumpInvoiceBeamText">Nowa faktura RR</string>-->
+
+    <string name="hentLblCaption">Kontrahent</string>
+    <string name="vatRateLblCaption">Stawka VAT</string>
+    <string name="payDueDaysLblCaption">Termin zapłaty</string>
+    <string name="transactionPlaceLblCaption">Miejsce transakcji</string>
+    <string name="transactionDateLblCaption">Data transakcji</string>
+    <string name="invoiceDateLblCaption">Data wystawienia</string>
+
+    <string name="customInvoiceNoLblCaption">Numer faktury</string>
+    <string name="payWayLblCaption">Sposób zapłaty</string>
+    <string name="setTransactionPlaceFromHentBtnCaption">Z kontrahenta</string>
+    <string name="setTransactionPlaceFromHerdBtnCaption">Ze stada</string>
+    <string name="payWayCash">gotówka</string>
+    <string name="payWayTransfer">przelew</string>
+    <string name="hentTypeIndividual">Indywidualny</string>
+    <string name="hentTypeCompany">Firma</string>
+    <string name="cowSexXX">XX</string>
+    <string name="cowSexXY">XY</string>
+    <string name="cowSexNONE">BRAK</string>
+
+    <string name="payDueDays3">3 dni</string>
+    <string name="payDueDays7">7 dni</string>
+    <string name="payDueDays14">14 dni</string>
+    <string name="payDueDays21">21 dni</string>
+    <string name="showLastInvoicesBtnCaption">Ostatnie</string>
+    <string name="extrasLblCaption">Uwagi</string>
+    <string name="noLastInvoicesToShow">Brak faktur</string>
+    <string name="invoiceNoCaption">Nr faktury</string>
+    <string name="invoiceDateCaption">Data wystawienia</string>
+
+    <string name="invoicesTabCaption">Faktury</string>
+    <string name="summaryTabCaption">Podsumowanie</string>
+    <string name="errorCaption">Błąd</string>
+    <string name="errHasOpenPurchaseOnHerd">Na stado %03d skup został już otwarty</string>
+    <string name="openPurchasesBtnCaption">Otwarte skupy</string>
+    <string name="purchaseHerdLblCaption">Stado</string>
+    <string name="purchaseStartDtLblCaption">Rozpoczęty</string>
+    <string name="cowAmountLblCaption">Ilość</string>
+    <string name="totalNetLblCaption">Suma netto</string>
+    <string name="totalGrossLblCaption">Suma brutto</string>
+    <string name="purchaseStartEndDtLblCaption">Początek/Koniec</string>
+    <string name="purchaseStateLblCaption">Status</string>
+
+    <string name="summaryTitleVatRate">VAT</string>
+    <string name="summaryTitleInvoiceType">Typ</string>
+    <string name="summaryTitleTotalNet">NETTO</string>
+    <string name="summaryTitleTotalGross">BRUTTO</string>
+
+    <string name="errMissingInvoiceHent">Wybierz kontrahenta!</string>
+    <string name="errMissingInvoicePayWay">Podaj sposób zapłaty!</string>
+    <string name="errNoCowsInInvoice">Nie ma zwierząt w tej fakturze!</string>
+    <string name="errHentHasNoBankAccountNo">Kontrahent nie ma wpisanego numeru konta.</string>
+    <string name="errMissingInvoiceNo">Podaj numer faktury.</string>
+    <string name="errHentFiscalNoIsRequiredForRegularInvoice">Numer NIP kontrahenta jest wymagany dla faktury VAT</string>
+    <string name="errHentPersonalNoIsRequiredForLumpInvoice">Numer PESEL jest wymagany dla faktury RR</string>
+    <string name="errHentPersonalIdNoIsRequiredForLumpInvoice">Numer D.O. jest wymagany dla faktury RR</string>
+    <string name="errHentPersonalIdIssuePostIsRequiredForLumpInvoice">Organ wydający D.O. jest wymagany dla faktury RR</string>
+    <string name="errHentPersonalIdIssueDateIsRequiredForLumpInvoice">Data wydania D.O. jest wymagana dla faktury RR</string>
+
+    <string name="errEmptyHentName">Pusta nazwa kontrahenta!</string>
+    <string name="errEmptyAlias">Pusty alias!</string>
+    <string name="errEmptyStreet">Pusta nazwa ulicy!</string>
+    <string name="errEmptyPOBox">Pusty numer domu!</string>
+    <string name="errEmptyCity">Pusta nazwa miasta!</string>
+    <string name="errEmptyZipCode">Pusty kod pocztowy!</string>
+    <string name="errEmptyFarmNo">Pusty numer gospodarstwa!</string>
+    <string name="errChooseHentType">Wybierz typ kontrahenta!</string>
+    <string name="errInvalidAccountNo">Niewłaściwy numer konta.</string>
+    <string name="errInvalidFiscalNo">Niepoprawny numer identyfikacji podatkowej</string>
+    <string name="errInvalidPersonalNo">Niepoprawny numer PESEL</string>    <string name="errIncompleteAccountNo">Niepełny numer konta.</string>
+    <string name="errNoCountryCode">Wybierz kod kraju!</string>
+    <string name="errInvalidEANLength">Niepoprawna długość, numer powinien składać sie z %d znaków</string>
+    <string name="askOverrideBadChkSum">Niepoprawna cyfra kontronla. Zignorować?</string>
+    <string name="errInvalidChkSumDigit">Niepoprawna cyfra kontrolna</string>
+    <string name="errDuplicatedEditHentFarmNo" formatted="false" tools:ignore="StringFormatInvalid">Zmieniasz numer gospodarstwa na %s, który jest juz przypisany do\n%s</string>
+    <string name="errDuplicatedNewHentFarmNo" formatted="false" tools:ignore="StringFormatInvalid">Numer gospodarstwa %s jest juz przypisany do\n%s</string>
+
+    <string name="hentNameLblCaption">Nazwa</string>
+    <string name="hentAliasLblCaption">Alias</string>
+    <string name="hentStreetLblCaption">Ulica</string>
+    <string name="hentPOBoxLblCaption">Nr</string>
+    <string name="hentCityLblCaption">Miasto</string>
+    <string name="hentZipLblCaption">Kod</string>
+    <string name="hentHentTypeLblCaption">Typ</string>
+    <string name="hentFarmNoLblCaption">Nr ARiMR</string>
+    <string name="hentWetIdNoLblCaption">Nr ident. wet.</string>
+    <string name="hentWetLicNoLblCaption">Nr licen. wet.</string>
+    <string name="hentPhoneLblCaption">Nr telefonu</string>
+    <string name="hentMobilePhoneLblCaption">Nr tel. kom.</string>
+    <string name="hentEmailAddrrLblCaption">Adres email</string>
+    <string name="hentAccountNoLblCaption">Nr konta</string>
+    <string name="hentBankNameLblCaption">Bank</string>
+    <string name="hentFiscalNoLblCaption">NIP</string>
+    <string name="hentREGONLblCaption">REGON</string>
+    <string name="hentPersonalNoLblCaption">PESEL</string>
+    <string name="hentIssuedByLblCaption">Wydany przez</string>
+    <string name="hentIssueDateLblCaption">Data wydania</string>
+    <string name="hentPersonalIdNoLblCaption">Nr dow. os.</string>
+
+    <string name="hintHentName">Podaj nazwę kontrahenta</string>
+    <string name="hintHentAlias">Podaj alias kontrahenta</string>
+    <string name="hintPersonalNo">Podaj numer PESEL kontrahenta</string>
+    <string name="hintIssuePost">Podaj nazwę organu, który wydał dow. os.</string>
+    <string name="hintIdNo">Podaj numer dow. os.</string>
+    <string name="hintHentStreetName">Podaj nazwę ulicy</string>
+    <string name="hintHentPoBox">Podaj numer domu</string>
+    <string name="hintHentCityName">Podaj nazwę miasta</string>
+    <string name="hintHentZipCode">Podaj kod pocztowy</string>
+    <string name="hintHentNo">Podaj numer gospodarstwa</string>
+    <string name="hintHentWetLicNo">Podaj numer licencji weterynryjnej</string>
+    <string name="hintHentWetIdNo">Podaj numer identyfikacji weterynaryjnej</string>
+    <string name="hintHentPhoneNo">Podaj numer telefonu</string>
+    <string name="hintHentCellPhoneNo">Podaj numer tel. komórkowego</string>
+    <string name="hintHentEmailAddress">Podaj adres e-mail</string>
+    <string name="hintHentAccountNo">Podaj numer konta</string>
+    <string name="hintHentBankName">Podaj nazwę banku</string>
+    <string name="hintHentFiscalNo">Podaj numer NIP</string>
+    <string name="hintHentStatsNo">Podaj numer REGON</string>
+    <string name="hintHentIdIssueDate">Podaj datę wydania dow. os.</string>
+    <string name="hintFindByHentName">Wpisz część nazwy lub numeru kontrahenta</string>
+    <string name="hintTouchToFindHent">Dotknij aby znaleść kontrahenta</string>
+
+    <string name="generalTabCaption">Ogólne</string>
+    <string name="contactTabCaption">Kontakt</string>
+    <string name="bankTabCaption">Bank</string>
+    <string name="identificationTabCaption">Identyfikacja</string>
+
+    <string name="errSearchPatternToShort">Do wyszukiwania potrzebne są min. 3 znaki.</string>
+
+    <string name="cowNoLblCaption">Nr kolczyka</string>
+    <string name="cowSexLblCaption">Płeć</string>
+    <string name="cowWeightLblCaption">Waga</string>
+    <string name="cowPriceLblCaption">Cena</string>
+
+    <string name="cowFstOwnerLblCaption">Posiadacz</string>
+    <string name="cowPassportNoLblCaption">Paszport</string>
+    <string name="cowPassportIssueDtLblCaption">Data wystawienia</string>
+    <string name="cowHealthCertNoLblCaption">Nr świad. zdr.</string>
+    <string name="cowMotherNoLblCaption">Nr kolczyka matki</string>
+    <string name="cowBirthPlaceLblCaption">Miejsce urodzenia</string>
+    <string name="cowBirthBtLblCaption">Data urodzenia</string>
+    <string name="cowStockLblCaption">Rasa</string>
+    <string name="cowClassLblCaption">Klasa</string>
+
+    <string name="netPricePerKg">ZA KG NETTO</string>
+    <string name="grossPricePerKg">ZA KG BRUTTO</string>
+    <string name="totalGrossPrice">CAŁKOWITA BRUTTO</string>
+    <string name="totalNetPrice">CAŁKOWITA NETTO</string>
+
+
+    <string name="stockCodeLblCaption">Kod rasy</string>
+    <string name="stockNameLblCaption">Nazwa</string>
+
+    <string name="errStockNotSelected">Wybierz rasę</string>
+    <string name="askDeleteStock">Usunąć rasę %s?</string>
+
+    <string name="cowClassCodeLblCaption">Kod klasy</string>
+    <string name="cowClassNameLblCaption">Nazwa</string>
+    <string name="cowClassPredefSexLblCaption">Płeć</string>
+    <string name="cowClassPricePerKgLblCaption">Cena za kg</string>
+
+    <string name="hintClassCode">Wpisz kod klasy</string>
+    <string name="hintClassName">Wpisz nazwę klasy</string>
+    <string name="hintCowClassPricePerKg">Wpisz domyślną cenę za kg</string>
+
+    <string name="errNoValueProvided">Nie wprowadzono wartości. Wprowadź wartość!</string>
+    <string name="inputGrossPricePerKgTitle">Wprowadź cenę za kg brutto</string>
+    <string name="inputNetPricePerKgTitle">Wprowadź cenę za kg netto</string>
+    <string name="input_weight">Wprowadź wagę</string>
+
+    <string name="errCowClassNotSelected">Wybierz klasę</string>
+    <string name="askDeleteCowClass">Usunąć klasę %s?</string>
+
+
+    <string name="errEmptyCowNo">Pusty numer kolczyka.</string>
+    <string name="errEmptyClass">Wybierz klasę zwierzęcia!</string>
+    <string name="errInvalidCowWeight">Niepoprawna waga.</string>
+    <string name="errInvalidCowPrice">Niepoprawna cena. Cena musi być większa od 0.01</string>
+    <string name="errInvalidBirthDtWRTPassportIssueDt">Data urodzenia musi być przed datą wystawienia paszportu.</string>
+    <string name="askToInputValidCowNo">Wprowadź poprawny numer kolczyka</string>
+    <string name="errNotACowNo">To nie jest numer kolczyka</string>
+
+    <string name="cowNetPriceLblCaption">Cena netto</string>
+    <string name="cowNetPricePerKgLblCaption">Za kg</string>
+
+    <string name="cowStockNameLblCaption">Nazwa rasy</string>
+    <string name="cowStockCodeLblCaption">Kod rasy</string>
+    <string name="hintStockName">Wpisz pełną nazwę rasy</string>
+    <string name="hintStockCode">Wpisz kod rasy</string>
+
+    <string name="hentDoesntExistAnymoreAskAdd">Kontrahent nie istnieje w katalogu.\nDodać ponownie?</string>
+
+    <string name="errEmptyClassCode">Pusty kod klasy!</string>
+    <string name="errCowClassAlreadyDefined">Klasa o tym kodzie jest juz zdefiniowana</string>
+
+    <string name="errEmptyStockCode">Pusty kod rasy!</string>
+    <string name="errStockAlreadyDefined">Rasa o tym kodzie jest juz zdefiniowana</string>
+    <string name="errMissingVatRateForLumpInvoice">Wpisz stawkę VAT dla Indywidualny</string>
+    <string name="errMissingVatRateForRegularInvoice">Wpisz stawkę VAT dla Firma</string>
+
+
+    <string name="errProfileNotSelected">Wybierz profil</string>
+
+    <string name="errDeductionNotSelected">Wybierz odliczenie</string>
+    <string name="askDeleteDeduction">Usunąć odliczenie %s?</string>
+    <string name="askDeleteProfile">Usunąć profil %s?</string>
+
+
+    <string name="deductionCodeLblCaption">Kod</string>
+    <string name="hintDeductionCode">Wpisz kod identyfikujący odliczenie</string>
+    <string name="deductionFractionLblCaption">Procent</string>
+    <string name="hintDeductionFraction">Wpisz procent kwoty netto do odliczenia</string>
+    <string name="deductAlwaysLblCaption">Odliczaj zawsze</string>
+    <string name="deductionReasonLblCaption">Powód</string>
+    <string name="hintDeductionReason">Wpisz uzasadnienie odliczenia</string>
+    <string name="deductedAmountLblCaption">Kwota odliczona</string>
+
+
+    <string name="errDeductionAlreadyDefined">Odliczenie o tym kodzie jest juz zdefiniowane</string>
+    <string name="errEmptyDeductionCode">Pusty kod odliczenia</string>
+    <string name="errEmptyDeductionReason">Puste uzasadnienie odliczenia</string>
+    <string name="errEmptyDeductionFraction">Brak procentowej stawki odliczenia</string>
+
+
+    <string name="purchaseSummaryCowCount">Ilość zwierząt</string>
+    <string name="purchaseSummaryTotalWeight">Całkowita waga</string>
+    <string name="purchaseSummaryTotalNet">Suma netto</string>
+    <string name="purchaseSummaryTotalGross">Suma brutto</string>
+    <string name="purchaseSummaryCash">GOTÓWKA</string>
+    <string name="purchaseSummaryTransfer">PRZELEW</string>
+
+
+    <string name="errNotAFarmNo">To nie jest numer gospodarstwa</string>
+    <string name="errBadFarmNoLengthFmt">Niepoprawna długość, numer gospodarstwa ma %d znaków</string>
+    <string name="errBadCowNoLengthFmt">Niepoprawna długość, numer kolczyka ma %d znaków</string>
+
+    <string name="detailPieceLumpInvoiceDocName">Faktura RR szczegółowa na sztuki</string>
+    <string name="detailWeightLumpInvoiceDocName">Faktura RR szczegółowa na wagę</string>
+    <string name="weightCompactLumpInvoiceDocName">Faktura RR zespolona wagowa</string>
+    <string name="pieceCompactLumpInvoiceDocName">Faktura RR zespolona na sztuki</string>
+
+    <string name="detailPieceRegularInvoiceDocName">Faktura VAT szczegółowa na sztuki</string>
+    <string name="detailWeightRegularInvoiceDocName">Faktura VAT szczegółowa na wagę</string>
+    <string name="weightCompactRegularInvoiceDocName">Faktura VAT zespolona wagowa</string>
+    <string name="pieceCompactRegularInvoiceDocName">Faktura VAT zespolona na sztuki</string>
+
+    <string name="moveNotificationDocName">Zgłoszenie przemieszczenia</string>
+    <string name="foodChainDocName">Łańcuch żywieniowy</string>
+    <string name="contractDocName">Umowa na dostarczenie produktów rolnych</string>
+    <string name="contractPayDueDaysDocName">Umowa o terminie płatności</string>
+    <string name="contractPayDueDaysBackwardsDocName">Umowa o terminie płatności (wstecz)</string>
+    <string name="gdprDocName">Klauzula informacyjna RODO</string>
+
+    <string name="currencyPerKg">zł/kg</string>
+    <string name="currencySymbol">zł</string>
+    <string name="currencyFractionSymbol">gr</string>
+    <string name="numeralDayPlural">dni</string>
+    <string name="numeralDaySingular">dzień</string>
+    <string name="kilogramUnitSymbol">kg</string>
+    <string name="pieceUnitSymbol">szt.</string>
+
+    <string name="errEnterRepoLogin">Wpisz login do repozytorium</string>
+    <string name="errEnterRepoPassword">Wpisz hasło do repozytorium</string>
+
+    <string name="errCantChangePrinterWhilePrinting">Drukowanie w toku, nie możesz zmienić drukarki</string>
+    <string name="errPrinterNotAvailable">Drukarka jest niedostępna</string>
+
+    <string name="printJobCompleted">Skończone</string>
+    <string name="printJobError">Błąd</string>
+    <string name="printJobPrinting">Drukowanie</string>
+    <string name="printJobWaiting">Czekam</string>
+    <string name="printJobAborted">Przerwane</string>
+
+    <string name="askAddNewHentWhenNotFound">Kontrahent nie znaleziony. Dodać?</string>
+
+    <string name="cowNoInputCaption">Numer kolczyka</string>
+    <string name="farmNoInputCaption">Numer gospodarstwa</string>
+    <string name="cowStockInputCaption">Rasa</string>
+    <string name="priceInputCaption">Cena</string>
+    <string name="weightInputCaption">Waga</string>
+    <string name="sexInputCaption">Płeć</string>
+
+    <string name="hentTypePreferenceHeader">Typ kontrahenta</string>
+    <string name="defaultCountryPreferenceHeader">Domyślny kraj</string>
+    <string name="payWayForCompanyPreferenceHeader">Sposób zapłaty dla Firma</string>
+    <string name="payWayForIndividualPreferenceHeader">Sposób zapłaty dla Indywidualny</string>
+    <string name="payDueDaysForCompanyPreferenceHeader">Termin zapłaty dla Firma</string>
+    <string name="payDueDaysForIndividualPreferenceHeader">Termin zapłaty dla Indywidualny</string>
+    <string name="askCloseAndSendPurchase">Zamknąć i wysłać skup?</string>
+    <string name="errCantClosePurchaseIsEmpty">Skup jest pusty. Nie można zamknąć.</string>
+    <string name="closingPurchase">Zamykanie skupu</string>
+
+    <string name="errEmptyCompanyName">Nazwa firmy nie może być pusta</string>
+    <string name="errEmptyCompanyStreet">Wpisz ulice</string>
+    <string name="errEmptyCompanyPOBox">Wpisz numer domu</string>
+    <string name="errEmptyCompanyCity">Wpisz miasto</string>
+    <string name="errEmptyCompanyZip">Wpisz kod pocztowy</string>
+    <string name="errNoCompanyFarmNo">Podaj numer gospodarstwa</string>
+    <string name="errNoCompanyFiscalNo">Podaj NIP</string>
+    <string name="askDownloadHents">Pobrać listę kontrahentów?</string>
+    <string name="confirmFinish">Na pewno wyjść?</string>
+    <string name="askDeleteInvoice">Usunąć fakturę?</string>
+    <string name="device">Urządzenie</string>
+    <string name="data">Dane</string>
+    <string name="serviceIsDisabled">Usługa jest wyłączona</string>
+    <string name="errDuplicatedCowNoInPurchase">Duplikacja numeru kolczyka w skupie: %s</string>
+    <string name="errAddingCausesDuplicateInInvoice">Dodanie zwierzęcia o tym numerze spowoduje duplikacje w ramach faktury</string>
+    <string name="errAddingCausesDuplicateInPurchase">Dodanie zwierzęcia o tym numerze spowoduje duplikacje w ramach obecnego skupu</string>
+    <string name="documents_to_print">Do wydrukowania</string>
+    <string name="printjobs_in_progress">W trakcie drukowania</string>
+
+    <string name="noMatchingHentsFound">Nie znaleziono pasujących kontrahentów</string>
+    <string name="errEmptyCowSex">Nie określono płci zwierzęcia</string>
+
+    <string name="poopWeight">Z wagi</string>
+    <string name="noPoopWeight">Po strączce</string>
+
+    <string name="documentEnabledHdrCaption">Włączony</string>
+    <string name="documentNameHdrCaption">Nazwa</string>
+
+    <string name="invoiceNoFmtLblCaption">Format numeru</string>
+    <string name="invoiceStartNoLblCaption">Numer kolejny</string>
+    <string name="invoiceNoFmtHint">Wpisz format numeru faktury</string>
+    <string name="invoiceStartNoHint">Wpisz startowy numeru faktury</string>
+    <string name="askInputProfileName">Wpisz nazwę profilu</string>
+    <string name="errNoProfileNameProvided">Nie wprowadzono nazwy profilu!</string>
+    <string name="creatingNewProflieBusyText">Tworzenie profilu</string>
+    <string name="deletingProfileBusyText">Usuwanie profilu</string>
+    <string name="savingProfileBusyText">Zapisywanie profilu</string>
+
+    <string name="tokenGOODS">TOWAR</string>
+    <string name="tokenCOWNO">KOLCZYK</string>
+    <string name="tokenSEX">PLEĆ</string>
+    <string name="tokenSEX_noPolish">PLEC</string>
+    <string name="tokenCLASS">KLASA</string>
+    <string name="tokenCLASSNAME">NAZWAKLASY</string>
+    <string name="tokenWEIGHT">WAGA</string>
+    <string name="tokenSTOCK">RASA</string>
+    <string name="tokenQTY">ILOŚĆ</string>
+    <string name="tokenQTY_noPolish">ILOSC</string>
+
+    <string name="tokenYEAR">ROK</string>
+    <string name="tokenYYYY">RRRR</string>
+    <string name="tokenYY">RR</string>
+    <string name="tokenCOUNTER">LICZNIK</string>
+    <string name="tokenNUMBER">NUMER</string>
+    <string name="saving">Zapisywanie...</string>
+    <string name="errEmptyInvoiceNo">Wpisz kolejny numer faktury</string>
+
+</resources>

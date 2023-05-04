@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:orientation="vertical"
+                  >
+
+
+        <TextView android:id="@+id/TextView17"
+                  android:layout_width="fill_parent"
+                  android:text="@string/hentPhoneLblCaption"
+                  style="@style/label"/>
+
+            <EditText android:id="@+id/hentPhoneNoEditbox"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:maxLength="@integer/MAX_PHONE"
+                      android:inputType="phone"
+                      android:hint="@string/hintHentPhoneNo"
+                      style="@style/input"/>
+
+            <TextView android:id="@+id/TextView18"
+                      android:layout_width="fill_parent"
+                      android:text="@string/hentMobilePhoneLblCaption"
+                      style="@style/label"/>
+
+            <EditText android:id="@+id/hentCellPhoneNoEditbox"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:maxLength="@integer/MAX_CELLPHONE"
+                      android:inputType="phone"
+                      android:hint="@string/hintHentCellPhoneNo"
+                      style="@style/input"/>
+
+
+        <TextView android:id="@+id/TextView19"
+                  android:layout_width="fill_parent"
+                  android:text="@string/hentEmailAddrrLblCaption"
+                  style="@style/label"/>
+
+        <EditText android:id="@+id/hentEmailAddrEditbox"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:maxLength="@integer/MAX_EMAIL"
+                  android:inputType="textEmailAddress"
+                  android:hint="@string/hintHentEmailAddress"
+                  style="@style/input"/>
+
+</LinearLayout>
+
+

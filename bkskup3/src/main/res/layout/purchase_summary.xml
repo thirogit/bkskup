@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              >
+
+    <TableRow >
+         <TextView android:layout_height="wrap_content"
+                   android:layout_width="0dp"
+                   android:layout_weight="0.3"
+                   android:text="@string/purchaseSummaryCowCount"
+                   android:background="@color/purchaseSummaryItemTitle"
+                   style="@style/purchase_summary_item_title"/>
+
+        <TextView android:id="@+id/purchaseSummaryCowCountBox"
+                  android:layout_height="wrap_content"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.7"
+                  style="@style/purchase_summary_item_value"/>
+    </TableRow>
+
+    <TableRow >
+        <TextView android:layout_height="wrap_content"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.3"
+                  android:text="@string/purchaseSummaryTotalWeight"
+                  android:background="@color/purchaseSummaryItemTitle"
+                  style="@style/purchase_summary_item_title"/>
+
+        <TextView android:id="@+id/purchaseSummaryTotalWeightBox"
+                  android:layout_height="wrap_content"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.7"
+                  style="@style/purchase_summary_item_value"/>
+    </TableRow>
+
+    <TableRow >
+        <TextView android:layout_height="wrap_content"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.3"
+                  android:text="@string/purchaseSummaryTotalNet"
+                  android:background="@color/purchaseSummaryItemTitle"
+                  style="@style/purchase_summary_item_title"/>
+
+        <TextView android:id="@+id/purchaseSummaryTotalNetBox"
+                  android:layout_height="wrap_content"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.7"
+                  style="@style/purchase_summary_item_value"/>
+    </TableRow>
+
+    <TableRow >
+        <TextView android:layout_height="wrap_content"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.3"
+                  android:text="@string/purchaseSummaryTotalGross"
+                  android:background="@color/purchaseSummaryItemTitle"
+                  style="@style/purchase_summary_item_title"/>
+
+        <LinearLayout android:layout_height="wrap_content"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.7"
+                      android:gravity="center_horizontal|center_vertical"
+                >
+
+        <TextView android:id="@+id/purchaseSummaryTotalGrossBox"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  style="@style/purchase_summary_item_value"/>
+
+        <TextView android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  style="@style/purchase_summary_item_value"
+                  android:text="/"/>
+
+        <TextView android:id="@+id/purchaseSummaryTotalGrossAfterDeductionsBox"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  style="@style/purchase_summary_item_value"
+                  android:textColor="#FFF"/>
+
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow >
+        <TextView android:layout_height="wrap_content"
+              android:layout_width="0dp"
+              android:layout_weight="0.3"
+
+              />
+
+        <TextView android:layout_height="wrap_content"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.35"
+                  android:background="#FFF"
+                  android:textColor="#000"
+                  android:text="@string/purchaseSummaryCash"
+                  style="@style/purchase_summary_item_title"/>
+
+        <TextView android:layout_height="wrap_content"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.35"
+                  android:background="#FFF"
+                  android:textColor="#000"
+                  android:text="@string/purchaseSummaryTransfer"
+                  style="@style/purchase_summary_item_title"/>
+    </TableRow>
+
+
+    <TableRow >
+        <TextView android:layout_height="wrap_content"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.3"
+                  android:text="@string/purchaseSummaryCowCount"
+                  android:background="@color/purchaseSummaryItemTitle"
+                  style="@style/purchase_summary_item_title"/>
+
+        <TextView android:id="@+id/purchaseSummaryCashCowCountBox"
+                  android:layout_height="wrap_content"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.35"
+                  style="@style/purchase_summary_item_value"/>
+
+        <TextView android:id="@+id/purchaseSummaryTransferCowCountBox"
+                  android:layout_height="wrap_content"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.35"
+                  style="@style/purchase_summary_item_value"/>
+    </TableRow>
+
+    <TableRow >
+        <TextView android:layout_height="wrap_content"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.3"
+                  android:background="@color/purchaseSummaryItemTitle"
+                  android:text="@string/purchaseSummaryTotalWeight"
+                  style="@style/purchase_summary_item_title"/>
+
+        <TextView android:id="@+id/purchaseSummaryCashTotalWeightBox"
+                  android:layout_height="wrap_content"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.35"
+                  style="@style/purchase_summary_item_value"/>
+
+        <TextView android:id="@+id/purchaseSummaryTransferTotalWeightBox"
+                  android:layout_height="wrap_content"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.35"
+                  style="@style/purchase_summary_item_value"/>
+    </TableRow>
+
+    <TableRow >
+        <TextView android:layout_height="wrap_content"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.3"
+                  android:background="@color/purchaseSummaryItemTitle"
+                  android:text="@string/purchaseSummaryTotalNet"
+                  style="@style/purchase_summary_item_title"/>
+
+        <TextView android:id="@+id/purchaseSummaryCashTotalNetBox"
+                  android:layout_height="wrap_content"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.35"
+                  style="@style/purchase_summary_item_value"/>
+
+        <TextView android:id="@+id/purchaseSummaryTransferTotalNetBox"
+                  android:layout_height="wrap_content"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.35"
+                  style="@style/purchase_summary_item_value"/>
+    </TableRow>
+
+    <TableRow >
+        <TextView android:layout_height="wrap_content"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.3"
+                  android:background="@color/purchaseSummaryItemTitle"
+                  android:text="@string/purchaseSummaryTotalGross"
+                  style="@style/purchase_summary_item_title"/>
+
+        <TextView android:id="@+id/purchaseSummaryCashTotalGrossBox"
+                  android:layout_height="wrap_content"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.35"
+                  style="@style/purchase_summary_item_value"/>
+
+        <TextView android:id="@+id/purchaseSummaryTransferTotalGrossBox"
+                  android:layout_height="wrap_content"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.35"
+                  style="@style/purchase_summary_item_value"/>
+    </TableRow>
+
+
+</TableLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/simplePad"
+              android:layout_width="600dp"
+              android:layout_height="330dp"
+              android:orientation="vertical"
+              android:layout_gravity="center">
+
+    <com.bk.widgets.actionbar.ActionBar
+            android:id="@+id/actionBar"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal"
+            />
+
+    <include layout="@layout/weight_input_display"/>
+
+    <com.bk.bkskup3.widgets.PercentDeductionButton
+        android:id="@+id/weightDeduction"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        />
+
+    <include layout="@layout/decimal_input_kb"/>
+
+</LinearLayout>

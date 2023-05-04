@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <com.bk.widgets.actionbar.ActionBar
+            android:id="@+id/actionBar"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal"
+            />
+
+
+    <EditText android:id="@+id/hentNameEditBox"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:singleLine="true"
+              android:inputType="text"
+              android:hint="@string/hintFindByHentName"/>
+
+
+    <FrameLayout android:id="@+id/bcOutputFrame"
+                 android:layout_width="600dp"
+                 android:layout_height="350dp"
+            >
+
+        <ListView
+                android:id="@+id/hentSearchResultList"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+
+        <TextView android:id="@+id/noMatchingHentsBox"
+                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal|center_vertical"
+                  android:text="@string/noMatchingHentsFound" android:visibility="gone"
+                  android:textSize="25sp"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menuDownload"
+        android:title="@string/menuDownloadBtnCaption"
+        android:icon="@drawable/ic_action_cloud_download"
+        android:showAsAction="ifRoom"
+        />
+
+    <item android:id="@+id/menuAdd"
+          android:title="@string/menuAddBtnCaption"
+          android:icon="@drawable/add"
+          android:showAsAction="ifRoom"
+            />
+
+    <item android:id="@+id/menuEdit"
+          android:title="@string/menuEditBtnCaption"
+          android:icon="@drawable/edit"
+          android:showAsAction="always"
+            />
+
+    <item android:id="@+id/menuDelete"
+          android:title="@string/menuDeleteBtnCaption"
+          android:icon="@drawable/remove"
+          android:showAsAction="ifRoom"
+            />
+
+
+</menu>

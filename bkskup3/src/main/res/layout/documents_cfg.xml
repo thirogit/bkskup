@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/progress_container"
+        layout="@layout/loading_progress" />
+
+
+    <LinearLayout
+        android:id="@+id/content_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/documentsHeader"
+            layout="@layout/documents_list_header" />
+
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             />
+
+    </LinearLayout>
+
+
+</FrameLayout>

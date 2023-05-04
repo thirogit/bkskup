@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget56"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TableLayout
+        android:id="@+id/TableLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:id="@+id/TableRow01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="@string/herdNumberLblCaption"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/herdNumberEditBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:hint="@string/hintHerdNo"
+                android:inputType="number"
+                android:maxLength="3"
+                android:singleLine="true"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/TableRow02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.25"
+                android:text="@string/streetLblCaption"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/herdStreetEditBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:hint="@string/hintStreetName"
+                android:inputType="textCapCharacters"
+                android:maxLength="@integer/MAX_STREET"
+                android:singleLine="true"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TextView07"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="@string/poBoxLblCaption"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/herdPOBoxEditBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:hint="@string/hintPoBox"
+                android:inputType="textPostalAddress"
+                android:maxLength="@integer/MAX_POBOX"
+                android:textSize="24sp"
+                android:maxLines="1" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/TableRow04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TextView09"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.25"
+                android:text="@string/cityLblCaption"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/herdCityEditBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:hint="@string/hintCityName"
+                android:inputType="textCapCharacters"
+                android:maxLength="@integer/MAX_CITY"
+                android:maxLines="1"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TextView11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="@string/zipLblCaption"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/herdZipEditBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:hint="@string/hintZipCode"
+                android:inputType="textPostalAddress"
+                android:maxLength="@integer/MAX_ZIP"
+                android:textSize="24sp"
+                android:maxLines="1" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+</ScrollView>
+

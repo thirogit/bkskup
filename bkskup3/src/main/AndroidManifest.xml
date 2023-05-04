@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bk.bkskup3">
+
+    <uses-sdk />
+
+    <!--<uses-feature android:name="android.hardware.camera" />-->
+    <!--<uses-feature android:name="android.hardware.camera.autofocus"  />-->
+    <!--<uses-feature android:name="android.hardware.camera.front"  android:required="false" />-->
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--<uses-permission android:name="android.permission.CAMERA" />-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <meta-data
+        android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+        android:value="ocr" />
+
+    <application
+        android:name="com.bk.bkskup3.BkApplication"
+        android:icon="@drawable/ic_launcher_icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.mTheme">
+
+        <meta-data
+            tools:replace="android:value"
+            android:name="android.support.VERSION"
+            android:value="25.4.0" />
+
+        <activity
+            android:name="com.bk.bkskup3.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.bk.bkskup3.WelcomeActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.bk.bkskup3.management.ManagementActivity"
+            android:label="@string/management" />
+        <activity
+            android:name="com.bk.bkskup3.management.HerdsManagementActivity"
+            android:label="@string/herds_management" />
+        <activity
+            android:name="com.bk.bkskup3.management.NewHerdActivity"
+            android:label="@string/new_herd" />
+        <activity
+            android:name="com.bk.bkskup3.management.EditHerdActivity"
+            android:label="@string/edit_herd" />
+        <activity
+            android:name="com.bk.bkskup3.management.AgentActivity"
+            android:label="@string/edit_agent" />
+        <activity
+            android:name="com.bk.bkskup3.management.CompanyActivity"
+            android:label="@string/edit_company" />
+        <activity
+            android:name="com.bk.bkskup3.management.ChangePassword"
+            android:label="change password activity" />
+        <activity
+            android:name="com.bk.bkskup3.management.TaxRatesActivity"
+            android:label="@string/vat_rates" />
+        <activity
+            android:name="com.bk.bkskup3.work.OpenNewPurchaseActivity"
+            android:label="@string/choose_herd" />
+        <activity
+            android:name="com.bk.bkskup3.work.PurchaseEditActivity"
+            android:label="" />
+        <activity
+            android:name="com.bk.bkskup3.work.PurchaseViewActivity"
+            android:label="" />
+        <activity
+            android:name="com.bk.bkskup3.work.OpenPurchasesActivity"
+            android:label="@string/open_purchases" />
+        <activity
+            android:name="com.bk.bkskup3.work.NewInvoiceActivity"
+            android:label="@string/new_invoice" />
+        <activity
+            android:name="com.bk.bkskup3.work.EditInvoiceActivity"
+            android:label="@string/edit_invoice" />
+        <activity
+            android:name="com.bk.bkskup3.work.HentNoInputActivity"
+            android:label="@string/hentno_input"
+            android:theme="@style/InputActivityInWindow" />
+        <activity
+            android:name="com.bk.bkskup3.work.FarmNoInputActivity"
+            android:label="@string/farmno_input"
+            android:theme="@style/InputActivityInWindow" />
+        <activity
+            android:name="com.bk.bkskup3.work.CowNoScanActivity"
+            android:label="@string/cowno_input"
+            android:theme="@style/InputActivityInWindow" />
+        <activity
+            android:name="com.bk.bkskup3.work.NewHentActivity"
+            android:label="@string/new_hent" />
+        <activity
+            android:name="com.bk.bkskup3.work.FindHentActivity"
+            android:label="@string/find_hent"
+            android:theme="@style/InputActivityInWindow" />
+        <activity
+            android:name="com.bk.bkskup3.work.EditHentActivity"
+            android:label="@string/edit_hent" />
+        <activity
+            android:name="com.bk.bkskup3.work.NewCowActivity"
+            android:label="@string/new_cow" />
+        <activity
+            android:name="com.bk.bkskup3.work.EditCowActivity"
+            android:label="@string/edit_cow"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.bk.bkskup3.work.DecimalInputActivity"
+            android:label="decimal input"
+            android:theme="@style/InputActivityInWindow" />
+        <activity
+            android:name="com.bk.bkskup3.work.WeightInputActivity"
+            android:label="@string/input_weight"
+            android:theme="@style/InputActivityInWindow" />
+        <activity
+            android:name="com.bk.bkskup3.work.CowNoInputActivity"
+            android:label="@string/cowno_input"
+            android:theme="@style/InputActivityInWindow" />
+        <activity
+            android:name="com.bk.bkskup3.management.ClassesActivity"
+            android:label="@string/manage_classes" />
+        <activity
+            android:name="com.bk.bkskup3.management.StocksActivity"
+            android:label="@string/manage_stocks" />
+        <activity
+            android:name="com.bk.bkskup3.management.NewCowClassActivity"
+            android:label="@string/new_cowclass" />
+        <activity
+            android:name="com.bk.bkskup3.management.EditCowClassActivity"
+            android:label="@string/edit_cowclass" />
+        <activity
+            android:name="com.bk.bkskup3.management.NewStockActivity"
+            android:label="@string/new_stock" />
+        <activity
+            android:name="com.bk.bkskup3.management.EditStockActivity"
+            android:label="@string/edit_stock" />
+        <activity
+            android:name="com.bk.bkskup3.work.AccountNoInputActivity"
+            android:label="@string/accountno_input"
+            android:theme="@style/InputActivityInWindow" />
+        <activity
+            android:name="com.bk.bkskup3.management.DeductionsActivity"
+            android:label="@string/manage_deductions" />
+        <activity
+            android:name="com.bk.bkskup3.management.NewDeductionActivity"
+            android:label="@string/new_deduction" />
+        <activity
+            android:name="com.bk.bkskup3.management.EditDeductionActivity"
+            android:label="@string/edit_deduction" />
+        <activity
+            android:name="com.bk.bkskup3.management.HentsActivity"
+            android:label="@string/manage_hents" />
+        <activity
+            android:name="com.bk.bkskup3.management.InvoiceSettingsActivity"
+            android:label="@string/invoice_settings" />
+        <activity
+            android:name="com.bk.bkskup3.work.QuickCowActivity"
+            android:label="@string/quick_cow"
+            android:theme="@style/InputActivityInWindow" />
+
+        <activity
+            android:name="com.bk.bkskup3.work.NewInvoiceDeductionActivity"
+            android:label="@string/new_deduction" />
+        <activity
+            android:name="com.bk.bkskup3.work.EditInvoiceDeductionActivity"
+            android:label="@string/edit_deduction" />
+
+        <activity
+            android:name="com.bk.bkskup3.barcode.BarcodeServiceSettingsActivity"
+            android:label="@string/bcscan_service"
+            android:theme="@style/InputActivityInWindow">
+            <intent-filter>
+                <action android:name="com.bk.barcodeservice.action.SHOW_BC_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bk.bkskup3.work.choice.ChooseScannerActivity"
+            android:label="@string/choose_scanner"
+            android:theme="@style/InputActivityInWindow" />
+        <activity
+            android:name="com.bk.bkskup3.work.choice.ChoosePrinterActivity"
+            android:label="@string/choose_printer"
+            android:theme="@style/InputActivityInWindow" />
+
+        <activity
+            android:name="com.bk.bkskup3.work.ScanHentActivity"
+            android:label="@string/scan_farmno"
+            android:theme="@style/InputActivityInWindow" />
+
+        <activity
+            android:name="com.bk.bkskup3.print.PrintActivity"
+            android:label="@string/print_invoice" />
+        <activity
+            android:name="com.bk.bkskup3.preferences.AgentPreferencesActivity"
+            android:label="@string/preference" />
+        <activity
+            android:name="com.bk.bkskup3.management.RepoActivity"
+            android:label="@string/repo_management" />
+        <activity
+            android:name="com.bk.bkskup3.work.PurchasesHistoryActivity"
+            android:label="@string/purchase_history" />
+        <activity
+            android:name="com.bk.bkskup3.print.PrintPreviewActivity"
+            android:label="@string/print_preview" />
+        <activity
+            android:name="com.bk.bkskup3.work.InvoiceViewActivity"
+            android:label="@string/view_invoice" />
+        <activity
+            android:name="com.bk.bkskup3.work.CowViewActivity"
+            android:label="@string/view_cow" />
+        <activity
+            android:name="com.bk.bkskup3.work.HentNoScanActivity"
+            android:label="@string/scan_farmno" />
+        <activity
+            android:name="com.bk.bkskup3.management.DocumentsCfgActivity"
+            android:label="@string/document_cfg" />
+        <activity
+            android:name="com.bk.bkskup3.management.DocumentProfilesActivity"
+            android:label="@string/edit_profiles" />
+
+        <activity
+            android:name="com.todobom.opennotescanner.OpenNoteScannerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/passport_scanner"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme.NoActionBar">
+        </activity>
+        <!--<activity-->
+            <!--android:name=".GalleryGridActivity"-->
+            <!--android:configChanges="orientation|keyboardHidden|screenSize"-->
+            <!--android:label="@string/title_activity_gallery"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/FullscreenTheme">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name=".FullScreenViewActivity"-->
+            <!--android:theme="@style/FullscreenTheme" />-->
+        <!--<activity-->
+            <!--android:name=".SettingsActivity"-->
+            <!--android:label="@string/settings"-->
+            <!--android:theme="@style/AppTheme" />-->
+
+        <activity
+            android:name="com.bk.bkskup3.work.OcrNumberActivity"
+            android:label="@string/cowno_input"
+            android:theme="@style/InputActivityInWindow" />
+
+
+        <service
+            android:name="com.bk.barcode.service.BarcodeService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":barcodeservice">
+            <intent-filter>
+                <action android:name="com.bk.barcode.service.BarcodeService" />
+            </intent-filter>
+        </service>
+
+
+
+        <service
+            android:name="com.bk.print.service.PrintService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":printservice"
+            >
+            <intent-filter>
+                <action android:name="com.bk.print.service.PrintService" />
+            </intent-filter>
+        </service>
+
+
+        <service
+            android:exported="false"
+            android:name=".repo.purchases.PurchaseUploadService"
+            android:permission="android.permission.BIND_JOB_SERVICE">
+
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.bk.bkskup3.work.service.InvoiceService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.bk.bkskup3.work.service.InvoiceService" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.bk.bkskup3.library.DocumentLibraryService"
+            android:enabled="true"
+            android:exported="false">
+
+            <intent-filter>
+                <action android:name="com.bk.bkskup3.library.DocumentLibraryService" />
+            </intent-filter>
+
+        </service>
+
+        <service
+            android:exported="false"
+            android:name=".repo.hents.HentsSyncService"
+            android:permission="android.permission.BIND_JOB_SERVICE">
+
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+
+
+
+
+    </application>
+
+
+</manifest>

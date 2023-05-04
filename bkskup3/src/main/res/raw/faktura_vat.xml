@@ -1,0 +1,1311 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<template xmlns="http://com.bk.docs">
+
+   <styles>
+      <style id="USERDEF">
+         <textColor>#000000</textColor>
+         <horAlign>CENTER</horAlign>
+         <verAlign>CENTER</verAlign>
+         <font>
+            <height>-30</height>
+            <face>Arial</face>
+            <bold>false</bold>
+            <italic>false</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+         </font>
+      </style>
+
+      <style id="ITEM_SMALL">
+        <textColor>#000000</textColor>
+        <horAlign>CENTER</horAlign>
+        <verAlign>CENTER</verAlign>
+        <font>
+           <height>-25</height>
+           <face>Arial</face>
+           <bold>false</bold>
+           <italic>false</italic>
+           <underline>false</underline>
+           <strikeout>false</strikeout>
+        </font>
+     </style>
+
+      <style id="ITEM_BIG">
+        <textColor>#000000</textColor>
+        <horAlign>CENTER</horAlign>
+        <verAlign>CENTER</verAlign>
+        <font>
+           <height>-30</height>
+           <face>Arial</face>
+           <bold>false</bold>
+           <italic>false</italic>
+           <underline>false</underline>
+           <strikeout>false</strikeout>
+        </font>
+     </style>
+
+      <style id="HEADER">
+         <textColor>#000000</textColor>
+         <horAlign>CENTER</horAlign>
+         <verAlign>CENTER</verAlign>
+         <font>
+            <height>-40</height>
+            <face>Arial</face>
+            <bold>true</bold>
+            <italic>true</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+         </font>
+      </style>
+
+      <style id="FIELDS">
+         <textColor>#000000</textColor>
+         <horAlign>CENTER</horAlign>
+         <verAlign>CENTER</verAlign>
+         <font>
+            <height>-25</height>
+            <face>Arial</face>
+            <bold>true</bold>
+            <italic>true</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+         </font>
+      </style>
+
+      <style id="FIELDSSMALL">
+          <textColor>#000000</textColor>
+          <horAlign>CENTER</horAlign>
+          <verAlign>CENTER</verAlign>
+          <font>
+             <height>-20</height>
+             <face>Arial</face>
+             <bold>true</bold>
+             <italic>true</italic>
+             <underline>false</underline>
+             <strikeout>false</strikeout>
+          </font>
+       </style>
+
+      <style id="BOTTOMTEXT">
+         <textColor>#000000</textColor>
+         <horAlign>LEFT</horAlign>
+         <verAlign>CENTER</verAlign>
+         <font>
+            <height>-22</height>
+            <face>Arial</face>
+            <bold>true</bold>
+            <italic>true</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+         </font>
+      </style>
+
+      <style id="FIELDSTOP">
+         <textColor>#000000</textColor>
+         <horAlign>CENTER</horAlign>
+         <verAlign>TOP</verAlign>
+         <font>
+            <height>-23</height>
+            <face>Arial</face>
+            <bold>true</bold>
+            <italic>true</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+         </font>
+      </style>
+
+       <style id="SMALL">
+           <textColor>#000000</textColor>
+           <horAlign>CENTER</horAlign>
+           <verAlign>CENTER</verAlign>
+           <font>
+               <height>-12</height>
+               <face>Arial</face>
+               <bold>false</bold>
+               <italic>false</italic>
+               <underline>false</underline>
+               <strikeout>false</strikeout>
+           </font>
+       </style>
+
+   </styles>
+
+   <header>
+      <text label="INVOICE_HEADER_LBL">
+         <position>
+            <left>0</left>
+            <top>0</top>
+            <width>1000</width>
+            <height>58</height>
+         </position>
+         <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+         </border>
+         <value>FAKTURA VAT</value>
+         <style ref="HEADER"/>
+      </text>
+
+       <text label="INVOICE_LABEL">
+           <position>
+               <left>800</left>
+               <top>29</top>
+               <width>200</width>
+               <height>29</height>
+           </position>
+           <value>KOPIA</value>
+           <style ref="SMALL"/>
+       </text>
+
+      <text label="INVOICE_NUMBER_LBL">
+         <position>
+            <left>0</left>
+            <top>58</top>
+            <width>300</width>
+            <height>58</height>
+         </position>
+         <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+         </border>
+         <value>NR</value>
+         <style ref="HEADER"/>
+      </text>
+
+      <text label="INVOICENO">
+         <position>
+            <left>300</left>
+            <top>58</top>
+            <width>700</width>
+            <height>58</height>
+         </position>
+         <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+         </border>
+         <value>${CUSTOMNUMBER}</value>
+         <style ref="HEADER"/>
+      </text>
+
+      <text label="INVOICE_DATE_LBL">
+         <position>
+            <left>0</left>
+            <top>116</top>
+            <width>300</width>
+            <height>58</height>
+         </position>
+         <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+         </border>
+         <value>Data wystawienia</value>
+         <style ref="FIELDS"/>
+      </text>
+
+      <text label="INVOICE_DATE">
+         <position>
+            <left>300</left>
+            <top>116</top>
+            <width>700</width>
+            <height>58</height>
+         </position>
+         <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+         </border>
+         <value>${INVOICEDATE}</value>
+         <style ref="USERDEF"/>
+      </text>
+
+      <text label="TRANSACTION_DT_LBL">
+         <position>
+            <left>0</left>
+            <top>174</top>
+            <width>300</width>
+            <height>58</height>
+         </position>
+         <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+         </border>
+         <value>Data sprzedaży</value>
+         <style ref="FIELDS"/>
+      </text>
+      <text label="TRANSACTION_DATE">
+         <position>
+            <left>300</left>
+            <top>174</top>
+            <width>700</width>
+            <height>58</height>
+         </position>
+         <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+         </border>
+         <value>${TRANSACTIONDATE}</value>
+         <style ref="USERDEF"/>
+      </text>
+
+      <text label="TRANSACTION_PLACE_LBL">
+         <position>
+            <left>0</left>
+            <top>232</top>
+            <width>300</width>
+            <height>58</height>
+         </position>
+         <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+         </border>
+         <value>Miejsce sprzedaży</value>
+         <style ref="FIELDS"/>
+      </text>
+      <text label="TRANSACTION_PLACE">
+         <position>
+            <left>300</left>
+            <top>232</top>
+            <width>700</width>
+            <height>58</height>
+         </position>
+         <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+         </border>
+         <value>${TRANSACTIONPLACE}</value>
+         <style ref="USERDEF"/>
+      </text>
+
+      <text label="SELLER_INFO_LBL">
+         <position>
+            <left>0</left>
+            <top>290</top>
+            <width>1000</width>
+            <height>51</height>
+         </position>
+         <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+         </border>
+         <value>SPRZEDAWCA</value>
+         <style ref="HEADER"/>
+      </text>
+
+      <text label="SELLER_NAME_LBL">
+         <position>
+            <left>0</left>
+            <top>341</top>
+            <width>300</width>
+            <height>107</height>
+         </position>
+         <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+         </border>
+         <value>Nazwa</value>
+         <style ref="FIELDS"/>
+      </text>
+
+      <text label="SELLER_NAME">
+         <position>
+            <left>300</left>
+            <top>341</top>
+            <width>700</width>
+            <height>107</height>
+         </position>
+         <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+         </border>
+         <value>${SELLERNAME}</value>
+         <style ref="USERDEF"/>
+      </text>
+
+      <text label="SELLER_ADDRESS_LBL">
+         <position>
+            <left>0</left>
+            <top>448</top>
+            <width>300</width>
+            <height>90</height>
+         </position>
+         <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+         </border>
+         <value>Adres</value>
+         <style ref="FIELDS"/>
+      </text>
+
+      <text label="SELLER_ADDRESS">
+        <position>
+           <left>300</left>
+           <top>448</top>
+           <width>700</width>
+           <height>90</height>
+        </position>
+        <border>
+           <lineWidth>1</lineWidth>
+           <lineColor>#000000</lineColor>
+        </border>
+        <value>${SELLERADDRESS}</value>
+        <style ref="USERDEF"/>
+     </text>
+
+      <text label="SELLER_FISCALNO_LBL">
+         <position>
+            <left>0</left>
+            <top>538</top>
+            <width>300</width>
+            <height>45</height>
+         </position>
+         <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+         </border>
+         <value>NIP</value>
+         <style ref="FIELDS"/>
+      </text>
+
+      <text label="SELLER_FISCALNO">
+         <position>
+            <left>300</left>
+            <top>538</top>
+            <width>700</width>
+            <height>45</height>
+         </position>
+         <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+         </border>
+         <value>${SELLERFISCALNO}</value>
+         <style ref="USERDEF"/>
+      </text>
+
+
+      <text label="SELLER_FARMNO_LBL">
+         <position>
+            <left>0</left>
+            <top>583</top>
+            <width>300</width>
+            <height>45</height>
+         </position>
+         <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+         </border>
+         <value>Nr siedziby stada</value>
+         <style ref="FIELDS"/>
+      </text>
+
+      <text label="SELLER_FARMNO">
+          <position>
+             <left>300</left>
+             <top>583</top>
+             <width>700</width>
+             <height>45</height>
+          </position>
+          <border>
+             <lineWidth>1</lineWidth>
+             <lineColor>#000000</lineColor>
+          </border>
+          <value>${SELLERFARMNO}</value>
+          <style ref="USERDEF"/>
+       </text>
+
+
+
+      <text label="BUYER_INFO_LBL">
+         <position>
+            <left>0</left>
+            <top>628</top>
+            <width>1000</width>
+            <height>51</height>
+         </position>
+         <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+         </border>
+         <value>NABYWCA</value>
+         <style ref="HEADER"/>
+      </text>
+
+      <text label="BUYER_NAME_LBL">
+         <position>
+            <left>0</left>
+            <top>679</top>
+            <width>300</width>
+            <height>96</height>
+         </position>
+         <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+         </border>
+         <value>Nazwa</value>
+         <style ref="FIELDS"/>
+      </text>
+
+      <text label="BUYER_NAME">
+         <position>
+            <left>300</left>
+            <top>679</top>
+            <width>700</width>
+            <height>96</height>
+         </position>
+         <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+         </border>
+         <value>${BUYERNAME}</value>
+         <style ref="USERDEF"/>
+      </text>
+
+      <text label="BUYER_ADDRESS_LBL">
+         <position>
+            <left>0</left>
+            <top>775</top>
+            <width>300</width>
+            <height>90</height>
+         </position>
+         <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+         </border>
+         <value>Adress</value>
+         <style ref="FIELDS"/>
+      </text>
+
+      <text label="BUYER_ADDRESS">
+        <position>
+           <left>300</left>
+           <top>775</top>
+           <width>700</width>
+           <height>90</height>
+        </position>
+        <border>
+           <lineWidth>1</lineWidth>
+           <lineColor>#000000</lineColor>
+        </border>
+        <value>${BUYERADDRESS}</value>
+        <style ref="USERDEF"/>
+     </text>
+
+       <text label="BUYER_PHONENO_LBL">
+           <position>
+               <left>0</left>
+               <top>865</top>
+               <width>300</width>
+               <height>45</height>
+           </position>
+           <border>
+               <lineWidth>1</lineWidth>
+               <lineColor>#000000</lineColor>
+           </border>
+           <value>Telefon</value>
+           <style ref="FIELDS"/>
+       </text>
+
+       <text label="BUYER_PHONENO">
+           <position>
+               <left>300</left>
+               <top>865</top>
+               <width>700</width>
+               <height>45</height>
+           </position>
+           <border>
+               <lineWidth>1</lineWidth>
+               <lineColor>#000000</lineColor>
+           </border>
+           <value>${BUYERPHONENO}</value>
+           <style ref="USERDEF"/>
+       </text>
+
+
+
+       <text label="BUYER_FISCALNO_LBL">
+         <position>
+            <left>0</left>
+            <top>910</top>
+            <width>300</width>
+            <height>45</height>
+         </position>
+         <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+         </border>
+         <value>NIP</value>
+         <style ref="FIELDS"/>
+      </text>
+
+      <text label="BUYER_FISCALNO">
+         <position>
+            <left>300</left>
+            <top>910</top>
+            <width>700</width>
+            <height>45</height>
+         </position>
+         <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+         </border>
+         <value>${BUYERFISCALNO}</value>
+         <style ref="USERDEF"/>
+      </text>
+
+
+      <text label="BUYER_FARMNO_LBL">
+         <position>
+            <left>0</left>
+            <top>955</top>
+            <width>300</width>
+            <height>45</height>
+         </position>
+         <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+         </border>
+         <value>Nr siedziby stada</value>
+         <style ref="FIELDS"/>
+      </text>
+
+      <text label="BUYER_FARMNO">
+          <position>
+             <left>300</left>
+             <top>955</top>
+             <width>700</width>
+             <height>45</height>
+          </position>
+          <border>
+             <lineWidth>1</lineWidth>
+             <lineColor>#000000</lineColor>
+          </border>
+          <value>${BUYERFARMNO}</value>
+          <style ref="USERDEF"/>
+       </text>
+
+   </header>
+
+
+    <band name="INVOICEITEMS">
+
+        <header>
+            <text label="GOODS_HEADER_LBL">
+                <position>
+                    <left>0</left>
+                    <top>0</top>
+                    <width>1000</width>
+                    <height>60</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>TOWAR</value>
+                <style ref="HEADER"/>
+            </text>
+
+
+            <text label="TBLHLBL_LP">
+                <position>
+                    <left>0</left>
+                    <top>60</top>
+                    <width>60</width>
+                    <height>90</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>Lp</value>
+                <style ref="FIELDS"/>
+            </text>
+            <text label="TBLHLBL_NAME">
+                <position>
+                    <left>60</left>
+                    <top>60</top>
+                    <width>760</width>
+                    <height>45</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>Nazwa</value>
+                <style ref="FIELDS"/>
+            </text>
+
+            <text label="TBLHLBL_PKWIU">
+                <position>
+                    <left>820</left>
+                    <top>60</top>
+                    <width>180</width>
+                    <height>45</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>PKWiU</value>
+                <style ref="FIELDS"/>
+            </text>
+
+
+
+            <text label="TBLHLBL_QTY">
+                <position>
+                    <left>60</left>
+                    <top>105</top>
+                    <width>140</width>
+                    <height>45</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>Ilość</value>
+                <style ref="FIELDSSMALL"/>
+            </text>
+            <text label="TBLHLBL_UNIT">
+                <position>
+                    <left>200</left>
+                    <top>105</top>
+                    <width>120</width>
+                    <height>45</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>Symol j.m.</value>
+                <style ref="FIELDSSMALL"/>
+            </text>
+
+            <text label="TBLHLBL_UNITPRICE">
+                <position>
+                    <left>320</left>
+                    <top>105</top>
+                    <width>180</width>
+                    <height>45</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>Cena za j.m.</value>
+                <style ref="FIELDSSMALL"/>
+            </text>
+
+            <text label="TBLHLBL_NET">
+                <position>
+                    <left>500</left>
+                    <top>105</top>
+                    <width>180</width>
+                    <height>45</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>Wartość netto</value>
+                <style ref="FIELDSSMALL"/>
+            </text>
+
+            <text label="TBLHLBL_VAT">
+                <position>
+                    <left>680</left>
+                    <top>105</top>
+                    <width>140</width>
+                    <height>45</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>Kwota VAT</value>
+                <style ref="FIELDSSMALL"/>
+            </text>
+
+            <text label="TBLHLBL_GROSS">
+                <position>
+                    <left>820</left>
+                    <top>105</top>
+                    <width>180</width>
+                    <height>45</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>Wartość bruto</value>
+                <style ref="FIELDSSMALL"/>
+            </text>
+
+
+        </header>
+
+        <fields>
+            <text label="INDEX">
+                <position>
+                    <left>0</left>
+                    <top>0</top>
+                    <width>60</width>
+                    <height>90</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>${INDEX}</value>
+                <style ref="ITEM_BIG"/>
+            </text>
+
+            <text label="GOODS_NAME">
+                <position>
+                    <left>60</left>
+                    <top>0</top>
+                    <width>760</width>
+                    <height>45</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>${GOODSNAME}</value>
+                <style ref="ITEM_SMALL"/>
+            </text>
+
+            <text label="GOODS_CATEGORY">
+                <position>
+                    <left>820</left>
+                    <top>0</top>
+                    <width>180</width>
+                    <height>45</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>${GOODSCATEGORY}</value>
+                <style ref="ITEM_SMALL"/>
+            </text>
+
+            <text label="GOODS_QTY">
+                <position>
+                    <left>60</left>
+                    <top>45</top>
+                    <width>140</width>
+                    <height>45</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>${GOODSQTY}</value>
+                <style ref="ITEM_SMALL"/>
+            </text>
+            <text label="GOODS_QTY_UNIT">
+                <position>
+                    <left>200</left>
+                    <top>45</top>
+                    <width>120</width>
+                    <height>45</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>${GOODSQTYUNIT}</value>
+                <style ref="ITEM_SMALL"/>
+            </text>
+            <text label="UNIT_PRICE_NET">
+                <position>
+                    <left>320</left>
+                    <top>45</top>
+                    <width>180</width>
+                    <height>45</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>${UNITPRICENET}</value>
+                <style ref="ITEM_SMALL"/>
+            </text>
+
+            <text label="NET_PRICE">
+                <position>
+                    <left>500</left>
+                    <top>45</top>
+                    <width>180</width>
+                    <height>45</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>${NETPRICE}</value>
+                <style ref="ITEM_SMALL"/>
+            </text>
+            <text label="VAT_VALUE">
+                <position>
+                    <left>680</left>
+                    <top>45</top>
+                    <width>140</width>
+                    <height>45</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>${VATVALUE}</value>
+                <style ref="ITEM_SMALL"/>
+            </text>
+            <text label="GROSS_PRICE">
+                <position>
+                    <left>820</left>
+                    <top>45</top>
+                    <width>180</width>
+                    <height>45</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>${GROSSPRICE}</value>
+                <style ref="ITEM_SMALL"/>
+            </text>
+
+
+        </fields>
+
+        <footer>
+            <text label="FOOTER_LBL_VATRATE">
+                <position>
+                    <left>0</left>
+                    <top>0</top>
+                    <width>300</width>
+                    <height>45</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>Stawka VAT</value>
+                <style ref="FIELDS"/>
+            </text>
+            <text label="VAT_RATE">
+                <position>
+                    <left>300</left>
+                    <top>0</top>
+                    <width>700</width>
+                    <height>45</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>${VATRATE}</value>
+                <style ref="USERDEF"/>
+            </text>
+            <text label="FOOTER_LBL_TOTALNET">
+                <position>
+                    <left>0</left>
+                    <top>45</top>
+                    <width>300</width>
+                    <height>45</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>Wartość netto</value>
+                <style ref="FIELDS"/>
+            </text>
+            <text label="TOTAL_NET">
+                <position>
+                    <left>300</left>
+                    <top>45</top>
+                    <width>700</width>
+                    <height>45</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>${TOTALNET}</value>
+                <style ref="USERDEF"/>
+            </text>
+            <text label="FOOTER_LBL_TOTALVAT">
+                <position>
+                    <left>0</left>
+                    <top>90</top>
+                    <width>300</width>
+                    <height>45</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>Wartość VAT</value>
+                <style ref="FIELDS"/>
+            </text>
+            <text label="TOTAL_VAT">
+                <position>
+                    <left>300</left>
+                    <top>90</top>
+                    <width>700</width>
+                    <height>45</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>${TOTALVAT}</value>
+                <style ref="USERDEF"/>
+            </text>
+            <text label="FOOTER_LBL_TOTALGROSS">
+                <position>
+                    <left>0</left>
+                    <top>135</top>
+                    <width>300</width>
+                    <height>45</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>Wartość brutto</value>
+                <style ref="FIELDS"/>
+            </text>
+            <text label="TOTAL_GROSS">
+                <position>
+                    <left>300</left>
+                    <top>135</top>
+                    <width>700</width>
+                    <height>45</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>${TOTALGROSS}</value>
+                <style ref="USERDEF"/>
+            </text>
+        </footer>
+    </band>
+
+
+    <band name="INVOICEDEDUCTIONS">
+
+        <header>
+            <text label="INVOICEDEDUCTIONS_HEADER_LBL">
+                <position>
+                    <left>0</left>
+                    <top>0</top>
+                    <width>1000</width>
+                    <height>58</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>ODLICZENIA</value>
+                <style ref="HEADER"/>
+            </text>
+        </header>
+
+        <fields>
+
+            <text label="DEDUCTION_REASON">
+                <position>
+                    <left>0</left>
+                    <top>0</top>
+                    <width>750</width>
+                    <height>150</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>${DEDUCTIONREASON}</value>
+                <style ref="ITEM_SMALL"/>
+            </text>
+
+            <text label="DEDUCTED_AMOUNT">
+                <position>
+                    <left>750</left>
+                    <top>0</top>
+                    <width>250</width>
+                    <height>150</height>
+                </position>
+                <border>
+                    <lineWidth>1</lineWidth>
+                    <lineColor>#000000</lineColor>
+                </border>
+                <value>${DEDUCTEDAMOUNT}</value>
+                <style ref="ITEM_SMALL"/>
+            </text>
+
+        </fields>
+    </band>
+
+
+    <footer>
+
+        <text label="FOOTER_LBL_TOTALOWED">
+            <position>
+                <left>0</left>
+                <top>0</top>
+                <width>300</width>
+                <height>45</height>
+            </position>
+            <border>
+                <lineWidth>1</lineWidth>
+                <lineColor>#000000</lineColor>
+            </border>
+            <value>Należnośc ogółem</value>
+            <style ref="FIELDS"/>
+        </text>
+
+        <text label="TOTAL_OWED">
+            <position>
+                <left>300</left>
+                <top>0</top>
+                <width>700</width>
+                <height>45</height>
+            </position>
+            <border>
+                <lineWidth>1</lineWidth>
+                <lineColor>#000000</lineColor>
+            </border>
+            <value>${TOTALOWED}</value>
+            <style ref="USERDEF"/>
+        </text>
+
+
+        <text label="FOOTER_LBL_TOTALTEXT">
+            <position>
+                <left>0</left>
+                <top>45</top>
+                <width>300</width>
+                <height>90</height>
+            </position>
+            <border>
+                <lineWidth>1</lineWidth>
+                <lineColor>#000000</lineColor>
+            </border>
+            <value>Słownie</value>
+            <style ref="FIELDS"/>
+        </text>
+
+        <text label="TOTAL_TEXT">
+            <position>
+                <left>300</left>
+                <top>45</top>
+                <width>700</width>
+                <height>90</height>
+            </position>
+            <border>
+                <lineWidth>1</lineWidth>
+                <lineColor>#000000</lineColor>
+            </border>
+            <value>  ${TOTALTEXT}</value>
+            <style ref="BOTTOMTEXT"/>
+        </text>
+
+
+        <text label="FOOTER_LBL_PAYWAY">
+         <position>
+            <left>0</left>
+            <top>135</top>
+            <width>300</width>
+            <height>45</height>
+         </position>
+         <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+         </border>
+         <value>Sposób zapłaty</value>
+         <style ref="FIELDS"/>
+      </text>
+
+      <text label="PAY_WAY">
+          <position>
+             <left>300</left>
+             <top>135</top>
+             <width>700</width>
+             <height>45</height>
+          </position>
+          <border>
+             <lineWidth>1</lineWidth>
+             <lineColor>#000000</lineColor>
+          </border>
+          <value>  ${PAYWAY}</value>
+          <style ref="BOTTOMTEXT"/>
+       </text>
+
+        <text label="FOOTER_LBL_BANKNAME">
+            <position>
+                <left>0</left>
+                <top>180</top>
+                <width>450</width>
+                <height>45</height>
+            </position>
+            <value>Do przelania na rachunek w banku:</value>
+            <style ref="BOTTOMTEXT"/>
+        </text>
+
+        <text label="BANK_NAME">
+            <position>
+                <left>450</left>
+                <top>180</top>
+                <width>550</width>
+                <height>45</height>
+            </position>
+            <border>
+                <lineWidth>1</lineWidth>
+                <lineColor>#000000</lineColor>
+            </border>
+            <value>  ${BANKNAME}</value>
+            <style ref="BOTTOMTEXT"/>
+        </text>
+
+        <text label="FOOTER_LBL_ACCOUNTNO">
+            <position>
+                <left>0</left>
+                <top>225</top>
+                <width>450</width>
+                <height>45</height>
+            </position>
+            <value>nr konta:</value>
+            <style ref="BOTTOMTEXT"/>
+        </text>
+
+        <text label="ACCOUNT_NO">
+            <position>
+                <left>450</left>
+                <top>225</top>
+                <width>550</width>
+                <height>45</height>
+            </position>
+            <border>
+                <lineWidth>1</lineWidth>
+                <lineColor>#000000</lineColor>
+            </border>
+            <value>  ${ACCOUNTNO}</value>
+            <style ref="BOTTOMTEXT"/>
+        </text>
+
+        <text label="FOOTER_LBL_PAYDUEDAYS">
+          <position>
+             <left>0</left>
+             <top>270</top>
+             <width>450</width>
+             <height>45</height>
+          </position>
+          <value>Termin płatności w dniach:</value>
+          <style ref="BOTTOMTEXT"/>
+       </text>
+
+       <text label="PAY_DUE_DAYS">
+          <position>
+             <left>450</left>
+             <top>270</top>
+             <width>550</width>
+             <height>45</height>
+          </position>
+          <border>
+             <lineWidth>1</lineWidth>
+             <lineColor>#000000</lineColor>
+          </border>
+          <value>  ${PAYDUEDAYS}</value>
+          <style ref="BOTTOMTEXT"/>
+       </text>
+
+      <text label="FOOTER_LBL_EXTRAS">
+         <position>
+            <left>0</left>
+            <top>315</top>
+            <width>1000</width>
+            <height>250</height>
+         </position>
+         <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+         </border>
+         <value>Uwagi</value>
+         <style ref="FIELDSTOP"/>
+      </text>
+
+      <text label="EXTRAS">
+         <position>
+            <left>30</left>
+            <top>365</top>
+            <width>940</width>
+            <height>200</height>
+         </position>
+         <value>${EXTRAS}</value>
+         <style ref="USERDEF"/>
+      </text>
+
+      <text label="FOOTER_LBL_SELLER_SIGNATURE">
+        <position>
+           <left>0</left>
+           <top>565</top>
+           <width>1000</width>
+           <height>245</height>
+        </position>
+        <border>
+           <lineWidth>1</lineWidth>
+           <lineColor>#000000</lineColor>
+        </border>
+        <value>.........................................................................
+(podpis osoby uprawnionej do odbioru faktury)
+        </value>
+        <ownstyle>
+           <textColor>#000000</textColor>
+           <horAlign>CENTER</horAlign>
+           <verAlign>BOTTOM</verAlign>
+           <font>
+              <height>-18</height>
+              <face>Arial</face>
+              <bold>true</bold>
+              <italic>true</italic>
+              <underline>false</underline>
+              <strikeout>false</strikeout>
+           </font>
+        </ownstyle>
+     </text>
+
+      <text label="FOOTER_LBL_BUYER_SIGNATURE">
+        <position>
+           <left>0</left>
+           <top>810</top>
+           <width>1000</width>
+           <height>245</height>
+        </position>
+        <border>
+           <lineWidth>1</lineWidth>
+           <lineColor>#000000</lineColor>
+        </border>
+        <value>.........................................................................
+(podpis osoby uprawnionej do wystawienia faktury)
+        </value>
+        <ownstyle>
+           <textColor>#000000</textColor>
+           <horAlign>CENTER</horAlign>
+           <verAlign>BOTTOM</verAlign>
+           <font>
+              <height>-18</height>
+              <face>Arial</face>
+              <bold>true</bold>
+              <italic>true</italic>
+              <underline>false</underline>
+              <strikeout>false</strikeout>
+           </font>
+        </ownstyle>
+     </text>
+
+
+
+   </footer>
+
+</template>

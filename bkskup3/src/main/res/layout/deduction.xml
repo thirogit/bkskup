@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/widget56"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+        >
+
+    <TableLayout
+            android:id="@+id/TableLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/TextView05"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.25"
+                      android:text="@string/deductionCodeLblCaption"
+                      style="@style/label"/>
+
+            <EditText android:id="@+id/deductionCodeBox"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.75"
+                      android:maxLength="@integer/MAX_DEDUCTIONCODE"
+                      android:inputType="textCapCharacters"
+                      android:hint="@string/hintDeductionCode"
+                      style="@style/input"/>
+
+
+        </TableRow>
+
+
+        <TableRow android:id="@+id/TableRow02" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/TextView01"
+                      android:layout_width="0dp"
+                      android:text="@string/deductionFractionLblCaption"
+                      android:layout_weight="0.25"
+                      style="@style/label"/>
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="0.75"
+                          android:orientation="horizontal"
+                          android:gravity="center_vertical">
+
+                <EditText android:id="@+id/fractionEditBox"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="0.8"
+                          android:inputType="numberDecimal"
+                          android:hint="@string/hintDeductionFraction"
+                          style="@style/input"/>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:gravity="center_vertical"
+                        style="@style/SegmentedButtonContainer"
+                        >
+
+                    <Button android:id="@+id/deductionFractionPlusBtn"
+                            android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:text="+"
+                            style="@style/SegmentedButton"
+                            />
+
+                    <Button android:id="@+id/deductionFractionMinusBtn"
+                            android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:text="-"
+                            style="@style/SegmentedButton"
+                            />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow android:id="@+id/TableRow03" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/TextView07"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.25"
+                      android:text="@string/deductAlwaysLblCaption"
+                      style="@style/label"/>
+
+            <LinearLayout  android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="0.75"
+                    >
+            <Switch android:id="@+id/deductAlwaysSwitchBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="@string/yesAllCaps"
+                    android:textOff="@string/noAllCaps"
+                    android:layout_gravity="left"
+                    />
+            </LinearLayout>
+
+        </TableRow>
+
+
+        <TableRow android:id="@+id/TableRow04" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/TextView09"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.25"
+                      android:text="@string/deductionReasonLblCaption"
+                      style="@style/label"/>
+
+            <EditText android:id="@+id/deductionReasonBox"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.75"
+                      android:layout_height="100dp"
+                      android:inputType="textMultiLine"
+                      android:lines="3"
+                      android:minLines="3"
+                      android:gravity="top|left"
+                      android:maxLines="3"
+                      android:textSize="24sp"
+                      android:hint="@string/hintDeductionReason"
+                      android:maxLength="@integer/MAX_DEDUCTIONREASON"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+</ScrollView>
+

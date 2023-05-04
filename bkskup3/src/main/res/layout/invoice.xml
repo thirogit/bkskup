@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <include android:id="@+id/progress_container" layout="@layout/loading_progress"/>
+
+
+    <RelativeLayout android:id="@+id/content_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+        <LinearLayout android:id="@+id/summary_container"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentBottom="true">
+             <include android:id="@+id/invoice_summary" layout="@layout/invoice_summary" />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_above="@id/summary_container">
+
+            <android.support.v4.view.PagerTabStrip
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+
+                    />
+
+        </android.support.v4.view.ViewPager>
+
+    </RelativeLayout>
+</FrameLayout>

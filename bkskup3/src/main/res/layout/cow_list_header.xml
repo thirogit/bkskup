@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/layout01"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content" 
+	  android:orientation="horizontal"
+	  android:background="@color/listview_column_header_bkg">
+	  
+         <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.35"
+            android:text="@string/cowNoLblCaption"
+			style="@style/list_header_label"
+            />
+         <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:text="@string/cowWeightLblCaption"
+			style="@style/list_header_label"
+            />
+         <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:text="@string/cowClassLblCaption"
+			style="@style/list_header_label"
+            />
+
+         <TextView
+              android:layout_width="0dp"
+              android:layout_weight="0.15"
+              android:text="@string/cowNetPricePerKgLblCaption"
+			  style="@style/list_header_label"
+              />
+
+           <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.20"
+            android:text="@string/cowNetPriceLblCaption"
+			style="@style/list_header_label"
+            />
+			
+   </LinearLayout>
+
+
+

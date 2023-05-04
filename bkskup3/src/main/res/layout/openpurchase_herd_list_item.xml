@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.bk.layout.CheckableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:id="@+id/herdsListItem"
+                                             android:layout_width="fill_parent"
+                                             android:layout_height="wrap_content"
+                                             android:orientation="horizontal"
+                                             android:background="@drawable/checkable_background_red"
+                                             android:minHeight="40dp"
+                                             android:gravity="center_vertical"
+        >
+
+
+    <View android:id="@+id/hasOpenPurchaseIndicator"
+          android:layout_width="15dp"
+          android:layout_height="fill_parent"
+            />
+
+    <TextView
+            android:id="@+id/herdNumber"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            style="@style/list_cell"
+            />
+
+    <View android:id="@+id/divider1"
+          android:background="@drawable/white_divider"
+          android:layout_width="1dp"
+          android:layout_height="fill_parent"/>
+
+    <TextView
+            android:id="@+id/herdAddress"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            style="@style/list_cell"
+            />
+
+
+</com.bk.layout.CheckableLinearLayout>
+

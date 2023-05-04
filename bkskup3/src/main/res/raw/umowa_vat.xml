@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<template xmlns="http://com.bk.docs">
+
+  <styles>
+    <style id="USERDEF">
+      <textColor>#000000</textColor>
+      <horAlign>LEFT</horAlign>
+      <verAlign>CENTER</verAlign>
+      <font>
+        <height>-30</height>
+        <face>Arial</face>
+        <bold>false</bold>
+        <italic>false</italic>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+      </font>
+    </style>
+
+      <style id="item">
+          <textColor>#000000</textColor>
+          <horAlign>CENTER</horAlign>
+          <verAlign>CENTER</verAlign>
+          <font>
+              <height>-30</height>
+              <face>Arial</face>
+              <bold>false</bold>
+              <italic>false</italic>
+              <underline>false</underline>
+              <strikeout>false</strikeout>
+          </font>
+      </style>
+
+     <style id="signature">
+       <textColor>#000000</textColor>
+       <horAlign>CENTER</horAlign>
+       <verAlign>BOTTOM</verAlign>
+       <font>
+         <height>-22</height>
+         <face>Arial</face>
+         <bold>false</bold>
+         <italic>false</italic>
+         <underline>false</underline>
+         <strikeout>false</strikeout>
+       </font>
+     </style>
+
+    <style id="dane">
+      <textColor>#000000</textColor>
+      <horAlign>CENTER</horAlign>
+      <verAlign>CENTER</verAlign>
+      <font>
+        <height>-25</height>
+        <face>Arial</face>
+        <bold>true</bold>
+        <italic>true</italic>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+      </font>
+    </style>
+
+      <style id="paragraph">
+          <textColor>#000000</textColor>
+          <horAlign>CENTER</horAlign>
+          <verAlign>CENTER</verAlign>
+          <font>
+              <height>-30</height>
+              <face>Arial</face>
+              <bold>true</bold>
+              <italic>false</italic>
+              <underline>false</underline>
+              <strikeout>false</strikeout>
+          </font>
+      </style>
+
+
+      <style id="beam">
+         <textColor>#000000</textColor>
+         <horAlign>CENTER</horAlign>
+         <verAlign>CENTER</verAlign>
+         <font>
+             <height>-40</height>
+             <face>Arial</face>
+             <bold>true</bold>
+             <italic>false</italic>
+             <underline>false</underline>
+             <strikeout>false</strikeout>
+         </font>
+    </style>
+
+      <style id="FIELDS">
+          <textColor>#000000</textColor>
+          <horAlign>CENTER</horAlign>
+          <verAlign>CENTER</verAlign>
+          <font>
+              <height>-25</height>
+              <face>Arial</face>
+              <bold>true</bold>
+              <italic>true</italic>
+              <underline>false</underline>
+              <strikeout>false</strikeout>
+          </font>
+      </style>
+
+      <style id="label">
+          <textColor>#FFFFFF</textColor>
+          <backColor>#000000</backColor>
+          <horAlign>CENTER</horAlign>
+          <verAlign>TOP</verAlign>
+          <font>
+              <height>-40</height>
+              <face>Arial</face>
+              <bold>true</bold>
+              <italic>false</italic>
+              <underline>false</underline>
+              <strikeout>false</strikeout>
+          </font>
+      </style>
+
+
+  </styles>
+
+  <header>
+
+  <text label="DOC_TITLE">
+     <position>
+         <left>0</left>
+         <top>0</top>
+         <width>1000</width>
+         <height>150</height>
+     </position>
+     <border>
+       <lineWidth>1</lineWidth>
+       <lineColor>#000000</lineColor>
+     </border>
+     <value>UMOWA DOSTARCZENIA PRODUKTÓW ROLNYCH NR ${CONTRACTNO}</value>
+     <style ref="beam"/>
+   </text>
+
+      <text label="CONTRACT_DATE_AND_PLACE">
+          <position>
+              <left>0</left>
+              <top>150</top>
+              <width>1000</width>
+              <height>50</height>
+          </position>
+
+          <value>Zawarta przed zakupem między</value>
+          <ownstyle>
+              <textColor>#000000</textColor>
+              <horAlign>CENTER</horAlign>
+              <verAlign>CENTER</verAlign>
+              <font>
+                  <height>-30</height>
+                  <face>Arial</face>
+                  <bold>true</bold>
+                  <italic>false</italic>
+                  <underline>false</underline>
+                  <strikeout>false</strikeout>
+              </font>
+          </ownstyle>
+      </text>
+
+
+      <text label="BUYER_BEAM">
+          <position>
+              <left>0</left>
+              <top>200</top>
+              <width>1000</width>
+              <height>70</height>
+          </position>
+          <border>
+              <lineWidth>1</lineWidth>
+              <lineColor>#000000</lineColor>
+          </border>
+          <value>ODBIORCA</value>
+          <style ref="beam"/>
+      </text>
+
+      <text label="BUYER_NAME_LBL">
+          <position>
+              <left>0</left>
+              <top>270</top>
+              <width>300</width>
+              <height>100</height>
+          </position>
+          <border>
+              <lineWidth>1</lineWidth>
+              <lineColor>#000000</lineColor>
+          </border>
+          <value>Nazwa</value>
+          <style ref="FIELDS"/>
+      </text>
+
+      <text label="BUYER_NAME">
+          <position>
+              <left>300</left>
+              <top>270</top>
+              <width>700</width>
+              <height>100</height>
+          </position>
+          <border>
+              <lineWidth>1</lineWidth>
+              <lineColor>#000000</lineColor>
+          </border>
+          <value>${BUYERNAME}</value>
+          <style ref="USERDEF"/>
+      </text>
+
+      <text label="BUYER_ADDRESS_LBL">
+          <position>
+              <left>0</left>
+              <top>370</top>
+              <width>300</width>
+              <height>100</height>
+          </position>
+          <border>
+              <lineWidth>1</lineWidth>
+              <lineColor>#000000</lineColor>
+          </border>
+          <value>Adress</value>
+          <style ref="FIELDS"/>
+      </text>
+
+      <text label="BUYER_ADDRESS">
+          <position>
+              <left>300</left>
+              <top>370</top>
+              <width>700</width>
+              <height>100</height>
+          </position>
+          <border>
+              <lineWidth>1</lineWidth>
+              <lineColor>#000000</lineColor>
+          </border>
+          <value>${BUYERADDRESS}</value>
+          <style ref="USERDEF"/>
+      </text>
+
+      <text label="BUYER_PHONENO_LBL">
+          <position>
+              <left>0</left>
+              <top>470</top>
+              <width>300</width>
+              <height>50</height>
+          </position>
+          <border>
+              <lineWidth>1</lineWidth>
+              <lineColor>#000000</lineColor>
+          </border>
+          <value>Telefon</value>
+          <style ref="FIELDS"/>
+      </text>
+
+      <text label="BUYER_PHONENO">
+          <position>
+              <left>300</left>
+              <top>470</top>
+              <width>700</width>
+              <height>50</height>
+          </position>
+          <border>
+              <lineWidth>1</lineWidth>
+              <lineColor>#000000</lineColor>
+          </border>
+          <value>${BUYERPHONENO}</value>
+          <style ref="USERDEF"/>
+      </text>
+
+
+
+      <text label="BUYER_FISCALNO_LBL">
+          <position>
+              <left>0</left>
+              <top>520</top>
+              <width>300</width>
+              <height>50</height>
+          </position>
+          <border>
+              <lineWidth>1</lineWidth>
+              <lineColor>#000000</lineColor>
+          </border>
+          <value>NIP</value>
+          <style ref="FIELDS"/>
+      </text>
+
+      <text label="BUYER_FISCALNO">
+          <position>
+              <left>300</left>
+              <top>520</top>
+              <width>700</width>
+              <height>50</height>
+          </position>
+          <border>
+              <lineWidth>1</lineWidth>
+              <lineColor>#000000</lineColor>
+          </border>
+          <value>${BUYERFISCALNO}</value>
+          <style ref="USERDEF"/>
+      </text>
+
+
+      <text label="BUYER_FARMNO_LBL">
+          <position>
+              <left>0</left>
+              <top>570</top>
+              <width>300</width>
+              <height>50</height>
+          </position>
+          <border>
+              <lineWidth>1</lineWidth>
+              <lineColor>#000000</lineColor>
+          </border>
+          <value>Nr siedziby stada</value>
+          <style ref="FIELDS"/>
+      </text>
+
+      <text label="BUYER_FARMNO">
+          <position>
+              <left>300</left>
+              <top>570</top>
+              <width>700</width>
+              <height>50</height>
+          </position>
+          <border>
+              <lineWidth>1</lineWidth>
+              <lineColor>#000000</lineColor>
+          </border>
+          <value>${BUYERFARMNO}</value>
+          <style ref="USERDEF"/>
+      </text>
+
+
+      <text label="SELLER_BEAM">
+          <position>
+              <left>0</left>
+              <top>620</top>
+              <width>1000</width>
+              <height>70</height>
+          </position>
+          <border>
+              <lineWidth>1</lineWidth>
+              <lineColor>#000000</lineColor>
+          </border>
+          <value>DOSTAWCA</value>
+          <style ref="beam"/>
+      </text>
+
+
+      <text label="SELLER_NAME_LBL">
+          <position>
+              <left>0</left>
+              <top>690</top>
+              <width>300</width>
+              <height>100</height>
+          </position>
+          <border>
+              <lineWidth>1</lineWidth>
+              <lineColor>#000000</lineColor>
+          </border>
+          <value>Nazwa</value>
+          <style ref="FIELDS"/>
+      </text>
+
+      <text label="SELLER_NAME">
+          <position>
+              <left>300</left>
+              <top>690</top>
+              <width>700</width>
+              <height>100</height>
+          </position>
+          <border>
+              <lineWidth>1</lineWidth>
+              <lineColor>#000000</lineColor>
+          </border>
+          <value>${SELLERNAME}</value>
+          <style ref="USERDEF"/>
+      </text>
+
+      <text label="SELLER_ADDRESS_LBL">
+          <position>
+              <left>0</left>
+              <top>790</top>
+              <width>300</width>
+              <height>100</height>
+          </position>
+          <border>
+              <lineWidth>1</lineWidth>
+              <lineColor>#000000</lineColor>
+          </border>
+          <value>Adres</value>
+          <style ref="FIELDS"/>
+      </text>
+
+      <text label="SELLER_ADDRESS">
+          <position>
+              <left>300</left>
+              <top>790</top>
+              <width>700</width>
+              <height>100</height>
+          </position>
+          <border>
+              <lineWidth>1</lineWidth>
+              <lineColor>#000000</lineColor>
+          </border>
+          <value>${SELLERADDRESS}</value>
+          <style ref="USERDEF"/>
+      </text>
+
+
+      <text label="SELLER_FISCALNO_LBL">
+          <position>
+              <left>0</left>
+              <top>890</top>
+              <width>300</width>
+              <height>50</height>
+          </position>
+          <border>
+              <lineWidth>1</lineWidth>
+              <lineColor>#000000</lineColor>
+          </border>
+          <value>NIP</value>
+          <style ref="FIELDS"/>
+      </text>
+
+      <text label="SELLER_FISCALNO">
+          <position>
+              <left>300</left>
+              <top>890</top>
+              <width>700</width>
+              <height>50</height>
+          </position>
+          <border>
+              <lineWidth>1</lineWidth>
+              <lineColor>#000000</lineColor>
+          </border>
+          <value>${SELLERFISCALNO}</value>
+          <style ref="USERDEF"/>
+      </text>
+
+
+      <text label="SELLER_FARMNO_LBL">
+          <position>
+              <left>0</left>
+              <top>940</top>
+              <width>300</width>
+              <height>50</height>
+          </position>
+          <border>
+              <lineWidth>1</lineWidth>
+              <lineColor>#000000</lineColor>
+          </border>
+          <value>Nr siedziby stada</value>
+          <style ref="FIELDS"/>
+      </text>
+
+      <text label="SELLER_FARMNO">
+          <position>
+              <left>300</left>
+              <top>940</top>
+              <width>700</width>
+              <height>50</height>
+          </position>
+          <border>
+              <lineWidth>1</lineWidth>
+              <lineColor>#000000</lineColor>
+          </border>
+          <value>${SELLERFARMNO}</value>
+          <style ref="USERDEF"/>
+      </text>
+
+      <text label="PARAGRAPGH1">
+          <position>
+              <left>0</left>
+              <top>990</top>
+              <width>1000</width>
+              <height>50</height>
+          </position>
+          <border>
+              <lineWidth>1</lineWidth>
+              <lineColor>#000000</lineColor>
+          </border>
+          <value>§1</value>
+          <style ref="beam"/>
+
+      </text>
+
+      <text label="PARAGRAPGH1_CONTENT 1/2">
+          <position>
+              <left>0</left>
+              <top>1090</top>
+              <width>1000</width>
+              <height>100</height>
+          </position>
+
+          <value>DOSTAWCA zobowiązuje się dostarczyć ODBIORCY następujące zwierzęta gospodarskie</value>
+          <style ref="paragraph"/>
+
+      </text>
+
+
+  </header>
+    <band name="COWS">
+    <header>
+
+        <text label="TBLHLBL_LP">
+            <position>
+                <left>0</left>
+                <top>30</top>
+                <width>70</width>
+                <height>50</height>
+            </position>
+            <border>
+                <lineWidth>1</lineWidth>
+                <lineColor>#000000</lineColor>
+            </border>
+            <value>Lp</value>
+            <style ref="FIELDS"/>
+        </text>
+
+        <text label="TBLHLBL_NAME">
+            <position>
+                <left>70</left>
+                <top>30</top>
+                <width>700</width>
+                <height>50</height>
+            </position>
+            <border>
+                <lineWidth>1</lineWidth>
+                <lineColor>#000000</lineColor>
+            </border>
+            <value>Opis</value>
+            <style ref="FIELDS"/>
+        </text>
+
+
+        <text label="TBLHLBL_GROSS">
+            <position>
+                <left>770</left>
+                <top>30</top>
+                <width>230</width>
+                <height>50</height>
+            </position>
+            <border>
+                <lineWidth>1</lineWidth>
+                <lineColor>#000000</lineColor>
+            </border>
+            <value>Cena/kg brutto</value>
+            <style ref="FIELDS"/>
+        </text>
+
+    </header>
+
+
+    <fields>
+
+          <text label="ITEM_INDEX">
+            <position>
+              <left>0</left>
+              <top>0</top>
+              <width>70</width>
+              <height>70</height>
+            </position>
+            <border>
+              <lineWidth>1</lineWidth>
+              <lineColor>#000000</lineColor>
+            </border>
+            <value>${INDEX}</value>
+            <style ref="item"/>
+          </text>
+
+          <text label="ITEMDESCRIPTION">
+              <position>
+                <left>70</left>
+                <top>0</top>
+                <width>700</width>
+                <height>70</height>
+              </position>
+              <border>
+                <lineWidth>1</lineWidth>
+                <lineColor>#000000</lineColor>
+              </border>
+              <value>${ITEMDESCRIPTION}</value>
+              <style ref="item"/>
+            </text>
+
+          <text label="ITEM_GROSS_PRICCE">
+             <position>
+               <left>770</left>
+               <top>0</top>
+               <width>230</width>
+               <height>70</height>
+             </position>
+             <border>
+               <lineWidth>1</lineWidth>
+               <lineColor>#000000</lineColor>
+             </border>
+             <value>${ITEMGROSSPRICE}</value>
+             <style ref="item"/>
+          </text>
+
+
+       </fields>
+
+        <footer>
+
+
+
+            <text label="PARAGRAPGH1_CONTENT_2/2">
+                <position>
+                    <left>0</left>
+                    <top>30</top>
+                    <width>1000</width>
+                    <height>150</height>
+                </position>
+                <value>DOSTAWCA zobowiązuje się dostarczyć powyższe zwierzęta gospodarskie w terminie ${TRANSACTIONDT} i w miejscu uprzednio ustalonym przez Strony.</value>
+                <style ref="paragraph"/>
+
+            </text>
+
+
+            </footer>
+    </band>
+
+<footer>
+
+
+    <text label="PARAGRAPGH2">
+        <position>
+            <left>0</left>
+            <top>30</top>
+            <width>1000</width>
+            <height>50</height>
+        </position>
+        <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+        </border>
+        <value>§2</value>
+        <style ref="beam"/>
+
+    </text>
+
+    <text label="PARAGRAPGH2_CONTENT">
+        <position>
+            <left>0</left>
+            <top>80</top>
+            <width>1000</width>
+            <height>250</height>
+        </position>
+        <value>Płatności za powyższe zwierzęta następować będą w terminie ${PAYDUEDAYS} dni od daty zakupu.
+W przypadku konfiskaty towaru przez Inspekcję Weterynaryjna kupujący nie ma obowiązku zapłaty za konfiskowaną sztukę towaru.</value>
+        <style ref="paragraph"/>
+
+    </text>
+
+
+
+
+    <text label="PARAGRAPGH3">
+        <position>
+            <left>0</left>
+            <top>330</top>
+            <width>1000</width>
+            <height>50</height>
+        </position>
+        <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+        </border>
+        <value>§3</value>
+        <style ref="beam"/>
+
+    </text>
+
+    <text label="PARAGRAPGH3_CONTENT">
+        <position>
+            <left>0</left>
+            <top>380</top>
+            <width>1000</width>
+            <height>120</height>
+        </position>
+        <value>Wszelkie zmiany umowy wymagają formy pisemnej, pod rygorem nieważności.</value>
+        <style ref="paragraph"/>
+
+    </text>
+
+
+
+    <text label="PARAGRAPGH4">
+        <position>
+            <left>0</left>
+            <top>500</top>
+            <width>1000</width>
+            <height>50</height>
+        </position>
+        <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+        </border>
+        <value>§4</value>
+        <style ref="beam"/>
+
+    </text>
+
+
+    <text label="PARAGRAPGH4_CONTENT">
+        <position>
+            <left>0</left>
+            <top>550</top>
+            <width>1000</width>
+            <height>120</height>
+        </position>
+        <value>W sprawach nieuregulowanych niniejszą umową stosuje się przepisy Kodeksu cywilnego</value>
+        <style ref="paragraph"/>
+
+    </text>
+
+
+    <text label="PARAGRAPGH5">
+        <position>
+            <left>0</left>
+            <top>670</top>
+            <width>1000</width>
+            <height>50</height>
+        </position>
+        <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+        </border>
+        <value>§5</value>
+        <style ref="beam"/>
+
+    </text>
+
+
+    <text label="PARAGRAPGH5_CONTENT">
+        <position>
+            <left>0</left>
+            <top>720</top>
+            <width>1000</width>
+            <height>200</height>
+        </position>
+        <value> Strony umowy będą zwolnione z odpowiedzialności za niewypełnienie swoich zobowiązań wynikających z umowy z powodu siły wyższej zaistniałej w okresie trwania umowy.</value>
+        <style ref="paragraph"/>
+
+    </text>
+
+
+    <text label="PARAGRAPGH6">
+        <position>
+            <left>0</left>
+            <top>920</top>
+            <width>1000</width>
+            <height>50</height>
+        </position>
+        <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+        </border>
+        <value>§6</value>
+        <style ref="beam"/>
+
+    </text>
+
+
+
+    <text label="PARAGRAPGH6_CONTENT">
+        <position>
+            <left>0</left>
+            <top>970</top>
+            <width>1000</width>
+            <height>120</height>
+        </position>
+        <value>Niniejsza umowa sporządzona jest w dwóch jednobrzmiących egzemplarzach.</value>
+        <style ref="paragraph"/>
+
+    </text>
+
+
+
+    <text label="SELLER_SIGNATURE">
+     <position>
+       <left>0</left>
+       <top>1090</top>
+       <width>1000</width>
+       <height>200</height>
+     </position>
+     <border>
+       <lineWidth>1</lineWidth>
+       <lineColor>#000000</lineColor>
+     </border>
+     <value>...............................................................................................
+Podpis DOSTAWCY</value>
+     <style ref="signature"/>
+   </text>
+
+
+     <text label="BUYES_SIGNATURE">
+     <position>
+       <left>0</left>
+       <top>1310</top>
+       <width>1000</width>
+       <height>200</height>
+     </position>
+     <border>
+       <lineWidth>1</lineWidth>
+       <lineColor>#000000</lineColor>
+     </border>
+     <value>...............................................................................................
+Podpis ODBIORCY</value>
+     <style ref="signature"/>
+   </text>
+
+</footer>
+</template>

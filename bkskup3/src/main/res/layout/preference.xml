@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+            >
+
+
+        <TextView android:text="@string/hentTypePreferenceHeader"
+                  style="@style/preference_section_header"/>
+
+        <com.bk.bkskup3.widgets.HentTypeButton
+            android:id="@+id/defaultHentTypeBtn"
+                                               android:layout_width="fill_parent"
+                                               android:layout_height="wrap_content"
+                                               style="@style/preference_item"/>
+
+        <TextView android:text="@string/defaultCountryPreferenceHeader"
+                  style="@style/preference_section_header" />
+
+        <com.bk.bkskup3.widgets.CountrySpinner
+            android:id="@+id/defaultCountryBtn"
+                                              android:layout_width="fill_parent"
+                                              android:layout_height="wrap_content"
+                                              android:popupBackground="@drawable/tw_spinner_dropdown_background"
+                                              style="@style/preference_item"/>
+
+        <TextView android:text="@string/payWayForCompanyPreferenceHeader"
+                  style="@style/preference_section_header"/>
+
+        <com.bk.bkskup3.widgets.PayWayButton
+            android:id="@+id/payWayForCompanyBtn"
+                                             android:layout_width="fill_parent"
+                                             android:layout_height="wrap_content"
+                                             style="@style/preference_item"/>
+
+        <TextView android:text="@string/payWayForIndividualPreferenceHeader"
+                  style="@style/preference_section_header"/>
+
+        <com.bk.bkskup3.widgets.PayWayButton
+            android:id="@+id/payWayForIndividualBtn"
+                                             android:layout_width="fill_parent"
+                                             android:layout_height="wrap_content"
+                                             style="@style/preference_item"/>
+
+        <TextView android:text="@string/payDueDaysForCompanyPreferenceHeader"
+                  style="@style/preference_section_header"/>
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:gravity="center_vertical"
+                      style="@style/preference_item">
+
+            <EditText android:id="@+id/payDueDaysForCompanyBox"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.8"
+                      android:inputType="number"
+                      android:maxLength="3"
+                      style="@style/input"/>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical"
+                    style="@style/SegmentedButtonContainer"
+                    >
+
+                <Button android:id="@+id/payDueDaysForCompanyPlusBtn"
+                        android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="+"
+                        style="@style/SegmentedButton"
+                        />
+
+                <Button android:id="@+id/payDueDaysForCompanyMinusBtn"
+                        android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="-"
+                        style="@style/SegmentedButton"
+                        />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView android:text="@string/payDueDaysForIndividualPreferenceHeader"
+                  style="@style/preference_section_header"/>
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:gravity="center_vertical"
+                      style="@style/preference_item">
+
+            <EditText android:id="@+id/payDueDaysForIndividualBox"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.8"
+                      android:inputType="number"
+                      android:maxLength="3"
+                      style="@style/input"/>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical"
+                    style="@style/SegmentedButtonContainer"
+                    >
+
+                <Button android:id="@+id/payDueDaysForIndividualPlusBtn"
+                        android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="+"
+                        style="@style/SegmentedButton"
+                        />
+
+                <Button android:id="@+id/payDueDaysForIndividualMinusBtn"
+                        android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="-"
+                        style="@style/SegmentedButton"
+                        />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        android:id="@+id/widget56"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+            <TextView android:id="@+id/TextView01"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/herdNumberLblCaption"
+                      android:textSize="20sp"/>
+
+            <EditText android:id="@+id/herdNumberEditBox"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:maxLength="3"
+                      android:singleLine="true"
+                      android:inputType="number"
+                      android:hint="@string/hintHerdNo"
+                      android:textSize="24sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+            <TextView android:id="@+id/TextView05"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/streetLblCaption"
+                      android:layout_gravity="center_vertical"
+                      android:textSize="20sp"/>
+
+            <EditText android:id="@+id/herdStreetEditBox"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:maxLength="@integer/MAX_STREET"
+                      android:singleLine="true"
+                      android:inputType="textCapCharacters"
+                      android:hint="@string/hintStreetName"
+                      android:textSize="24sp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+            <TextView android:id="@+id/TextView07"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/poBoxLblCaption"
+                      android:layout_weight="0.2"
+                      android:textSize="20sp"/>
+
+            <EditText android:id="@+id/herdPOBoxEditBox"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.4"
+                      android:maxLength="@integer/MAX_POBOX"
+                      android:singleLine="true"
+                      android:inputType="textPostalAddress"
+                      android:hint="@string/hintPoBox"
+                      android:textSize="24sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+            <TextView android:id="@+id/TextView09"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/cityLblCaption"
+                      android:layout_weight="0.15"
+                      android:layout_gravity="center_vertical"
+                      android:textSize="20sp"/>
+
+            <EditText android:id="@+id/herdCityEditBox"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.4"
+                      android:maxLength="@integer/MAX_CITY"
+                      android:singleLine="true"
+                      android:inputType="textCapCharacters"
+                      android:hint="@string/hintCityName"
+                      android:textSize="24sp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+            <TextView android:id="@+id/TextView11"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/zipLblCaption"
+                      android:layout_weight="0.2"
+                      android:textSize="20sp"/>
+
+            <EditText android:id="@+id/herdZipEditBox"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.4"
+                      android:maxLength="@integer/MAX_ZIP"
+                      android:singleLine="true"
+                      android:inputType="textPostalAddress"
+                      android:hint="@string/hintZipCode"
+                      android:textSize="24sp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

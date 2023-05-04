@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BKSkan</string>
+
+    <!--<string name="textOn">Wł.</string>-->
+    <!--<string name="textOff">Wył.</string>-->
+    <!--<string name="setDevice">Ustaw</string>-->
+    <!--<string name="finishActionItemText">Koniec</string>-->
+
+    <string name="serviceTickerText">Usługa skanowania kodów paskowych</string>
+    <string name="ntfnContentTitle">Usługa skanowania jest włączona</string>
+    <string name="ntfnContentText">Dotknij aby skonfigurować</string>
+
+
+</resources>

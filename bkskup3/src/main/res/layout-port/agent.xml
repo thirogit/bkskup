@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        android:id="@+id/widget56"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+            <TextView android:id="@+id/TextView01"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/agentCodeLblCaption"
+                      android:textSize="20sp"/>
+
+            <EditText android:id="@+id/agentCodeEditBox"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:maxLength="@integer/MAX_AGENTCODE"
+                      android:singleLine="true"
+                      android:inputType="textCapCharacters"
+                      android:hint="@string/hintAgentCode"
+                      android:textSize="24sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+            <TextView android:id="@+id/TextView05"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/agentNameLblCaption"
+                      android:layout_gravity="center_vertical"
+                      android:textSize="20sp"/>
+
+            <EditText android:id="@+id/agentNameEditBox"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:maxLength="@integer/MAX_AGENTNAME"
+                      android:singleLine="true"
+                      android:inputType="textCapCharacters"
+                      android:hint="@string/hintAgentName"
+                      android:textSize="24sp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+            <TextView android:id="@+id/TextView07"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/plateNoLblCaption"
+                      android:layout_weight="0.2"
+                      android:textSize="20sp"/>
+
+            <EditText android:id="@+id/plateNoEditBox"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.4"
+                      android:maxLength="@integer/MAX_PLATE"
+                      android:singleLine="true"
+                      android:inputType="textCapCharacters"
+                      android:hint="@string/hintPlateNo"
+                      android:textSize="24sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="validationerror">#ffff0000</color>
+    <color name="lumpInvoiceColor">#8AC5FF</color>
+    <color name="regularInvoiceColor">#FA89CA</color>
+    <color name="bloody_red">#ed1c24</color>
+    <color name="darker_bloody_red">#990d14</color>
+
+    <color name="orange">#ffc113</color>
+    <color name="darker_orange">#ff9f12</color>
+
+
+    <color name="green">#8fc550</color>
+    <color name="darker_green">#1ba261</color>
+
+    <color name="blue">#7087f4</color>
+    <color name="darker_blue">#396ad5</color>
+
+
+    <color name="color_btn_magic_flame">#00ffffff</color>
+    <color name="color_btn_button_text">#ffffffff</color>
+    <color name="listview_column_header_bkg">#FF7F7F7F</color>
+    <color name="listview_column_header_txt">#FF000000</color>
+
+    <color name="companyHent">#ffff0000</color>
+    <color name="individualHent">#ff0000ff</color>
+
+    <color name="cowAmount">#FFa349a4</color>
+    <color name="netPrice">#ffffff00</color>
+    <color name="grossPrice">#ffff8000</color>
+
+    <color name="purchaseSummaryItemTitle">#00a2e8</color>
+
+    <color name="window_bkg">#FF000000</color>
+    <color name="text_color">#FFFFFFFF</color>
+
+    <color name="payWayTransfer">#fffc33</color>
+    <color name="payWayCash">#669e75</color>
+
+    <color name="dark_gray">#202020</color>
+
+    <color name="pink">#FF0080</color>
+    <color name="light_green">#80FF00</color>
+
+    <color name="purple">#BE5DD2</color>
+
+    <color name="viewfinder_mask">#60000000</color>
+</resources>

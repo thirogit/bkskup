@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<template xmlns="http://com.bk.docs">
+
+  <styles>
+    <style id="USERDEF">
+      <textColor>#000000</textColor>
+      <horAlign>LEFT</horAlign>
+      <verAlign>CENTER</verAlign>
+      <font>
+        <height>-30</height>
+        <face>Arial</face>
+        <bold>false</bold>
+        <italic>false</italic>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+      </font>
+    </style>
+
+      <style id="item">
+          <textColor>#000000</textColor>
+          <horAlign>CENTER</horAlign>
+          <verAlign>CENTER</verAlign>
+          <font>
+              <height>-30</height>
+              <face>Arial</face>
+              <bold>false</bold>
+              <italic>false</italic>
+              <underline>false</underline>
+              <strikeout>false</strikeout>
+          </font>
+      </style>
+
+     <style id="signature">
+       <textColor>#000000</textColor>
+       <horAlign>CENTER</horAlign>
+       <verAlign>BOTTOM</verAlign>
+       <font>
+         <height>-22</height>
+         <face>Arial</face>
+         <bold>false</bold>
+         <italic>false</italic>
+         <underline>false</underline>
+         <strikeout>false</strikeout>
+       </font>
+     </style>
+
+    <style id="dane">
+      <textColor>#000000</textColor>
+      <horAlign>CENTER</horAlign>
+      <verAlign>CENTER</verAlign>
+      <font>
+        <height>-25</height>
+        <face>Arial</face>
+        <bold>true</bold>
+        <italic>true</italic>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+      </font>
+    </style>
+
+      <style id="paragraph">
+          <textColor>#000000</textColor>
+          <horAlign>CENTER</horAlign>
+          <verAlign>CENTER</verAlign>
+          <font>
+              <height>-20</height>
+              <face>Arial</face>
+              <bold>true</bold>
+              <italic>false</italic>
+              <underline>false</underline>
+              <strikeout>false</strikeout>
+          </font>
+      </style>
+
+      <style id="paragraph_left">
+          <textColor>#000000</textColor>
+          <horAlign>LEFT</horAlign>
+          <verAlign>CENTER</verAlign>
+          <font>
+              <height>-20</height>
+              <face>Arial</face>
+              <bold>true</bold>
+              <italic>false</italic>
+              <underline>false</underline>
+              <strikeout>false</strikeout>
+          </font>
+      </style>
+
+      <style id="beam">
+         <textColor>#000000</textColor>
+         <horAlign>CENTER</horAlign>
+         <verAlign>CENTER</verAlign>
+         <font>
+             <height>-35</height>
+             <face>Arial</face>
+             <bold>true</bold>
+             <italic>false</italic>
+             <underline>false</underline>
+             <strikeout>false</strikeout>
+         </font>
+    </style>
+
+      <style id="FIELDS">
+          <textColor>#000000</textColor>
+          <horAlign>CENTER</horAlign>
+          <verAlign>CENTER</verAlign>
+          <font>
+              <height>-25</height>
+              <face>Arial</face>
+              <bold>true</bold>
+              <italic>true</italic>
+              <underline>false</underline>
+              <strikeout>false</strikeout>
+          </font>
+      </style>
+
+      <style id="label">
+          <textColor>#FFFFFF</textColor>
+          <backColor>#000000</backColor>
+          <horAlign>CENTER</horAlign>
+          <verAlign>TOP</verAlign>
+          <font>
+              <height>-40</height>
+              <face>Arial</face>
+              <bold>true</bold>
+              <italic>false</italic>
+              <underline>false</underline>
+              <strikeout>false</strikeout>
+          </font>
+      </style>
+
+
+  </styles>
+
+  <header>
+
+  <text label="DOC_TITLE">
+     <position>
+         <left>0</left>
+         <top>0</top>
+         <width>1000</width>
+         <height>150</height>
+     </position>
+
+     <value>KLAUZULA INFORMACYJNA</value>
+     <style ref="beam"/>
+   </text>
+
+
+   <text label="NOTICE">
+          <position>
+              <left>0</left>
+              <top>150</top>
+              <width>1000</width>
+              <height>200</height>
+          </position>
+
+          <value>Zgodnie z art. 13 ust. 1 i 2 Rozporządzenia Parlamentu Europejskiego
+i Rady (UE) 2016/679 z dnia 27 kwietnia 2016r. w sprawie ochrony osób fizycznych
+w związku z przetwarzaniem danych osobowych i w sprawie swobodnego
+przepływu takich danych oraz uchylenia dyrektywy 95/46/WE
+(zwane dalej RODO) informujemy, iż:</value>
+          <style ref="paragraph"/>
+
+      </text>
+
+  </header>
+
+<footer>
+
+
+		<text label="PARAGRAPGH1">
+          <position>
+              <left>0</left>
+              <top>0</top>
+              <width>1000</width>
+              <height>50</height>
+          </position>
+
+          <value>§1</value>
+          <style ref="beam"/>
+
+      </text>
+
+      <text label="PARAGRAPGH1_CONTENT 1/2">
+          <position>
+              <left>0</left>
+              <top>50</top>
+              <width>1000</width>
+              <height>200</height>
+          </position>
+
+          <value>Administratorem podanych danych osobowych jest
+${COMPANY}
+z siedzibą w
+${COMPANYADR}</value>
+          <style ref="paragraph"/>
+
+      </text>
+
+    <text label="PARAGRAPGH2">
+        <position>
+            <left>0</left>
+            <top>250</top>
+            <width>1000</width>
+            <height>50</height>
+        </position>
+
+        <value>§2</value>
+        <style ref="beam"/>
+
+    </text>
+
+    <text label="PARAGRAPGH2_1/2_CONTENT">
+        <position>
+            <left>0</left>
+            <top>300</top>
+            <width>1000</width>
+            <height>100</height>
+        </position>
+        <value>Pani/Pana dane osobowe przetwarzane będą przez Administratora,
+na podstawie art. 6 uat. 1 lit. c) RODO w celu:
+		</value>
+        <style ref="paragraph"/>
+
+    </text>
+
+    <text label="PARAGRAPGH2_2/2_CONTENT">
+        <position>
+            <left>50</left>
+            <top>400</top>
+            <width>950</width>
+            <height>300</height>
+        </position>
+        <value>a) wypełnienia obowiązków prawynych ciążących na Administratorze
+     związanych z prowadzoną działalnościa gostpadarczą,
+b) podjęcia działań przed zawarciem umowy lub w celu wykonania umowy
+     pomiędzy Panem/Panią a Administratorem,
+c) wypełnienia prawnie uzasadnionych interesów realizowanych
+     przez Administratora (w tym sprzedaży, zapewnienia bezpieczeństwa sieci
+     informatycznych, zapobieganiu przestępstwom)
+        </value>
+        <style ref="paragraph_left"/>
+
+    </text>
+
+
+
+
+    <text label="PARAGRAPGH3">
+        <position>
+            <left>0</left>
+            <top>700</top>
+            <width>1000</width>
+            <height>50</height>
+        </position>
+
+        <value>§3</value>
+        <style ref="beam"/>
+
+    </text>
+
+    <text label="PARAGRAPGH3_CONTENT">
+        <position>
+            <left>0</left>
+            <top>750</top>
+            <width>1000</width>
+            <height>150</height>
+        </position>
+        <value>Pani/Pana dane osobowe będą przechowywane przez okres trwania umowy
+oraz po jej zakończeniu w celu wypełnienia obowiązku prawnego ciążącego na
+Administratorze, przez okres zgodny z obowiązującymi przepisami.</value>
+        <style ref="paragraph"/>
+
+    </text>
+
+
+
+    <text label="PARAGRAPGH4">
+        <position>
+            <left>0</left>
+            <top>900</top>
+            <width>1000</width>
+            <height>50</height>
+        </position>
+
+        <value>§4</value>
+        <style ref="beam"/>
+
+    </text>
+
+
+    <text label="PARAGRAPGH4_CONTENT">
+        <position>
+            <left>0</left>
+            <top>950</top>
+            <width>1000</width>
+            <height>150</height>
+        </position>
+        <value>Posiada Pani/Pan prawo do żądania dostępu do treści swoich danych
+oraz prawo och sprostowania, usunięcia, ograniczenia przetwarzania,
+prawo do przenoszenia danych, prawo wniesienia sprzeciwu
+wobec przetwarzania.</value>
+        <style ref="paragraph"/>
+
+    </text>
+
+
+    <text label="PARAGRAPGH5">
+        <position>
+            <left>0</left>
+            <top>1100</top>
+            <width>1000</width>
+            <height>50</height>
+        </position>
+
+        <value>§5</value>
+        <style ref="beam"/>
+
+    </text>
+
+
+    <text label="PARAGRAPGH5_CONTENT">
+        <position>
+            <left>0</left>
+            <top>1150</top>
+            <width>1000</width>
+            <height>150</height>
+        </position>
+        <value>Posiada Pani/Pan prawo wniesienia skargi do organu nadzorczego,
+gdy uzna Pani/Pan, iż przetwarzania danych osobowych Pani/Pana dotyczących,
+narusza przepisy RODO.</value>
+        <style ref="paragraph"/>
+
+    </text>
+
+
+    <text label="PARAGRAPGH6">
+        <position>
+            <left>0</left>
+            <top>1300</top>
+            <width>1000</width>
+            <height>50</height>
+        </position>
+
+        <value>§6</value>
+        <style ref="beam"/>
+
+    </text>
+
+
+    <text label="PARAGRAPGH6_CONTENT">
+        <position>
+            <left>0</left>
+            <top>1350</top>
+            <width>1000</width>
+            <height>150</height>
+        </position>
+        <value>Podanie przez Panią/Pana danych osobowych jest dobrowolne,
+ale niezbędne w celu zawarcia i relzlizacji umowy
+(w szczególności jest warunkiem jej zawarcia).</value>
+        <style ref="paragraph"/>
+
+    </text>
+
+
+	 <text label="PARAGRAPGH7">
+        <position>
+            <left>0</left>
+            <top>1500</top>
+            <width>1000</width>
+            <height>50</height>
+        </position>
+
+        <value>§7</value>
+        <style ref="beam"/>
+
+    </text>
+
+
+    <text label="PARAGRAPGH7_CONTENT">
+        <position>
+            <left>0</left>
+            <top>1550</top>
+            <width>1000</width>
+            <height>150</height>
+        </position>
+        <value>Nie będzie Pani/Pan podlegać zautomatyzowanemu podejmowaniu decyzji,
+która opiera się wyłącznie na zautomatyzowanemu przetwarzaniu,
+w tym profilowaniu.</value>
+        <style ref="paragraph"/>
+
+    </text>
+
+
+	<text label="PARAGRAPGH8">
+        <position>
+            <left>0</left>
+            <top>1700</top>
+            <width>1000</width>
+            <height>50</height>
+        </position>
+
+        <value>§8</value>
+        <style ref="beam"/>
+
+    </text>
+
+
+    <text label="PARAGRAPGH8_CONTENT">
+        <position>
+            <left>0</left>
+            <top>1750</top>
+            <width>1000</width>
+            <height>150</height>
+        </position>
+        <value>Administrator może powierzyć Pani/Pana dane osobowe innym podmiotom
+(np. podmiotom świadczącym obsługę prawną, podmiotom świadczącym usługi
+informatyczne) przetwarzającym je na zlecenie Administratora
+na podstawie zawartej umowy zgodnie z art. 28 RODO.</value>
+        <style ref="paragraph"/>
+
+    </text>
+
+
+	<text label="PARAGRAPGH9">
+        <position>
+            <left>0</left>
+            <top>1900</top>
+            <width>1000</width>
+            <height>50</height>
+        </position>
+
+        <value>§9</value>
+        <style ref="beam"/>
+
+    </text>
+
+
+    <text label="PARAGRAPGH9_CONTENT">
+        <position>
+            <left>0</left>
+            <top>1950</top>
+            <width>1000</width>
+            <height>150</height>
+        </position>
+        <value>Wskazane powyżej dane mają zastosowanie do wszystkich umów zawartych
+z Administratorem.</value>
+        <style ref="paragraph"/>
+
+    </text>
+
+    <text label="SELLER_SIGNATURE">
+     <position>
+       <left>0</left>
+       <top>2200</top>
+       <width>1000</width>
+       <height>200</height>
+     </position>
+
+     <value>...............................................................................................
+/czytelny podpis kontrahenta/
+${NOWDATE}</value>
+     <style ref="signature"/>
+   </text>
+
+
+
+
+</footer>
+</template>

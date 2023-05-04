@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/simplePad"
+              android:layout_width="350dp"
+              android:layout_height="400dp"
+              android:orientation="vertical"
+              android:layout_gravity="center">
+
+    <com.bk.widgets.actionbar.ActionBar
+            android:id="@+id/actionBar"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal"
+            />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dip">
+
+        <com.bk.bkskup3.widgets.CountrySpinner
+                android:id="@+id/countrySpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:dropDownWidth="500dp"
+                android:layout_weight="0.3"
+                app:showFlag="false"/>
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+                android:id="@+id/inputBox"
+                style="@style/calc_input_display_style"
+                android:layout_width="0dp"
+                android:textSize="35sp"
+                android:layout_weight="0.7"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        <com.bk.bkskup3.widgets.MagicButton
+                android:id="@+id/backspace"
+                style="@style/backspace_button_style"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                />
+
+        <com.bk.bkskup3.widgets.MagicButton
+                android:id="@+id/clear"
+                style="@style/clear_button_style"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        <com.bk.bkskup3.widgets.MagicButton
+                android:id="@+id/digit7"
+                android:text="7"
+                style="@style/digit_button_style"/>
+
+        <com.bk.bkskup3.widgets.MagicButton
+                android:id="@+id/digit8"
+                android:text="8"
+                style="@style/digit_button_style"/>
+
+        <com.bk.bkskup3.widgets.MagicButton
+                android:id="@+id/digit9"
+                android:text="9"
+                style="@style/digit_button_style"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            >
+        <com.bk.bkskup3.widgets.MagicButton
+                android:id="@+id/digit4"
+                android:text="4"
+                style="@style/digit_button_style"
+                />
+        <com.bk.bkskup3.widgets.MagicButton
+                android:id="@+id/digit5"
+                android:text="5"
+                style="@style/digit_button_style"
+                />
+        <com.bk.bkskup3.widgets.MagicButton
+                android:id="@+id/digit6"
+                android:text="6"
+                style="@style/digit_button_style"
+                />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            >
+        <com.bk.bkskup3.widgets.MagicButton
+                android:id="@+id/digit1"
+                android:text="1"
+                style="@style/digit_button_style"
+                />
+        <com.bk.bkskup3.widgets.MagicButton
+                android:id="@+id/digit2"
+                android:text="2"
+                style="@style/digit_button_style"
+                />
+        <com.bk.bkskup3.widgets.MagicButton
+                android:id="@+id/digit3"
+                android:text="3"
+                style="@style/digit_button_style"
+                />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            >
+
+        <com.bk.bkskup3.widgets.MagicButton
+                android:id="@+id/digit0"
+                android:text="0"
+                style="@style/digit_button_style"
+                />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="400dp"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/errMsgTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tw_textfield_multiline_default_holo_dark"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="false"
+            android:textSize="12sp"
+            />
+
+    <LinearLayout
+        android:id="@+id/buttonBarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/buttonBarStyle">
+
+        <Button
+            android:id="@+id/btnAbandon"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="@string/abandonBtnCaption"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/btnRetry"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="@string/retryBtnCaption"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+    </LinearLayout>
+
+</LinearLayout>

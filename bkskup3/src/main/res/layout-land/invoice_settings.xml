@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/progress_container"
+        layout="@layout/loading_progress" />
+
+    <ScrollView
+        android:id="@+id/content_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone">
+
+        <TableLayout
+            android:id="@+id/TableLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:id="@+id/TableRow01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text="@string/invoiceNoFmtLblCaption"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/invoiceNoFmtEditBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:hint="@string/invoiceNoFmtHint"
+                    android:maxLines="1"
+                    android:textSize="24sp" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/TableRow02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/TextView05"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.25"
+                    android:text="@string/invoiceStartNoLblCaption"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/invoiceStartNoEditBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:hint="@string/invoiceStartNoHint"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textSize="24sp" />
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/TableRow03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/TextView06"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text="@string/lumpInvoiceExtrasTemplateLblCaption"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/lumpInvoiceTemplateEditBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:gravity="top|left"
+                    android:hint="@string/hintLumpInvoiceExtrasTemplate"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:maxLength="@integer/MAX_TEMPLATE"
+                    android:maxLines="3"
+                    android:minLines="3" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/TableRow04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/TextView07"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.25"
+                    android:text="@string/regularInvoiceExtrasTemplateLblCaption"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/regularInvoiceTemplateEditBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:gravity="top|left"
+                    android:hint="@string/hintRegularInvoiceExtrasTemplate"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:maxLength="@integer/MAX_TEMPLATE"
+                    android:maxLines="3"
+                    android:minLines="3" />
+
+            </TableRow>
+
+
+        </TableLayout>
+
+    </ScrollView>
+</FrameLayout>
+

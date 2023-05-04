@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/weight_input_label"
+                    android:layout_width="match_parent"
+                    android:background="#FFF"
+                    android:text="@string/poopWeight"
+                     />
+
+                <com.bk.bkskup3.widgets.CalculatorEditText
+                    android:id="@+id/weightBox"
+                    style="@style/calc_input_display_style"
+                    android:layout_width="match_parent"
+                    android:textSize="33sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/weight_input_label"
+                    android:layout_width="match_parent"
+                    android:background="@color/purple"
+                    android:text="@string/noPoopWeight"
+                     />
+
+                <com.bk.bkskup3.widgets.CalculatorEditText
+                    android:id="@+id/weightAfterDeductionBox"
+                    style="@style/calc_input_display_style"
+                    android:layout_width="match_parent"
+                    android:textSize="33sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.bk.bkskup3.widgets.MagicButton
+            android:id="@+id/backspace"
+            style="@style/backspace_button_style"
+            android:layout_width="0dp"
+            android:layout_weight="0.15" />
+
+        <com.bk.bkskup3.widgets.MagicButton
+            android:id="@+id/clear"
+            style="@style/clear_button_style"
+            android:layout_width="0dp"
+            android:layout_weight="0.15" />
+
+    </LinearLayout>
+
+
+</merge>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TableLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+
+    <TableRow
+        android:id="@+id/TableRow13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TextView20"
+            style="@style/label"
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:text="@string/hentAccountNoLblCaption" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.85"
+            android:orientation="horizontal">
+
+            <com.bk.bkskup3.widgets.AccountNoEditText
+                android:id="@+id/hentAccountNo"
+                style="@style/input"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hintHentAccountNo"
+                android:inputType="none" />
+
+            <ImageButton
+                android:id="@+id/ocrAccountNoBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_action_camera_alt" />
+
+        </LinearLayout>
+
+
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/TableRow14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TextView21"
+            style="@style/label"
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:text="@string/hentBankNameLblCaption" />
+
+        <EditText
+            android:id="@+id/hentBankName"
+            style="@style/input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.85"
+            android:hint="@string/hintHentBankName"
+            android:inputType="textCapCharacters"
+            android:maxLength="@integer/MAX_BANKNAME" />
+    </TableRow>
+
+
+</TableLayout>
+
+

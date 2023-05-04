@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="app_name">BKBluetooth</string>
+   <string name="scan">Skanuj</string>
+    <string name="scanning">Skanowanie…</string>
+   <string name="stop">Stop</string>
+   <string name="ok">OK</string>
+   <string name="cancel">Anuluj</string>
+   <string name="emptyBtDevicesListText">Wciśnij \'Skanuj\', aby wykryć urządzenia w pobliżu</string>
+   <string name="errNoDeviceSelected">Wybierz urządzenie</string>
+</resources>

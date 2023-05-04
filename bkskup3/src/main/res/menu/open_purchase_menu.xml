@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menuOpenPurchase"
+          android:title="@string/menuOpenBtnCaption"
+          android:icon="@drawable/shopping_cart"
+          android:showAsAction="ifRoom"
+            />
+
+    <item android:id="@+id/menuClosePurchase"
+          android:title="@string/menuCloseBtnCaption"
+          android:icon="@drawable/inbox"
+          android:showAsAction="ifRoom"
+            />
+</menu>
+

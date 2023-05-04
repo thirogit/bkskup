@@ -1,0 +1,1242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<template xmlns="http://com.bk.docs">
+
+  <styles>
+    <style id="USERDEF">
+      <textColor>#000000</textColor>
+      <horAlign>LEFT</horAlign>
+      <verAlign>CENTER</verAlign>
+      <font>
+        <height>-30</height>
+        <face>Arial</face>
+        <bold>false</bold>
+        <italic>false</italic>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+      </font>
+    </style>
+
+     <style id="signature">
+       <textColor>#000000</textColor>
+       <horAlign>CENTER</horAlign>
+       <verAlign>BOTTOM</verAlign>
+       <font>
+         <height>-22</height>
+         <face>Arial</face>
+         <bold>false</bold>
+         <italic>false</italic>
+         <underline>false</underline>
+         <strikeout>false</strikeout>
+       </font>
+     </style>
+
+    <style id="dane">
+      <textColor>#000000</textColor>
+      <horAlign>CENTER</horAlign>
+      <verAlign>CENTER</verAlign>
+      <font>
+        <height>-25</height>
+        <face>Arial</face>
+        <bold>true</bold>
+        <italic>true</italic>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+      </font>
+    </style>
+
+    <style id="YES_NO">
+      <textColor>#000000</textColor>
+      <horAlign>CENTER</horAlign>
+      <verAlign>CENTER</verAlign>
+      <font>
+        <height>-32</height>
+        <face>Arial</face>
+        <bold>false</bold>
+        <italic>false</italic>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+      </font>
+    </style>
+
+     <style id="question">
+      <textColor>#000000</textColor>
+      <horAlign>LEFT</horAlign>
+      <verAlign>CENTER</verAlign>
+      <font>
+        <height>-25</height>
+        <face>Arial</face>
+        <bold>false</bold>
+        <italic>false</italic>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+      </font>
+    </style>
+
+      <style id="beam">
+          <textColor>#000000</textColor>
+          <horAlign>CENTER</horAlign>
+          <verAlign>TOP</verAlign>
+          <font>
+              <height>-40</height>
+              <face>Arial</face>
+              <bold>true</bold>
+              <italic>false</italic>
+              <underline>false</underline>
+              <strikeout>false</strikeout>
+          </font>
+      </style>
+
+
+  </styles>
+
+  <header>
+    <text label="DOC_TITLE">
+      <position>
+        <left>23</left>
+        <top>3</top>
+        <width>1000</width>
+        <height>104</height>
+      </position>
+      <border>
+        <lineWidth>1</lineWidth>
+        <lineColor>#000000</lineColor>
+      </border>
+      <value>Informacje dotyczące łańcucha żywieniowego zwierząt rzeźnych kierowanych do uboju</value>
+      <ownstyle>
+        <textColor>#000000</textColor>
+        <horAlign>CENTER</horAlign>
+        <verAlign>CENTER</verAlign>
+        <font>
+          <height>-30</height>
+          <face>Arial</face>
+          <bold>true</bold>
+          <italic>false</italic>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+        </font>
+      </ownstyle>
+    </text>
+
+  <text label="FILLED_BY_ANIMALS_OWNER_TITLE">
+     <position>
+       <left>23</left>
+       <top>107</top>
+       <width>1000</width>
+       <height>53</height>
+     </position>
+     <border>
+       <lineWidth>1</lineWidth>
+       <lineColor>#000000</lineColor>
+     </border>
+     <value>Wypełnia WŁASCICIEL zwierząt</value>
+     <style ref="beam"/>
+
+   </text>
+    
+	<!--<text label="">-->
+      <!--<position>-->
+        <!--<left>77</left>-->
+        <!--<top>54</top>-->
+        <!--<width>0</width>-->
+        <!--<height>87</height>-->
+      <!--</position>-->
+      <!--<border>-->
+        <!--<lineWidth>1</lineWidth>-->
+        <!--<lineColor>#000000</lineColor>-->
+      <!--</border>-->
+      <!--<brush>-->
+        <!--<fillColor>#C0C0C0</fillColor>-->
+      <!--</brush>-->
+      <!--<value>ABCDabcd1234</value>-->
+      <!--<ownstyle>-->
+        <!--<textColor>#000000</textColor>-->
+        <!--<horAlign>CENTER</horAlign>-->
+        <!--<verAlign>CENTER</verAlign>-->
+        <!--<font>-->
+          <!--<height>-30</height>-->
+          <!--<face>Arial</face>-->
+          <!--<bold>false</bold>-->
+          <!--<italic>false</italic>-->
+          <!--<underline>false</underline>-->
+          <!--<strikeout>false</strikeout>-->
+        <!--</font>-->
+      <!--</ownstyle>-->
+    <!--</text>-->
+	
+     <text label="OWNER_NAME_LBL">
+           <position>
+             <left>23</left>
+             <top>160</top>
+             <width>251</width>
+             <height>70</height>
+           </position>
+           <border>
+             <lineWidth>1</lineWidth>
+             <lineColor>#000000</lineColor>
+           </border>
+           <value>Imię i Nazwisko</value>
+           <style ref="dane"/>
+         </text>
+
+     <text label="OWNER_NAME">
+       <position>
+         <left>274</left>
+         <top>160</top>
+         <width>749</width>
+         <height>70</height>
+       </position>
+       <border>
+         <lineWidth>1</lineWidth>
+         <lineColor>#000000</lineColor>
+       </border>
+       <value>${OWNERNAME}</value>
+       <style ref="USERDEF"/>
+     </text>
+	
+    <text label="ZIP_CODE_LBL">
+      <position>
+        <left>23</left>
+        <top>230</top>
+        <width>251</width>
+        <height>70</height>
+      </position>
+      <border>
+        <lineWidth>1</lineWidth>
+        <lineColor>#000000</lineColor>
+      </border>
+      <value>Kod pocztowy</value>
+      <style ref="dane"/>
+    </text>
+
+
+     <text label="OWNER_ZIP_CODE">
+         <position>
+           <left>274</left>
+           <top>230</top>
+           <width>749</width>
+           <height>70</height>
+         </position>
+         <border>
+           <lineWidth>1</lineWidth>
+           <lineColor>#000000</lineColor>
+         </border>
+         <value>${OWNERZIPCODE}</value>
+         <style ref="USERDEF"/>
+       </text>
+
+     <text label="OWNER_CITY_LBL">
+        <position>
+          <left>23</left>
+          <top>300</top>
+          <width>251</width>
+          <height>70</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value>Miejscowość</value>
+        <style ref="dane"/>
+      </text>
+
+
+       <text label="OWNER_CITY">
+         <position>
+           <left>274</left>
+           <top>300</top>
+           <width>749</width>
+           <height>70</height>
+         </position>
+         <border>
+           <lineWidth>1</lineWidth>
+           <lineColor>#000000</lineColor>
+         </border>
+         <value>${OWNERCITY}</value>
+         <style ref="USERDEF"/>
+       </text>
+
+     <text label="OWNER_STREET_ADDR_LBL">
+       <position>
+         <left>23</left>
+         <top>370</top>
+         <width>251</width>
+         <height>70</height>
+       </position>
+       <border>
+         <lineWidth>1</lineWidth>
+         <lineColor>#000000</lineColor>
+       </border>
+       <value>Ulica, nr domu</value>
+       <style ref="dane"/>
+     </text>
+
+       <text label="OWNER_STREET_ADDR">
+         <position>
+           <left>274</left>
+           <top>370</top>
+           <width>749</width>
+           <height>70</height>
+         </position>
+         <border>
+           <lineWidth>1</lineWidth>
+           <lineColor>#000000</lineColor>
+         </border>
+         <value>${OWNERSTREETADDRR}</value>
+         <style ref="USERDEF"/>
+       </text>
+
+     <text label="OWNER_FARM_NO_LBL">
+       <position>
+         <left>23</left>
+         <top>440</top>
+         <width>251</width>
+         <height>70</height>
+       </position>
+       <border>
+         <lineWidth>1</lineWidth>
+         <lineColor>#000000</lineColor>
+       </border>
+       <value>Nr gospodarstwa</value>
+       <style ref="dane"/>
+     </text>
+
+     <text label="FARM_NO">
+        <position>
+          <left>274</left>
+          <top>440</top>
+          <width>749</width>
+          <height>70</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value>${FARMNO}</value>
+        <style ref="USERDEF"/>
+      </text>
+
+	
+    <text label="PLATE_NO_LBL">
+      <position>
+        <left>23</left>
+        <top>510</top>
+        <width>251</width>
+        <height>70</height>
+      </position>
+      <border>
+        <lineWidth>1</lineWidth>
+        <lineColor>#000000</lineColor>
+      </border>
+      <value>Nr śr. transportu</value>
+      <style ref="dane"/>
+    </text>
+
+     <text label="PLATE_NO">
+        <position>
+          <left>274</left>
+          <top>510</top>
+          <width>749</width>
+          <height>70</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value>${PLATENO}</value>
+        <style ref="USERDEF"/>
+      </text>
+
+
+     <text label="CITY_OF_SLAUGHTER_HOUSE_LBL">
+      <position>
+        <left>23</left>
+        <top>580</top>
+        <width>500</width>
+        <height>70</height>
+      </position>
+      <border>
+        <lineWidth>1</lineWidth>
+        <lineColor>#000000</lineColor>
+      </border>
+      <value>Zwierzęta wywożone do rzeźni w</value>
+      <style ref="dane"/>
+    </text>
+
+     <text label="DEST_SLAUCHTER_CITY">
+       <position>
+         <left>523</left>
+         <top>580</top>
+         <width>500</width>
+         <height>70</height>
+       </position>
+       <border>
+         <lineWidth>1</lineWidth>
+         <lineColor>#000000</lineColor>
+       </border>
+       <value>${DESTSLAUCHTERCITY}</value>
+       <style ref="USERDEF"/>
+     </text>
+
+     <text label="ANIMAL_SPECIES_LBL">
+        <position>
+          <left>23</left>
+          <top>650</top>
+          <width>250</width>
+          <height>70</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value>Gatunek</value>
+        <style ref="dane"/>
+      </text>
+
+     <text label="ANIMAL_SPECIES">
+       <position>
+         <left>273</left>
+         <top>650</top>
+         <width>250</width>
+         <height>70</height>
+       </position>
+       <border>
+         <lineWidth>1</lineWidth>
+         <lineColor>#000000</lineColor>
+       </border>
+       <value>${ANIMALSPECIES}</value>
+       <style ref="USERDEF"/>
+     </text>
+
+
+      <text label="ANIMAL_COUNT_LBL">
+        <position>
+          <left>523</left>
+          <top>650</top>
+          <width>250</width>
+          <height>70</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value>Liczba zwierząt</value>
+        <style ref="dane"/>
+      </text>
+
+
+     <text label="ANIMAL_COUNT">
+       <position>
+         <left>773</left>
+         <top>650</top>
+         <width>250</width>
+         <height>70</height>
+       </position>
+       <border>
+         <lineWidth>1</lineWidth>
+         <lineColor>#000000</lineColor>
+       </border>
+       <value>${ANIMALCOUNT}</value>
+       <style ref="USERDEF"/>
+     </text>
+
+</header>
+    <band name="COWS">
+       <fields>
+
+          <text label="COW_INDEX">
+            <position>
+              <left>23</left>
+              <top>0</top>
+              <width>50</width>
+              <height>50</height>
+            </position>
+            <border>
+              <lineWidth>1</lineWidth>
+              <lineColor>#000000</lineColor>
+            </border>
+            <value>${INDEX}</value>
+            <style ref="USERDEF"/>
+          </text>
+
+          <text label="COW_NO">
+              <position>
+                <left>73</left>
+                <top>0</top>
+                <width>750</width>
+                <height>50</height>
+              </position>
+              <border>
+                <lineWidth>1</lineWidth>
+                <lineColor>#000000</lineColor>
+              </border>
+              <value>${COWNO}</value>
+              <style ref="USERDEF"/>
+            </text>
+
+          <text label="COW_GENDER">
+             <position>
+               <left>823</left>
+               <top>0</top>
+               <width>200</width>
+               <height>50</height>
+             </position>
+             <border>
+               <lineWidth>1</lineWidth>
+               <lineColor>#000000</lineColor>
+             </border>
+             <value>${COWGENDER}</value>
+             <style ref="USERDEF"/>
+          </text>
+
+       </fields>
+    </band>
+
+<footer>
+     <text label="QUESTION_1_LBL">
+       <position>
+         <left>23</left>
+         <top>0</top>
+         <width>800</width>
+         <height>51</height>
+       </position>
+       <border>
+         <lineWidth>1</lineWidth>
+         <lineColor>#000000</lineColor>
+       </border>
+       <value>Czy zwierzęta były leczone?</value>
+      <style ref="question"/>
+     </text>
+	
+     <text label="QUESTION_1_NO">
+       <position>
+         <left>923</left>
+         <top>0</top>
+         <width>100</width>
+         <height>51</height>
+       </position>
+       <border>
+         <lineWidth>1</lineWidth>
+         <lineColor>#000000</lineColor>
+       </border>
+       <value>NIE</value>
+       <style ref="YES_NO"/>
+     </text>
+
+     <text label="QUESTION_1_YES">
+       <position>
+         <left>823</left>
+         <top>0</top>
+         <width>100</width>
+         <height>51</height>
+       </position>
+       <border>
+         <lineWidth>1</lineWidth>
+         <lineColor>#000000</lineColor>
+       </border>
+       <value>TAK</value>
+       <style ref="YES_NO"/>
+     </text>
+
+     <!--<shape label="QUESTION_1_ANS">-->
+       <!--<type>CIRCLE</type>-->
+       <!--<position>-->
+         <!--<left>934</left>-->
+         <!--<top>0</top>-->
+         <!--<width>75</width>-->
+         <!--<height>51</height>-->
+       <!--</position>-->
+       <!--<border>-->
+         <!--<lineWidth>6</lineWidth>-->
+         <!--<lineColor>#000000</lineColor>-->
+       <!--</border>-->
+     <!--</shape>-->
+
+
+     <text label="QUESTION_2_LBL">
+      <position>
+        <left>23</left>
+        <top>51</top>
+        <width>800</width>
+        <height>123</height>
+      </position>
+      <border>
+        <lineWidth>1</lineWidth>
+        <lineColor>#000000</lineColor>
+      </border>
+      <value>Czy gostpodarstwo jest/było objęte rygorem zwalczania
+chorób zakaźnych i/lub stwierdzono w nim choroby
+mogące mieć wpływ na bezpieczeństwo żywności ?</value>
+        <style ref="question"/>
+    </text>
+
+    <text label="QUESTION_2_YES">
+      <position>
+        <left>823</left>
+        <top>51</top>
+        <width>100</width>
+        <height>123</height>
+      </position>
+      <border>
+        <lineWidth>1</lineWidth>
+        <lineColor>#000000</lineColor>
+      </border>
+      <value>TAK</value>
+      <style ref="YES_NO"/>
+    </text>
+
+
+     <text label="QUESTION_2_NO">
+        <position>
+          <left>923</left>
+          <top>51</top>
+          <width>100</width>
+          <height>123</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value>NIE</value>
+        <style ref="YES_NO"/>
+      </text>
+
+     <!--<shape label="QUESTION_2_ANS">-->
+        <!--<type>CIRCLE</type>-->
+        <!--<position>-->
+          <!--<left>934</left>-->
+          <!--<top>87</top>-->
+          <!--<width>75</width>-->
+          <!--<height>51</height>-->
+        <!--</position>-->
+        <!--<border>-->
+          <!--<lineWidth>6</lineWidth>-->
+          <!--<lineColor>#000000</lineColor>-->
+        <!--</border>-->
+      <!--</shape>-->
+
+	
+    <text label="QUESTION_3_LBL">
+      <position>
+        <left>23</left>
+        <top>174</top>
+        <width>800</width>
+        <height>99</height>
+      </position>
+      <border>
+        <lineWidth>1</lineWidth>
+        <lineColor>#000000</lineColor>
+      </border>
+      <value>Czy u zwierząt z tego stada poddanych dotychczas 
+ubojowi stwierdzono choroby ?</value>
+       <style ref="question"/>
+    </text>
+
+     <text label="QUESTION_3_YES">
+       <position>
+         <left>823</left>
+         <top>174</top>
+         <width>100</width>
+         <height>99</height>
+       </position>
+       <border>
+         <lineWidth>1</lineWidth>
+         <lineColor>#000000</lineColor>
+       </border>
+       <value>TAK</value>
+       <style ref="YES_NO"/>
+     </text>
+
+     <text label="QUESTION_3_NO">
+      <position>
+        <left>923</left>
+        <top>174</top>
+        <width>100</width>
+        <height>99</height>
+      </position>
+      <border>
+        <lineWidth>1</lineWidth>
+        <lineColor>#000000</lineColor>
+      </border>
+      <value>NIE</value>
+      <style ref="YES_NO"/>
+    </text>
+
+     <!--<shape label="QUESTION_3_ANS">-->
+       <!--<type>CIRCLE</type>-->
+       <!--<position>-->
+         <!--<left>934</left>-->
+         <!--<top>198</top>-->
+         <!--<width>75</width>-->
+         <!--<height>51</height>-->
+       <!--</position>-->
+       <!--<border>-->
+         <!--<lineWidth>6</lineWidth>-->
+         <!--<lineColor>#000000</lineColor>-->
+       <!--</border>-->
+     <!--</shape>-->
+
+    <text label="QUESTION_4_LBL">
+      <position>
+        <left>23</left>
+        <top>273</top>
+        <width>800</width>
+        <height>51</height>
+      </position>
+      <border>
+        <lineWidth>1</lineWidth>
+        <lineColor>#000000</lineColor>
+      </border>
+      <value>Czy w gospodarstwie zapewniono dobrostan zwierząt ?</value>
+       <style ref="question"/>
+    </text>
+	
+     <text label="QUESTION_4_NO">
+        <position>
+          <left>923</left>
+          <top>273</top>
+          <width>100</width>
+          <height>51</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value>NIE</value>
+        <style ref="YES_NO"/>
+      </text>
+
+      <text label="QUESTION_4_YES">
+        <position>
+          <left>823</left>
+          <top>273</top>
+          <width>100</width>
+          <height>51</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value>TAK</value>
+        <style ref="YES_NO"/>
+      </text>
+
+     <!--<shape label="QUESTION_4_ANS">-->
+       <!--<type>CIRCLE</type>-->
+       <!--<position>-->
+         <!--<left>834</left>-->
+         <!--<top>273</top>-->
+         <!--<width>75</width>-->
+         <!--<height>51</height>-->
+       <!--</position>-->
+       <!--<border>-->
+         <!--<lineWidth>6</lineWidth>-->
+         <!--<lineColor>#000000</lineColor>-->
+       <!--</border>-->
+     <!--</shape>-->
+
+     <text label="QUESTION_5_LBL">
+       <position>
+         <left>23</left>
+         <top>324</top>
+         <width>800</width>
+         <height>114</height>
+       </position>
+       <border>
+         <lineWidth>1</lineWidth>
+         <lineColor>#000000</lineColor>
+       </border>
+       <value>Czy na terenie gospodarstwa były pobierane próby
+ do badań monitoringowych pozostałości biologicznych
+ i chemicznych?</value>
+        <style ref="question"/>
+     </text>
+
+
+     <text label="QUESTION_5_NO">
+        <position>
+          <left>923</left>
+          <top>324</top>
+          <width>100</width>
+          <height>114</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value>NIE</value>
+        <style ref="YES_NO"/>
+      </text>
+
+      <text label="QUESTION_5_YES">
+        <position>
+          <left>823</left>
+          <top>324</top>
+          <width>100</width>
+          <height>114</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value>TAK</value>
+        <style ref="YES_NO"/>
+      </text>
+
+     <!--<shape label="QUESTION_5_ANS">-->
+       <!--<type>CIRCLE</type>-->
+       <!--<position>-->
+         <!--<left>934</left>-->
+         <!--<top>352</top>-->
+         <!--<width>75</width>-->
+         <!--<height>51</height>-->
+       <!--</position>-->
+       <!--<border>-->
+         <!--<lineWidth>6</lineWidth>-->
+         <!--<lineColor>#000000</lineColor>-->
+       <!--</border>-->
+     <!--</shape>-->
+
+
+     <text label="QUESTION_6_LBL">
+        <position>
+          <left>23</left>
+          <top>438</top>
+          <width>800</width>
+          <height>73</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+     <value>Czy w pobieranych próbach stwierdzono pozostałości
+biologiczne lub chemiczne ?</value>
+        <style ref="question"/>
+      </text>
+
+     <text label="QUESTION_6_YES">
+       <position>
+         <left>823</left>
+         <top>438</top>
+         <width>100</width>
+         <height>73</height>
+       </position>
+       <border>
+         <lineWidth>1</lineWidth>
+         <lineColor>#000000</lineColor>
+       </border>
+       <value>TAK</value>
+       <style ref="YES_NO"/>
+     </text>
+
+     <text label="QUESTION_6_NO">
+       <position>
+         <left>923</left>
+         <top>438</top>
+         <width>100</width>
+         <height>73</height>
+       </position>
+       <border>
+         <lineWidth>1</lineWidth>
+         <lineColor>#000000</lineColor>
+       </border>
+       <value>NIE</value>
+       <style ref="YES_NO"/>
+     </text>
+
+     <!--<shape label="QUESTION_6_ANS">-->
+       <!--<type>CIRCLE</type>-->
+       <!--<position>-->
+         <!--<left>934</left>-->
+         <!--<top>449</top>-->
+         <!--<width>75</width>-->
+         <!--<height>51</height>-->
+       <!--</position>-->
+       <!--<border>-->
+         <!--<lineWidth>6</lineWidth>-->
+         <!--<lineColor>#000000</lineColor>-->
+       <!--</border>-->
+     <!--</shape>-->
+
+
+    <text label="ANIMAL_NOURISHMENT_LBL">
+      <position>
+        <left>23</left>
+        <top>511</top>
+        <width>334</width>
+        <height>70</height>
+      </position>
+      <border>
+        <lineWidth>1</lineWidth>
+        <lineColor>#000000</lineColor>
+      </border>
+      <value>Żywienie zwierząt</value>
+      <style ref="dane"/>
+    </text>
+	
+    <text label="OWN_FODDER">
+      <position>
+        <left>357</left>
+        <top>511</top>
+        <width>333</width>
+        <height>70</height>
+      </position>
+      <border>
+        <lineWidth>1</lineWidth>
+        <lineColor>#000000</lineColor>
+      </border>
+      <value>pasza własna</value>
+      <ownstyle>
+        <textColor>#000000</textColor>
+        <horAlign>CENTER</horAlign>
+        <verAlign>CENTER</verAlign>
+        <font>
+          <height>-30</height>
+          <face>Arial</face>
+          <bold>false</bold>
+          <italic>false</italic>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+        </font>
+      </ownstyle>
+    </text>
+
+     <text label="BOUGHT_FODDER_LBL">
+        <position>
+          <left>690</left>
+          <top>511</top>
+          <width>333</width>
+          <height>70</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value>pasza z zakupu</value>
+        <ownstyle>
+          <textColor>#000000</textColor>
+          <horAlign>CENTER</horAlign>
+          <verAlign>CENTER</verAlign>
+          <font>
+            <height>-30</height>
+            <face>Arial</face>
+            <bold>false</bold>
+            <italic>false</italic>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+          </font>
+        </ownstyle>
+      </text>
+
+
+    <text label="FOODER_LINE_1">
+      <position>
+        <left>23</left>
+        <top>581</top>
+        <width>1000</width>
+        <height>55</height>
+      </position>
+      <border>
+        <lineWidth>1</lineWidth>
+        <lineColor>#000000</lineColor>
+      </border>
+      <value></value>
+      <style ref="USERDEF"/>
+    </text>
+	
+    <text label="FOODER_LINE_1">
+      <position>
+        <left>23</left>
+        <top>636</top>
+        <width>1000</width>
+        <height>55</height>
+      </position>
+      <border>
+        <lineWidth>1</lineWidth>
+        <lineColor>#000000</lineColor>
+      </border>
+      <value></value>
+      <style ref="USERDEF"/>
+    </text>
+
+     <text label="FOODER_LINE_1">
+        <position>
+          <left>23</left>
+          <top>691</top>
+          <width>1000</width>
+          <height>55</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value></value>
+        <style ref="USERDEF"/>
+     </text>
+
+     <text label="OWNER_SIGNATURE">
+     <position>
+       <left>23</left>
+       <top>746</top>
+       <width>1000</width>
+       <height>115</height>
+     </position>
+     <border>
+       <lineWidth>1</lineWidth>
+       <lineColor>#000000</lineColor>
+     </border>
+     <value>...............................................................................................
+Data i podpis Właściciela</value>
+     <style ref="signature"/>
+   </text>
+
+     <text label="FILLED_BY_SLAUGHTER_HOUSE_TITLE">
+         <position>
+           <left>23</left>
+           <top>861</top>
+           <width>1000</width>
+           <height>53</height>
+         </position>
+         <border>
+           <lineWidth>1</lineWidth>
+           <lineColor>#000000</lineColor>
+         </border>
+         <value>Wypełnia RZEŹNIA</value>
+         <style ref="beam"/>
+       </text>
+
+       <text label="DELIVERY_DATE_LBL">
+         <position>
+           <left>23</left>
+           <top>914</top>
+           <width>500</width>
+           <height>70</height>
+         </position>
+         <border>
+           <lineWidth>1</lineWidth>
+           <lineColor>#000000</lineColor>
+         </border>
+         <value>Data dostarczenia</value>
+         <style ref="dane"/>
+       </text>
+
+     <text label="DELIVERY_DATE">
+        <position>
+          <left>523</left>
+          <top>914</top>
+          <width>500</width>
+          <height>70</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value></value>
+        <style ref="USERDEF"/>
+      </text>
+
+
+     <text label="SLAUGHTER_DATE_LBL">
+       <position>
+         <left>23</left>
+         <top>984</top>
+         <width>500</width>
+         <height>70</height>
+       </position>
+       <border>
+         <lineWidth>1</lineWidth>
+         <lineColor>#000000</lineColor>
+       </border>
+       <value>Data uboju</value>
+       <style ref="dane"/>
+     </text>
+
+
+     <text label="SLAUGHTER_DATE">
+       <position>
+         <left>523</left>
+         <top>984</top>
+         <width>500</width>
+         <height>70</height>
+       </position>
+       <border>
+         <lineWidth>1</lineWidth>
+         <lineColor>#000000</lineColor>
+       </border>
+       <value></value>
+       <style ref="USERDEF"/>
+     </text>
+
+       <text label="FILLED_BY_VETERINARIAN_TITLE">
+         <position>
+           <left>23</left>
+           <top>1054</top>
+           <width>1000</width>
+           <height>58</height>
+         </position>
+         <border>
+           <lineWidth>1</lineWidth>
+           <lineColor>#000000</lineColor>
+         </border>
+
+         <value>Wypełnia urzędowy LEKARZ WETERYNARII</value>
+         <style ref="beam"/>
+       </text>
+
+     <text label="PRE_SLAUGHTER_TEST_DATE_LBL">
+        <position>
+          <left>23</left>
+          <top>1112</top>
+          <width>500</width>
+          <height>70</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value>Data badania przedubojowego</value>
+        <style ref="dane"/>
+      </text>
+
+     <text label="PRE_SLAUGHTER_TEST_DATE">
+         <position>
+           <left>523</left>
+           <top>1112</top>
+           <width>500</width>
+           <height>70</height>
+         </position>
+         <border>
+           <lineWidth>1</lineWidth>
+           <lineColor>#000000</lineColor>
+         </border>
+         <value></value>
+         <style ref="USERDEF"/>
+       </text>
+
+       <text label="PRE_LOG_ENTRY_NO_LBL">
+         <position>
+           <left>23</left>
+           <top>1182</top>
+           <width>500</width>
+           <height>70</height>
+         </position>
+         <border>
+           <lineWidth>1</lineWidth>
+           <lineColor>#000000</lineColor>
+         </border>
+         <value>Pozycja w Dz. Badania</value>
+         <style ref="dane"/>
+       </text>
+
+       <text label="PRE_LOG_ENTRY_NO">
+        <position>
+          <left>523</left>
+          <top>1182</top>
+          <width>500</width>
+          <height>70</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value></value>
+        <style ref="USERDEF"/>
+      </text>
+
+
+     <text label="PRE_VETERINARIAN_SIGNATURE">
+     <position>
+       <left>23</left>
+       <top>1252</top>
+       <width>1000</width>
+       <height>115</height>
+     </position>
+     <border>
+       <lineWidth>1</lineWidth>
+       <lineColor>#000000</lineColor>
+     </border>
+     <value>...............................................................................................
+Podpis Lekarza Weterynarii</value>
+     <style ref="signature"/>
+   </text>
+
+
+    <text label="POST_SLAUGHTER_TEST_DATE_LBL">
+        <position>
+            <left>23</left>
+            <top>1367</top>
+            <width>500</width>
+            <height>70</height>
+        </position>
+        <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+        </border>
+        <value>Data badania poubojowego</value>
+        <style ref="dane"/>
+    </text>
+
+    <text label="POST_SLAUGHTER_TEST_DATE">
+        <position>
+            <left>523</left>
+            <top>1367</top>
+            <width>500</width>
+            <height>70</height>
+        </position>
+        <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+        </border>
+        <value></value>
+        <style ref="USERDEF"/>
+    </text>
+
+    <text label="LOG_ENTRY_NO_LBL">
+        <position>
+            <left>23</left>
+            <top>1437</top>
+            <width>500</width>
+            <height>70</height>
+        </position>
+        <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+        </border>
+        <value>Pozycja w Dz. Badania</value>
+        <style ref="dane"/>
+    </text>
+
+    <text label="LOG_ENTRY_NO">
+        <position>
+            <left>523</left>
+            <top>1437</top>
+            <width>500</width>
+            <height>70</height>
+        </position>
+        <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+        </border>
+        <value></value>
+        <style ref="USERDEF"/>
+    </text>
+
+
+    <text label="VETERINARIAN_SIGNATURE">
+        <position>
+            <left>23</left>
+            <top>1507</top>
+            <width>1000</width>
+            <height>115</height>
+        </position>
+        <border>
+            <lineWidth>1</lineWidth>
+            <lineColor>#000000</lineColor>
+        </border>
+        <value>...............................................................................................
+            Podpis Lekarza Weterynarii</value>
+        <style ref="signature"/>
+    </text>
+
+</footer>
+
+</template>

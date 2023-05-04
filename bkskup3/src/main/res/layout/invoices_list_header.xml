@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+   android:orientation="horizontal"
+   android:background="@color/listview_column_header_bkg">
+
+         <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:text="@string/invoiceCustomNumberLblCaption"
+            style="@style/list_header_label"
+            />
+
+         <View android:id="@+id/divider1"
+             android:background="@drawable/white_divider"
+             android:layout_width="1dp"
+             android:layout_height="fill_parent"/>
+
+         <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:text="@string/invoiceHentAliasLblCaption"
+            style="@style/list_header_label"
+            />
+
+         <View android:id="@+id/divider2"
+             android:background="@drawable/white_divider"
+             android:layout_width="1dp"
+             android:layout_height="fill_parent"/>
+
+         <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:text="@string/invoiceCowAmountLblCaption"
+            style="@style/list_header_label"
+            />
+
+         <View android:id="@+id/divider3"
+             android:background="@drawable/white_divider"
+             android:layout_width="1dp"
+             android:layout_height="fill_parent"/>
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:text="@string/invoiceTotalNetLblCaption"
+            style="@style/list_header_label"
+            />
+
+         <View android:id="@+id/divider4"
+             android:background="@drawable/white_divider"
+             android:layout_width="1dp"
+             android:layout_height="fill_parent"/>
+
+         <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:text="@string/invoiceTotalGrossLblCaption"
+            style="@style/list_header_label"
+            />
+
+</LinearLayout>
+
+

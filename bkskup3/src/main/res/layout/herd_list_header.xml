@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/herdsListHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/listview_column_header_bkg">
+
+    <TextView
+            android:id="@+id/herdNumberLbl"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/herdNumberLblCaption"
+            style="@style/list_header_label"
+            />
+
+    <TextView
+            android:id="@+id/herdAddressLbl"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:text="@string/herdAddressLblCaption"
+            style="@style/list_header_label"
+            />
+
+</LinearLayout>
+

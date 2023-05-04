@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <include android:id="@+id/progress_container" layout="@layout/loading_progress"/>
+
+    <ScrollView android:id="@+id/content_container"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone"
+
+            >
+
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                          android:orientation="vertical">
+
+                <TextView android:id="@+id/TextView05"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:text="@string/repoLoginLblCaption"
+                          android:layout_gravity="center_vertical"
+                          android:textSize="20sp"/>
+
+                <EditText android:id="@+id/repoLoginEditBox"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:maxLength="@integer/MAX_SETTING"
+                          android:singleLine="true"
+                          android:inputType="textCapCharacters"
+                          android:hint="@string/hintRepoLogin"
+                          android:textSize="24sp"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                          android:orientation="vertical">
+
+                <TextView android:id="@+id/TextView07"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:text="@string/repoPasswordLblCaption"
+                          android:textSize="20sp"/>
+
+                <EditText android:id="@+id/repoPasswordEditBox"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:maxLength="@integer/MAX_SETTING"
+                          android:singleLine="true"
+                          android:inputType="textPassword"
+                          android:hint="@string/hintRepoPassword"
+                          android:textSize="24sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

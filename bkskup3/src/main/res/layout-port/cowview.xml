@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/content_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+        >
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+
+        <TextView android:text="@string/cowNoLblCaption"
+                  style="@style/label_port"/>
+
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+            android:id="@+id/cowNoBox"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   android:layout_gravity="center_vertical"
+                                                   style="@style/input"/>
+
+
+        <TextView android:text="@string/cowClassLblCaption"
+                  style="@style/label_port"/>
+
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+            android:id="@+id/cowClassCdBox"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   android:layout_gravity="center_vertical"
+                                                   style="@style/input"/>
+
+
+        <TextView android:text="@string/cowStockLblCaption"
+                  style="@style/label_port"/>
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+            android:id="@+id/cowStockCdBox"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   android:layout_gravity="center_vertical"
+                                                   style="@style/input"/>
+
+
+        <TextView android:text="@string/cowSexLblCaption"
+                  style="@style/label_port"
+                />
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+            android:id="@+id/cowSexBox"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   android:layout_gravity="center_vertical"
+                                                   style="@style/input"/>
+
+
+        <TextView android:text="@string/cowWeightLblCaption"
+                  style="@style/label_port"/>
+
+
+        <EditText android:id="@+id/cowWeightBox"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="none"
+                  android:focusableInTouchMode="false"
+                  style="@style/input"
+                />
+
+
+        <TextView android:text="@string/cowPriceLblCaption"
+                  style="@style/label_port"/>
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:gravity="center"
+                      android:baselineAligned="false">
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:layout_weight="0.5"
+                          android:gravity="center">
+
+                <TextView android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:text="@string/netPricePerKg"
+                          android:textSize="18sp"
+                          android:background="@color/netPrice"
+                          android:textColor="@android:color/black"/>
+
+
+                <EditText android:id="@+id/cowNetPricePerKgBox"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:inputType="none"
+                          android:focusableInTouchMode="false"
+                          style="@style/input"/>
+
+                <TextView android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:text="@string/totalNetPrice"
+                          android:textSize="18sp"
+                          android:background="@color/netPrice"
+                          android:textColor="@android:color/black"/>
+
+                <EditText android:id="@+id/cowTotalNetPriceBox"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:inputType="none"
+                          android:focusableInTouchMode="false"
+                          android:background="@color/netPrice"
+                          android:textColor="@android:color/black"
+                          style="@style/input"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:layout_weight="0.5"
+                          android:gravity="center">
+
+                <TextView android:id="@+id/grossPricePerKgLabel"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:text="@string/grossPricePerKg"
+                          android:textSize="18sp"
+                          android:background="@color/grossPrice"
+                          android:textColor="@android:color/black"/>
+
+
+                <EditText android:id="@+id/cowGrossPricePerKgBox"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:inputType="none"
+                          android:focusableInTouchMode="false"
+                          style="@style/input"/>
+
+                <TextView android:id="@+id/grossPriceTotalLabel"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:text="@string/totalGrossPrice"
+                          android:textSize="18sp"
+                          android:background="@color/grossPrice"
+                          android:textColor="@android:color/black"/>
+
+                <EditText android:id="@+id/cowTotalGrossPriceBox"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:inputType="none"
+                          android:focusableInTouchMode="false"
+                          android:background="@color/grossPrice"
+                          android:textColor="@android:color/black"
+                          style="@style/input"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView android:text="@string/cowFstOwnerLblCaption"
+                  style="@style/label_port"/>
+
+
+        <EditText android:id="@+id/fstOwnerBox"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="none"
+                  android:focusableInTouchMode="false"
+                  style="@style/input"/>
+
+
+        <TextView android:text="@string/cowPassportNoLblCaption"
+                  style="@style/label_port"/>
+
+
+        <EditText android:id="@+id/cowPassportNoBox"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="none"
+                  android:focusableInTouchMode="false"
+                  style="@style/input"
+                />
+
+        <TextView android:text="@string/cowPassportIssueDtLblCaption"
+                  style="@style/label_port"/>
+
+        <EditText android:id="@+id/cowPassportIssueDtBox"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:focusableInTouchMode="false"
+                  android:inputType="none"
+                  style="@style/input"/>
+
+
+        <TextView android:text="@string/cowHealthCertNoLblCaption"
+                  style="@style/label_port"/>
+
+
+        <EditText android:id="@+id/cowHealthCertNoBox"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:maxLength="@integer/MAX_HEALTHCERTNO"
+                  android:inputType="none"
+                  android:focusableInTouchMode="false"
+                  style="@style/input"/>
+
+        <TextView
+                android:text="@string/cowMotherNoLblCaption"
+                style="@style/label_port"/>
+
+        <EditText android:id="@+id/cowMotherNoBox"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="none"
+                  android:focusableInTouchMode="false"
+                  style="@style/input"/>
+
+        <TextView android:text="@string/cowBirthBtLblCaption"
+                  style="@style/label_port"/>
+
+        <EditText android:id="@+id/cowBirthDtBox"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="none"
+                  android:focusableInTouchMode="false"
+                  style="@style/input"/>
+
+        <TextView
+                android:text="@string/cowBirthPlaceLblCaption"
+                style="@style/label_port"
+                />
+
+
+        <EditText android:id="@+id/cowBirthPlaceBox"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_vertical"
+                  android:inputType="none"
+                  android:focusableInTouchMode="false"
+                  style="@style/input"
+                />
+
+
+    </LinearLayout>
+
+</ScrollView>

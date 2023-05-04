@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ToggleState">
+        <attr name="state_toggled" format="boolean"/>
+        <attr name="toggledDrawable" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="MagicButton">
+        <attr name="button_icon" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CountrySpinner">
+        <attr name="showFlag" format="boolean"/>
+    </declare-styleable>
+
+</resources>

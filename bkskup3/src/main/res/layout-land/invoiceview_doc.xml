@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        android:id="@+id/widget56"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+            >
+
+        <LinearLayout android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:gravity="center">
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.3"
+                      android:text="@string/payWayLblCaption"
+                      style="@style/label"/>
+
+
+            <com.bk.bkskup3.widgets.CalculatorEditText
+                android:id="@+id/payWayBox"
+                                                       android:layout_width="0dp"
+                                                       android:layout_height="wrap_content"
+                                                       android:layout_weight="0.7"
+                                                       style="@style/input"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:gravity="center"
+                >
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.3"
+                      android:text="@string/payDueDaysLblCaption"
+                      style="@style/label"/>
+
+            <com.bk.bkskup3.widgets.CalculatorEditText
+                android:id="@+id/payDueDaysBox"
+                                                       android:layout_width="0dp"
+                                                       android:layout_height="wrap_content"
+                                                       android:layout_weight="0.7"
+                                                       style="@style/input"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:gravity="center">
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.3"
+                      android:text="@string/transactionPlaceLblCaption"
+                      style="@style/label"/>
+
+
+            <com.bk.bkskup3.widgets.CalculatorEditText
+                android:id="@+id/transactionPlaceBox"
+                                                       android:layout_width="0dp"
+                                                       android:layout_height="wrap_content"
+                                                       android:layout_weight="0.7"
+                                                       style="@style/input"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:gravity="center">
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.3"
+                      android:text="@string/transactionDateLblCaption"
+                      style="@style/label"/>
+
+            <com.bk.bkskup3.widgets.CalculatorEditText
+                android:id="@+id/transactionDateBox"
+                                                       android:layout_width="0dp"
+                                                       android:layout_height="wrap_content"
+                                                       android:layout_weight="0.7"
+                                                       style="@style/input"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:gravity="center">
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.3"
+                      android:text="@string/customInvoiceNoLblCaption"
+                      style="@style/label"/>
+
+            <com.bk.bkskup3.widgets.CalculatorEditText
+                android:id="@+id/customInvoiceNoValueBox"
+                                                       android:layout_width="0dp"
+                                                       android:layout_height="wrap_content"
+                                                       android:layout_weight="0.7"
+                                                       style="@style/input"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:gravity="center">
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.3"
+                      android:text="@string/extrasLblCaption"
+                      style="@style/label"/>
+
+
+            <com.bk.bkskup3.widgets.CalculatorEditText
+                android:id="@+id/extrasBox"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.7"
+                      android:layout_height="100dp"
+                      android:inputType="textMultiLine"
+                      android:lines="3"
+                      android:minLines="3"
+                      android:gravity="top|left"
+                      android:maxLines="3"
+                      android:maxLength="@integer/MAX_EXTRAS"
+                      style="@style/input"
+                    />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

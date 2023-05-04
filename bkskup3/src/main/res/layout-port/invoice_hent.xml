@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+        <TextView android:text="@string/hentNameLblCaption"
+                  style="@style/label_port"/>
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+            android:id="@+id/hentNameEditBox"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   style="@style/input"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+            <TextView android:text="@string/hentStreetLblCaption"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.75"
+                      style="@style/label"/>
+
+            <TextView android:text="@string/hentPOBoxLblCaption"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.25"
+                      style="@style/label"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+            <com.bk.bkskup3.widgets.CalculatorEditText
+                android:id="@+id/hentStreetEditBox"
+                                                       android:layout_width="0dp"
+                                                       android:layout_height="wrap_content"
+                                                       android:layout_weight="0.75"
+                                                       style="@style/input"/>
+
+
+            <com.bk.bkskup3.widgets.CalculatorEditText
+                android:id="@+id/hentPOBoxEditBox"
+                                                       android:layout_width="0dp"
+                                                       android:layout_height="wrap_content"
+                                                       android:layout_weight="0.25"
+                                                       style="@style/input"/>
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+            <TextView android:text="@string/hentCityLblCaption"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.7"
+                      style="@style/label"/>
+
+            <TextView android:text="@string/hentZipLblCaption"
+                      android:layout_width="0dp"
+                      android:layout_weight="0.3"
+                      style="@style/label"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+            <com.bk.bkskup3.widgets.CalculatorEditText
+                android:id="@+id/hentCityEditBox"
+                                                       android:layout_width="0dp"
+                                                       android:layout_height="wrap_content"
+                                                       android:layout_weight="0.7"
+                                                       style="@style/input"/>
+
+
+            <com.bk.bkskup3.widgets.CalculatorEditText
+                android:id="@+id/hentZipEditBox"
+                                                       android:layout_width="0dp"
+                                                       android:layout_height="wrap_content"
+                                                       android:layout_weight="0.3"
+                                                       style="@style/input"/>
+
+        </LinearLayout>
+
+
+        <TextView android:text="@string/hentFarmNoLblCaption"
+                  style="@style/label_port"/>
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+            android:id="@+id/hentHentNoEditBox"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   style="@style/input"/>
+
+        <TextView android:text="@string/hentPhoneLblCaption"
+                  style="@style/label_port"/>
+
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+            android:id="@+id/hentPhoneNoEditbox"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   style="@style/input"/>
+
+
+        <TextView android:text="@string/hentMobilePhoneLblCaption"
+                  style="@style/label_port"/>
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+            android:id="@+id/hentCellPhoneNoEditbox"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   style="@style/input"/>
+
+
+        <TextView android:text="@string/hentEmailAddrrLblCaption"
+                  style="@style/label_port"/>
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+            android:id="@+id/hentEmailAddrEditbox"
+                                                   android:layout_width="fill_parent"
+                                                   android:layout_height="wrap_content"
+                                                   style="@style/input"/>
+
+
+        <TextView android:text="@string/hentAccountNoLblCaption"
+                  style="@style/label_port"/>
+
+        <com.bk.bkskup3.widgets.AccountNoEditText
+            android:id="@+id/hentAccountNo"
+                                                  android:layout_width="fill_parent"
+                                                  android:layout_height="wrap_content"
+                                                  style="@style/input"/>
+
+
+        <TextView android:text="@string/hentBankNameLblCaption"
+                  style="@style/label_port"/>
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+            android:id="@+id/hentBankName"
+                                                   android:layout_width="fill_parent"
+                                                   android:layout_height="wrap_content"
+                                                   style="@style/input"/>
+
+
+        <TextView android:text="@string/hentFiscalNoLblCaption"
+                  style="@style/label_port"/>
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+            android:id="@+id/hentFiscalNoBox"
+                                                   android:layout_width="fill_parent"
+                                                   android:layout_height="wrap_content"
+                                                   style="@style/input"/>
+
+
+        <TextView android:text="@string/hentREGONLblCaption"
+                  style="@style/label_port"/>
+
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+            android:id="@+id/hentREGON"
+                                                   android:layout_width="fill_parent"
+                                                   android:layout_height="wrap_content"
+                                                   style="@style/input"/>
+
+        <TextView android:text="@string/hentWetLicNoLblCaption"
+                  style="@style/label_port"/>
+
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+            android:id="@+id/hentWetLicenceNo"
+                                                   android:layout_width="fill_parent"
+                                                   android:layout_height="wrap_content"
+                                                   style="@style/input"/>
+
+        <TextView android:text="@string/hentWetIdNoLblCaption"
+                  style="@style/label_port"/>
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+            android:id="@+id/hentWetNoEditbox"
+                                                   android:layout_width="fill_parent"
+                                                   android:layout_height="wrap_content"
+                                                   style="@style/input"/>
+
+
+        <TextView android:text="@string/hentPersonalIdNoLblCaption"
+                  style="@style/label_port"/>
+
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+            android:id="@+id/hentIdNoEditbox"
+                                                   android:layout_width="fill_parent"
+                                                   android:layout_height="wrap_content"
+                                                   style="@style/input"/>
+
+        <TextView android:text="@string/hentIssueDateLblCaption"
+                  style="@style/label_port"/>
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+            android:id="@+id/hentIdIssueDateEditbox"
+                                                   android:layout_width="fill_parent"
+                                                   android:layout_height="wrap_content"
+                                                   style="@style/input"/>
+
+
+        <TextView android:text="@string/hentIssuedByLblCaption"
+                  style="@style/label_port"/>
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+            android:id="@+id/hentIdIssuePostEditbox"
+                                                   android:layout_width="fill_parent"
+                                                   android:layout_height="wrap_content"
+                                                   style="@style/input"/>
+
+
+        <TextView android:text="@string/hentPersonalNoLblCaption"
+                  style="@style/label_port"/>
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+            android:id="@+id/hentPersonalNoBox"
+                                                   android:layout_width="fill_parent"
+                                                   android:layout_height="wrap_content"
+                                                   style="@style/input"/>
+
+    </LinearLayout>
+</ScrollView>

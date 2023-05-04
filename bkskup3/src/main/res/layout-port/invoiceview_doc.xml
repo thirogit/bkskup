@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        android:id="@+id/widget56"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+            >
+
+
+        <TextView android:text="@string/payWayLblCaption"
+                  style="@style/label_port"/>
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+            android:id="@+id/payWayBox"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   style="@style/input"/>
+
+
+        <TextView android:text="@string/payDueDaysLblCaption"
+                  style="@style/label_port"/>
+
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+            android:id="@+id/payDueDaysBox"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   style="@style/input"/>
+
+
+
+        <TextView android:text="@string/transactionPlaceLblCaption"
+                  style="@style/label_port"/>
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+            android:id="@+id/transactionPlaceBox"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   style="@style/input"/>
+
+
+        <TextView android:text="@string/transactionDateLblCaption"
+                  style="@style/label_port"/>
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+            android:id="@+id/transactionDateBox"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   style="@style/input"/>
+
+        <TextView android:text="@string/customInvoiceNoLblCaption"
+                  style="@style/label_port"/>
+
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+            android:id="@+id/customInvoiceNoValueBox"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   style="@style/input"/>
+
+        <TextView android:text="@string/extrasLblCaption"
+                  style="@style/label_port"/>
+
+        <com.bk.bkskup3.widgets.CalculatorEditText
+            android:id="@+id/extrasBox"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="100dp"
+                                                   android:inputType="textMultiLine"
+                                                   android:lines="3"
+                                                   android:minLines="3"
+                                                   android:gravity="top|left"
+                                                   android:maxLines="3"
+                                                   android:maxLength="@integer/MAX_EXTRAS"
+                                                   style="@style/input"/>
+
+
+    </LinearLayout>
+</ScrollView>
