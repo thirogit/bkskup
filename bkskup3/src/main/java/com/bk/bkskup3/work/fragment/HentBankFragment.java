@@ -15,7 +15,7 @@ import com.bk.bkskup3.model.EAN;
 import com.bk.bkskup3.model.IBAN;
 import com.bk.bkskup3.widgets.AccountNoEditText;
 import com.bk.bkskup3.work.AccountNoInputActivity;
-import com.bk.bkskup3.work.OcrNumberActivity;
+//import com.bk.bkskup3.work.OcrNumberActivity;
 
 /**
  * Created with IntelliJ IDEA.
@@ -83,7 +83,7 @@ public class HentBankFragment extends HentFragment {
     }
 
     private void startOcrAccountNoActivity() {
-        Intent inputIntent = new Intent(getActivity(), OcrNumberActivity.class);
+//        Intent inputIntent = new Intent(getActivity(), OcrNumberActivity.class);
 //        inputIntent.putExtra(AccountNoInputActivity.EXTRA_ACCOUNTNO,mInput.getBankAccountNo());
 
 //        EAN hentNo = mInput.getHentNo();
@@ -91,7 +91,7 @@ public class HentBankFragment extends HentFragment {
 //            inputIntent.putExtra(AccountNoInputActivity.EXTRA_COUNTRY, hentNo.getCountryCode());
 //        }
 
-        startActivityForResult(inputIntent,REQUEST_CODE_OCR_ACCOUNTNO);
+//        startActivityForResult(inputIntent,REQUEST_CODE_OCR_ACCOUNTNO);
     }
 
     protected String getBankName() {

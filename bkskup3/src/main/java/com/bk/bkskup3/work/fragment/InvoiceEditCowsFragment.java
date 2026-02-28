@@ -16,7 +16,7 @@ import com.bk.bkskup3.work.fragment.event.CowDeletedEvent;
 import com.bk.bkskup3.work.fragment.event.CowEditedEvent;
 import com.bk.bkskup3.work.input.CowInput;
 import com.squareup.otto.InheritSubscribers;
-import com.todobom.opennotescanner.OpenNoteScannerActivity;
+//import com.todobom.opennotescanner.OpenNoteScannerActivity;
 
 import java.util.UUID;
 
@@ -114,8 +114,8 @@ public class InvoiceEditCowsFragment extends InvoiceFragment {
     }
 
     private void onOCRPassport() {
-            Intent ocrPassportIntent = new Intent(getActivity(), OpenNoteScannerActivity.class);
-            startActivityForResult(ocrPassportIntent, CAPTURE_PASSPORT_REQUEST_CODE);
+//            Intent ocrPassportIntent = new Intent(getActivity(), OpenNoteScannerActivity.class);
+//            startActivityForResult(ocrPassportIntent, CAPTURE_PASSPORT_REQUEST_CODE);
     }
 
     private void onDeleteCow() {

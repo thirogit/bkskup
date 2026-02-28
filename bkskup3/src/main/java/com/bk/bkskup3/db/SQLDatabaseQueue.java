@@ -1,6 +1,7 @@
 package com.bk.bkskup3.db;
 
 import android.database.SQLException;
+import android.database.sqlite.SQLiteDatabase;
 
 import com.google.common.base.Preconditions;
 
@@ -24,19 +25,20 @@ public class SQLDatabaseQueue {
 
     private final SQLDatabase db;
     private final ExecutorService queue;
-    private final Logger logger = Logger.getLogger(SQLDatabase.class.getCanonicalName());
+    private final Logger logger = Logger.getLogger(SQLDatabaseQueue.class.getCanonicalName());
     private AtomicBoolean acceptTasks = new AtomicBoolean(true);
     private String sqliteVersion = null;
 
     public SQLDatabaseQueue(final File file) {
         queue = Executors.newSingleThreadExecutor(new ThreadFactory(file));
         this.db = new SQLDatabase();
-        queue.execute(new Runnable() {
-            @Override
-            public void run() {
-                db.open(file);
-            }
-        });
+        db.open(file);
+//        queue.execute(new Runnable() {
+//            @Override
+//            public void run() {
+//                db.open(file);
+//            }
+//        });
     }
 
     /**

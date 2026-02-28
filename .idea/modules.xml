@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bkskup.iml" filepath="$PROJECT_DIR$/.idea/modules/bkskup.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/barcodeservice/bkskup.barcodeservice.iml" filepath="$PROJECT_DIR$/.idea/modules/barcodeservice/bkskup.barcodeservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bkbands/bkskup.bkbands.iml" filepath="$PROJECT_DIR$/.idea/modules/bkbands/bkskup.bkbands.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bksettings/bkskup.bksettings.iml" filepath="$PROJECT_DIR$/.idea/modules/bksettings/bkskup.bksettings.iml" />

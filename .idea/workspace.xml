@@ -4,10 +4,25 @@
     <shared>
       <config />
     </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/barcode_input.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/camera_input.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+    </layouts>
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="AvailableLibraryUpdateStorage">
     <library-updates>
@@ -184,23 +199,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="883182f0-1c87-42e8-8a71-4b7d69048ea7" name="Default" comment="umowa o terminie platnoscie wsteczna - document option daydate">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/barcodeservice/bkskup.barcodeservice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/barcodeservice/bkskup.barcodeservice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/bkbands/bkskup.bkbands.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/bkbands/bkskup.bkbands.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/bksettings/bkskup.bksettings.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/bksettings/bkskup.bksettings.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/bkskup.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/bkskup3/bkskup.bkskup3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/bkskup3/bkskup.bkskup3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/bkwidgets/bkskup.bkwidgets.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/bkwidgets/bkskup.bkwidgets.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/bluetoothcommon/bkskup.bluetoothcommon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/bluetoothcommon/bkskup.bluetoothcommon.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/countries/bkskup.countries.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/countries/bkskup.countries.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/passportscanner/bkskup.passportscanner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/passportscanner/bkskup.passportscanner.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/printservice/bkskup.printservice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/printservice/bkskup.printservice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/barcodeservice/barcodeservice.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkbands/bkbands.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bksettings/bksettings.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/bkskup3-bkskup3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkwidgets/bkwidgets.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bluetoothcommon/bluetoothcommon.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/countries/countries.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/barcodeservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/barcodeservice/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkbands/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/bkbands/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bksettings/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/bksettings/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkskup3/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/BkApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/BkApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/db/SQLDatabaseQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/db/SQLDatabaseQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/OcrNumberActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/OcrNumberActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/fragment/HentBankFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/fragment/HentBankFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/fragment/InvoiceEditCowsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/fragment/InvoiceEditCowsFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/res/layout/camera_input.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkwidgets/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/bkwidgets/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluetoothcommon/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/bluetoothcommon/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/countries/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/countries/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-bkskup3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/passportscanner/passportscanner.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/printservice/printservice.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/passportscanner/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/printservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/printservice/build.gradle" afterDir="false" />
     </list>
     <list id="0fb91eea-005f-44d2-b29d-68e5df9e35cd" name="ignore" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -208,7 +241,10 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[LocalEmulator::path=C:\Users\thiro\.android\avd\Medium_Phone.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -228,25 +264,29 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="bkskup3" type="f1a62948:ProjectNode" />
+                <item name="bkskup" type="f1a62948:ProjectNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="bkskup3" type="f1a62948:ProjectNode" />
-                <item name=":bkskup3" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="bkskup3" type="f1a62948:ProjectNode" />
-                <item name=":bkskup3" type="2d1252cf:ModuleNode" />
+                <item name="bkskup" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="bkskup3" type="f1a62948:ProjectNode" />
-                <item name=":bkskup3" type="2d1252cf:ModuleNode" />
+                <item name="bkskup" type="f1a62948:ProjectNode" />
+                <item name="bkskup3" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bkskup" type="f1a62948:ProjectNode" />
+                <item name="bkskup3" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bkskup" type="f1a62948:ProjectNode" />
+                <item name="bkskup3" type="2d1252cf:ModuleNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
             <select />
@@ -271,32 +311,43 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="1lTr3chQq3IivwtqfxxUrzshckJ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ExportApk.ApkPath" value="C:\DEV\my\bkskup3\bkskup3" />
-    <property name="ExportApk.BuildType" value="release" />
-    <property name="ExportApk.BuildVariants" value="release" />
-    <property name="ExportApk.Flavors" value="" />
-    <property name="ExportApk.SignV1" value="true" />
-    <property name="ExportApk.SignV2" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="android.profiler.active" value="true" />
-    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="device.picker.selection" value="ce09160969a7881601" />
-    <property name="last_opened_file_path" value="C:/devtools" />
-    <property name="project.structure.last.edited" value="Suggestions" />
-    <property name="project.structure.proportion" value="0.17" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="instant.run" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Android App.bkskup3.executor": "Debug",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.Upgrade Gradle wrapper.executor": "Run",
+    "Gradle.bkskup3:bkskup3 [build].executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/prj/bk/bkskup",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  }
+}]]></component>
   <component name="PsdUISettings">
+    <option name="MODULE_TAB" value="Signing Configs" />
+    <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
@@ -310,21 +361,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Android App.bkskup3">
-    <configuration default="true" type="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-    </configuration>
-    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-    </configuration>
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -332,78 +368,34 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bkskup3-bkskup3" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="bkskup3-bkskup3" />
-      <option name="DEPLOY" value="true" />
-      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
-      <option name="DEPLOY_AS_INSTANT" value="false" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ALL_USERS" value="false" />
-      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="DEBUGGER_TYPE" value="Auto" />
-      <Auto>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Auto>
-      <Hybrid>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Hybrid>
-      <Java />
-      <Native>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Native>
-      <Profilers>
-        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
-        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
-        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
-      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bkskup3" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="bkskup.bkskup3" />
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+    <configuration name="bkskup3-bkskup3" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="RESTORE_FRESH_INSTALL_ONLY" value="false" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
@@ -414,6 +406,8 @@
         <option name="WORKING_DIR" value="" />
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Auto>
       <Hybrid>
         <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
@@ -421,24 +415,104 @@
         <option name="WORKING_DIR" value="" />
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Hybrid>
-      <Java />
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
       <Native>
         <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
         <option name="SHOW_STATIC_VARS" value="true" />
         <option name="WORKING_DIR" value="" />
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Callstack Sample" />
         <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
         <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bkskup3" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="bkskup.bkskup3" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="RESTORE_FRESH_INSTALL_ONLY" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Callstack Sample" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
@@ -468,7 +542,13 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
       <method v="2" />
     </configuration>
     <configuration name="bkskup3:bkskup3 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -487,8 +567,21 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
       <method v="2" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
@@ -614,27 +707,6 @@
     </todo-panel>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="bkskup3" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -649,7 +721,15 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -667,32 +747,6 @@
     <MESSAGE value="umowa o terminie platnoscie wsteczna - document option daydate" />
     <option name="LAST_COMMIT_MESSAGE" value="umowa o terminie platnoscie wsteczna - document option daydate" />
   </component>
-  <component name="WindowStateProjectService">
-    <state width="1690" height="560" key="GridCell.Tab.0.bottom" timestamp="1641838270676">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1690" height="560" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1641838270676" />
-    <state width="1690" height="560" key="GridCell.Tab.0.center" timestamp="1641838270676">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1690" height="560" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1641838270676" />
-    <state width="1690" height="560" key="GridCell.Tab.0.left" timestamp="1641838270675">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1690" height="560" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1641838270675" />
-    <state width="1690" height="560" key="GridCell.Tab.0.right" timestamp="1641838270676">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1690" height="560" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1641838270676" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1641844545440">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1641844545440" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1641854866217">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1641854866217" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -706,8 +760,28 @@
           <line>920</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/BkApplication.java</url>
+          <line>202</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/BkApplication.java</url>
+          <line>198</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/db/SQLDatabaseQueue.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.bk.bkskup3.db.SQLDatabaseQueue" memberName="db" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="masterDetails">
     <states>
@@ -723,5 +797,26 @@
         </settings>
       </state>
     </states>
+  </component>
+  <component name="play_dynamic_filters_status">
+    <option name="appIdToCheckInfo">
+      <map>
+        <entry key="com.bk.bkskup3">
+          <value>
+            <CheckInfo lastCheckTimestamp="1772296481289" />
+          </value>
+        </entry>
+        <entry key="com.bk.bkskup3.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1772296481289" />
+          </value>
+        </entry>
+        <entry key="com.todobom.opennotescanner.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1772298788415" />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

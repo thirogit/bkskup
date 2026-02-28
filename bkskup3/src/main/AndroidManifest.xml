@@ -235,13 +235,13 @@
             android:name="com.bk.bkskup3.management.DocumentProfilesActivity"
             android:label="@string/edit_profiles" />
 
-        <activity
-            android:name="com.todobom.opennotescanner.OpenNoteScannerActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/passport_scanner"
-            android:screenOrientation="portrait"
-            android:theme="@style/FullscreenTheme.NoActionBar">
-        </activity>
+<!--        <activity-->
+<!--            android:name="com.todobom.opennotescanner.OpenNoteScannerActivity"-->
+<!--            android:configChanges="orientation|keyboardHidden|screenSize"-->
+<!--            android:label="@string/passport_scanner"-->
+<!--            android:screenOrientation="portrait"-->
+<!--            android:theme="@style/FullscreenTheme.NoActionBar">-->
+<!--        </activity>-->
         <!--<activity-->
             <!--android:name=".GalleryGridActivity"-->
             <!--android:configChanges="orientation|keyboardHidden|screenSize"-->
@@ -260,10 +260,10 @@
             <!--android:label="@string/settings"-->
             <!--android:theme="@style/AppTheme" />-->
 
-        <activity
-            android:name="com.bk.bkskup3.work.OcrNumberActivity"
-            android:label="@string/cowno_input"
-            android:theme="@style/InputActivityInWindow" />
+<!--        <activity-->
+<!--            android:name="com.bk.bkskup3.work.OcrNumberActivity"-->
+<!--            android:label="@string/cowno_input"-->
+<!--            android:theme="@style/InputActivityInWindow" />-->
 
 
         <service

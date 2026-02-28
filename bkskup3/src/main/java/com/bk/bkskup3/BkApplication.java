@@ -3,6 +3,7 @@ package com.bk.bkskup3;
 import android.app.Activity;
 import android.app.Application;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
 import com.bk.barcode.service.BarcodeService;
@@ -193,7 +194,12 @@ public class BkApplication extends Application {
 
         Stetho.initializeWithDefaults(this);
 
-        bkDb = new SQLDatabaseQueue(this.getDatabasePath("bkskup3"));
+//        SQLiteDatabase db = this.openOrCreateDatabase("bkskup3", MODE_PRIVATE,null);
+
+        bkDb = new SQLDatabaseQueue(getDatabasePath("bkskup3"));
+
+
+
         SchemaUpdater schemaUpdater = new SchemaUpdater(bkDb);
 
         try {
