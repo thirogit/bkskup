@@ -5,7 +5,7 @@ import android.database.Cursor;
 import android.support.annotation.Nullable;
 
 import com.bk.bkskup3.db.SQLCallable;
-import com.bk.bkskup3.db.SQLDatabase;
+import com.bk.bkskup3.db.SQLDatabaseWrapper;
 import com.bk.bkskup3.db.SQLDatabaseQueue;
 import com.bk.bkskup3.invoice.InvoiceNoState;
 import com.bk.bkskup3.invoice.InvoiceNoTransaction;
@@ -27,7 +27,7 @@ public class InvoiceNoTransactionStore extends AbstractSQLStore {
         super(mDb);
     }
 
-    private void updateTransaction(SQLDatabase db,InvoiceNoTransaction transaction) {
+    private void updateTransaction(SQLDatabaseWrapper db, InvoiceNoTransaction transaction) {
         ContentValues values = new ContentValues();
         values.put(INVOICENO_TRANSACTION_INVOICE_NO, transaction.getInvoiceNo());
         values.put(INVOICENO_TRANSACTION_STATE, transaction.getState().getId());
@@ -38,7 +38,7 @@ public class InvoiceNoTransactionStore extends AbstractSQLStore {
 
         Future<Void> future = mDb.submit(new SQLCallable<Void>() {
             @Override
-            public Void call(SQLDatabase db) {
+            public Void call(SQLDatabaseWrapper db) {
                 ContentValues values = new ContentValues();
                 values.put(INVOICENO_TRANSACTION_STATE, state.getId());
                 db.updateOrThrow(TABLE_NAME_INVOICENO_TRANSACTION, values, eq(INVOICENO_TRANSACTION_TRANSACTION_ID, String.valueOf(transactionId)));
@@ -54,7 +54,7 @@ public class InvoiceNoTransactionStore extends AbstractSQLStore {
 
         Future<InvoiceNoTransaction> future = mDb.submit(new SQLCallable<InvoiceNoTransaction>() {
             @Override
-            public InvoiceNoTransaction call(SQLDatabase db) {
+            public InvoiceNoTransaction call(SQLDatabaseWrapper db) {
                 InvoiceNoTransaction transaction = getLastTransactionInternal(db);
                 if (transaction != null) {
                     InvoiceNoState state = transaction.getState();
@@ -96,7 +96,7 @@ public class InvoiceNoTransactionStore extends AbstractSQLStore {
     protected InvoiceNoTransaction insertTransaction(InvoiceNoTransaction transaction) {
         Future<InvoiceNoTransaction> future = mDb.submit(new SQLCallable<InvoiceNoTransaction>() {
             @Override
-            public InvoiceNoTransaction call(SQLDatabase db) {
+            public InvoiceNoTransaction call(SQLDatabaseWrapper db) {
                 ContentValues values = new ContentValues();
                 values.put(INVOICENO_TRANSACTION_INVOICE_NO, transaction.getInvoiceNo());
                 values.put(INVOICENO_TRANSACTION_STATE, transaction.getState().getId());
@@ -116,7 +116,7 @@ public class InvoiceNoTransactionStore extends AbstractSQLStore {
 
         Future<InvoiceNoTransaction> future = mDb.submit(new SQLCallable<InvoiceNoTransaction>() {
             @Override
-            public InvoiceNoTransaction call(SQLDatabase db) {
+            public InvoiceNoTransaction call(SQLDatabaseWrapper db) {
                 return getLastTransactionInternal(db);
             }
         });
@@ -127,7 +127,7 @@ public class InvoiceNoTransactionStore extends AbstractSQLStore {
     }
 
     @Nullable
-    private InvoiceNoTransaction getLastTransactionInternal(SQLDatabase db) {
+    private InvoiceNoTransaction getLastTransactionInternal(SQLDatabaseWrapper db) {
         InvoiceNoTransaction result = null;
         Cursor cursor = db.query(TABLE_NAME_INVOICENO_TRANSACTION,
                 new String[]{INVOICENO_TRANSACTION_TRANSACTION_ID, INVOICENO_TRANSACTION_INVOICE_NO, INVOICENO_TRANSACTION_STATE},

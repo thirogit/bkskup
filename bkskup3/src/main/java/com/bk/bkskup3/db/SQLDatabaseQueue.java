@@ -1,7 +1,6 @@
 package com.bk.bkskup3.db;
 
 import android.database.SQLException;
-import android.database.sqlite.SQLiteDatabase;
 
 import com.google.common.base.Preconditions;
 
@@ -11,6 +10,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.RejectedExecutionException;
+import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.logging.Level;
@@ -23,22 +23,15 @@ import java.util.logging.Logger;
  */
 public class SQLDatabaseQueue {
 
-    private final SQLDatabase db;
+    private final SQLDatabaseWrapper db;
     private final ExecutorService queue;
     private final Logger logger = Logger.getLogger(SQLDatabaseQueue.class.getCanonicalName());
     private AtomicBoolean acceptTasks = new AtomicBoolean(true);
     private String sqliteVersion = null;
 
-    public SQLDatabaseQueue(final File file) {
-        queue = Executors.newSingleThreadExecutor(new ThreadFactory(file));
-        this.db = new SQLDatabase();
-        db.open(file);
-//        queue.execute(new Runnable() {
-//            @Override
-//            public void run() {
-//                db.open(file);
-//            }
-//        });
+    public SQLDatabaseQueue(SQLDatabaseWrapper db, ThreadFactory threadFactory) {
+        this.db = db;
+        this.queue = Executors.newSingleThreadExecutor(threadFactory);
     }
 
     /**
@@ -93,39 +86,39 @@ public class SQLDatabaseQueue {
      * executed, however the queue will not accept additional
      * tasks
      */
-    public void shutdown() {
-        // If shutdown has already been called then we don't need to shutdown again
-        if (acceptTasks.getAndSet(false)) {
-            //pass straight to queue, tasks passed via submitTaskToQueue will now be blocked.
-            Future<?> close = queue.submit(new Runnable() {
-                @Override
-                public void run() {
-                    db.close();
-                }
-            });
-            queue.shutdown();
-            try {
-                close.get();
-                queue.awaitTermination(5, TimeUnit.MINUTES);
-            } catch (InterruptedException e) {
-                logger.log(Level.SEVERE, "Interrupted while waiting for queue to terminate", e);
-            } catch (ExecutionException e) {
-                logger.log(Level.SEVERE, "Failed to close database", e);
-            }
-        } else {
-            logger.log(Level.WARNING, "SQLDatabase is already closed.");
-        }
+//    public void shutdown() {
+//        // If shutdown has already been called then we don't need to shutdown again
+//        if (acceptTasks.getAndSet(false)) {
+//            //pass straight to queue, tasks passed via submitTaskToQueue will now be blocked.
+//            Future<?> close = queue.submit(new Runnable() {
+//                @Override
+//                public void run() {
+//                    db.close();
+//                }
+//            });
+//            queue.shutdown();
+//            try {
+//                close.get();
+//                queue.awaitTermination(5, TimeUnit.MINUTES);
+//            } catch (InterruptedException e) {
+//                logger.log(Level.SEVERE, "Interrupted while waiting for queue to terminate", e);
+//            } catch (ExecutionException e) {
+//                logger.log(Level.SEVERE, "Failed to close database", e);
+//            }
+//        } else {
+//            logger.log(Level.WARNING, "SQLDatabase is already closed.");
+//        }
+//
+//
+//    }
 
-
-    }
-
-    /**
-     * Checks if {@link SQLDatabaseQueue#shutdown()} has been called
-     * @return true if {@link SQLDatabaseQueue#shutdown()} has been called.
-     */
-    public boolean isShutdown() {
-        return queue.isShutdown();
-    }
+//    /**
+//     * Checks if {@link SQLDatabaseQueue#shutdown()} has been called
+//     * @return true if {@link SQLDatabaseQueue#shutdown()} has been called.
+//     */
+//    public boolean isShutdown() {
+//        return queue.isShutdown();
+//    }
 
     /**
      * Adds a task to the queue, checking if the queue is still open
@@ -168,7 +161,7 @@ public class SQLDatabaseQueue {
 
     private static class SQLiteVersionCallable implements SQLCallable<String> {
         @Override
-        public String call(SQLDatabase db) throws Exception {
+        public String call(SQLDatabaseWrapper db) throws Exception {
             BKCursor cursor = db.rawQuery("SELECT sqlite_version()", null);
 
             StringBuilder stringBuilder = new StringBuilder();
@@ -181,21 +174,8 @@ public class SQLDatabaseQueue {
 
     private static class VersionCallable implements SQLCallable<Integer> {
         @Override
-        public Integer call(SQLDatabase db) throws Exception {
+        public Integer call(SQLDatabaseWrapper db) throws Exception {
             return db.getVersion();
-        }
-    }
-
-    private static class ThreadFactory implements java.util.concurrent.ThreadFactory {
-        private final File file;
-
-        public ThreadFactory(File file) {
-            this.file = file;
-        }
-
-        @Override
-        public Thread newThread(Runnable r) {
-            return new Thread(r, "SQLDatabaseQueue - "+ file);
         }
     }
 
@@ -217,7 +197,7 @@ public class SQLDatabaseQueue {
             }
         }
 
-        private void updateSchema(SQLDatabase database, Migration migration, int version)
+        private void updateSchema(SQLDatabaseWrapper database, Migration migration, int version)
                 throws SQLException {
             Preconditions.checkArgument(version > 0, "Schema version number must be positive");
             // ensure foreign keys are enforced in the case that we are up to date and no migration happen

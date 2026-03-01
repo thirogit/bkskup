@@ -5,7 +5,7 @@ import android.database.Cursor;
 
 import com.bk.bkskup3.dao.q.QDeduction;
 import com.bk.bkskup3.db.SQLCallable;
-import com.bk.bkskup3.db.SQLDatabase;
+import com.bk.bkskup3.db.SQLDatabaseWrapper;
 import com.bk.bkskup3.db.SQLDatabaseQueue;
 import com.bk.bkskup3.model.CowClass;
 import com.bk.bkskup3.model.CowClassObj;
@@ -68,7 +68,7 @@ public class DefinitionsStore extends AbstractSQLStore {
 
         Future<Collection<HerdObj>> future = mDb.submit(new SQLCallable<Collection<HerdObj>>() {
             @Override
-            public Collection<HerdObj> call(SQLDatabase db) {
+            public Collection<HerdObj> call(SQLDatabaseWrapper db) {
                 Collection<HerdObj> herds = new LinkedList<>();
                 Cursor herdCursor = null;
 
@@ -139,7 +139,7 @@ public class DefinitionsStore extends AbstractSQLStore {
 
         Future<Void> future = mDb.submit(new SQLCallable<Void>() {
             @Override
-            public Void call(SQLDatabase db) {
+            public Void call(SQLDatabaseWrapper db) {
                 ContentValues herdValues = createHerdValues(herd);
                 ContentValues where = new ContentValues();
                 where.put(HERDS_HERDID, herd.getId());
@@ -156,7 +156,7 @@ public class DefinitionsStore extends AbstractSQLStore {
 
         Future<HerdObj> future = mDb.submit(new SQLCallable<HerdObj>() {
             @Override
-            public HerdObj call(SQLDatabase db) {
+            public HerdObj call(SQLDatabaseWrapper db) {
                 ContentValues herdValues = createHerdValues(newHerd);
 
                 db.insertOrThrow(TABLE_NAME_HERDS, herdValues);
@@ -176,7 +176,7 @@ public class DefinitionsStore extends AbstractSQLStore {
 
         Future<Void> future = mDb.submit(new SQLCallable<Void>() {
             @Override
-            public Void call(SQLDatabase db) {
+            public Void call(SQLDatabaseWrapper db) {
                 ContentValues where = new ContentValues();
                 where.put(HERDS_HERDID, herdId);
                 db.deleteOrThrow(TABLE_NAME_HERDS, where);
@@ -196,7 +196,7 @@ public class DefinitionsStore extends AbstractSQLStore {
 
         Future<Collection<StockObj>> future = mDb.submit(new SQLCallable<Collection<StockObj>>() {
             @Override
-            public Collection<StockObj> call(SQLDatabase db) {
+            public Collection<StockObj> call(SQLDatabaseWrapper db) {
                 LinkedList<StockObj> stocks = new LinkedList<StockObj>();
                 Cursor stockCursor = null;
                 try {
@@ -249,7 +249,7 @@ public class DefinitionsStore extends AbstractSQLStore {
 
         Future<Void> future = mDb.submit(new SQLCallable<Void>() {
             @Override
-            public Void call(SQLDatabase db) {
+            public Void call(SQLDatabaseWrapper db) {
                 ContentValues condition = new ContentValues();
                 condition.put(STOCKS_STOCKID, stockId);
 
@@ -271,7 +271,7 @@ public class DefinitionsStore extends AbstractSQLStore {
 
         Future<Collection<CowClassObj>> future = mDb.submit(new SQLCallable<Collection<CowClassObj>>() {
             @Override
-            public Collection<CowClassObj> call(SQLDatabase db) throws Exception {
+            public Collection<CowClassObj> call(SQLDatabaseWrapper db) throws Exception {
                 LinkedList<CowClassObj> classes = new LinkedList<CowClassObj>();
                 Cursor classCursor = null;
                 try {
@@ -334,7 +334,7 @@ public class DefinitionsStore extends AbstractSQLStore {
 
         Future<Void> future = mDb.submit(new SQLCallable<Void>() {
             @Override
-            public Void call(SQLDatabase db) {
+            public Void call(SQLDatabaseWrapper db) {
                 ContentValues condition = new ContentValues();
                 condition.put(CLASSES_CLASSID, cowClassId);
 
@@ -367,7 +367,7 @@ public class DefinitionsStore extends AbstractSQLStore {
 
         Future<CowClassObj> insertFuture = mDb.submitTransaction(new SQLCallable<CowClassObj>() {
             @Override
-            public CowClassObj call(SQLDatabase db) {
+            public CowClassObj call(SQLDatabaseWrapper db) {
                 db.insertOrThrow(TABLE_NAME_CLASSES, createCowClassValues(classObj));
                 int newClassId = db.queryMax(TABLE_NAME_CLASSES, CLASSES_CLASSID, 1);
 
@@ -385,7 +385,7 @@ public class DefinitionsStore extends AbstractSQLStore {
     public void updateClass(CowClass cowClass) {
         Future<Void> future = mDb.submit(new SQLCallable<Void>() {
             @Override
-            public Void call(SQLDatabase db) {
+            public Void call(SQLDatabaseWrapper db) {
                 ContentValues classValues = createCowClassValues(cowClass);
                 ContentValues where = new ContentValues();
                 where.put(CLASSES_CLASSID, cowClass.getId());
@@ -405,7 +405,7 @@ public class DefinitionsStore extends AbstractSQLStore {
 
         Future<Void> future = mDb.submit(new SQLCallable<Void>() {
             @Override
-            public Void call(SQLDatabase db) {
+            public Void call(SQLDatabaseWrapper db) {
                 ContentValues stockValues = createStockValues(stock);
                 ContentValues where = new ContentValues();
                 where.put(STOCKS_STOCKID, stock.getId());
@@ -423,7 +423,7 @@ public class DefinitionsStore extends AbstractSQLStore {
 
         Future<StockObj> future = mDb.submit(new SQLCallable<StockObj>() {
             @Override
-            public StockObj call(SQLDatabase db) {
+            public StockObj call(SQLDatabaseWrapper db) {
                 db.insertOrThrow(TABLE_NAME_STOCKS, createStockValues(stock));
                 int newStockId = db.queryMax(TABLE_NAME_STOCKS, STOCKS_STOCKID, 1);
 
@@ -455,7 +455,7 @@ public class DefinitionsStore extends AbstractSQLStore {
 
         Future<Collection<DeductionDefinitionObj>> future = mDb.submit(new SQLCallable<Collection<DeductionDefinitionObj>>() {
             @Override
-            public Collection<DeductionDefinitionObj> call(SQLDatabase db) throws Exception {
+            public Collection<DeductionDefinitionObj> call(SQLDatabaseWrapper db) throws Exception {
                 LinkedList<DeductionDefinitionObj> deductions = new LinkedList<DeductionDefinitionObj>();
                 Cursor deductionCursor = null;
                 try {
@@ -509,7 +509,7 @@ public class DefinitionsStore extends AbstractSQLStore {
 
         Future<DeductionDefinitionObj> future = mDb.submit(new SQLCallable<DeductionDefinitionObj>() {
             @Override
-            public DeductionDefinitionObj call(SQLDatabase db) {
+            public DeductionDefinitionObj call(SQLDatabaseWrapper db) {
                 db.insertOrThrow(TABLE_NAME_DEDUCTIONS, createDeductionValues(deduction));
                 int newDeductionId = db.queryMax(TABLE_NAME_DEDUCTIONS, DEDUCTIONS_DEDUCTIONID, 1);
 
@@ -543,7 +543,7 @@ public class DefinitionsStore extends AbstractSQLStore {
 
         Future<Void> future = mDb.submit(new SQLCallable<Void>() {
             @Override
-            public Void call(SQLDatabase db) {
+            public Void call(SQLDatabaseWrapper db) {
                 ContentValues condition = new ContentValues();
                 condition.put(DEDUCTIONS_DEDUCTIONID, deductionId);
                 db.deleteOrThrow(TABLE_NAME_DEDUCTIONS, condition);
@@ -559,7 +559,7 @@ public class DefinitionsStore extends AbstractSQLStore {
 
         Future<Void> future = mDb.submit(new SQLCallable<Void>() {
             @Override
-            public Void call(SQLDatabase db) {
+            public Void call(SQLDatabaseWrapper db) {
                 ContentValues condition = new ContentValues();
                 condition.put(DEDUCTIONS_DEDUCTIONID, deduction.getId());
                 db.updateOrThrow(TABLE_NAME_DEDUCTIONS, createDeductionValues(deduction), condition);

@@ -5,6 +5,7 @@ import android.app.Application;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 
 import com.bk.barcode.service.BarcodeService;
 import com.bk.bkskup3.dao.BkStore;
@@ -15,6 +16,7 @@ import com.bk.bkskup3.dao.InvoiceNoTransactionStore;
 import com.bk.bkskup3.dao.PurchasesStore;
 import com.bk.bkskup3.dao.SettingsStore;
 import com.bk.bkskup3.db.SQLDatabaseQueue;
+import com.bk.bkskup3.db.SQLDatabaseWrapper;
 import com.bk.bkskup3.db.SchemaUpdater;
 import com.bk.bkskup3.library.DocumentLibraryService;
 import com.bk.bkskup3.management.AgentActivity;
@@ -70,6 +72,7 @@ import com.firebase.jobdispatcher.RetryStrategy;
 import com.firebase.jobdispatcher.Trigger;
 
 import java.io.IOException;
+import java.util.concurrent.ThreadFactory;
 
 import dagger.Module;
 import dagger.ObjectGraph;
@@ -189,17 +192,22 @@ public class BkApplication extends Application {
         return bkStore;
     }
 
+
+
     public void onCreate() {
         super.onCreate();
 
         Stetho.initializeWithDefaults(this);
 
-//        SQLiteDatabase db = this.openOrCreateDatabase("bkskup3", MODE_PRIVATE,null);
+        SQLiteDatabase db = this.openOrCreateDatabase("bkskup3",MODE_PRIVATE,null);
+        SQLDatabaseWrapper dbWrapper = new SQLDatabaseWrapper(db);
 
-        bkDb = new SQLDatabaseQueue(getDatabasePath("bkskup3"));
-
-
-
+        bkDb = new SQLDatabaseQueue(dbWrapper, new ThreadFactory() {
+            @Override
+            public Thread newThread(@NonNull Runnable r) {
+                return new Thread(r, "SQLDatabaseQueue-bkskup3");
+            }
+        });
         SchemaUpdater schemaUpdater = new SchemaUpdater(bkDb);
 
         try {

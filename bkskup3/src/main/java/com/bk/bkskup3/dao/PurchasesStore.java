@@ -8,7 +8,7 @@ import com.bk.bkskup3.dao.q.QInvoice;
 import com.bk.bkskup3.dao.q.QPurchase;
 import com.bk.bkskup3.db.BKCursor;
 import com.bk.bkskup3.db.SQLCallable;
-import com.bk.bkskup3.db.SQLDatabase;
+import com.bk.bkskup3.db.SQLDatabaseWrapper;
 import com.bk.bkskup3.db.SQLDatabaseQueue;
 import com.bk.bkskup3.model.Cow;
 import com.bk.bkskup3.model.CowDetails;
@@ -158,7 +158,7 @@ public class PurchasesStore extends AbstractSQLStore {
 
         Future<Collection<PurchaseObj>> future = mDb.submit(new SQLCallable<Collection<PurchaseObj>>() {
             @Override
-            public Collection<PurchaseObj> call(SQLDatabase db) {
+            public Collection<PurchaseObj> call(SQLDatabaseWrapper db) {
                 LinkedList<PurchaseObj> purchases = new LinkedList<PurchaseObj>();
 
                 long limit = -1;
@@ -226,7 +226,7 @@ public class PurchasesStore extends AbstractSQLStore {
 
         Future<PurchaseObj> future = mDb.submit(new SQLCallable<PurchaseObj>() {
             @Override
-            public PurchaseObj call(SQLDatabase db) {
+            public PurchaseObj call(SQLDatabaseWrapper db) {
                 ContentValues purchaseValues = new ContentValues();
 
                 purchaseValues.put(PURACHES_PURACHESTART, Dates.toDateTimeLong(newPurchase.getPurchaseStart()));
@@ -260,7 +260,7 @@ public class PurchasesStore extends AbstractSQLStore {
 
         Future<List<InvoiceObj>> future = mDb.submit(new SQLCallable<List<InvoiceObj>>() {
             @Override
-            public List<InvoiceObj> call(SQLDatabase db) throws Exception {
+            public List<InvoiceObj> call(SQLDatabaseWrapper db) throws Exception {
                 List<InvoiceObj> invoices = fetchInvoiceShells(db,q);
 
                 for (InvoiceObj invoice : invoices) {
@@ -285,7 +285,7 @@ public class PurchasesStore extends AbstractSQLStore {
 
     }
 
-    private List<InvoiceObj> fetchInvoiceShells(SQLDatabase db, Query q) {
+    private List<InvoiceObj> fetchInvoiceShells(SQLDatabaseWrapper db, Query q) {
 
 
         long limit = -1;
@@ -345,7 +345,7 @@ public class PurchasesStore extends AbstractSQLStore {
     }
 
 
-    private InvoiceHentObj fetchInvoiceHent(SQLDatabase db, int invoiceId) {
+    private InvoiceHentObj fetchInvoiceHent(SQLDatabaseWrapper db, int invoiceId) {
 
         ContentValues condition = new ContentValues();
         condition.put(INVOICEHENTS_INVOICEID, invoiceId);
@@ -433,7 +433,7 @@ public class PurchasesStore extends AbstractSQLStore {
 
     }
 
-    private Collection<InvoiceDeductionObj> fetchInvoiceDeductions(SQLDatabase db, int invoiceId) {
+    private Collection<InvoiceDeductionObj> fetchInvoiceDeductions(SQLDatabaseWrapper db, int invoiceId) {
 
 
         Collection<InvoiceDeductionObj> result = new LinkedList<InvoiceDeductionObj>();
@@ -475,7 +475,7 @@ public class PurchasesStore extends AbstractSQLStore {
 
     }
 
-    private Collection<CowObj> fetchInvoiceCows(SQLDatabase db,int invoiceId) {
+    private Collection<CowObj> fetchInvoiceCows(SQLDatabaseWrapper db, int invoiceId) {
         return fetchCows(db,where(QCow.invoiceId.eq(invoiceId)));
     }
 
@@ -488,7 +488,7 @@ public class PurchasesStore extends AbstractSQLStore {
 
         Future<Collection<CowObj>> future = mDb.submit(new SQLCallable<Collection<CowObj>>() {
             @Override
-            public Collection<CowObj> call(SQLDatabase db) throws Exception {
+            public Collection<CowObj> call(SQLDatabaseWrapper db) throws Exception {
                 return fetchCows(db, query);
             }
         });
@@ -497,7 +497,7 @@ public class PurchasesStore extends AbstractSQLStore {
     }
 
     @NonNull
-    private Collection<CowObj> fetchCows(SQLDatabase db, Query query) {
+    private Collection<CowObj> fetchCows(SQLDatabaseWrapper db, Query query) {
         LinkedList<CowObj> cows = new LinkedList<CowObj>();
         String where = null;
         long limit = -1;
@@ -624,7 +624,7 @@ public class PurchasesStore extends AbstractSQLStore {
 
         Future<InvoiceObj> future = mDb.submitTransaction(new SQLCallable<InvoiceObj>() {
             @Override
-            public InvoiceObj call(SQLDatabase db) {
+            public InvoiceObj call(SQLDatabaseWrapper db) {
                 ContentValues invoiceValues = createInvoiceValues(invoice);
                 db.insertOrThrow(TABLE_NAME_INVOICES, invoiceValues);
                 int newInvoiceId = db.queryMax(TABLE_NAME_INVOICES, INVOICES_INVOICEID, 1);
@@ -657,7 +657,7 @@ public class PurchasesStore extends AbstractSQLStore {
 
     }
 
-    private void insertInvoiceHent(SQLDatabase db, int invoiceId, InvoiceHent hent) {
+    private void insertInvoiceHent(SQLDatabaseWrapper db, int invoiceId, InvoiceHent hent) {
         ContentValues invoiceHentValues = createInvoiceHentValues(hent);
         invoiceHentValues.put(INVOICEHENTS_INVOICEID, invoiceId);
         db.insertOrThrow(TABLE_NAME_INVOICEHENTS, invoiceHentValues);
@@ -688,7 +688,7 @@ public class PurchasesStore extends AbstractSQLStore {
         return hentValues;
     }
 
-    private void insertDeduction(SQLDatabase db, int invoiceId, InvoiceDeduction deduction) {
+    private void insertDeduction(SQLDatabaseWrapper db, int invoiceId, InvoiceDeduction deduction) {
         ContentValues deductionValues = createDeductionValues(deduction);
         deductionValues.put(INVOICEDEDUCTIONS_INVOICEID, invoiceId);
         db.insertOrThrow(TABLE_NAME_INVOICEDEDUCTIONS, deductionValues);
@@ -703,7 +703,7 @@ public class PurchasesStore extends AbstractSQLStore {
         return deductionValues;
     }
 
-    private int insertInvoiceCow(SQLDatabase db, int invoiceId, CowDetails cowDetails) {
+    private int insertInvoiceCow(SQLDatabaseWrapper db, int invoiceId, CowDetails cowDetails) {
 
         ContentValues cowValues = createCowValues(cowDetails);
         cowValues.put(COWS_INVOICE, invoiceId);
@@ -736,7 +736,7 @@ public class PurchasesStore extends AbstractSQLStore {
 
         Future<Void> future = mDb.submitTransaction(new SQLCallable<Void>() {
             @Override
-            public Void call(SQLDatabase db) {
+            public Void call(SQLDatabaseWrapper db) {
                 ContentValues invoiceValues = createInvoiceValues(invoice);
                 int invoiceId = invoice.getId();
                 db.updateOrThrow(TABLE_NAME_INVOICES, invoiceValues, INVOICES_INVOICEID + '=' + invoiceId);
@@ -763,19 +763,19 @@ public class PurchasesStore extends AbstractSQLStore {
 
     }
 
-    private void deleteInvoiceHent(SQLDatabase db, int invoiceId) {
+    private void deleteInvoiceHent(SQLDatabaseWrapper db, int invoiceId) {
         ContentValues where = new ContentValues();
         where.put(INVOICEHENTS_INVOICEID, invoiceId);
         db.deleteOrThrow(TABLE_NAME_INVOICEHENTS, where);
     }
 
-    private void deleteInvoiceDeductions(SQLDatabase db, int invoiceId) {
+    private void deleteInvoiceDeductions(SQLDatabaseWrapper db, int invoiceId) {
         ContentValues where = new ContentValues();
         where.put(INVOICEDEDUCTIONS_INVOICEID, invoiceId);
         db.deleteOrThrow(TABLE_NAME_INVOICEDEDUCTIONS, where);
     }
 
-    private void deleteInvoiceCows(SQLDatabase db, int invoiceId) {
+    private void deleteInvoiceCows(SQLDatabaseWrapper db, int invoiceId) {
         ContentValues where = new ContentValues();
         where.put(COWS_INVOICE, invoiceId);
         db.deleteOrThrow(TABLE_NAME_COWS, where);
@@ -800,7 +800,7 @@ public class PurchasesStore extends AbstractSQLStore {
 
         Future<Void> future = mDb.submit(new SQLCallable<Void>() {
             @Override
-            public Void call(SQLDatabase db) {
+            public Void call(SQLDatabaseWrapper db) {
                 ContentValues values = new ContentValues();
                 values.put(PURACHES_STATE, nullOrToString(state));
                 db.updateOrThrow(TABLE_NAME_PURCHASES, values, PURACHES_PURACHEID + '=' + purchaseId);
@@ -815,7 +815,7 @@ public class PurchasesStore extends AbstractSQLStore {
 
         Future<Void> future = mDb.submit(new SQLCallable<Void>() {
             @Override
-            public Void call(SQLDatabase db) {
+            public Void call(SQLDatabaseWrapper db) {
                 ContentValues detailsValues = createPurchaseDetailsValues(purchaseDetails);
                 db.updateOrThrow(TABLE_NAME_PURCHASES, detailsValues, PURACHES_PURACHEID + '=' + purchaseId);
                 return null;
@@ -829,7 +829,7 @@ public class PurchasesStore extends AbstractSQLStore {
 
         Future<Void> future = mDb.submitTransaction(new SQLCallable<Void>() {
             @Override
-            public Void call(SQLDatabase db) {
+            public Void call(SQLDatabaseWrapper db) {
                 deleteInvoiceCows(db, invoiceId);
                 deleteInvoiceDeductions(db, invoiceId);
                 deleteInvoiceHent(db, invoiceId);
@@ -850,7 +850,7 @@ public class PurchasesStore extends AbstractSQLStore {
 
         Future<Collection<InvoiceDetails>> future = mDb.submit(new SQLCallable<Collection<InvoiceDetails>>() {
             @Override
-            public Collection<InvoiceDetails> call(SQLDatabase db) throws Exception {
+            public Collection<InvoiceDetails> call(SQLDatabaseWrapper db) throws Exception {
                 List<InvoiceObj> invoiceShells = fetchInvoiceShells(db,query);
                 return Lists.transform(invoiceShells, new Function<InvoiceObj, InvoiceDetails>() {
                     @Override

@@ -22,7 +22,7 @@ import java.util.concurrent.Callable;
  */
 class SQLQueueCallable<T> implements Callable<T> {
 
-    private SQLDatabase db;
+    private SQLDatabaseWrapper db;
     private boolean runInTransaction;
     private SQLCallable<T> sqlCallable;
 
@@ -36,7 +36,7 @@ class SQLQueueCallable<T> implements Callable<T> {
      * @param db The SQLDatabase to use for invoking
      * @param sqlCallable The SQLCallable to invoke
      */
-    SQLQueueCallable(SQLDatabase db, SQLCallable<T> sqlCallable) {
+    SQLQueueCallable(SQLDatabaseWrapper db, SQLCallable<T> sqlCallable) {
         this.db = db;
         this.sqlCallable = sqlCallable;
     }
@@ -52,7 +52,7 @@ class SQLQueueCallable<T> implements Callable<T> {
      * @param sqlCallable The SQLCallable to invoke
      * @param runInTransaction Whether to invoke the SQLCallable in a new transaction
      */
-    SQLQueueCallable(SQLDatabase db, SQLCallable<T> sqlCallable, boolean runInTransaction) {
+    SQLQueueCallable(SQLDatabaseWrapper db, SQLCallable<T> sqlCallable, boolean runInTransaction) {
         this.db = db;
         this.runInTransaction = runInTransaction;
         this.sqlCallable = sqlCallable;

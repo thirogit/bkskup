@@ -1,11 +1,10 @@
 package com.bk.bkskup3.dao;
 
-import android.app.Service;
 import android.content.ContentValues;
 import android.database.Cursor;
 
 import com.bk.bkskup3.db.SQLCallable;
-import com.bk.bkskup3.db.SQLDatabase;
+import com.bk.bkskup3.db.SQLDatabaseWrapper;
 import com.bk.bkskup3.db.SQLDatabaseQueue;
 import com.bk.bkskup3.library.DocumentOption;
 import com.bk.bkskup3.library.DocumentPreference;
@@ -49,7 +48,7 @@ public class DocumentOptionsStore extends AbstractSQLStore {
 
         Future<Collection<DocumentPreference>> future = mDb.submit(new SQLCallable<Collection<DocumentPreference>>() {
             @Override
-            public Collection<DocumentPreference> call(SQLDatabase db) throws Exception {
+            public Collection<DocumentPreference> call(SQLDatabaseWrapper db) throws Exception {
                 LinkedList<DocumentPreference> preferences = new LinkedList<DocumentPreference>();
                 Cursor cursor = null;
                 try {
@@ -89,7 +88,7 @@ public class DocumentOptionsStore extends AbstractSQLStore {
     {
         Future<Collection<DocumentProfileCount>> future = mDb.submit(new SQLCallable<Collection<DocumentProfileCount>>() {
             @Override
-            public Collection<DocumentProfileCount> call(SQLDatabase db) {
+            public Collection<DocumentProfileCount> call(SQLDatabaseWrapper db) {
                 LinkedList<DocumentProfileCount> counts = new LinkedList<>();
                 Cursor cursor = null;
                 try {
@@ -124,7 +123,7 @@ public class DocumentOptionsStore extends AbstractSQLStore {
     {
         Future<Collection<DocumentProfile>> future = mDb.submit(new SQLCallable<Collection<DocumentProfile>>() {
             @Override
-            public Collection<DocumentProfile> call(SQLDatabase db) {
+            public Collection<DocumentProfile> call(SQLDatabaseWrapper db) {
                 LinkedList<DocumentProfile> profiles = new LinkedList<DocumentProfile>();
                 Cursor cursor = null;
                 try {
@@ -172,7 +171,7 @@ public class DocumentOptionsStore extends AbstractSQLStore {
 
     }
 
-    private Collection<DocumentOption> fetchOptions(SQLDatabase db,int profileId) {
+    private Collection<DocumentOption> fetchOptions(SQLDatabaseWrapper db, int profileId) {
         Map<String,DocumentOption> options = new HashMap<String, DocumentOption>();
         Cursor cursor = null;
         try {
@@ -220,7 +219,7 @@ public class DocumentOptionsStore extends AbstractSQLStore {
 
         Future<Void> future = mDb.submit(new SQLCallable<Void>() {
             @Override
-            public Void call(SQLDatabase db) {
+            public Void call(SQLDatabaseWrapper db) {
                 ContentValues preferenceValues = createPreferenceValues(preference);
                 preferenceValues.put(DOCUMENT_PREFERENCES_DOCCODE,preference.getDocumentCode());
                 db.insertOrThrow(TABLE_NAME_DOCUMENT_PREFERENCES, preferenceValues);
@@ -243,7 +242,7 @@ public class DocumentOptionsStore extends AbstractSQLStore {
 
         Future<Void> future = mDb.submit(new SQLCallable<Void>() {
             @Override
-            public Void call(SQLDatabase db) {
+            public Void call(SQLDatabaseWrapper db) {
                 ContentValues values = createPreferenceValues(preference);
                 ContentValues where = new ContentValues();
                 where.put(DOCUMENT_PREFERENCES_DOCCODE, preference.getDocumentCode());
@@ -261,7 +260,7 @@ public class DocumentOptionsStore extends AbstractSQLStore {
     {
         Future<Void> future = mDb.submitTransaction(new SQLCallable<Void>() {
             @Override
-            public Void call(SQLDatabase db) {
+            public Void call(SQLDatabaseWrapper db) {
                 deleteProfileOptions(db,profileId);
 
                 ContentValues values = new ContentValues();
@@ -276,14 +275,14 @@ public class DocumentOptionsStore extends AbstractSQLStore {
 
     }
 
-    private void deleteProfileOptions(SQLDatabase db,int profileId)
+    private void deleteProfileOptions(SQLDatabaseWrapper db, int profileId)
     {
         ContentValues values = new ContentValues();
         values.put(DOCUMENT_OPTIONS_PROFILEID,profileId);
         db.deleteOrThrow(TABLE_NAME_DOCUMENT_OPTIONS,values);
     }
 
-    private void insertProfileOptionPart(SQLDatabase db,int profileId,OptionValuePart option)
+    private void insertProfileOptionPart(SQLDatabaseWrapper db, int profileId, OptionValuePart option)
     {
         ContentValues optionValues = new ContentValues();
         optionValues.put(DOCUMENT_OPTIONS_OPTIONNAME,option.optionName);
@@ -298,7 +297,7 @@ public class DocumentOptionsStore extends AbstractSQLStore {
     {
         Future<DocumentProfile> future = mDb.submitTransaction(new SQLCallable<DocumentProfile>() {
             @Override
-            public DocumentProfile call(SQLDatabase db) {
+            public DocumentProfile call(SQLDatabaseWrapper db) {
                 ContentValues profileValues = new ContentValues();
                 profileValues.put(DOCUMENT_OPTIONS_PROFILE_NAME, profile.getProfileName());
                 profileValues.put(DOCUMENT_OPTIONS_PROFILE_DOCCODE, profile.getDocumentCode());
@@ -322,7 +321,7 @@ public class DocumentOptionsStore extends AbstractSQLStore {
 
     }
 
-    private void insertProfileOption(SQLDatabase db,int profileId, DocumentOption option) {
+    private void insertProfileOption(SQLDatabaseWrapper db, int profileId, DocumentOption option) {
         Collection<OptionValuePart> parts = divideValue(option);
         for(OptionValuePart part : parts)
         {
@@ -351,7 +350,7 @@ public class DocumentOptionsStore extends AbstractSQLStore {
 
         Future<Void> future = mDb.submitTransaction(new SQLCallable<Void>() {
             @Override
-            public Void call(SQLDatabase db) {
+            public Void call(SQLDatabaseWrapper db) {
                 int id = profile.getProfileId();
                 deleteProfileOptions(db, id);
                 for (DocumentOption option : profile.getOptions()) {

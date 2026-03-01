@@ -9,7 +9,7 @@ import com.bk.bksettings.runtime.SettingSetter;
 import com.bk.bksettings.runtime.SettingsException;
 import com.bk.bksettings.runtime.SettingsIntrospector;
 import com.bk.bkskup3.db.SQLCallable;
-import com.bk.bkskup3.db.SQLDatabase;
+import com.bk.bkskup3.db.SQLDatabaseWrapper;
 import com.bk.bkskup3.db.SQLDatabaseQueue;
 import com.bk.bkskup3.model.Agent;
 import com.bk.bkskup3.model.Company;
@@ -43,7 +43,7 @@ public class SettingsStore extends AbstractSQLStore {
 
             Future<Void> future = mDb.submitTransaction(new SQLCallable<Void>() {
                 @Override
-                public Void call(SQLDatabase db) {
+                public Void call(SQLDatabaseWrapper db) {
                     ContentValues settingValues = new ContentValues();
 
                     settingValues.put(SETTINGS_TYPE, setting.getType().getId());
@@ -96,7 +96,7 @@ public class SettingsStore extends AbstractSQLStore {
 
         Future<Setting> fetchFuture = mDb.submit(new SQLCallable<Setting>() {
             @Override
-            public Setting call(SQLDatabase db) throws Exception {
+            public Setting call(SQLDatabaseWrapper db) throws Exception {
                 ContentValues where = new ContentValues();
                 where.put(SETTINGS_NAME, settingName);
                 Cursor settingsCursor =

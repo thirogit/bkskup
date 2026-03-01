@@ -27,7 +27,7 @@ public class SchemaOnlyMigration implements Migration {
         this.statements = Arrays.copyOf(statements, statements.length);
     }
 
-    public void runMigration(SQLDatabase db) throws Exception {
+    public void runMigration(SQLDatabaseWrapper db) throws Exception {
         for (String statement : statements) {
             db.execSQL(statement);
         }

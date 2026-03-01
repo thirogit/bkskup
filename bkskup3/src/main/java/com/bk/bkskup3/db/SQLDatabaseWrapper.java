@@ -1,11 +1,9 @@
 package com.bk.bkskup3.db;
 
 import android.content.ContentValues;
-import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteException;
 
 import com.bk.bkskup3.utils.Dates;
 import com.google.common.base.Joiner;
@@ -18,21 +16,16 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-public class SQLDatabase {
+public class SQLDatabaseWrapper {
 
     private SQLiteDatabase mDb;
 
+    public SQLDatabaseWrapper(SQLiteDatabase mDb) {
+        this.mDb = mDb;
+    }
+
     public int getVersion() {
         return this.mDb.getVersion();
-    }
-
-    public SQLDatabase open(File file) {
-        mDb = SQLiteDatabase.openOrCreateDatabase(file, null);
-        return this;
-    }
-
-    public void close() {
-        mDb.close();
     }
 
     public int queryCount(String tableName, ContentValues queryConditions) {

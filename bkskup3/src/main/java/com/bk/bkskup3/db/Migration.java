@@ -24,9 +24,9 @@ public interface Migration {
      *
      * Throw an exception if the migration fails.
      *
-     * @param db The {@link SQLDatabase} to migrate
+     * @param db The {@link SQLDatabaseWrapper} to migrate
      * @throws Exception an exception was thrown during migration
      */
-    void runMigration(SQLDatabase db) throws Exception;
+    void runMigration(SQLDatabaseWrapper db) throws Exception;
 
 }

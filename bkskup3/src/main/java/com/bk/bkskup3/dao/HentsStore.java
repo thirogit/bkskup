@@ -5,7 +5,7 @@ import android.content.ContentValues;
 import com.bk.bkskup3.dao.q.QHent;
 import com.bk.bkskup3.db.BKCursor;
 import com.bk.bkskup3.db.SQLCallable;
-import com.bk.bkskup3.db.SQLDatabase;
+import com.bk.bkskup3.db.SQLDatabaseWrapper;
 import com.bk.bkskup3.db.SQLDatabaseQueue;
 import com.bk.bkskup3.model.EAN;
 import com.bk.bkskup3.model.Hent;
@@ -68,7 +68,7 @@ public class HentsStore extends AbstractSQLStore {
 
         Future<Collection<HentObj>> fetchHentFuture = mDb.submit(new SQLCallable<Collection<HentObj>>() {
             @Override
-            public Collection<HentObj> call(SQLDatabase db) {
+            public Collection<HentObj> call(SQLDatabaseWrapper db) {
                 Collection<HentObj> hents = new LinkedList<HentObj>();
                 BKCursor hentCursor = null;
 
