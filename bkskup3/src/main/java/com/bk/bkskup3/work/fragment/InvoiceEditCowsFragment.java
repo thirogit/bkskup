@@ -106,9 +106,9 @@ public class InvoiceEditCowsFragment extends InvoiceFragment {
             case R.id.menuDeleteCow:
                 onDeleteCow();
                 break;
-            case R.id.menuCapturePassport:
+//            case R.id.menuCapturePassport:
 //                onOCRPassport();
-                break;
+//                break;
         }
         return super.onOptionsItemSelected(item);
     }

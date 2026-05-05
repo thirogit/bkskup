@@ -10,7 +10,17 @@
           <theme>@style/Theme.mTheme</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/camera_input.xml">
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/invoice_cows.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/menu/invoice_cow_crud_menu.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/menu/invoice_cow_menu.xml">
         <config>
           <theme>@style/Theme.mTheme</theme>
         </config>
@@ -198,21 +208,137 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="883182f0-1c87-42e8-8a71-4b7d69048ea7" name="Default" comment="buduje sie i uruchamia na tabletach od michala">
+    <list default="true" id="883182f0-1c87-42e8-8a71-4b7d69048ea7" name="Default" comment="poprawki inicializacji bazy danych na pusto">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/BkApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/BkApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/dao/DefinitionsStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/dao/DefinitionsStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/dao/DocumentOptionsStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/dao/DocumentOptionsStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/dao/HentsStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/dao/HentsStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/dao/InvoiceNoTransactionStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/dao/InvoiceNoTransactionStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/dao/PurchasesStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/dao/PurchasesStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/dao/SettingsStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/dao/SettingsStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/db/Migration.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/db/Migration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/db/SQLCallable.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/db/SQLCallable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/db/SQLDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/db/SQLDatabaseWrapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/db/SQLDatabaseQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/db/SQLDatabaseQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/db/SQLQueueCallable.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/db/SQLQueueCallable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/db/SchemaOnlyMigration.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/db/SchemaOnlyMigration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/barcodeservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/barcodeservice/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/barcodeservice/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/barcodeservice/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkbands/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/bkbands/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkbands/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bkbands/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bksettings/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/bksettings/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bksettings/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bksettings/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkskup3/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/fragment/InvoiceEditCowsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/fragment/InvoiceEditCowsFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/res/menu/invoice_cow_crud_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/res/menu/invoice_cow_crud_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/res/menu/invoice_cow_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/res/menu/invoice_cow_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkwidgets/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/bkwidgets/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkwidgets/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bkwidgets/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluetoothcommon/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/bluetoothcommon/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluetoothcommon/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bluetoothcommon/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/countries/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/countries/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/countries/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/countries/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/java/com/todobom/opennotescanner/ClickListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/java/com/todobom/opennotescanner/FullScreenImageAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/java/com/todobom/opennotescanner/FullScreenViewActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/java/com/todobom/opennotescanner/GalleryGridActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/java/com/todobom/opennotescanner/ImageProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/java/com/todobom/opennotescanner/OpenNoteScannerActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/java/com/todobom/opennotescanner/OpenNoteScannerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/java/com/todobom/opennotescanner/SettingsActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/java/com/todobom/opennotescanner/SettingsFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/java/com/todobom/opennotescanner/helpers/AboutFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/java/com/todobom/opennotescanner/helpers/AppConstant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/java/com/todobom/opennotescanner/helpers/CustomOpenCVLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/java/com/todobom/opennotescanner/helpers/OpenNoteMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/java/com/todobom/opennotescanner/helpers/PreviewFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/java/com/todobom/opennotescanner/helpers/Quadrilateral.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/java/com/todobom/opennotescanner/helpers/ScannedDocument.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/java/com/todobom/opennotescanner/helpers/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/java/com/todobom/opennotescanner/views/HUDCanvasView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/java/com/todobom/opennotescanner/views/OpenNoteCameraView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/java/com/todobom/opennotescanner/views/SquareFrameLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/java/com/todobom/opennotescanner/views/TagEditorFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/java/com/todobom/opennotescanner/views/TouchImageView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable-hdpi/ic_delete_white_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable-mdpi/ic_delete_white_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable-v21/ic_menu_camera.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable-v21/ic_menu_gallery.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable-v21/ic_menu_manage.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable-v21/ic_menu_send.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable-v21/ic_menu_share.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable-v21/ic_menu_slideshow.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable-xhdpi/ic_delete_white_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable-xxhdpi/ic_delete_white_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable-xxxhdpi/ic_delete_white_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable/angle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable/button_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable/ic_arrow_back_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable/ic_camera_green.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable/ic_done_all_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable/ic_find_in_page.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable/ic_flash_on_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable/ic_info_outline_white_24px.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable/ic_menu_tag.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable/ic_monochrome.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable/ic_palette.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable/ic_photo_filter_white_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable/ic_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable/ic_tag_bell.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable/ic_tag_game.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable/ic_tag_gift.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable/ic_tag_magnet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable/ic_tag_rocket.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable/ic_tag_star.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable/ic_tag_tv.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable/round_button.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/drawable/side_nav_bar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/layout/about_view.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/layout/activity_fullscreen_view.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/layout/activity_gallery.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/layout/activity_open_note_scanner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/layout/activity_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/layout/gallery_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/layout/layout_fullscreen_image.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/layout/tageditor_view.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/menu/menu_gallery.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/menu/menu_imagepager.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/values-cs/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/values-de/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/values-el/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/values-es/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/values-fr/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/values-he/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/values-it/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/values-ja/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/values-nl/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/values-pt/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/values-ru/values-ru.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/values-v21/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/values-w820dp/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/values-zh-rTW/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/values/attrs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/values/drawables.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/passportscanner/src/main/res/xml/settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/printservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/printservice/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/printservice/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/printservice/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <list id="0fb91eea-005f-44d2-b29d-68e5df9e35cd" name="ignore" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -223,7 +349,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[LocalEmulator::path=C:\Users\thiro\.android\avd\Medium_Phone.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -248,7 +374,7 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="bkskup" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -260,6 +386,13 @@
                 <item name="bkskup" type="f1a62948:ProjectNode" />
                 <item name="bkskup3" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bkskup" type="f1a62948:ProjectNode" />
+                <item name="bkskup3" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -288,6 +421,11 @@
     <option name="BUILD_TARGET_KEY" value="apk" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
@@ -301,29 +439,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Android App.bkskup3.executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Upgrade Gradle wrapper.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.bkskup3:bkskup3 [build].executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/prj/bk/bkskup&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Android App.bkskup3.executor": "Debug",
+    "Gradle.Configure Daemon JVM Criteria.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.Upgrade Gradle wrapper.executor": "Run",
+    "Gradle.bkskup3 [build].executor": "Run",
+    "Gradle.bkskup3:bkskup3 [build].executor": "Run",
+    "GradleDaemonJvmCriteriaMigrationNotification.isNotificationDisabled": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "android16",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/prj/bk/bkskup",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "experimental"
   }
-}</component>
+}]]></component>
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Signing Configs" />
     <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
@@ -339,7 +480,7 @@
       <recent name="C:\DEV\my\bkskup3\bkskup3\src\main\res\layout" />
     </key>
   </component>
-  <component name="RunManager" selected="Android App.bkskup3">
+  <component name="RunManager" selected="Gradle.bkskup3 [build]">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -579,8 +720,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.bkskup3:bkskup3 [build]" />
         <item itemvalue="Gradle.bkskup3 [build]" />
+        <item itemvalue="Gradle.bkskup3:bkskup3 [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -681,7 +822,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772310293002</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="poprawki inicializacji bazy danych na pusto">
+      <option name="closed" value="true" />
+      <created>1772376368465</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1772376368466</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -733,7 +882,8 @@
     <MESSAGE value="przejscie na nowsza wersja android studio; umowa o terminie platnoscie wsteczna" />
     <MESSAGE value="umowa o terminie platnoscie wsteczna - document option daydate" />
     <MESSAGE value="buduje sie i uruchamia na tabletach od michala" />
-    <option name="LAST_COMMIT_MESSAGE" value="buduje sie i uruchamia na tabletach od michala" />
+    <MESSAGE value="poprawki inicializacji bazy danych na pusto" />
+    <option name="LAST_COMMIT_MESSAGE" value="poprawki inicializacji bazy danych na pusto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -779,19 +929,49 @@
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
       <map>
+        <entry key="com.bk.bands.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1778015299344" />
+          </value>
+        </entry>
+        <entry key="com.bk.barcode.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1778015291456" />
+          </value>
+        </entry>
+        <entry key="com.bk.bksettings.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1778015304549" />
+          </value>
+        </entry>
         <entry key="com.bk.bkskup3">
           <value>
-            <CheckInfo lastCheckTimestamp="1772296481289" />
+            <CheckInfo lastCheckTimestamp="1778013939462" />
           </value>
         </entry>
         <entry key="com.bk.bkskup3.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1772296481289" />
+            <CheckInfo lastCheckTimestamp="1778013939462" />
+          </value>
+        </entry>
+        <entry key="com.bk.btcommon.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1778015316992" />
+          </value>
+        </entry>
+        <entry key="com.bk.countries.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1778015322068" />
+          </value>
+        </entry>
+        <entry key="com.bk.widgets.actionbar.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1778015310957" />
           </value>
         </entry>
         <entry key="com.todobom.opennotescanner.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1772298788415" />
+            <CheckInfo lastCheckTimestamp="1778015328851" />
           </value>
         </entry>
       </map>
