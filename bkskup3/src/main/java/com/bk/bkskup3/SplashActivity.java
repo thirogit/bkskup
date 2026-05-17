@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.widget.TextView;
 
+import com.couchbase.lite.BuildConfig;
+
 public class SplashActivity extends Activity {
 
     // Splash screen timer

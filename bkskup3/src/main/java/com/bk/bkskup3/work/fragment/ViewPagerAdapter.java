@@ -5,9 +5,10 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Parcelable;
 //import android.support.v13.app.FragmentCompat;
-import android.support.v4.view.PagerAdapter;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.viewpager.widget.PagerAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

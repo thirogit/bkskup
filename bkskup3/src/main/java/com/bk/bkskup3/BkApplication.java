@@ -5,7 +5,8 @@ import android.app.Application;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 import com.bk.barcode.service.BarcodeService;
 import com.bk.bkskup3.dao.BkStore;
@@ -62,14 +63,9 @@ import com.bk.bkskup3.work.QuickCowActivity;
 import com.bk.bkskup3.work.ScanBarcodeActivity;
 import com.bk.bkskup3.work.ScanHentActivity;
 import com.bk.print.service.PrintService;
+import com.couchbase.lite.CouchbaseLite;
 import com.facebook.stetho.Stetho;
-import com.firebase.jobdispatcher.Constraint;
-import com.firebase.jobdispatcher.FirebaseJobDispatcher;
-import com.firebase.jobdispatcher.GooglePlayDriver;
-import com.firebase.jobdispatcher.Job;
-import com.firebase.jobdispatcher.Lifetime;
-import com.firebase.jobdispatcher.RetryStrategy;
-import com.firebase.jobdispatcher.Trigger;
+import com.facebook.stetho.common.ExceptionUtil;
 
 import java.io.IOException;
 import java.util.concurrent.ThreadFactory;
@@ -77,8 +73,6 @@ import java.util.concurrent.ThreadFactory;
 import dagger.Module;
 import dagger.ObjectGraph;
 import dagger.Provides;
-import io.reactivex.exceptions.Exceptions;
-
 
 /**
  * Created by IntelliJ IDEA.
@@ -133,9 +127,6 @@ public class BkApplication extends Application {
             EditHentActivity.class,
             CowNoScanActivity.class,
             HentNoScanActivity.class,
-            ScanHentActivity.class,
-
-
     },
             library = true)
     public class StoreDependenciesModule {
@@ -197,6 +188,7 @@ public class BkApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
+        CouchbaseLite.init(this);
         Stetho.initializeWithDefaults(this);
 
         SQLiteDatabase db = this.openOrCreateDatabase("bkskup3",MODE_PRIVATE,null);
@@ -213,63 +205,63 @@ public class BkApplication extends Application {
         try {
             schemaUpdater.update(this.getResources().openRawResource(R.raw.schema1), 1);
         } catch (IOException e) {
-            Exceptions.propagate(e);
+            ExceptionUtil.propagate(e);
         }
         bkStore = new BkStore(bkDb);
 
-        startService(Intents.makeExplicit(this.getBaseContext(),new Intent(BarcodeService.class.getName())));
+//        startService(Intents.makeExplicit(this.getBaseContext(),new Intent(BarcodeService.class.getName())));
         startService(Intents.makeExplicit(this.getBaseContext(),new Intent(PrintService.class.getName())));
         startService(new Intent(this, DocumentLibraryService.class));
 
-        FirebaseJobDispatcher dispatcher = new FirebaseJobDispatcher(new GooglePlayDriver(this));
-
-        Job hentsSyncJob = dispatcher.newJobBuilder()
-                // the JobService that will be called
-                .setService(HentsSyncService.class)
-                // uniquely identifies the job
-                .setTag("hent-sync-job")
-                // one-off job
-                .setRecurring(true)
-                // don't persist past a device reboot
-                .setLifetime(Lifetime.FOREVER)
-                // start between 0 and 60 seconds from now
-                .setTrigger(Trigger.executionWindow(FETCH_HENTS_UPDATES_INTERVAL_MINUTES *60, FETCH_HENTS_UPDATES_INTERVAL_MINUTES *60 + 10))
-                // don't overwrite an existing job with the same tag
-                .setReplaceCurrent(true)
-                // retry with exponential backoff
-                .setRetryStrategy(RetryStrategy.DEFAULT_EXPONENTIAL)
-                // constraints that need to be satisfied for the job to run
-                .setConstraints(
-                        Constraint.ON_ANY_NETWORK
-                )
-                .setExtras(new Bundle())
-                .build();
-
-
-        Job uploadPurchaseJob = dispatcher.newJobBuilder()
-                // the JobService that will be called
-                .setService(PurchaseUploadService.class)
-                // uniquely identifies the job
-                .setTag("purchase-upload-job")
-                // one-off job
-                .setRecurring(true)
-                // don't persist past a device reboot
-                .setLifetime(Lifetime.FOREVER)
-                // start between 0 and 60 seconds from now
-                .setTrigger(Trigger.executionWindow(UPLOAD_PURCHASE_INTERVAL_MINUTES *60, UPLOAD_PURCHASE_INTERVAL_MINUTES *60 + 10))
-                // don't overwrite an existing job with the same tag
-                .setReplaceCurrent(true)
-                // retry with exponential backoff
-                .setRetryStrategy(RetryStrategy.DEFAULT_EXPONENTIAL)
-                // constraints that need to be satisfied for the job to run
-                .setConstraints(
-                        Constraint.ON_ANY_NETWORK
-                )
-                .setExtras(new Bundle())
-                .build();
-
-        dispatcher.mustSchedule(hentsSyncJob);
-        dispatcher.mustSchedule(uploadPurchaseJob);
+//        FirebaseJobDispatcher dispatcher = new FirebaseJobDispatcher(new GooglePlayDriver(this));
+//
+//        Job hentsSyncJob = dispatcher.newJobBuilder()
+//                // the JobService that will be called
+//                .setService(HentsSyncService.class)
+//                // uniquely identifies the job
+//                .setTag("hent-sync-job")
+//                // one-off job
+//                .setRecurring(true)
+//                // don't persist past a device reboot
+//                .setLifetime(Lifetime.FOREVER)
+//                // start between 0 and 60 seconds from now
+//                .setTrigger(Trigger.executionWindow(FETCH_HENTS_UPDATES_INTERVAL_MINUTES *60, FETCH_HENTS_UPDATES_INTERVAL_MINUTES *60 + 10))
+//                // don't overwrite an existing job with the same tag
+//                .setReplaceCurrent(true)
+//                // retry with exponential backoff
+//                .setRetryStrategy(RetryStrategy.DEFAULT_EXPONENTIAL)
+//                // constraints that need to be satisfied for the job to run
+//                .setConstraints(
+//                        Constraint.ON_ANY_NETWORK
+//                )
+//                .setExtras(new Bundle())
+//                .build();
+//
+//
+//        Job uploadPurchaseJob = dispatcher.newJobBuilder()
+//                // the JobService that will be called
+//                .setService(PurchaseUploadService.class)
+//                // uniquely identifies the job
+//                .setTag("purchase-upload-job")
+//                // one-off job
+//                .setRecurring(true)
+//                // don't persist past a device reboot
+//                .setLifetime(Lifetime.FOREVER)
+//                // start between 0 and 60 seconds from now
+//                .setTrigger(Trigger.executionWindow(UPLOAD_PURCHASE_INTERVAL_MINUTES *60, UPLOAD_PURCHASE_INTERVAL_MINUTES *60 + 10))
+//                // don't overwrite an existing job with the same tag
+//                .setReplaceCurrent(true)
+//                // retry with exponential backoff
+//                .setRetryStrategy(RetryStrategy.DEFAULT_EXPONENTIAL)
+//                // constraints that need to be satisfied for the job to run
+//                .setConstraints(
+//                        Constraint.ON_ANY_NETWORK
+//                )
+//                .setExtras(new Bundle())
+//                .build();
+//
+//        dispatcher.mustSchedule(hentsSyncJob);
+//        dispatcher.mustSchedule(uploadPurchaseJob);
 
         mObjectGraph = ObjectGraph.create(new StoreDependenciesModule(bkStore));
 

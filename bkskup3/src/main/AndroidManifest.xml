@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="DiscouragedApi"
+    >
 
     <uses-sdk />
 
@@ -8,12 +10,14 @@
     <!--<uses-feature android:name="android.hardware.camera.autofocus"  />-->
     <!--<uses-feature android:name="android.hardware.camera.front"  android:required="false" />-->
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<!--    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+<!--    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
     <!--<uses-permission android:name="android.permission.CAMERA" />-->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -35,6 +39,7 @@
 
         <activity
             android:name="com.bk.bkskup3.SplashActivity"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
 
@@ -182,6 +187,7 @@
 
         <activity
             android:name="com.bk.bkskup3.barcode.BarcodeServiceSettingsActivity"
+            android:exported="true"
             android:label="@string/bcscan_service"
             android:theme="@style/InputActivityInWindow">
             <intent-filter>

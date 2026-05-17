@@ -2,7 +2,6 @@ package com.bk.bkskup3.dao;
 
 import android.content.ContentValues;
 import android.database.Cursor;
-import android.support.annotation.Nullable;
 
 import com.bk.bkskup3.db.SQLCallable;
 import com.bk.bkskup3.db.SQLDatabaseWrapper;
@@ -14,6 +13,8 @@ import java.util.Collections;
 import java.util.concurrent.Future;
 
 import static com.bk.bkskup3.dao.WhereUtils.eq;
+
+import androidx.annotation.Nullable;
 
 public class InvoiceNoTransactionStore extends AbstractSQLStore {
 

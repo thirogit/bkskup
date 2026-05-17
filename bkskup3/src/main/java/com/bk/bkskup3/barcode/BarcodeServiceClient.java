@@ -58,7 +58,7 @@ public class BarcodeServiceClient {
                 }
             });
 
-    private ServiceConnection mServiceConnection = new ServiceConnection() {
+    private final ServiceConnection mServiceConnection = new ServiceConnection() {
         public void onServiceConnected(ComponentName className, IBinder service) {
             mServiceMessenger = new Messenger(service);
             try {

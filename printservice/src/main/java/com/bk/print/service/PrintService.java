@@ -27,10 +27,9 @@ import com.bk.bands.serializer.DocumentBean;
 import com.bk.btcommon.model.BluetoothAddress;
 import com.couchbase.lite.CouchbaseLiteException;
 import com.couchbase.lite.Database;
-import com.couchbase.lite.DatabaseOptions;
+import com.couchbase.lite.DatabaseConfiguration;
 import com.couchbase.lite.Document;
-import com.couchbase.lite.Manager;
-import com.couchbase.lite.android.AndroidContext;
+import com.couchbase.lite.MutableDocument;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -94,7 +93,6 @@ public class PrintService extends Service {
 
     private PrintWorker mWorker = new PrintWorker();
 
-    private Manager mManager;
     private Database mDatabase;
 
     public static final String ACTION_SERVICE_STARTED = "com.bk.print.service.action.SERVICE_STARTED";
@@ -122,7 +120,6 @@ public class PrintService extends Service {
             }
         }
     };
-
 
 
     private void onBeforeBluetoothTurnedOff() {
@@ -188,16 +185,14 @@ public class PrintService extends Service {
     }
 
 
-
-
     private static final int MSG_CONNECTION_DISPOSE = 1;
     private Handler mConnectionDisposeHandler = new Handler() {
         public void handleMessage(Message msg) {
 
             Log.d(TAG, "connection disposal check");
             if (mConnectionState != ConnectionState.DISCONNECTED) {
-                for(PrintJobState state : mJobs.values()) {
-                    if(state.status == JobStatus.Printing || state.status == JobStatus.Waiting ) {
+                for (PrintJobState state : mJobs.values()) {
+                    if (state.status == JobStatus.Printing || state.status == JobStatus.Waiting) {
                         Log.d(TAG, "there are active jobs in job queue, deferring connection disposal");
                         scheduleConnectionDisposal();
                         return;
@@ -206,9 +201,7 @@ public class PrintService extends Service {
                     Log.d(TAG, "disposing connection");
                     disconnect();
                 }
-            }
-            else
-            {
+            } else {
                 Log.d(TAG, "connection already disposed");
             }
         }
@@ -232,8 +225,7 @@ public class PrintService extends Service {
         }
     }
 
-    private void scheduleConnectionDisposal()
-    {
+    private void scheduleConnectionDisposal() {
         Log.d(TAG, "scheduling connection disposal in " + CONNECTION_DISPOSAL_DELAY_SEC + "ms");
         mConnectionDisposeHandler.sendEmptyMessageDelayed(MSG_CONNECTION_DISPOSE, CONNECTION_DISPOSAL_DELAY_SEC);
     }
@@ -272,7 +264,7 @@ public class PrintService extends Service {
         Message message = Message.obtain();
 
         Bundle data = new Bundle();
-        data.putParcelable(MSG_PRINTER_BTADDR_KEY,readPrinterAddress());
+        data.putParcelable(MSG_PRINTER_BTADDR_KEY, readPrinterAddress());
         message.setData(data);
         message.what = PrintServiceCommons.MSG_NOTIFY_PRINTER_ADDRESS;
         try {
@@ -355,16 +347,16 @@ public class PrintService extends Service {
             PrintJobState jobState = mJobs.get(jobId);
             jobState.progress = progress;
             jobState.status = JobStatus.Printing;
-            updatePrintJob(jobState,null);
-            notifyJobProgress(jobId,progress);
+            updatePrintJob(jobState, null);
+            notifyJobProgress(jobId, progress);
         }
 
         @Override
         public void onJobError(UUID jobId, String errorCode) {
             PrintJobState jobState = mJobs.get(jobId);
             jobState.status = JobStatus.Error;
-            updatePrintJob(jobState,errorCode);
-            notifyJobEror(jobId,errorCode);
+            updatePrintJob(jobState, errorCode);
+            notifyJobError(jobId, errorCode);
             mJobs.remove(jobId);
         }
 
@@ -372,7 +364,7 @@ public class PrintService extends Service {
         public void onJobStarted(UUID jobId) {
             PrintJobState jobState = mJobs.get(jobId);
             jobState.status = JobStatus.Printing;
-            updatePrintJob(jobState,null);
+            updatePrintJob(jobState, null);
             notifyJobStarted(jobId);
         }
 
@@ -381,7 +373,7 @@ public class PrintService extends Service {
         public void onJobAborted(UUID jobId) {
             PrintJobState jobState = mJobs.get(jobId);
             jobState.status = JobStatus.Aborted;
-            updatePrintJob(jobState,null);
+            updatePrintJob(jobState, null);
             notifyJobAborted(jobId);
             mJobs.remove(jobId);
         }
@@ -390,7 +382,7 @@ public class PrintService extends Service {
         public void onJobCompleted(UUID jobId) {
             PrintJobState jobState = mJobs.get(jobId);
             jobState.status = JobStatus.Completed;
-            updatePrintJob(jobState,null);
+            updatePrintJob(jobState, null);
             notifyJobCompleted(jobId);
             mJobs.remove(jobId);
         }
@@ -399,38 +391,38 @@ public class PrintService extends Service {
     private void notifyJobCompleted(UUID jobId) {
         Message msg = Message.obtain(null, MSG_NOTIFY_JOB_COMPLETED);
         Bundle data = msg.getData();
-        data.putSerializable(MSG_JOBID_KEY,jobId);
+        data.putSerializable(MSG_JOBID_KEY, jobId);
         sendMsgToListeners(msg);
     }
 
     private void notifyJobAborted(UUID jobId) {
         Message msg = Message.obtain(null, MSG_NOTIFY_JOB_ABORTED);
         Bundle data = msg.getData();
-        data.putSerializable(MSG_JOBID_KEY,jobId);
+        data.putSerializable(MSG_JOBID_KEY, jobId);
         sendMsgToListeners(msg);
     }
 
     private void notifyJobStarted(UUID jobId) {
         Message msg = Message.obtain(null, MSG_NOTIFY_JOB_STARTED);
         Bundle data = msg.getData();
-        data.putSerializable(MSG_JOBID_KEY,jobId);
+        data.putSerializable(MSG_JOBID_KEY, jobId);
         sendMsgToListeners(msg);
     }
 
 
-    private void notifyJobEror(UUID jobId, String errorCode) {
+    private void notifyJobError(UUID jobId, String errorCode) {
         Message msg = Message.obtain(null, MSG_NOTIFY_JOB_ERROR);
         Bundle data = msg.getData();
-        data.putString(MSG_ERROR_CODE,errorCode);
-        data.putSerializable(MSG_JOBID_KEY,jobId);
+        data.putString(MSG_ERROR_CODE, errorCode);
+        data.putSerializable(MSG_JOBID_KEY, jobId);
         sendMsgToListeners(msg);
     }
 
     private void notifyJobProgress(UUID jobId, int progress) {
         Message msg = Message.obtain(null, MSG_NOTIFY_JOB_PROGRESS);
         Bundle data = msg.getData();
-        data.putInt(MSG_PROGRESS_KEY,progress);
-        data.putSerializable(MSG_JOBID_KEY,jobId);
+        data.putInt(MSG_PROGRESS_KEY, progress);
+        data.putSerializable(MSG_JOBID_KEY, jobId);
         sendMsgToListeners(msg);
     }
 
@@ -501,7 +493,6 @@ public class PrintService extends Service {
     private void logPrintJob(PrintJobState jobState) {
         PrintJob job = jobState.job;
         UUID jobId = job.getJobId();
-        Document document = new Document(mDatabase, jobId.toString());
 
         PrintJobLogEntry logEntry = createLogEntry(jobState);
 
@@ -509,34 +500,49 @@ public class PrintService extends Service {
         });
 
         try {
-            document.putProperties(mapOfProperties);
+            MutableDocument document = new MutableDocument(jobId.toString());
+            document.setData(mapOfProperties);
+            com.couchbase.lite.Collection defaultCollection = mDatabase.getDefaultCollection();
+            defaultCollection.save(document);
+
         } catch (CouchbaseLiteException e) {
             Log.e(TAG, "failed to create print job log entry - " + jobId, e);
         }
     }
 
-    private void updatePrintJob(PrintJobState jobState,String errorCd) {
+    private void updatePrintJob(PrintJobState jobState, String errorCd) {
         PrintJob job = jobState.job;
         UUID jobId = job.getJobId();
-        Document retrievedDocument = mDatabase.getDocument(jobId.toString());
+
 
         try {
+            com.couchbase.lite.Collection defaultCollection = mDatabase.getDefaultCollection();
+            Document retrievedDocument = defaultCollection.getDocument(jobId.toString());
 
             if (retrievedDocument != null) {
 
                 PrintJobLogEntry logEntry = createLogEntry(jobState);
                 logEntry.setErrorCode(errorCd);
+
+                MutableDocument document = retrievedDocument.toMutable();
+
                 Map<String, Object> mapOfProperties = mMapper.convertValue(logEntry, new TypeReference<Map<String, Object>>() {
                 });
-                mapOfProperties.put("_rev",retrievedDocument.getCurrentRevisionId());
-                retrievedDocument.putProperties(mapOfProperties);
+//                mapOfProperties.put("_rev",retrievedDocument.getRevisionID());
+                document.setData(mapOfProperties);
+                defaultCollection.save(document);
+
             } else {
-                Document document = new Document(mDatabase, jobId.toString());
+                MutableDocument document = new MutableDocument(jobId.toString());
                 PrintJobLogEntry logEntry = createLogEntry(jobState);
                 logEntry.setErrorCode(errorCd);
                 Map<String, Object> mapOfProperties = mMapper.convertValue(logEntry, new TypeReference<Map<String, Object>>() {
                 });
-                document.putProperties(mapOfProperties);
+
+                document.setData(mapOfProperties);
+
+                defaultCollection.save(document);
+
             }
         } catch (CouchbaseLiteException e) {
             Log.e(TAG, "failed to update print job log entry - " + jobId, e);
@@ -579,14 +585,21 @@ public class PrintService extends Service {
                 jobDescriptors.add(jobDesc);
             } else {
 
-                Document retrievedDocument = mDatabase.getDocument(jobId.toString());
-                if (retrievedDocument != null) {
-                    Map<String, Object> mapOfProperties = retrievedDocument.getProperties();
-                    PrintJobLogEntry logEntry = mMapper.convertValue(mapOfProperties, PrintJobLogEntry.class);
-                    JobDescriptor jobDesc = new JobDescriptor(logEntry.getId(), logEntry.getDocumentName(), logEntry.getStatus());
-                    jobDesc.setProgress(100);
-                    jobDesc.setErrorCode(logEntry.getErrorCode());
-                    jobDescriptors.add(jobDesc);
+                try {
+                    com.couchbase.lite.Collection defaultCollection = mDatabase.getDefaultCollection();
+                    Document retrievedDocument = defaultCollection.getDocument(jobId.toString());
+
+                    if (retrievedDocument != null) {
+                        Map<String, Object> mapOfProperties = retrievedDocument.toMap();
+                        PrintJobLogEntry logEntry = mMapper.convertValue(mapOfProperties, PrintJobLogEntry.class);
+                        JobDescriptor jobDesc = new JobDescriptor(logEntry.getId(), logEntry.getDocumentName(), logEntry.getStatus());
+                        jobDesc.setProgress(100);
+                        jobDesc.setErrorCode(logEntry.getErrorCode());
+                        jobDescriptors.add(jobDesc);
+                    }
+
+                } catch (CouchbaseLiteException e) {
+                    Log.e(TAG, "failed to retrieve print job with id " + jobId, e);
                 }
             }
         }
@@ -692,41 +705,33 @@ public class PrintService extends Service {
         broadcastStop();
     }
 
-    private Manager getManager() {
-        if (mManager == null) {
-            try {
-                AndroidContext context = new AndroidContext(getApplicationContext());
-                mManager = new Manager(context, Manager.DEFAULT_OPTIONS);
-            } catch (Exception e) {
-                Log.e(TAG, "cannot create Manager object", e);
-            }
-        }
-        return mManager;
-    }
-
     private Database openDatabase() {
         try {
-            DatabaseOptions options = new DatabaseOptions();
-            options.setCreate(true);
-            options.setStorageType(Manager.SQLITE_STORAGE);
-            options.setEncryptionKey(null);
-            return getManager().openDatabase("printjobslog", options);
+            return new Database("printjobslog");
         } catch (CouchbaseLiteException e) {
             Log.e(TAG, "cannot create database", e);
         }
         return null;
     }
 
+
+//    static class JobsStore {
+//        private final Database mDatabase;
+//        private final com.couchbase.lite.Collection mDefaultCollection;
+//
+//
+//    }
+
     private void enableLogging() {
-        if (LOGGING_ENABLED) {
-            Manager.enableLogging(TAG, Log.VERBOSE);
-            Manager.enableLogging(com.couchbase.lite.util.Log.TAG, Log.VERBOSE);
-            Manager.enableLogging(com.couchbase.lite.util.Log.TAG_SYNC_ASYNC_TASK, Log.VERBOSE);
-            Manager.enableLogging(com.couchbase.lite.util.Log.TAG_SYNC, Log.VERBOSE);
-            Manager.enableLogging(com.couchbase.lite.util.Log.TAG_QUERY, Log.VERBOSE);
-            Manager.enableLogging(com.couchbase.lite.util.Log.TAG_VIEW, Log.VERBOSE);
-            Manager.enableLogging(com.couchbase.lite.util.Log.TAG_DATABASE, Log.VERBOSE);
-        }
+//        if (LOGGING_ENABLED) {
+//            Manager.enableLogging(TAG, Log.VERBOSE);
+//            Manager.enableLogging(com.couchbase.lite.util.Log.TAG, Log.VERBOSE);
+//            Manager.enableLogging(com.couchbase.lite.util.Log.TAG_SYNC_ASYNC_TASK, Log.VERBOSE);
+//            Manager.enableLogging(com.couchbase.lite.util.Log.TAG_SYNC, Log.VERBOSE);
+//            Manager.enableLogging(com.couchbase.lite.util.Log.TAG_QUERY, Log.VERBOSE);
+//            Manager.enableLogging(com.couchbase.lite.util.Log.TAG_VIEW, Log.VERBOSE);
+//            Manager.enableLogging(com.couchbase.lite.util.Log.TAG_DATABASE, Log.VERBOSE);
+//        }
     }
 
 }

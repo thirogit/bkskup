@@ -4,6 +4,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.function.Predicate;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -16,7 +17,6 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.android.internal.util.Predicate;
 import com.bk.bkskup3.R;
 import com.bk.countries.Countries;
 import com.bk.countries.Country;
@@ -198,7 +198,7 @@ public class CountrySpinner extends Spinner
       {
          return getCountryPosition(new Predicate<Country>()
          {
-            public boolean apply(Country country)
+            public boolean test(Country country)
             {
                return countryToFind.equals(country);
             }
@@ -209,7 +209,7 @@ public class CountrySpinner extends Spinner
       {
          return getCountryPosition(new Predicate<Country>()
          {
-            public boolean apply(Country country)
+            public boolean test(Country country)
             {
                return code2a.equals(country.getCode2A());
             }
@@ -228,7 +228,7 @@ public class CountrySpinner extends Spinner
             int count = adapter.getCount();
             for(int pos = 0; pos < count;pos++)
             {
-               if(condition.apply(adapter.getItem(pos).getCountry()))
+               if(condition.test(adapter.getItem(pos).getCountry()))
                {
                   return pos;
                }

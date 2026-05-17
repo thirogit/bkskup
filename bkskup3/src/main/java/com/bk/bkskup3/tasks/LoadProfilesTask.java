@@ -5,7 +5,6 @@ import android.os.AsyncTask;
 import com.bk.bkskup3.library.DocumentLibraryException;
 import com.bk.bkskup3.library.DocumentLibraryService;
 import com.bk.bkskup3.library.DocumentProfile;
-import com.google.firebase.crash.FirebaseCrash;
 
 import java.util.Collection;
 
@@ -42,7 +41,7 @@ public class LoadProfilesTask extends AsyncTask<Void, Void, TaskResult<Collectio
             Collection<DocumentProfile> documentProfiles = mService.getDocumentProfiles(mDocumentCode);
             return TaskResult.withResult(documentProfiles);
         } catch (DocumentLibraryException e) {
-            FirebaseCrash.report(e);
+//            FirebaseCrash.report(e); crashlytics
             return TaskResult.withError(e);
         }
     }

@@ -5,11 +5,11 @@ import android.util.Log;
 import com.bk.bkskup3.BkApplication;
 import com.bk.bkskup3.dao.BkStore;
 import com.bk.bkskup3.tasks.TaskResult;
-import com.crashlytics.android.Crashlytics;
-import com.firebase.jobdispatcher.JobParameters;
-import com.firebase.jobdispatcher.JobService;
+//import com.firebase.jobdispatcher.JobParameters;
+//import com.firebase.jobdispatcher.JobService;
 
-public class PurchaseUploadService extends JobService {
+public class PurchaseUploadService //extends JobService
+{
 
     private static final String TAG = PurchaseUploadService.class.getSimpleName();
 
@@ -38,16 +38,16 @@ public class PurchaseUploadService extends JobService {
         public void onTaskError(Exception e) {
             mUploadTask = null;
             Log.e(TAG,"upload task finished with error: " + e.getMessage());
-            Crashlytics.logException(e);
+//            Crashlytics.logException(e);
         }
     };
 
 
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        mStore = ((BkApplication)getApplication()).getStore();
-    }
+//    @Override
+//    public void onCreate() {
+//        super.onCreate();
+//        mStore = ((BkApplication)getApplication()).getStore();
+//    }
 
     private void onPurchaseUploaded(int purchaseId) {
         notifyPurchaseUploaded(purchaseId);
@@ -59,20 +59,20 @@ public class PurchaseUploadService extends JobService {
 //        sendMsgToListeners(msg);
     }
 
-    @Override
-    public boolean onStartJob(JobParameters job) {
-        if (mUploadTask == null) {
-
-            mUploadTask = new UploadPurchaseTask(mStore);
-            mUploadTask.attachObserver(mObserver);
-            mUploadTask.execute();
-            return false;
-        }
-        return true;
-    }
-
-    @Override
-    public boolean onStopJob(JobParameters job) {
-        return false;
-    }
+//    @Override
+//    public boolean onStartJob(JobParameters job) {
+//        if (mUploadTask == null) {
+//
+//            mUploadTask = new UploadPurchaseTask(mStore);
+//            mUploadTask.attachObserver(mObserver);
+//            mUploadTask.execute();
+//            return false;
+//        }
+//        return true;
+//    }
+//
+//    @Override
+//    public boolean onStopJob(JobParameters job) {
+//        return false;
+//    }
 }

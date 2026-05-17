@@ -1,8 +1,6 @@
 package com.bk.bkskup3.dao;
 
 import android.content.ContentValues;
-import android.support.annotation.NonNull;
-
 import com.bk.bkskup3.dao.q.QCow;
 import com.bk.bkskup3.dao.q.QInvoice;
 import com.bk.bkskup3.dao.q.QPurchase;
@@ -47,6 +45,8 @@ import static com.bk.bkskup3.utils.NullUtils.dateTimeLongOrNull;
 import static com.bk.bkskup3.utils.NullUtils.ibanOrNull;
 import static com.bk.bkskup3.utils.NullUtils.nullOrToString;
 import static com.mysema.query.support.QueryBuilder.where;
+
+import androidx.annotation.NonNull;
 
 public class PurchasesStore extends AbstractSQLStore {
 

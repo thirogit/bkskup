@@ -2,13 +2,14 @@ package com.bk.bkskup3.management.widget;
 
 import android.content.Context;
 import android.media.Image;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
 
 import com.bk.bkskup3.R;
 import com.bk.bkskup3.library.DocumentOptionType;

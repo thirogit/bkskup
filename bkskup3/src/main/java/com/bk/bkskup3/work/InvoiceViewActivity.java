@@ -7,12 +7,14 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.viewpager.widget.ViewPager;
+
 import com.bk.bkskup3.R;
 import com.bk.bkskup3.dao.DefinitionsStore;
 import com.bk.bkskup3.dao.PurchasesStore;
