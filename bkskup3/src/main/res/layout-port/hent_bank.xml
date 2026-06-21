@@ -4,7 +4,9 @@
     android:id="@+id/TableLayout01"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    >
 
     <RelativeLayout
         android:layout_width="fill_parent"

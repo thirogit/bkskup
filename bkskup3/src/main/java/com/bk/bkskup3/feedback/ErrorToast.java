@@ -1,6 +1,9 @@
 package com.bk.bkskup3.feedback;
 
 import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.bk.bkskup3.R;
 
@@ -28,8 +31,13 @@ public class ErrorToast
 
    public void show(CharSequence msg)
    {
+//      LayoutInflater li = (LayoutInflater)mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE );
+//      View toastView = li.inflate(R.layout.toast_hint_layout, null);
+//      TextView text = (TextView) toastView.findViewById(R.id.hint_text_tv);
+//      text.setText(resID);
+
       mToast.setText(msg);
-      mToast.getView().setBackgroundColor(mContext.getResources().getColor(R.color.validationerror));
+//      mToast.getView().setBackgroundColor(mContext.getResources().getColor(R.color.validationerror));
       mToast.setDuration(Toast.LENGTH_SHORT);
       mToast.show();
    }

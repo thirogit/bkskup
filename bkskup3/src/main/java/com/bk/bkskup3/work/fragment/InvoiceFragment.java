@@ -39,7 +39,6 @@ public abstract class InvoiceFragment extends Fragment {
     @Override
     public void onStop() {
         super.onStop();
-        mService = null;
         BusActivity activity = (BusActivity) getActivity();
         activity.unregister(this);
         Log.d(TAG, "on stop "+ this.getTag()+", service=" + mService);
@@ -78,6 +77,7 @@ public abstract class InvoiceFragment extends Fragment {
     @Override
     public void onDetach() {
         super.onDetach();
+        mService = null;
         Log.d(TAG, "on detach "+ this.getTag()+", service=" + mService);
     }
 
@@ -85,6 +85,12 @@ public abstract class InvoiceFragment extends Fragment {
     public void onDestroy() {
         super.onDestroy();
         Log.d(TAG, "on destroy "+ this.getTag()+", service=" + mService);
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Log.d(TAG, "on save state "+ this.getTag()+", service=" + mService);
     }
 
     protected void scheduleAfterBoundService(Runnable runnable) {

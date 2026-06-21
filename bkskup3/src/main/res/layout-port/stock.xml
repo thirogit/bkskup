@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TextView05"
+                style="@style/label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cowStockNameLblCaption" />
+
+            <EditText
+                android:id="@+id/cowStockNameEditBox"
+                style="@style/input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintStockName"
+                android:inputType="text"
+                android:maxLength="@integer/MAX_STOCKNAME" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TextView07"
+                style="@style/label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cowStockCodeLblCaption" />
+
+            <EditText
+                android:id="@+id/cowStockCodeEditBox"
+                style="@style/input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintStockCode"
+                android:inputType="textCapCharacters"
+                android:maxLength="@integer/MAX_STOCKCODE" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
+

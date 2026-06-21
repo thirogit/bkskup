@@ -170,6 +170,11 @@ public class RepoActivity extends Activity {
             return;
         }
 
+        if(mState == State.Idle && mSettings != null) {
+            updateInputs();
+            showContent();
+        }
+
 
         if (mState == State.Loading) {
             if (mLoadTask != null) {

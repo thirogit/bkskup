@@ -57,8 +57,8 @@ public abstract class HentActivity extends BusActivity {
             mHent = load();
         } else {
             mSelectedTab = savedState.getInt(STATE_EXTRA_SELECTEDTAB, 0);
-            mHent = (HentObj) savedState.getSerializable(STATE_EXTRA_HENT);
-            mInputDefaults = (InputDefaultsSettings) savedState.getSerializable(STATE_EXTRA_INPUT_DEFAULTS);
+            mHent = savedState.getSerializable(STATE_EXTRA_HENT,HentObj.class);
+            mInputDefaults = savedState.getSerializable(STATE_EXTRA_INPUT_DEFAULTS,InputDefaultsSettings.class);
         }
 
         FragmentManager fm = getFragmentManager();

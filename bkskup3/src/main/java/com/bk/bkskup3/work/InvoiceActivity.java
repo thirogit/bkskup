@@ -213,7 +213,20 @@ public abstract class InvoiceActivity extends BusActivity {
         });
 
 
+        if(mService == null) {
+            bindService(new Intent(this, InvoiceService.class), mConnection, Context.BIND_AUTO_CREATE);
+        }
 
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (mService != null) {
+            unbindService(mConnection);
+            mService = null;
+            injectFragments();
+        }
     }
 
     private void updateSummary() {
@@ -238,11 +251,7 @@ public abstract class InvoiceActivity extends BusActivity {
     @Override
     protected void onStop() {
         super.onStop();
-        if (mService != null) {
-            unbindService(mConnection);
-            mService = null;
-            injectFragments();
-        }
+
     }
 
     private void loadInvoice() {
@@ -303,10 +312,8 @@ public abstract class InvoiceActivity extends BusActivity {
 //        Log.d(TAG,"InvoiceActivity - OnResume");
         super.onResume();
 
-        showWaitingForInvoiceBound();
-
         if(mService == null) {
-            bindService(new Intent(this, InvoiceService.class), mConnection, Context.BIND_AUTO_CREATE);
+            showWaitingForInvoiceBound();
         }
         else {
             continueResume();

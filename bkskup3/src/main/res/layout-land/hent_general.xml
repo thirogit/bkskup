@@ -1,199 +1,224 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:id="@+id/TableLayout01"
-             android:layout_width="fill_parent"
-             android:layout_height="wrap_content">
+    android:id="@+id/TableLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
 
-    <TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TableRow
+        android:id="@+id/TableRow01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-        <TextView android:id="@+id/TextView01"
-                  android:layout_width="0dp"
-                  android:layout_height="wrap_content"
-                  android:text="@string/hentNameLblCaption"
-                  android:layout_weight="0.15"
-                  android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:text="@string/hentNameLblCaption"
+            android:textSize="20sp" />
 
-        <EditText android:id="@+id/hentNameEditBox"
-                  android:layout_width="0dp"
-                  android:layout_height="wrap_content"
-                  android:layout_weight="0.85"
-                  android:maxLength="@integer/MAX_HENTNAME"
-                  android:inputType="textCapCharacters"
-                  android:hint="@string/hintHentName"
-                  style="@style/input"
-                />
+        <EditText
+            android:id="@+id/hentNameEditBox"
+            style="@style/input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.85"
+            android:hint="@string/hintHentName"
+            android:inputType="textCapCharacters"
+            android:maxLength="@integer/MAX_HENTNAME" />
 
     </TableRow>
 
-    <TableRow android:id="@+id/TableRow02" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TableRow
+        android:id="@+id/TableRow02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-        <TextView android:id="@+id/TextView03"
-                  android:layout_width="0dp"
-                  android:layout_height="wrap_content"
-                  android:text="@string/hentAliasLblCaption"
-                  android:layout_weight="0.15"
-                  android:layout_gravity="center_vertical"
-                  android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.15"
+            android:text="@string/hentAliasLblCaption"
+            android:textSize="20sp" />
 
-        <LinearLayout android:layout_width="0dp"
-                      android:layout_height="wrap_content"
-                      android:orientation="horizontal"
-                      android:layout_weight="0.85"
-                      android:layout_gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.85"
+            android:orientation="horizontal">
 
-            <EditText android:id="@+id/hentAliasEditBox"
-                      android:layout_width="0dp"
-                      android:layout_height="wrap_content"
-                      android:layout_weight="0.4"
-                      android:layout_gravity="center_vertical"
-                      android:maxLength="@integer/MAX_ALIAS"
-                      android:inputType="textCapCharacters"
-                      android:hint="@string/hintHentAlias"
-                      style="@style/input"
-                    />
+            <EditText
+                android:id="@+id/hentAliasEditBox"
+                style="@style/input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.4"
+                android:hint="@string/hintHentAlias"
+                android:inputType="textCapCharacters"
+                android:maxLength="@integer/MAX_ALIAS" />
 
-            <TextView android:id="@+id/TextView14"
-                      android:layout_width="0dp"
-                      android:layout_weight="0.1"
-                      android:text="@string/hentHentTypeLblCaption"
-                      android:layout_marginLeft="5dip"
-                      style="@style/label"
-                    />
+            <TextView
+                android:id="@+id/TextView14"
+                style="@style/label"
+                android:layout_width="0dp"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="0.1"
+                android:text="@string/hentHentTypeLblCaption" />
 
 
             <com.bk.bkskup3.widgets.HentTypeButton
                 android:id="@+id/hentTypeBtn"
-                                                   android:layout_width="0dp"
-                                                   android:layout_height="wrap_content"
-                                                   android:layout_weight="0.5"
-                                                   android:layout_gravity="center_vertical"/>
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5" />
 
 
         </LinearLayout>
 
     </TableRow>
 
-    <TableRow android:id="@+id/TableRow03" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TableRow
+        android:id="@+id/TableRow03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-        <TextView android:id="@+id/TextView05"
-                  android:layout_width="0dp"
-                  android:layout_weight="0.15"
-                  android:text="@string/hentStreetLblCaption"
-                  style="@style/label"/>
+        <TextView
+            android:id="@+id/TextView05"
+            style="@style/label"
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:text="@string/hentStreetLblCaption" />
 
-        <LinearLayout android:layout_width="0dp"
-                      android:layout_height="wrap_content"
-                      android:orientation="horizontal"
-                      android:layout_weight="0.85">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.85"
+            android:orientation="horizontal">
 
-            <EditText android:id="@+id/hentStreetEditBox"
-                      android:layout_width="0dp"
-                      android:layout_height="wrap_content"
-                      android:layout_weight="0.4"
-                      android:maxLength="@integer/MAX_STREET"
-                      android:inputType="textCapCharacters"
-                      android:hint="@string/hintHentStreetName"
-                      style="@style/input"
-                    />
+            <EditText
+                android:id="@+id/hentStreetEditBox"
+                style="@style/input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:hint="@string/hintHentStreetName"
+                android:inputType="textCapCharacters"
+                android:maxLength="@integer/MAX_STREET" />
 
-            <TextView android:id="@+id/TextView07"
-                      android:layout_width="0dp"
-                      android:text="@string/hentPOBoxLblCaption"
-                      android:layout_weight="0.1"
-                      android:layout_marginLeft="5dip"
-                      style="@style/label"/>
+            <TextView
+                android:id="@+id/TextView07"
+                style="@style/label"
+                android:layout_width="0dp"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="0.1"
+                android:text="@string/hentPOBoxLblCaption" />
 
-            <EditText android:id="@+id/hentPOBoxEditBox"
-                      android:layout_width="0dp"
-                      android:layout_height="wrap_content"
-                      android:layout_weight="0.5"
-                      android:maxLength="@integer/MAX_POBOX"
-                      android:inputType="textPostalAddress"
-                      android:hint="@string/hintHentPoBox"
-                      style="@style/input"
-                    />
+            <EditText
+                android:id="@+id/hentPOBoxEditBox"
+                style="@style/input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:hint="@string/hintHentPoBox"
+                android:inputType="textPostalAddress"
+                android:maxLength="@integer/MAX_POBOX" />
         </LinearLayout>
 
     </TableRow>
 
 
-    <TableRow android:id="@+id/TableRow04" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TableRow
+        android:id="@+id/TableRow04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-        <TextView android:id="@+id/TextView09"
-                  android:layout_width="0dp"
-                  android:layout_weight="0.15"
-                  android:text="@string/hentCityLblCaption"
-                  style="@style/label"/>
+        <TextView
+            android:id="@+id/TextView09"
+            style="@style/label"
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:text="@string/hentCityLblCaption" />
 
-        <LinearLayout android:layout_width="0dp"
-                      android:layout_height="wrap_content"
-                      android:orientation="horizontal"
-                      android:layout_weight="0.85">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.85"
+            android:orientation="horizontal">
 
-            <EditText android:id="@+id/hentCityEditBox"
-                      android:layout_width="0dp"
-                      android:layout_height="wrap_content"
-                      android:layout_weight="0.4"
-                      android:maxLength="@integer/MAX_CITY"
-                      android:inputType="textCapCharacters"
-                      android:hint="@string/hintHentCityName"
-                      style="@style/input"
-                    />
+            <EditText
+                android:id="@+id/hentCityEditBox"
+                style="@style/input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:hint="@string/hintHentCityName"
+                android:inputType="textCapCharacters"
+                android:maxLength="@integer/MAX_CITY" />
 
-            <TextView android:id="@+id/TextView11"
-                      android:layout_width="0dp"
-                      android:layout_weight="0.1"
-                      android:text="@string/hentZipLblCaption"
-                      android:layout_marginLeft="5dip"
-                      style="@style/label"/>
+            <TextView
+                android:id="@+id/TextView11"
+                style="@style/label"
+                android:layout_width="0dp"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="0.1"
+                android:text="@string/hentZipLblCaption" />
 
-            <EditText android:id="@+id/hentZipEditBox"
-                      android:layout_width="0dp"
-                      android:layout_height="wrap_content"
-                      android:layout_weight="0.5"
-                      android:maxLength="@integer/MAX_ZIP"
-                      android:inputType="textPostalAddress"
-                      android:hint="@string/hintHentZipCode"
-                      style="@style/input"
-                    />
+            <EditText
+                android:id="@+id/hentZipEditBox"
+                style="@style/input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:hint="@string/hintHentZipCode"
+                android:inputType="textPostalAddress"
+                android:maxLength="@integer/MAX_ZIP" />
 
         </LinearLayout>
 
     </TableRow>
 
-    <TableRow android:id="@+id/TableRow06" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TableRow
+        android:id="@+id/TableRow06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-        <TextView android:id="@+id/TextView13"
-                  android:layout_width="0dp"
-                  android:layout_weight="0.15"
-                  android:text="@string/hentFarmNoLblCaption"
-                  style="@style/label"/>
+        <TextView
+            android:id="@+id/TextView13"
+            style="@style/label"
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:text="@string/hentFarmNoLblCaption" />
 
-        <RelativeLayout android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.85">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.85">
 
             <com.bk.bkskup3.barcode.ServiceIndicatorButton
-                    android:id="@+id/bcServiceBtn"
-                    android:layout_width="55dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_alignParentRight="true"
-                    />
+                android:id="@+id/bcServiceBtn"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical" />
 
             <com.bk.bkskup3.widgets.CalculatorEditText
                 android:id="@+id/hentHentNoEditBox"
-                                                       android:layout_width="match_parent"
-                                                       android:layout_height="wrap_content"
-                                                       android:hint="@string/hintHentNo"
-                                                       android:textSize="24sp"
-                                                       android:layout_gravity="center_vertical"
-                                                       android:layout_alignParentLeft="true"
-                                                       android:focusableInTouchMode="false"
-                                                       android:layout_toLeftOf="@id/bcServiceBtn"
-                                                       style="@style/calc_input_display_style"
-                    />
+                style="@style/calc_input_display_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toLeftOf="@id/bcServiceBtn"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hintHentNo"
+                android:textSize="24sp" />
 
 
         </RelativeLayout>

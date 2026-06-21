@@ -343,7 +343,7 @@ public class InvoiceService extends Service {
         mSettings = mSettingsStore.loadSettings(InvoiceSettings.class);
 
         IntentFilter filter = new IntentFilter(InvoiceSettings.ACTION_SETTINGS_CHANGED);
-        this.registerReceiver(mReceiver, filter);
+        this.registerReceiver(mReceiver, filter,RECEIVER_EXPORTED);
 
 
     }
