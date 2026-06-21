@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
 
-    <TableRow>
+    <TableRow android:gravity="center_vertical" >
 
         <TextView
             style="@style/purchase_summary_item_title"
@@ -23,7 +23,7 @@
             android:layout_weight="0.7" />
     </TableRow>
 
-    <TableRow>
+    <TableRow android:gravity="center_vertical" >
 
         <TextView
             style="@style/purchase_summary_item_title"
@@ -41,7 +41,7 @@
             android:layout_weight="0.7" />
     </TableRow>
 
-    <TableRow>
+    <TableRow android:gravity="center_vertical" >
 
         <TextView
             style="@style/purchase_summary_item_title"
@@ -59,7 +59,7 @@
             android:layout_weight="0.7" />
     </TableRow>
 
-    <TableRow>
+    <TableRow android:gravity="center_vertical" >
 
         <TextView
             style="@style/purchase_summary_item_title"
@@ -97,7 +97,7 @@
         </LinearLayout>
     </TableRow>
 
-    <TableRow>
+    <TableRow android:gravity="center_vertical" >
 
         <TextView
             android:layout_width="0dp"
@@ -126,7 +126,7 @@
     </TableRow>
 
 
-    <TableRow>
+    <TableRow android:gravity="center_vertical" >
 
         <TextView
             style="@style/purchase_summary_item_title"
@@ -151,7 +151,7 @@
             android:layout_weight="0.35" />
     </TableRow>
 
-    <TableRow>
+    <TableRow android:gravity="center_vertical" >
 
         <TextView
             style="@style/purchase_summary_item_title"
@@ -176,7 +176,7 @@
             android:layout_weight="0.35" />
     </TableRow>
 
-    <TableRow>
+    <TableRow android:gravity="center_vertical" >
 
         <TextView
             style="@style/purchase_summary_item_title"
@@ -201,7 +201,7 @@
             android:layout_weight="0.35" />
     </TableRow>
 
-    <TableRow>
+    <TableRow android:gravity="center_vertical" >
 
         <TextView
             style="@style/purchase_summary_item_title"

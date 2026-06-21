@@ -187,8 +187,8 @@ public abstract class InvoiceActivity extends BusActivity {
         }
 
         if (savedState != null) {
-            mState = (State) savedState.getSerializable(STATE_EXTRA_STATE);
-            mDependencies = (DependenciesForInvoice) savedState.getSerializable(STATE_EXTRA_SETTINGS);
+            mState = savedState.getSerializable(STATE_EXTRA_STATE,State.class);
+            mDependencies = savedState.getSerializable(STATE_EXTRA_SETTINGS,DependenciesForInvoice.class);
             mDocFragment.setDependencies(mDependencies);
             mHentFragment.setDependencies(mDependencies);
         }
@@ -198,7 +198,7 @@ public abstract class InvoiceActivity extends BusActivity {
 
         mContentContainer = findViewById(R.id.content_container);
         mProgressContainer = findViewById(R.id.progress_container);
-        mTabPager = (ViewPager) findViewById(R.id.pager);
+        mTabPager = findViewById(R.id.pager);
 
         mTabPagerAdapter = new ViewPagerAdapter(fm);
         mTabPagerAdapter.addTab(getString(R.string.hentTabCaption), INVOICEHENT_FRAGMENT_TAG, mHentFragment);

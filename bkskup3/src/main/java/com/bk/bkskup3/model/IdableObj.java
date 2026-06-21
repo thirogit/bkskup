@@ -11,7 +11,7 @@ import java.io.Serializable;
  */
 public class IdableObj implements Idable,Serializable
 {
-   private int id;
+   private final int id;
 
    public IdableObj(int id)
    {
