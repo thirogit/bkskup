@@ -5,12 +5,291 @@
       <config />
     </shared>
     <layouts>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-land/agent.xml">
+        <config>
+          <state>Landscape</state>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-land/company.xml">
+        <config>
+          <state>Landscape</state>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-land/cow.xml">
+        <config>
+          <state>Landscape</state>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-land/hent_bank.xml">
+        <config>
+          <state>Landscape</state>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-land/hent_contact.xml">
+        <config>
+          <state>Landscape</state>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-land/hent_general.xml">
+        <config>
+          <state>Landscape</state>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-land/hent_identification.xml">
+        <config>
+          <state>Landscape</state>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-land/herd.xml">
+        <config>
+          <state>Landscape</state>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-land/invoice_settings.xml">
+        <config>
+          <state>Landscape</state>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-land/purchase_history.xml">
+        <config>
+          <state>Landscape</state>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-land/repo.xml">
+        <config>
+          <state>Landscape</state>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-land/vatrates.xml">
+        <config>
+          <state>Landscape</state>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-large-port/hent_general.xml">
+        <config>
+          <state>Portrait</state>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-port/agent.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-port/company.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-port/cow.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-port/cowclass.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-port/hent_bank.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-port/hent_contact.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-port/hent_general.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-port/hent_identification.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-port/herd.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-port/invoice_settings.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-port/purchase_history.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-port/repo.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-port/stock.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-port/vatrates.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-w900dp/doc_profile_options.xml">
+        <config>
+          <state>Portrait</state>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/barcode_input.xml">
         <config>
           <theme>@style/Theme.mTheme</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/cowclass.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/cowclass_management.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/deduction.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/deductions_management.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/doc_profile_options.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/document_list.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/documents_cfg.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/error_toast.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/hents.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/herds_management.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/invoice.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/invoice_cows.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/invoice_deduction.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/invoice_deductions.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/loading_progress.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/management_list_item.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/open_purchases.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/opennewpurchase.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/preference.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/purchase.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/purchase_invoices.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/purchase_summary.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/splash.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/stock.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/stocks_management.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/welcome.xml">
         <config>
           <theme>@style/Theme.mTheme</theme>
         </config>
@@ -21,6 +300,11 @@
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/menu/invoice_cow_menu.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/menu/save_menu.xml">
         <config>
           <theme>@style/Theme.mTheme</theme>
         </config>
@@ -208,41 +492,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="883182f0-1c87-42e8-8a71-4b7d69048ea7" name="Default" comment="migracja do najnowszego androida">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/barcodeservice/bkskup.barcodeservice.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/bkbands/bkskup.bkbands.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/bksettings/bkskup.bksettings.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/bkskup3/bkskup.bkskup3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/bkwidgets/bkskup.bkwidgets.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/bluetoothcommon/bkskup.bluetoothcommon.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/countries/bkskup.countries.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/printservice/bkskup.printservice.iml" beforeDir="false" />
+    <list default="true" id="883182f0-1c87-42e8-8a71-4b7d69048ea7" name="Default" comment="migracja do najnowszego androida - activity edycji skupu">
+      <change afterPath="$PROJECT_DIR$/.idea/AndroidProjectSystem.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deviceManager.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/migrations.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/BkApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/BkApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/SplashActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/barcode/BarcodeServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/barcode/BarcodeServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/dao/InvoiceNoTransactionStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/dao/InvoiceNoTransactionStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/dao/PurchasesStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/dao/PurchasesStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/management/widget/DocumentDayDateOptionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/management/widget/DocumentDayDateOptionView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/management/widget/DocumentOptionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/management/widget/DocumentOptionView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/management/widget/DocumentOptionViewInflater.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/management/widget/DocumentOptionViewInflater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/repo/hents/HentsSyncService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/repo/hents/HentsSyncService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/repo/purchases/PurchaseUploadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/repo/purchases/PurchaseUploadService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/tasks/LoadProfilesTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/tasks/LoadProfilesTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/widgets/CountrySpinner.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/widgets/CountrySpinner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/widgets/ViewfinderView.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/widgets/ViewfinderView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/InvoiceActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/InvoiceActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/InvoiceViewActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/InvoiceViewActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/fragment/ViewPagerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/fragment/ViewPagerAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bluetoothcommon/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/bluetoothcommon/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bluetoothcommon/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bluetoothcommon/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bluetoothcommon/src/main/java/com/bk/btcommon/ChooseDeviceActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/bluetoothcommon/src/main/java/com/bk/btcommon/ChooseDeviceActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/printservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/printservice/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/printservice/src/main/java/com/bk/print/service/PrintService.java" beforeDir="false" afterPath="$PROJECT_DIR$/printservice/src/main/java/com/bk/print/service/PrintService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/PurchaseViewActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/PurchaseViewActivity.java" afterDir="false" />
     </list>
     <list id="0fb91eea-005f-44d2-b29d-68e5df9e35cd" name="ignore" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -302,6 +559,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="layoutResourceFile_vertical" />
       </list>
     </option>
   </component>
@@ -336,8 +594,9 @@
     "Gradle.Configure Daemon JVM Criteria.executor": "Run",
     "Gradle.Download Sources.executor": "Run",
     "Gradle.Upgrade Gradle wrapper.executor": "Run",
+    "Gradle.bkskup [clean].executor": "Debug",
     "Gradle.bkskup [updateLintBaseline].executor": "Run",
-    "Gradle.bkskup3 [build].executor": "Run",
+    "Gradle.bkskup3 [build].executor": "Debug",
     "Gradle.bkskup3:bkskup3 [build].executor": "Run",
     "GradleDaemonJvmCriteriaMigrationNotification.isNotificationDisabled": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -345,12 +604,15 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
+    "com.google.services.firebase.aqiPopupShown": "true",
     "git-widget-placeholder": "android16",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/prj/bk/bkskup",
+    "last_directory_selection": "C:/prj/bk/bkskup/bkskup3/src/main/res/layout",
+    "last_opened_file_path": "C:/prj/bk/bkskup/bkskup3/src/main/res/layout",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2",
@@ -358,21 +620,22 @@
   }
 }]]></component>
   <component name="PsdUISettings">
-    <option name="MODULE_TAB" value="Signing Configs" />
+    <option name="MODULE_TAB" value="Default Config" />
     <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\prj\bk\bkskup\bkskup3\src\main\res\layout" />
+      <recent name="C:\DEV\my\bkskup3\bkskup3\src\main\res\raw" />
+      <recent name="C:\DEV\my\bkskup3\bkskup3\src\main\res\layout" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.bk.bkskup3.management.widget" />
       <recent name="com.bk.bkskup3.management" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\DEV\my\bkskup3\bkskup3\src\main\res\raw" />
-      <recent name="C:\DEV\my\bkskup3\bkskup3\src\main\res\layout" />
-    </key>
   </component>
-  <component name="RunManager" selected="Gradle.bkskup3 [build]">
+  <component name="RunManager" selected="Android App.bkskup3">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -538,6 +801,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="bkskup [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
     <configuration name="bkskup [updateLintBaseline]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -568,7 +856,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -632,12 +920,14 @@
     <list>
       <item itemvalue="Android App.bkskup3-bkskup3" />
       <item itemvalue="Android App.bkskup3" />
+      <item itemvalue="Gradle.bkskup [clean]" />
       <item itemvalue="Gradle.bkskup [updateLintBaseline]" />
       <item itemvalue="Gradle.bkskup3 [build]" />
       <item itemvalue="Gradle.bkskup3:bkskup3 [build]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.bkskup [clean]" />
         <item itemvalue="Gradle.bkskup3 [build]" />
         <item itemvalue="Gradle.bkskup [updateLintBaseline]" />
         <item itemvalue="Gradle.bkskup3:bkskup3 [build]" />
@@ -757,7 +1047,23 @@
       <option name="project" value="LOCAL" />
       <updated>1778016964499</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="migracja do najnowszego androida">
+      <option name="closed" value="true" />
+      <created>1782073205520</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1782073205520</updated>
+    </task>
+    <task id="LOCAL-00016" summary="migracja do najnowszego androida - activity edycji skupu">
+      <option name="closed" value="true" />
+      <created>1782076872465</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1782076872465</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -811,7 +1117,8 @@
     <MESSAGE value="buduje sie i uruchamia na tabletach od michala" />
     <MESSAGE value="poprawki inicializacji bazy danych na pusto" />
     <MESSAGE value="migracja do najnowszego androida" />
-    <option name="LAST_COMMIT_MESSAGE" value="migracja do najnowszego androida" />
+    <MESSAGE value="migracja do najnowszego androida - activity edycji skupu" />
+    <option name="LAST_COMMIT_MESSAGE" value="migracja do najnowszego androida - activity edycji skupu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -864,7 +1171,7 @@
         </entry>
         <entry key="com.bk.barcode.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1778015291456" />
+            <CheckInfo lastCheckTimestamp="1780859080235" />
           </value>
         </entry>
         <entry key="com.bk.bksettings.test">
@@ -874,17 +1181,17 @@
         </entry>
         <entry key="com.bk.bkskup3">
           <value>
-            <CheckInfo lastCheckTimestamp="1779041156816" />
+            <CheckInfo lastCheckTimestamp="1782164658118" />
           </value>
         </entry>
         <entry key="com.bk.bkskup3.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1779041156816" />
+            <CheckInfo lastCheckTimestamp="1782164658113" />
           </value>
         </entry>
         <entry key="com.bk.btcommon.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1779041282597" />
+            <CheckInfo lastCheckTimestamp="1781119601043" />
           </value>
         </entry>
         <entry key="com.bk.countries.test">
