@@ -91,7 +91,7 @@ public class PurchaseSummaryFragment extends PurchaseFragment {
         double transferTotalGross = 0.0;
         double transferTotalGrossAfterDeduction = 0.0;
 
-        if(mPurchase != null) {
+        if (mPurchase != null) {
 
             cowCount = mPurchase.getCowCount();
             for (Invoice invoice : mPurchase.getInvoices()) {

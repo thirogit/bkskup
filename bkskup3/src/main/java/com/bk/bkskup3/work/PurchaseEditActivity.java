@@ -1,6 +1,9 @@
 package com.bk.bkskup3.work;
 
-import android.app.*;
+import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -14,10 +17,17 @@ import com.bk.bkskup3.feedback.ErrorMessageFragment;
 import com.bk.bkskup3.model.InvoiceObj;
 import com.bk.bkskup3.model.PurchaseObj;
 import com.bk.bkskup3.print.PrintActivity;
-import com.bk.bkskup3.work.fragment.*;
 import com.bk.bkskup3.tasks.LoadPurchaseTask;
 import com.bk.bkskup3.tasks.TaskResult;
-import com.bk.bkskup3.work.fragment.event.*;
+import com.bk.bkskup3.work.fragment.PurchaseEditInvoicesFragment;
+import com.bk.bkskup3.work.fragment.PurchaseEditSummaryFragment;
+import com.bk.bkskup3.work.fragment.ViewPagerAdapter;
+import com.bk.bkskup3.work.fragment.event.EditInvoiceMenuItemSelected;
+import com.bk.bkskup3.work.fragment.event.InvoiceAdded;
+import com.bk.bkskup3.work.fragment.event.InvoiceUpdated;
+import com.bk.bkskup3.work.fragment.event.NewInvoiceMenuItemSelected;
+import com.bk.bkskup3.work.fragment.event.PrintInvoiceMenuItemSelected;
+import com.bk.bkskup3.work.fragment.event.PurchaseLoaded;
 import com.squareup.otto.Subscribe;
 
 import javax.inject.Inject;
@@ -38,13 +48,11 @@ public class PurchaseEditActivity extends BusActivity {
     private static final String STATE_EXTRA_STATE = "state";
 //    private static final String STATE_EXTRA_SELECTEDTAB = "selected_tab";
 
-    private static final String LOADING_FRAGMENT_TAG = "loading";
     private static final String SUMMARY_FRAGMENT_TAB_TAG = "summary";
     private static final String INVOICES_FRAGMENT_TAB_TAG = "invoices";
     private static final String ERROR_MSG_FRAGMENT_TAG = "error_fragment";
     private static final String RETAINER_FRAGMENT_TAG = "retainer";
 
-    protected Fragment mLoadingFragment;
     protected PurchaseObj mPurchase;
     private LoadPurchaseTask mLoadTask;
     private State mState;
@@ -175,7 +183,6 @@ public class PurchaseEditActivity extends BusActivity {
 
     private void onPurchasesLoadCompleted() {
         setState(State.Idle);
-        hideBusyIndicator();
         TaskResult<PurchaseObj> result = mLoadTask.getResult();
         mPurchase = result.getResult();
         mLoadTask = null;
@@ -251,7 +258,7 @@ public class PurchaseEditActivity extends BusActivity {
 
     private void startPurchasesLoad() {
         setState(State.LoadingPurchase);
-        showBusyIndicator();
+        showLoading();
         mLoadTask = new LoadPurchaseTask(mPurchasesStore, mIntentPurchaseId);
         mLoadTask.attachObserver(mObserver);
         mLoadTask.execute();
@@ -290,8 +297,8 @@ public class PurchaseEditActivity extends BusActivity {
                         setState(State.Idle);
                     }
                 } else {
+                    showLoading();
                     mLoadTask.attachObserver(mObserver);
-                    showBusyIndicator();
                 }
 
             } else {
@@ -305,27 +312,6 @@ public class PurchaseEditActivity extends BusActivity {
             mErrMsgFragment = (ErrorMessageFragment) getFragmentManager().findFragmentByTag(ERROR_MSG_FRAGMENT_TAG);
             mErrMsgFragment.setListener(mOnErrorHideListener);
             return;
-        }
-    }
-
-
-    protected void showBusyIndicator() {
-
-        FragmentTransaction ft = getFragmentManager().beginTransaction();
-        if (mLoadingFragment == null) {
-            mLoadingFragment = Fragment.instantiate(this, LoadingFragment.class.getName(), null);
-            ft.add(android.R.id.content, mLoadingFragment, LOADING_FRAGMENT_TAG);
-        } else {
-            ft.attach(mLoadingFragment);
-        }
-        ft.commit();
-    }
-
-    protected void hideBusyIndicator() {
-        FragmentTransaction ft = getFragmentManager().beginTransaction();
-        if (mLoadingFragment != null) {
-            ft.detach(mLoadingFragment);
-            ft.commit();
         }
     }
 
