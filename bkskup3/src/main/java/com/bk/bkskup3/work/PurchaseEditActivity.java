@@ -201,25 +201,6 @@ public class PurchaseEditActivity extends BusActivity {
     protected void showTabs() {
         mProgressContainer.setVisibility(View.GONE);
         mContentContainer.setVisibility(View.VISIBLE);
-//        ActionBar bar = getActionBar();
-//        bar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-//        bar.setDisplayOptions(0, ActionBar.DISPLAY_SHOW_TITLE);
-//
-//        ActionBar.Tab invoiceTab = bar.newTab()
-//                .setText(R.string.invoicesTabCaption)
-//                .setTabListener(new PurchaseTabListener<PurchaseEditInvoicesFragment>(INVOICES_FRAGMENT_TAB_TAG, mInvoicesFragment));
-//        bar.addTab(invoiceTab, true);
-//
-//        ActionBar.Tab summaryTab = bar.newTab()
-//                .setText(R.string.summaryTabCaption)
-//                .setTabListener(new PurchaseTabListener<PurchaseEditSummaryFragment>(SUMMARY_FRAGMENT_TAB_TAG, mSummaryFragment));
-//        bar.addTab(summaryTab);
-
-//        bar.setSelectedNavigationItem(0);
-//        if (savedInstanceState != null)
-//        {
-//            bar.setSelectedNavigationItem(savedInstanceState.getInt(SAVE_STATE_SELECTED_TAB, 0));
-//        }
     }
 
     protected void showLoading() {

@@ -6,6 +6,10 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+
+import androidx.viewpager.widget.ViewPager;
+
 import com.bk.bkskup3.R;
 import com.bk.bkskup3.dao.SettingsStore;
 import com.bk.bkskup3.feedback.ErrorToast;
@@ -35,28 +39,32 @@ public abstract class HentActivity extends BusActivity {
 
     private static final String STATE_EXTRA_HENT = "state_hent";
     private static final String STATE_EXTRA_INPUT_DEFAULTS = "state_input_defaults";
-    private static final String STATE_EXTRA_SELECTEDTAB = "selected_tab";
-
     HentGeneralFragment mGeneralFragment;
     HentBankFragment mBankFragment;
     HentIdentificationFragment mIdentificationFragment;
     HentContactFragment mContactFragment;
     protected HentObj mHent;
-    private int mSelectedTab;
     protected InputDefaultsSettings mInputDefaults;
 
     @Inject
     SettingsStore mSettingStore;
 
+    private View mProgressContainer;
+    private View mContentContainer;
+    private ViewPager mTabPager;
+
+    private ViewPagerAdapter mTabPagerAdapter;
+
     @Override
     public void onCreate(Bundle savedState) {
         super.onCreate(savedState);
+        setContentView(R.layout.hent);
 
         if (savedState == null) {
             mInputDefaults = mSettingStore.loadSettings(InputDefaultsSettings.class);
             mHent = load();
         } else {
-            mSelectedTab = savedState.getInt(STATE_EXTRA_SELECTEDTAB, 0);
+//            mSelectedTab = savedState.getInt(STATE_EXTRA_SELECTEDTAB, 0);
             mHent = savedState.getSerializable(STATE_EXTRA_HENT,HentObj.class);
             mInputDefaults = savedState.getSerializable(STATE_EXTRA_INPUT_DEFAULTS,InputDefaultsSettings.class);
         }
@@ -82,37 +90,41 @@ public abstract class HentActivity extends BusActivity {
             mContactFragment = (HentContactFragment) Fragment.instantiate(this, HentContactFragment.class.getName());
         }
 
+        mContentContainer = findViewById(R.id.content_container);
+        mProgressContainer = findViewById(R.id.progress_container);
+        mTabPager = findViewById(R.id.pager);
+
+        mTabPagerAdapter = new ViewPagerAdapter(fm);
+        mTabPagerAdapter.addTab(getString(R.string.generalTabCaption), GENERAL_FRAGMENT_TAB_TAG, mGeneralFragment);
+        mTabPagerAdapter.addTab(getString(R.string.contactTabCaption), CONTACT_FRAGMENT_TAB_TAG, mContactFragment);
+        mTabPagerAdapter.addTab(getString(R.string.identificationTabCaption), ID_FRAGMENT_TAB_TAG, mIdentificationFragment);
+        mTabPagerAdapter.addTab(getString(R.string.bankTabCaption), BANK_FRAGMENT_TAB_TAG, mBankFragment);
+        mTabPager.post(new Runnable() {
+            @Override
+            public void run() {
+                mTabPager.setAdapter(mTabPagerAdapter);
+            }
+        });
+
         injectFragments();
-        createTabs();
+        showTabs();
     }
 
-
-    private void createTabs() {
-        ActionBar bar = getActionBar();
-        bar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-        bar.setDisplayOptions(0, ActionBar.DISPLAY_SHOW_TITLE);
-
-        bar.addTab(bar.newTab()
-                .setText(R.string.generalTabCaption)
-                .setTabListener(new HentTabListener<HentGeneralFragment>(GENERAL_FRAGMENT_TAB_TAG, mGeneralFragment)));
-        bar.addTab(bar.newTab()
-                .setText(R.string.contactTabCaption)
-                .setTabListener(new HentTabListener<HentContactFragment>(CONTACT_FRAGMENT_TAB_TAG, mContactFragment)));
-
-        bar.addTab(bar.newTab()
-                .setText(R.string.identificationTabCaption)
-                .setTabListener(new HentTabListener<HentIdentificationFragment>(ID_FRAGMENT_TAB_TAG, mIdentificationFragment)));
-
-        bar.addTab(bar.newTab()
-                .setText(R.string.bankTabCaption)
-                .setTabListener(new HentTabListener<HentBankFragment>(BANK_FRAGMENT_TAB_TAG, mBankFragment)));
-
+    protected void showTabs() {
+        mProgressContainer.setVisibility(View.GONE);
+        mContentContainer.setVisibility(View.VISIBLE);
     }
+
+    protected void showLoading() {
+
+        mContentContainer.setVisibility(View.GONE);
+        mProgressContainer.setVisibility(View.VISIBLE);
+    }
+
 
     protected void onPause() {
         super.onPause();
         invokeSave();
-        mSelectedTab = getActionBar().getSelectedNavigationIndex();
     }
 
     protected abstract HentObj load();
@@ -155,7 +167,6 @@ public abstract class HentActivity extends BusActivity {
 
     protected void onResume() {
         super.onResume();
-        getActionBar().setSelectedNavigationItem(mSelectedTab);
     }
 
     private void injectFragments() {
@@ -174,7 +185,6 @@ public abstract class HentActivity extends BusActivity {
 
     public void onSaveInstanceState(Bundle state) {
         super.onSaveInstanceState(state);
-        state.putInt(STATE_EXTRA_SELECTEDTAB, mSelectedTab);
         state.putSerializable(STATE_EXTRA_HENT, mHent);
         state.putSerializable(STATE_EXTRA_INPUT_DEFAULTS, mInputDefaults);
     }
@@ -270,26 +280,6 @@ public abstract class HentActivity extends BusActivity {
         new ErrorToast(this).show(err);
     }
 
-    public class HentTabListener<T extends HentFragment> implements ActionBar.TabListener {
-        private final String mTag;
-        private HentFragment mFragment;
-
-        public HentTabListener(String tag, HentFragment fragment) {
-            mTag = tag;
-            mFragment = fragment;
-        }
-
-        public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
-            ft.replace(android.R.id.content, mFragment, mTag);
-        }
-
-        public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction ft) {
-            ft.remove(mFragment);
-        }
-
-        public void onTabReselected(ActionBar.Tab tab, FragmentTransaction ft) {
-        }
-    }
 
 
 }
