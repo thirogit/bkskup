@@ -31,10 +31,6 @@ public class PrintPreviewActivity extends Activity {
             ImageView imageView = findViewById(R.id.preview_image);
             imageView.setImageBitmap(paper.getBitmap());
 
-//            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-//            PaperView view = new PaperView(this, paper);
-//            view.setFitsSystemWindows(true);
-//            setContentView(view, params);
         } catch (Exception e) {
             e.printStackTrace();
         }
