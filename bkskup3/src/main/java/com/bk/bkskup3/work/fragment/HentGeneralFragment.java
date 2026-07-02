@@ -3,6 +3,7 @@ package com.bk.bkskup3.work.fragment;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -57,15 +58,17 @@ public class HentGeneralFragment extends HentFragment {
             }
         });
 
-        getFarmNoBox().setOnClickListener(new View.OnClickListener() {
+        EditText farmNoBox = getFarmNoBox();
+        farmNoBox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onChangeHentNo();
             }
         });
+        farmNoBox.setInputType(InputType.TYPE_NULL);
 
 
-        final ServiceIndicatorButton bcServiceIndBtn = getBCServiceIndBtn();
+//        final ServiceIndicatorButton bcServiceIndBtn = getBCServiceIndBtn();
 
         mBCServiceClient = new BarcodeServiceClient(getActivity());
         mBCServiceClient.attachObserver(new BarcodeServiceClient.BarcodeClientObserver() {
@@ -75,16 +78,16 @@ public class HentGeneralFragment extends HentFragment {
 
             @Override
             public void onState(BarcodeServiceState state) {
-                bcServiceIndBtn.setState(state);
+//                bcServiceIndBtn.setState(state);
             }
         });
 
-        bcServiceIndBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onScanHentNo();
-            }
-        });
+//        bcServiceIndBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                onScanHentNo();
+//            }
+//        });
 
 
     }
@@ -296,8 +299,8 @@ public class HentGeneralFragment extends HentFragment {
         }
     }
 
-    private ServiceIndicatorButton getBCServiceIndBtn() {
-        return (ServiceIndicatorButton) findViewById(R.id.bcServiceBtn);
-    }
+//    private ServiceIndicatorButton getBCServiceIndBtn() {
+//        return (ServiceIndicatorButton) findViewById(R.id.bcServiceBtn);
+//    }
 
 }

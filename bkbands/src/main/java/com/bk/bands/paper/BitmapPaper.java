@@ -77,7 +77,7 @@ public class BitmapPaper implements Paper {
     private Canvas getPaperCanvas() throws BandsException {
 
         if (paperImage == null) {
-            if (paperDPI < 100) {
+            if (paperDPI <= 100) {
                 throw new BandsException("Min. DPI is 100");
             }
 

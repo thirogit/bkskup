@@ -201,25 +201,24 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.85">
 
+            <EditText
+                android:id="@+id/hentHentNoEditBox"
+                style="@style/input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/bcServiceBtn"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hintHentNo"
+                />
+
             <com.bk.bkskup3.barcode.ServiceIndicatorButton
                 android:id="@+id/bcServiceBtn"
                 android:layout_width="55dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:layout_gravity="center_vertical" />
-
-            <com.bk.bkskup3.widgets.CalculatorEditText
-                android:id="@+id/hentHentNoEditBox"
-                style="@style/calc_input_display_style"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_gravity="center_vertical"
-                android:layout_toLeftOf="@id/bcServiceBtn"
-                android:focusableInTouchMode="false"
-                android:hint="@string/hintHentNo"
-                android:textSize="24sp" />
-
+                android:layout_centerVertical="true" />
 
         </RelativeLayout>
 

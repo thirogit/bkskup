@@ -1,9 +1,9 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 35
+    compileSdkVersion 36
     defaultConfig {
-        minSdkVersion 33
+        minSdkVersion 36
     }
     buildTypes {
         release {
@@ -14,10 +14,9 @@ android {
     namespace 'com.bk.barcode'
     lint {
         abortOnError false
-        targetSdk 27
+        targetSdk 36
     }
     testOptions {
-        targetSdk 27
     }
 }
 

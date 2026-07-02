@@ -128,9 +128,9 @@
             android:layout_height="wrap_content">
 
 
-            <com.bk.bkskup3.widgets.CalculatorEditText
+            <EditText
                 android:id="@+id/hentHentNoEditBox"
-                style="@style/calc_input_display_style"
+                style="@style/input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -138,7 +138,7 @@
                 android:layout_toLeftOf="@id/bcServiceBtn"
                 android:focusableInTouchMode="false"
                 android:hint="@string/hintHentNo"
-                android:textSize="24sp" />
+                 />
 
 
             <com.bk.bkskup3.barcode.ServiceIndicatorButton
