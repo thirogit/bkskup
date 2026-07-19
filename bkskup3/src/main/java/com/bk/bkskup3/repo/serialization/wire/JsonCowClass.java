@@ -4,8 +4,10 @@ import com.bk.bkskup3.model.CowClass;
 import com.bk.bkskup3.model.CowClassObj;
 import com.bk.bkskup3.model.CowSex;
 import com.bk.bkskup3.model.HerdObj;
+import com.bk.bkskup3.repo.serialization.serializers.CowSexDeserializer;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
 /**
  * Created by IntelliJ IDEA.
@@ -43,6 +45,7 @@ public class JsonCowClass {
     }
 
     @JsonProperty("default_sex")
+    @JsonDeserialize(using = CowSexDeserializer.class)
     public CowSex getPredefSex() {
         return mClass.getPredefSex();
     }

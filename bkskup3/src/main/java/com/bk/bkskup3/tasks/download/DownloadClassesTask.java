@@ -33,9 +33,9 @@ public class DownloadClassesTask extends DownloadConfigurationTask<List<CowClass
 
     @Override
     protected List<CowClassObj> download(Retrofit retrofit) throws Exception {
-        FetchConfigurationInterface uploadInterface = retrofit.create(FetchConfigurationInterface.class);
+        FetchConfigurationInterface fetchInterface = retrofit.create(FetchConfigurationInterface.class);
 
-        Call<List<JsonCowClass>> classesCall = uploadInterface.fetchClasses();
+        Call<List<JsonCowClass>> classesCall = fetchInterface.fetchClasses();
         Response<List<JsonCowClass>> result = classesCall.execute();
 
         List<JsonCowClass> jsonCowClasses = result.body();
