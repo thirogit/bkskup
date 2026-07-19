@@ -4,11 +4,15 @@ import android.app.Activity;
 import android.app.Application;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
-import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.work.BackoffPolicy;
+import androidx.work.Constraints;
+import androidx.work.ExistingPeriodicWorkPolicy;
+import androidx.work.NetworkType;
+import androidx.work.PeriodicWorkRequest;
+import androidx.work.WorkManager;
 
-import com.bk.barcode.service.BarcodeService;
 import com.bk.bkskup3.dao.BkStore;
 import com.bk.bkskup3.dao.DefinitionsStore;
 import com.bk.bkskup3.dao.DocumentOptionsStore;
@@ -40,8 +44,7 @@ import com.bk.bkskup3.management.StocksActivity;
 import com.bk.bkskup3.management.TaxRatesActivity;
 import com.bk.bkskup3.preferences.AgentPreferencesActivity;
 import com.bk.bkskup3.print.PrintActivity;
-import com.bk.bkskup3.repo.hents.HentsSyncService;
-import com.bk.bkskup3.repo.purchases.PurchaseUploadService;
+import com.bk.bkskup3.repo.hents.HentsSyncWorker;
 import com.bk.bkskup3.utils.Intents;
 import com.bk.bkskup3.work.CowNoScanActivity;
 import com.bk.bkskup3.work.EditCowActivity;
@@ -60,7 +63,6 @@ import com.bk.bkskup3.work.PurchaseEditActivity;
 import com.bk.bkskup3.work.PurchaseViewActivity;
 import com.bk.bkskup3.work.PurchasesHistoryActivity;
 import com.bk.bkskup3.work.QuickCowActivity;
-import com.bk.bkskup3.work.ScanBarcodeActivity;
 import com.bk.bkskup3.work.ScanHentActivity;
 import com.bk.print.service.PrintService;
 import com.couchbase.lite.CouchbaseLite;
@@ -68,7 +70,9 @@ import com.facebook.stetho.Stetho;
 import com.facebook.stetho.common.ExceptionUtil;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.util.concurrent.ThreadFactory;
+import java.util.concurrent.TimeUnit;
 
 import dagger.Module;
 import dagger.ObjectGraph;
@@ -82,11 +86,6 @@ import dagger.Provides;
  */
 
 public class BkApplication extends Application {
-
-
-    public static final int UPLOAD_PURCHASE_INTERVAL_MINUTES = 1;
-    public static final int FETCH_HENTS_UPDATES_INTERVAL_MINUTES = 1;
-
     @Module(injects = {
             AgentActivity.class,
             ClassesActivity.class,
@@ -184,14 +183,13 @@ public class BkApplication extends Application {
     }
 
 
-
     public void onCreate() {
         super.onCreate();
 
         CouchbaseLite.init(this);
         Stetho.initializeWithDefaults(this);
 
-        SQLiteDatabase db = this.openOrCreateDatabase("bkskup3",MODE_PRIVATE,null);
+        SQLiteDatabase db = this.openOrCreateDatabase("bkskup3", MODE_PRIVATE, null);
         SQLDatabaseWrapper dbWrapper = new SQLDatabaseWrapper(db);
 
         bkDb = new SQLDatabaseQueue(dbWrapper, new ThreadFactory() {
@@ -204,64 +202,33 @@ public class BkApplication extends Application {
 
         try {
             schemaUpdater.update(this.getResources().openRawResource(R.raw.schema1), 1);
+//            schemaUpdater.update(this.getResources().openRawResource(R.raw.schema2), 2);
         } catch (IOException e) {
             ExceptionUtil.propagate(e);
         }
         bkStore = new BkStore(bkDb);
 
 //        startService(Intents.makeExplicit(this.getBaseContext(),new Intent(BarcodeService.class.getName())));
-        startService(Intents.makeExplicit(this.getBaseContext(),new Intent(PrintService.class.getName())));
+        startService(Intents.makeExplicit(this.getBaseContext(), new Intent(PrintService.class.getName())));
         startService(new Intent(this, DocumentLibraryService.class));
 
-//        FirebaseJobDispatcher dispatcher = new FirebaseJobDispatcher(new GooglePlayDriver(this));
-//
-//        Job hentsSyncJob = dispatcher.newJobBuilder()
-//                // the JobService that will be called
-//                .setService(HentsSyncService.class)
-//                // uniquely identifies the job
-//                .setTag("hent-sync-job")
-//                // one-off job
-//                .setRecurring(true)
-//                // don't persist past a device reboot
-//                .setLifetime(Lifetime.FOREVER)
-//                // start between 0 and 60 seconds from now
-//                .setTrigger(Trigger.executionWindow(FETCH_HENTS_UPDATES_INTERVAL_MINUTES *60, FETCH_HENTS_UPDATES_INTERVAL_MINUTES *60 + 10))
-//                // don't overwrite an existing job with the same tag
-//                .setReplaceCurrent(true)
-//                // retry with exponential backoff
-//                .setRetryStrategy(RetryStrategy.DEFAULT_EXPONENTIAL)
-//                // constraints that need to be satisfied for the job to run
-//                .setConstraints(
-//                        Constraint.ON_ANY_NETWORK
-//                )
-//                .setExtras(new Bundle())
-//                .build();
-//
-//
-//        Job uploadPurchaseJob = dispatcher.newJobBuilder()
-//                // the JobService that will be called
-//                .setService(PurchaseUploadService.class)
-//                // uniquely identifies the job
-//                .setTag("purchase-upload-job")
-//                // one-off job
-//                .setRecurring(true)
-//                // don't persist past a device reboot
-//                .setLifetime(Lifetime.FOREVER)
-//                // start between 0 and 60 seconds from now
-//                .setTrigger(Trigger.executionWindow(UPLOAD_PURCHASE_INTERVAL_MINUTES *60, UPLOAD_PURCHASE_INTERVAL_MINUTES *60 + 10))
-//                // don't overwrite an existing job with the same tag
-//                .setReplaceCurrent(true)
-//                // retry with exponential backoff
-//                .setRetryStrategy(RetryStrategy.DEFAULT_EXPONENTIAL)
-//                // constraints that need to be satisfied for the job to run
-//                .setConstraints(
-//                        Constraint.ON_ANY_NETWORK
-//                )
-//                .setExtras(new Bundle())
-//                .build();
-//
-//        dispatcher.mustSchedule(hentsSyncJob);
-//        dispatcher.mustSchedule(uploadPurchaseJob);
+        Constraints constraints = (new Constraints.Builder())
+                .setRequiredNetworkType(NetworkType.CONNECTED)
+                .setRequiresBatteryNotLow(true)
+                .build();
+
+
+        PeriodicWorkRequest hentSyncWorkRequest =
+                new PeriodicWorkRequest.Builder(HentsSyncWorker.class, 30, TimeUnit.MINUTES)
+                        .setBackoffCriteria(BackoffPolicy.LINEAR, Duration.ofMinutes(1))
+                        .setConstraints(constraints)
+                        .build();
+
+        WorkManager
+                .getInstance(this)
+                .enqueueUniquePeriodicWork("hent-synch", ExistingPeriodicWorkPolicy.KEEP, hentSyncWorkRequest);
+
+
 
         mObjectGraph = ObjectGraph.create(new StoreDependenciesModule(bkStore));
 

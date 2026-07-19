@@ -23,6 +23,12 @@
           <theme>@style/Theme.mTheme</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-land/cowview.xml">
+        <config>
+          <state>Landscape</state>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-land/hent_bank.xml">
         <config>
           <state>Landscape</state>
@@ -53,7 +59,19 @@
           <theme>@style/Theme.mTheme</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-land/invoice_doc.xml">
+        <config>
+          <state>Landscape</state>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-land/invoice_settings.xml">
+        <config>
+          <state>Landscape</state>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-land/print_activity.xml">
         <config>
           <state>Landscape</state>
           <theme>@style/Theme.mTheme</theme>
@@ -103,6 +121,11 @@
           <theme>@style/Theme.mTheme</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-port/cowview.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-port/hent_bank.xml">
         <config>
           <theme>@style/Theme.mTheme</theme>
@@ -129,6 +152,11 @@
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-port/invoice_settings.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-port/print_activity.xml">
         <config>
           <theme>@style/Theme.mTheme</theme>
         </config>
@@ -204,6 +232,11 @@
           <theme>@style/Theme.mTheme</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/hent.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/hents.xml">
         <config>
           <theme>@style/Theme.mTheme</theme>
@@ -234,6 +267,16 @@
           <theme>@style/Theme.mTheme</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/list_fragment.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/loading.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/loading_progress.xml">
         <config>
           <theme>@style/Theme.mTheme</theme>
@@ -255,6 +298,11 @@
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/preference.xml">
+        <config>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout/print_preview.xml">
         <config>
           <theme>@style/Theme.mTheme</theme>
         </config>
@@ -492,14 +540,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="883182f0-1c87-42e8-8a71-4b7d69048ea7" name="Default" comment="migracja do najnowszego androida - activity edycji skupu">
+    <list default="true" id="883182f0-1c87-42e8-8a71-4b7d69048ea7" name="Default" comment="migracja do najnowszego androida - podglad wydruku">
       <change afterPath="$PROJECT_DIR$/.idea/AndroidProjectSystem.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/deviceManager.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/migrations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/dao/PurchaseUploadLogStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/repo/purchases/PurchaseUploadWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bkskup3/src/main/res/raw/schema2.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/PurchaseViewActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/PurchaseViewActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkskup3/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/BkApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/BkApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/repo/hents/FetchHentsUpdateChunkTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/repo/hents/HentsSyncService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/repo/hents/HentsSyncWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/repo/purchases/PurchaseUploadService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/repo/purchases/UploadPurchaseTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/tasks/TaskResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/tasks/TaskResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/fragment/ClosePurchaseActivityFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/fragment/ClosePurchaseActivityFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluetoothcommon/src/main/java/com/bk/btcommon/ChooseDeviceActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/bluetoothcommon/src/main/java/com/bk/btcommon/ChooseDeviceActivity.java" afterDir="false" />
     </list>
     <list id="0fb91eea-005f-44d2-b29d-68e5df9e35cd" name="ignore" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -510,7 +569,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[PhysicalDevice::serial=R3CXB0TZV2P]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -558,8 +617,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="layoutResourceFile_vertical" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -588,37 +647,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Android App.bkskup3.executor": "Debug",
-    "Gradle.Configure Daemon JVM Criteria.executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.Upgrade Gradle wrapper.executor": "Run",
-    "Gradle.bkskup [clean].executor": "Debug",
-    "Gradle.bkskup [updateLintBaseline].executor": "Run",
-    "Gradle.bkskup3 [build].executor": "Debug",
-    "Gradle.bkskup3:bkskup3 [build].executor": "Run",
-    "GradleDaemonJvmCriteriaMigrationNotification.isNotificationDisabled": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "com.google.services.firebase.aqiPopupShown": "true",
-    "git-widget-placeholder": "android16",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "C:/prj/bk/bkskup/bkskup3/src/main/res/layout",
-    "last_opened_file_path": "C:/prj/bk/bkskup/bkskup3/src/main/res/layout",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "experimental"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Android App.bkskup3.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.Configure Daemon JVM Criteria.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Upgrade Gradle wrapper.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.bkskup [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.bkskup [updateLintBaseline].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.bkskup3 [build].executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.bkskup3:bkskup3 [build].executor&quot;: &quot;Run&quot;,
+    &quot;GradleDaemonJvmCriteriaMigrationNotification.isNotificationDisabled&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;android16&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/prj/bk/bkskup/bkskup3/src/main/res/layout&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/prj/bk/bkskup/bkskup3/src/main/res/raw&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;experimental&quot;
   }
-}]]></component>
+}</component>
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Default Config" />
     <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
@@ -626,9 +685,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\prj\bk\bkskup\bkskup3\src\main\res\raw" />
       <recent name="C:\prj\bk\bkskup\bkskup3\src\main\res\layout" />
       <recent name="C:\DEV\my\bkskup3\bkskup3\src\main\res\raw" />
       <recent name="C:\DEV\my\bkskup3\bkskup3\src\main\res\layout" />
+    </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="com.bk.bkskup3.work.fragment" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.bk.bkskup3.management.widget" />
@@ -927,8 +990,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.bkskup [clean]" />
         <item itemvalue="Gradle.bkskup3 [build]" />
+        <item itemvalue="Gradle.bkskup [clean]" />
         <item itemvalue="Gradle.bkskup [updateLintBaseline]" />
         <item itemvalue="Gradle.bkskup3:bkskup3 [build]" />
       </list>
@@ -1063,7 +1126,55 @@
       <option name="project" value="LOCAL" />
       <updated>1782076872465</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="migracja do najnowszego androida - activity podgladu skupu">
+      <option name="closed" value="true" />
+      <created>1782165287826</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1782165287826</updated>
+    </task>
+    <task id="LOCAL-00018" summary="migracja do najnowszego androida - activity edycji i podgladu skupu">
+      <option name="closed" value="true" />
+      <created>1782252851857</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1782252851858</updated>
+    </task>
+    <task id="LOCAL-00019" summary="migracja do najnowszego androida - activity  kontrahenta">
+      <option name="closed" value="true" />
+      <created>1782253676616</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1782253676616</updated>
+    </task>
+    <task id="LOCAL-00020" summary="migracja do najnowszego androida - wyrownanie rozmiaru pola numer gospodarstwa , poprawki w print activity aby wszysko bylo widac">
+      <option name="closed" value="true" />
+      <created>1783022518784</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1783022518784</updated>
+    </task>
+    <task id="LOCAL-00021" summary="migracja do najnowszego androida - podglad wydruku">
+      <option name="closed" value="true" />
+      <created>1783024023479</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1783024023479</updated>
+    </task>
+    <task id="LOCAL-00022" summary="migracja do najnowszego androida - podglad wydruku">
+      <option name="closed" value="true" />
+      <created>1783024073378</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1783024073378</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1118,16 +1229,16 @@
     <MESSAGE value="poprawki inicializacji bazy danych na pusto" />
     <MESSAGE value="migracja do najnowszego androida" />
     <MESSAGE value="migracja do najnowszego androida - activity edycji skupu" />
-    <option name="LAST_COMMIT_MESSAGE" value="migracja do najnowszego androida - activity edycji skupu" />
+    <MESSAGE value="migracja do najnowszego androida - activity podgladu skupu" />
+    <MESSAGE value="migracja do najnowszego androida - activity edycji i podgladu skupu" />
+    <MESSAGE value="migracja do najnowszego androida - activity  kontrahenta" />
+    <MESSAGE value="migracja do najnowszego androida - wyrownanie rozmiaru pola numer gospodarstwa , poprawki w print activity aby wszysko bylo widac" />
+    <MESSAGE value="migracja do najnowszego androida - podglad wydruku" />
+    <option name="LAST_COMMIT_MESSAGE" value="migracja do najnowszego androida - podglad wydruku" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/repo/purchases/UploadPurchaseTask.java</url>
-          <line>190</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/CowActivity.java</url>
           <line>920</line>
@@ -1137,6 +1248,16 @@
           <url>file://$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/db/SQLDatabaseWrapper.java</url>
           <line>29</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/fragment/PurchaseSummaryFragment.java</url>
+          <line>142</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/fragment/PurchaseInvoicesFragment.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1181,17 +1302,17 @@
         </entry>
         <entry key="com.bk.bkskup3">
           <value>
-            <CheckInfo lastCheckTimestamp="1782164658118" />
+            <CheckInfo lastCheckTimestamp="1784473513672" />
           </value>
         </entry>
         <entry key="com.bk.bkskup3.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1782164658113" />
+            <CheckInfo lastCheckTimestamp="1784473513674" />
           </value>
         </entry>
         <entry key="com.bk.btcommon.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1781119601043" />
+            <CheckInfo lastCheckTimestamp="1782937885681" />
           </value>
         </entry>
         <entry key="com.bk.countries.test">

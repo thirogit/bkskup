@@ -1,9 +1,12 @@
 package com.bk.btcommon;
 
+import static android.webkit.ConsoleMessage.MessageLevel.LOG;
+
 import android.Manifest;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -15,6 +18,7 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,6 +38,8 @@ import com.bk.btcommon.model.BluetoothAddress;
 import com.bk.btcommon.model.BluetoothDeviceDescriptor;
 import com.bk.widgets.actionbar.ActionBar;
 
+import java.util.Set;
+
 /**
  * Created by IntelliJ IDEA.
  * User: SG0891787
@@ -46,7 +52,10 @@ public class ChooseDeviceActivity extends Activity {
     public static final String EXTRA_DEVICE_NAME_WILDCARD_FILTER = "device_name_wildcard_filter";
     private static final int REQUEST_PERMISSION_CODE = 1001;
 
+    private static final String TAG = ChooseDeviceActivity.class.getSimpleName();
+
     private Toast noDeviceSelectedToast;
+    private BluetoothManager mBtManager;
     private BluetoothAdapter mBtAdapter;
     private ArrayAdapter<BluetoothDevice> mDeviceListAdapter;
     private ListView mDevicesList;
@@ -120,10 +129,12 @@ public class ChooseDeviceActivity extends Activity {
     private void onBeforeBluetoothDisabled() {
         cancelDiscovery();
         showNoBluetoothAvailable();
+        rebuildActionBar();
     }
 
     private void onAfterBluetoothEnabled() {
         showBtDevicesList();
+        rebuildActionBar();
     }
 
 
@@ -132,14 +143,14 @@ public class ChooseDeviceActivity extends Activity {
         mNoDevicesTxt.setVisibility(View.GONE);
         mScanningInProgressView.setVisibility(View.GONE);
         mNoBluetoothImgView.setVisibility(View.VISIBLE);
-        rebuildActionBar();
+//        rebuildActionBar();
     }
 
     private void showBtDevicesList() {
         mDevicesList.setVisibility(View.VISIBLE);
         mDeviceListAdapter.notifyDataSetChanged();
         mNoBluetoothImgView.setVisibility(View.GONE);
-        rebuildActionBar();
+//        rebuildActionBar();
 
     }
 
@@ -150,7 +161,8 @@ public class ChooseDeviceActivity extends Activity {
         setContentView(R.layout.device_discovery);
         setResult(Activity.RESULT_CANCELED);
 
-        mBtAdapter = BluetoothAdapter.getDefaultAdapter();
+        mBtManager = getSystemService(BluetoothManager.class);
+        mBtAdapter = mBtManager.getAdapter();
 
 
         mDeviceListAdapter = new ArrayAdapter<BluetoothDevice>(this, R.layout.bt_device_list_item, R.id.btDeviceNameLbl) {
@@ -217,30 +229,52 @@ public class ChooseDeviceActivity extends Activity {
         mScanningInProgressView.setVisibility(View.GONE);
         mNoDevicesTxt.setVisibility(View.VISIBLE);
 
-        if (mBtAdapter == null || !mBtAdapter.isEnabled()) {
-            showNoBluetoothAvailable();
-        } else {
-            showBtDevicesList();
-        }
+        // Use this check to determine whether Bluetooth classic is supported on the device.
+// Then you can selectively disable BLE-related features.
+//        boolean bluetoothAvailable = getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH);
+
+
+
 
         noDeviceSelectedToast = Toast.makeText(this, getString(R.string.errNoDeviceSelected), Toast.LENGTH_SHORT);
-        noDeviceSelectedToast.getView().setBackgroundColor(Color.RED);
+//        noDeviceSelectedToast.getView().setBackgroundColor(Color.RED);
 
-        IntentFilter filter = new IntentFilter(BluetoothDevice.ACTION_FOUND);
+        IntentFilter filter = new IntentFilter();
+        filter.addAction(BluetoothDevice.ACTION_FOUND);
+        filter.addAction(BluetoothAdapter.ACTION_DISCOVERY_FINISHED);
+        filter.addAction(BluetoothAdapter.ACTION_DISCOVERY_STARTED);
+        filter.addAction(BluetoothAdapter.ACTION_STATE_CHANGED);
+
         this.registerReceiver(mReceiver, filter);
 
-        filter = new IntentFilter(BluetoothAdapter.ACTION_DISCOVERY_FINISHED);
-        this.registerReceiver(mReceiver, filter);
+        if (mBtAdapter == null || !mBtAdapter.isEnabled()) {
+            showNoBluetoothAvailable();
+            rebuildActionBar();
+        } else {
+//            askForDiscoveryPermission();
 
-        filter = new IntentFilter(BluetoothAdapter.ACTION_DISCOVERY_STARTED);
-        this.registerReceiver(mReceiver, filter);
+//            Set<BluetoothDevice> pairedDevices = mBtAdapter.getBondedDevices();
+//
+//            if (pairedDevices.size() > 0) {
+//                for (BluetoothDevice device : pairedDevices) {
+//                    onFoundDevice(device);
+//                }
+//            }
+            showBtDevicesList();
 
-        filter = new IntentFilter(BluetoothAdapter.ACTION_STATE_CHANGED);
-        this.registerReceiver(mReceiver, filter);
+        }
+
+
 
         mScanPending = false;
         rebuildActionBar();
 
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        askForDiscoveryPermission();
     }
 
     private ActionBar getBar() {
@@ -365,13 +399,14 @@ public class ChooseDeviceActivity extends Activity {
 
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {  // Only ask for these permissions on runtime when running Android 6.0 or higher
-                switch (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)) {
+                switch (ActivityCompat.checkSelfPermission(this, Manifest.permission.BLUETOOTH_SCAN)) {
 
                     case PackageManager.PERMISSION_DENIED:
                         askForDiscoveryPermission();
                         break;
                     case PackageManager.PERMISSION_GRANTED:
-                        mBtAdapter.startDiscovery();
+                        boolean result = mBtAdapter.startDiscovery();
+                        Log.i(TAG, "startDiscovery() = "+ result);
                         break;
                 }
             } else {
@@ -398,7 +433,10 @@ public class ChooseDeviceActivity extends Activity {
 
     private void askForDiscoveryPermission() {
         ActivityCompat.requestPermissions(this,
-                new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},
+                new String[]{Manifest.permission.ACCESS_COARSE_LOCATION,
+                        Manifest.permission.ACCESS_FINE_LOCATION,
+                        Manifest.permission.BLUETOOTH_SCAN,
+                        Manifest.permission.BLUETOOTH_CONNECT},
                 REQUEST_PERMISSION_CODE);
     }
 

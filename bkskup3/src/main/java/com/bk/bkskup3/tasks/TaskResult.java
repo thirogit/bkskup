@@ -26,7 +26,6 @@ public class TaskResult<T>
         return exception;
     }
 
-
     public boolean isError()
     {
         return exception != null;

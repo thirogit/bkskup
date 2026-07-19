@@ -6,6 +6,14 @@ import android.app.Fragment;
 import android.content.DialogInterface;
 import android.os.Bundle;
 
+import androidx.work.BackoffPolicy;
+import androidx.work.Constraints;
+import androidx.work.Data;
+import androidx.work.ExistingWorkPolicy;
+import androidx.work.NetworkType;
+import androidx.work.OneTimeWorkRequest;
+import androidx.work.WorkManager;
+
 import com.bk.bkskup3.BkApplication;
 import com.bk.bkskup3.R;
 import com.bk.bkskup3.dao.BkStore;
@@ -13,9 +21,11 @@ import com.bk.bkskup3.dao.PurchasesStore;
 import com.bk.bkskup3.feedback.ErrorToast;
 import com.bk.bkskup3.model.PurchaseObj;
 import com.bk.bkskup3.model.PurchaseState;
+import com.bk.bkskup3.repo.purchases.PurchaseUploadWorker;
 
 import java.util.Calendar;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created with IntelliJ IDEA.
@@ -49,6 +59,31 @@ public class ClosePurchaseActivityFragment extends Fragment {
         purchasesStore.updatePurchaseDetails(purchaseId, purchaseObj.getDetails());
     }
 
+
+    private void enqueuePurchase(PurchaseObj purchaseObj) {
+
+        Constraints constraints  = (new Constraints.Builder())
+                .setRequiredNetworkType(NetworkType.CONNECTED)
+                .setRequiresBatteryNotLow(true)
+        .build();
+
+        Data input = new Data.Builder()
+                .putInt(PurchaseUploadWorker.INPUT_PURCHASE_ID, purchaseObj.getId())
+                .build();
+
+        OneTimeWorkRequest uploadWorkRequest =
+                new OneTimeWorkRequest.Builder(PurchaseUploadWorker.class)
+                        .setBackoffCriteria(BackoffPolicy.LINEAR, 5, TimeUnit.MINUTES)
+                        .setInputData(input)
+                        .setConstraints(constraints)
+                        .build();
+
+        String workName = "purchase-" + purchaseObj.getId();
+        WorkManager
+                .getInstance(getActivity().getApplicationContext())
+                .enqueueUniqueWork(workName, ExistingWorkPolicy.REPLACE, uploadWorkRequest);
+    }
+
     public void closePurchase(final PurchaseObj purchaseObj, final Runnable onDone) {
 
         if (purchaseObj.getInvoices().isEmpty()) {
@@ -61,7 +96,8 @@ public class ClosePurchaseActivityFragment extends Fragment {
             public void onClick(DialogInterface dialog, int which) {
                 if (which == DialogInterface.BUTTON_POSITIVE) {
                     updatePurchaseState(purchaseObj);
-                    if(onDone != null)
+                    enqueuePurchase(purchaseObj);
+                    if (onDone != null)
                         onDone.run();
                 }
             }
