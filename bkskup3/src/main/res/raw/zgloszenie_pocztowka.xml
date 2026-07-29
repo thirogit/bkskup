@@ -15,7 +15,7 @@
         <strikeout>false</strikeout>
       </font>
     </style>
-      
+
     <style id="STYLE1">
       <textColor>#000000</textColor>
       <horAlign>CENTER</horAlign>
@@ -29,7 +29,7 @@
         <strikeout>false</strikeout>
       </font>
     </style>
-      
+
     <style id="EVENTSTYLE">
       <textColor>#000000</textColor>
       <horAlign>LEFT</horAlign>
@@ -43,7 +43,7 @@
         <strikeout>false</strikeout>
       </font>
     </style>
-      
+
     <style id="DATESTYLE">
       <textColor>#000000</textColor>
       <horAlign>CENTER</horAlign>
@@ -89,44 +89,44 @@
 
   <header>
 
-     <text label="DOC_ID">
-        <position>
-          <left>881</left>
-          <top>0</top>
-          <width>150</width>
-          <height>47</height>
-        </position>
-        <value>ZPBOK-1/13</value>
-        <ownstyle>
-          <textColor>#000000</textColor>
-          <horAlign>CENTER</horAlign>
-          <verAlign>CENTER</verAlign>
-          <font>
-            <height>-20</height>
-            <face>Arial CE</face>
-            <bold>false</bold>
-            <italic>false</italic>
-            <underline>false</underline>
-            <strikeout>false</strikeout>
-          </font>
-        </ownstyle>
-      </text>
+    <text label="DOC_ID">
+      <position>
+        <left>861</left>
+        <top>0</top>
+        <width>150</width>
+        <height>47</height>
+      </position>
+      <value>ZPBOK-1/13</value>
+      <ownstyle>
+        <textColor>#000000</textColor>
+        <horAlign>CENTER</horAlign>
+        <verAlign>CENTER</verAlign>
+        <font>
+          <height>-20</height>
+          <face>Arial CE</face>
+          <bold>false</bold>
+          <italic>false</italic>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+        </font>
+      </ownstyle>
+    </text>
 
-     <text label="DOC_TITLE">
-        <position>
-          <left>121</left>
-          <top>10</top>
-          <width>761</width>
-          <height>44</height>
-        </position>
-        <value>Zgłoszenie przemieszczenia*</value>
-        <style ref="STYLE1"/>
-      </text>
+    <text label="DOC_TITLE">
+      <position>
+        <left>101</left>
+        <top>10</top>
+        <width>761</width>
+        <height>44</height>
+      </position>
+      <value>Zgłoszenie przemieszczenia*</value>
+      <style ref="STYLE1"/>
+    </text>
 
 
     <text label="DOC_TITLE_CATTLE">
       <position>
-        <left>152</left>
+        <left>132</left>
         <top>38</top>
         <width>154</width>
         <height>80</height>
@@ -135,77 +135,77 @@
       <style ref="STYLE1"/>
     </text>
 
-     <text label="TYPE_COWS_BOX">
-            <position>
-              <left>315</left>
-              <top>59</top>
-              <width>36</width>
-              <height>35</height>
-            </position>
-            <border>
-              <lineWidth>1</lineWidth>
-              <lineColor>#000000</lineColor>
-            </border>
-            <value>X</value>
-            <style ref="USERDEF"/>
-          </text>
+    <text label="TYPE_COWS_BOX">
+      <position>
+        <left>295</left>
+        <top>59</top>
+        <width>36</width>
+        <height>35</height>
+      </position>
+      <border>
+        <lineWidth>1</lineWidth>
+        <lineColor>#000000</lineColor>
+      </border>
+      <value>X</value>
+      <style ref="USERDEF"/>
+    </text>
 
-     <text label="DOC_TITLE_SHEEPS">
-           <position>
-             <left>363</left>
-             <top>38</top>
-             <width>160</width>
-             <height>80</height>
-           </position>
-           <value>owiec**</value>
-         <style ref="STYLE1"/>
-         </text>
+    <text label="DOC_TITLE_SHEEPS">
+      <position>
+        <left>343</left>
+        <top>38</top>
+        <width>160</width>
+        <height>80</height>
+      </position>
+      <value>owiec**</value>
+      <style ref="STYLE1"/>
+    </text>
 
-     <text label="TYPE_SHEEPS_BOX">
-       <position>
-         <left>521</left>
-         <top>59</top>
-         <width>36</width>
-         <height>35</height>
-       </position>
-       <border>
-         <lineWidth>1</lineWidth>
-         <lineColor>#000000</lineColor>
-       </border>
-       <value></value>
-         <style ref="USERDEF"/>
-     </text>
+    <text label="TYPE_SHEEPS_BOX">
+      <position>
+        <left>501</left>
+        <top>59</top>
+        <width>36</width>
+        <height>35</height>
+      </position>
+      <border>
+        <lineWidth>1</lineWidth>
+        <lineColor>#000000</lineColor>
+      </border>
+      <value></value>
+      <style ref="USERDEF"/>
+    </text>
 
-     <text label="DOC_TITLE_GOUTS">
-       <position>
-         <left>544</left>
-         <top>38</top>
-         <width>264</width>
-         <height>80</height>
-       </position>
-       <value>albo kóz**</value>
-         <style ref="STYLE1"/>
-     </text>
+    <text label="DOC_TITLE_GOUTS">
+      <position>
+        <left>524</left>
+        <top>38</top>
+        <width>264</width>
+        <height>80</height>
+      </position>
+      <value>albo kóz**</value>
+      <style ref="STYLE1"/>
+    </text>
 
-     <text label="TYPE_GOUTS_BOX">
-       <position>
-         <left>789</left>
-         <top>58</top>
-         <width>36</width>
-         <height>35</height>
-       </position>
-       <border>
-         <lineWidth>1</lineWidth>
-         <lineColor>#000000</lineColor>
-       </border>
-       <value></value>
-         <style ref="USERDEF"/>
-     </text>
+    <text label="TYPE_GOUTS_BOX">
+      <position>
+        <left>769</left>
+        <top>58</top>
+        <width>36</width>
+        <height>35</height>
+      </position>
+      <border>
+        <lineWidth>1</lineWidth>
+        <lineColor>#000000</lineColor>
+      </border>
+      <value></value>
+      <style ref="USERDEF"/>
+    </text>
 
 
     <text label="TYPE_BOX_INSRUCTION">
       <position>
-        <left>204</left>
+        <left>184</left>
         <top>67</top>
         <width>579</width>
         <height>90</height>
@@ -227,34 +227,34 @@
     </text>
 
 
-      <text label="SOURCE_FAM_NO_LBL">
-        <position>
-          <left>30</left>
-          <top>132</top>
-          <width>997</width>
-          <height>94</height>
-        </position>
-        <value>Z siedziby stada/ miejsca gromadzenia/ siedziby podmiotu prowadzącego
+    <text label="SOURCE_FAM_NO_LBL">
+      <position>
+        <left>10</left>
+        <top>132</top>
+        <width>997</width>
+        <height>94</height>
+      </position>
+      <value>Z siedziby stada/miejsca gromadzenia/ siedziby podmiotu prowadzącego
 obrót, pośrednictwo w tym obrocie lub skup zwierząt bez wykorzystania
 obiektu o numerze:</value>
-        <ownstyle>
-          <textColor>#000000</textColor>
-          <horAlign>LEFT</horAlign>
-          <verAlign>CENTER</verAlign>
-          <font>
-            <height>-22</height>
-            <face>Arial CE</face>
-            <bold>false</bold>
-            <italic>false</italic>
-            <underline>false</underline>
-            <strikeout>false</strikeout>
-          </font>
-        </ownstyle>
-      </text>
+      <ownstyle>
+        <textColor>#000000</textColor>
+        <horAlign>LEFT</horAlign>
+        <verAlign>CENTER</verAlign>
+        <font>
+          <height>-22</height>
+          <face>Arial CE</face>
+          <bold>false</bold>
+          <italic>false</italic>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+        </font>
+      </ownstyle>
+    </text>
 
     <text label="SRC_FARMNO_1">
       <position>
-        <left>30</left>
+        <left>10</left>
         <top>231</top>
         <width>50</width>
         <height>50</height>
@@ -264,12 +264,12 @@ obiektu o numerze:</value>
         <lineColor>#000000</lineColor>
       </border>
       <value>${SRCFARMNO[0]}</value>
-        <style ref="USERDEF"/>
+      <style ref="USERDEF"/>
     </text>
 
     <text label="SRC_FARMNO_2">
       <position>
-        <left>96</left>
+        <left>76</left>
         <top>231</top>
         <width>50</width>
         <height>50</height>
@@ -279,12 +279,12 @@ obiektu o numerze:</value>
         <lineColor>#000000</lineColor>
       </border>
       <value>${SRCFARMNO[1]}</value>
-        <style ref="USERDEF"/>
+      <style ref="USERDEF"/>
     </text>
 
     <text label="SRC_FARMNO_3">
       <position>
-        <left>161</left>
+        <left>141</left>
         <top>231</top>
         <width>50</width>
         <height>50</height>
@@ -294,12 +294,12 @@ obiektu o numerze:</value>
         <lineColor>#000000</lineColor>
       </border>
       <value>${SRCFARMNO[2]}</value>
-        <style ref="USERDEF"/>
+      <style ref="USERDEF"/>
     </text>
 
     <text label="SRC_FARMNO_4">
       <position>
-        <left>231</left>
+        <left>211</left>
         <top>231</top>
         <width>50</width>
         <height>50</height>
@@ -309,12 +309,12 @@ obiektu o numerze:</value>
         <lineColor>#000000</lineColor>
       </border>
       <value>${SRCFARMNO[3]}</value>
-        <style ref="USERDEF"/>
+      <style ref="USERDEF"/>
     </text>
 
     <text label="SRC_FARMNO_5">
       <position>
-        <left>304</left>
+        <left>284</left>
         <top>231</top>
         <width>50</width>
         <height>50</height>
@@ -324,12 +324,12 @@ obiektu o numerze:</value>
         <lineColor>#000000</lineColor>
       </border>
       <value>${SRCFARMNO[4]}</value>
-        <style ref="USERDEF"/>
+      <style ref="USERDEF"/>
     </text>
 
     <text label="SRC_FARMNO_6">
       <position>
-        <left>372</left>
+        <left>352</left>
         <top>231</top>
         <width>50</width>
         <height>50</height>
@@ -339,12 +339,12 @@ obiektu o numerze:</value>
         <lineColor>#000000</lineColor>
       </border>
       <value>${SRCFARMNO[5]}</value>
-        <style ref="USERDEF"/>
+      <style ref="USERDEF"/>
     </text>
 
     <text label="SRC_FARMNO_7">
       <position>
-        <left>442</left>
+        <left>422</left>
         <top>231</top>
         <width>50</width>
         <height>50</height>
@@ -354,12 +354,12 @@ obiektu o numerze:</value>
         <lineColor>#000000</lineColor>
       </border>
       <value>${SRCFARMNO[6]}</value>
-        <style ref="USERDEF"/>
+      <style ref="USERDEF"/>
     </text>
 
     <text label="SRC_FARMNO_8">
       <position>
-        <left>508</left>
+        <left>488</left>
         <top>231</top>
         <width>50</width>
         <height>50</height>
@@ -369,12 +369,12 @@ obiektu o numerze:</value>
         <lineColor>#000000</lineColor>
       </border>
       <value>${SRCFARMNO[7]}</value>
-        <style ref="USERDEF"/>
+      <style ref="USERDEF"/>
     </text>
 
     <text label="SRC_FARMNO_9">
       <position>
-        <left>574</left>
+        <left>554</left>
         <top>231</top>
         <width>50</width>
         <height>50</height>
@@ -384,12 +384,12 @@ obiektu o numerze:</value>
         <lineColor>#000000</lineColor>
       </border>
       <value>${SRCFARMNO[8]}</value>
-        <style ref="USERDEF"/>
+      <style ref="USERDEF"/>
     </text>
 
     <text label="SRC_FARMNO_10">
       <position>
-        <left>645</left>
+        <left>625</left>
         <top>231</top>
         <width>50</width>
         <height>50</height>
@@ -399,12 +399,12 @@ obiektu o numerze:</value>
         <lineColor>#000000</lineColor>
       </border>
       <value>${SRCFARMNO[9]}</value>
-        <style ref="USERDEF"/>
+      <style ref="USERDEF"/>
     </text>
 
     <text label="SRC_FARMNO_11">
       <position>
-        <left>719</left>
+        <left>699</left>
         <top>231</top>
         <width>50</width>
         <height>50</height>
@@ -414,12 +414,12 @@ obiektu o numerze:</value>
         <lineColor>#000000</lineColor>
       </border>
       <value>${SRCFARMNO[10]}</value>
-        <style ref="USERDEF"/>
+      <style ref="USERDEF"/>
     </text>
 
     <text label="SRC_FARMNO_12">
       <position>
-        <left>789</left>
+        <left>769</left>
         <top>231</top>
         <width>50</width>
         <height>50</height>
@@ -429,12 +429,12 @@ obiektu o numerze:</value>
         <lineColor>#000000</lineColor>
       </border>
       <value>${SRCFARMNO[11]}</value>
-        <style ref="USERDEF"/>
+      <style ref="USERDEF"/>
     </text>
 
     <text label="SRC_FARMNO_13">
       <position>
-        <left>861</left>
+        <left>841</left>
         <top>231</top>
         <width>50</width>
         <height>50</height>
@@ -444,12 +444,12 @@ obiektu o numerze:</value>
         <lineColor>#000000</lineColor>
       </border>
       <value>${SRCFARMNO[12]}</value>
-        <style ref="USERDEF"/>
+      <style ref="USERDEF"/>
     </text>
 
     <text label="SRC_FARMNO_14">
       <position>
-        <left>936</left>
+        <left>916</left>
         <top>231</top>
         <width>50</width>
         <height>50</height>
@@ -459,12 +459,12 @@ obiektu o numerze:</value>
         <lineColor>#000000</lineColor>
       </border>
       <value>${SRCFARMNO[13]}</value>
-        <style ref="USERDEF"/>
+      <style ref="USERDEF"/>
     </text>
 
     <text label="COW_NUMBERS_LBL">
       <position>
-        <left>30</left>
+        <left>10</left>
         <top>280</top>
         <width>445</width>
         <height>40</height>
@@ -485,199 +485,199 @@ obiektu o numerze:</value>
       </ownstyle>
     </text>
 
-   </header>
+  </header>
 
-   <band name="COW_NUMBERS">
-   <fields>
+  <band name="COW_NUMBERS">
+    <fields>
 
-    <text label="COWNO_1">
-      <position>
-        <left>30</left>
-        <top>10</top>
-        <width>50</width>
-        <height>50</height>
-      </position>
-      <border>
-        <lineWidth>1</lineWidth>
-        <lineColor>#000000</lineColor>
-      </border>
-      <value>${COWNO[0]}</value>
+      <text label="COWNO_1">
+        <position>
+          <left>10</left>
+          <top>10</top>
+          <width>50</width>
+          <height>50</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value>${COWNO[0]}</value>
         <style ref="USERDEF"/>
-    </text>
+      </text>
 
-    <text label="COWNO_2">
-      <position>
-        <left>96</left>
-        <top>10</top>
-        <width>50</width>
-        <height>50</height>
-      </position>
-      <border>
-        <lineWidth>1</lineWidth>
-        <lineColor>#000000</lineColor>
-      </border>
-      <value>${COWNO[1]}</value>
+      <text label="COWNO_2">
+        <position>
+          <left>76</left>
+          <top>10</top>
+          <width>50</width>
+          <height>50</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value>${COWNO[1]}</value>
         <style ref="USERDEF"/>
-    </text>
+      </text>
 
-    <text label="COWNO_3">
-      <position>
-        <left>161</left>
-        <top>10</top>
-        <width>50</width>
-        <height>50</height>
-      </position>
-      <border>
-        <lineWidth>1</lineWidth>
-        <lineColor>#000000</lineColor>
-      </border>
-      <value>${COWNO[2]}</value>
+      <text label="COWNO_3">
+        <position>
+          <left>141</left>
+          <top>10</top>
+          <width>50</width>
+          <height>50</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value>${COWNO[2]}</value>
         <style ref="USERDEF"/>
-    </text>
-    <text label="COWNO_4">
-      <position>
-        <left>231</left>
-        <top>10</top>
-        <width>50</width>
-        <height>50</height>
-      </position>
-      <border>
-        <lineWidth>1</lineWidth>
-        <lineColor>#000000</lineColor>
-      </border>
-      <value>${COWNO[3]}</value>
+      </text>
+      <text label="COWNO_4">
+        <position>
+          <left>211</left>
+          <top>10</top>
+          <width>50</width>
+          <height>50</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value>${COWNO[3]}</value>
         <style ref="USERDEF"/>
-    </text>
-    <text label="COWNO_5">
-      <position>
-        <left>304</left>
-        <top>10</top>
-        <width>50</width>
-        <height>50</height>
-      </position>
-      <border>
-        <lineWidth>1</lineWidth>
-        <lineColor>#000000</lineColor>
-      </border>
-      <value>${COWNO[4]}</value>
+      </text>
+      <text label="COWNO_5">
+        <position>
+          <left>284</left>
+          <top>10</top>
+          <width>50</width>
+          <height>50</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value>${COWNO[4]}</value>
         <style ref="USERDEF"/>
-    </text>
-    <text label="COWNO_6">
-      <position>
-        <left>372</left>
-        <top>10</top>
-        <width>50</width>
-        <height>50</height>
-      </position>
-      <border>
-        <lineWidth>1</lineWidth>
-        <lineColor>#000000</lineColor>
-      </border>
-      <value>${COWNO[5]}</value>
+      </text>
+      <text label="COWNO_6">
+        <position>
+          <left>352</left>
+          <top>10</top>
+          <width>50</width>
+          <height>50</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value>${COWNO[5]}</value>
         <style ref="USERDEF"/>
-    </text>
-    <text label="COWNO_7">
-      <position>
-        <left>442</left>
-        <top>10</top>
-        <width>50</width>
-        <height>50</height>
-      </position>
-      <border>
-        <lineWidth>1</lineWidth>
-        <lineColor>#000000</lineColor>
-      </border>
-      <value>${COWNO[6]}</value>
+      </text>
+      <text label="COWNO_7">
+        <position>
+          <left>422</left>
+          <top>10</top>
+          <width>50</width>
+          <height>50</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value>${COWNO[6]}</value>
         <style ref="USERDEF"/>
-    </text>
-    <text label="COWNO_8">
-      <position>
-        <left>508</left>
-        <top>10</top>
-        <width>50</width>
-        <height>50</height>
-      </position>
-      <border>
-        <lineWidth>1</lineWidth>
-        <lineColor>#000000</lineColor>
-      </border>
-      <value>${COWNO[7]}</value>
+      </text>
+      <text label="COWNO_8">
+        <position>
+          <left>488</left>
+          <top>10</top>
+          <width>50</width>
+          <height>50</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value>${COWNO[7]}</value>
         <style ref="USERDEF"/>
-    </text>
-    <text label="COWNO_9">
-      <position>
-        <left>574</left>
-        <top>10</top>
-        <width>50</width>
-        <height>50</height>
-      </position>
-      <border>
-        <lineWidth>1</lineWidth>
-        <lineColor>#000000</lineColor>
-      </border>
-      <value>${COWNO[8]}</value>
+      </text>
+      <text label="COWNO_9">
+        <position>
+          <left>554</left>
+          <top>10</top>
+          <width>50</width>
+          <height>50</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value>${COWNO[8]}</value>
         <style ref="USERDEF"/>
-    </text>
-    <text label="COWNO_10">
-      <position>
-        <left>645</left>
-        <top>10</top>
-        <width>50</width>
-        <height>50</height>
-      </position>
-      <border>
-        <lineWidth>1</lineWidth>
-        <lineColor>#000000</lineColor>
-      </border>
-      <value>${COWNO[9]}</value>
+      </text>
+      <text label="COWNO_10">
+        <position>
+          <left>625</left>
+          <top>10</top>
+          <width>50</width>
+          <height>50</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value>${COWNO[9]}</value>
         <style ref="USERDEF"/>
-    </text>
-    <text label="COWNO_11">
-      <position>
-        <left>719</left>
-        <top>10</top>
-        <width>50</width>
-        <height>50</height>
-      </position>
-      <border>
-        <lineWidth>1</lineWidth>
-        <lineColor>#000000</lineColor>
-      </border>
-      <value>${COWNO[10]}</value>
+      </text>
+      <text label="COWNO_11">
+        <position>
+          <left>699</left>
+          <top>10</top>
+          <width>50</width>
+          <height>50</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value>${COWNO[10]}</value>
         <style ref="USERDEF"/>
-    </text>
-    <text label="COWNO_12">
-      <position>
-        <left>789</left>
-        <top>10</top>
-        <width>50</width>
-        <height>50</height>
-      </position>
-      <border>
-        <lineWidth>1</lineWidth>
-        <lineColor>#000000</lineColor>
-      </border>
-      <value>${COWNO[11]}</value>
+      </text>
+      <text label="COWNO_12">
+        <position>
+          <left>769</left>
+          <top>10</top>
+          <width>50</width>
+          <height>50</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value>${COWNO[11]}</value>
         <style ref="USERDEF"/>
-    </text>
-    <text label="COWNO_13">
-      <position>
-        <left>861</left>
-        <top>10</top>
-        <width>50</width>
-        <height>50</height>
-      </position>
-      <border>
-        <lineWidth>1</lineWidth>
-        <lineColor>#000000</lineColor>
-      </border>
-      <value>${COWNO[12]}</value>
+      </text>
+      <text label="COWNO_13">
+        <position>
+          <left>841</left>
+          <top>10</top>
+          <width>50</width>
+          <height>50</height>
+        </position>
+        <border>
+          <lineWidth>1</lineWidth>
+          <lineColor>#000000</lineColor>
+        </border>
+        <value>${COWNO[12]}</value>
         <style ref="USERDEF"/>
-    </text>
+      </text>
 
       <text label="COWNO_14">
         <position>
-          <left>936</left>
+          <left>916</left>
           <top>10</top>
           <width>50</width>
           <height>50</height>
@@ -687,22 +687,22 @@ obiektu o numerze:</value>
           <lineColor>#000000</lineColor>
         </border>
         <value>${COWNO[13]}</value>
-          <style ref="USERDEF"/>
+        <style ref="USERDEF"/>
       </text>
 
 
-   </fields>
-   </band>
+    </fields>
+  </band>
 
-   <footer>
+  <footer>
 
-   <text label="DEST_FARM_NO_LBL">
-         <position>
-           <left>30</left>
-           <top>10</top>
-           <width>986</width>
-           <height>123</height>
-         </position>
+    <text label="DEST_FARM_NO_LBL">
+      <position>
+        <left>10</left>
+        <top>10</top>
+        <width>986</width>
+        <height>123</height>
+      </position>
       <value>Do siedziby stada /miejsca gromadzenia/rzeźni/ siedziby podmiotu
 prowadzącego obrót, pośrednictwo w tym obrocie lub skup zwierząt bez
 wykorzystania obiektu o numerze:</value>
@@ -724,7 +724,7 @@ wykorzystania obiektu o numerze:</value>
 
     <text label="DEST_FARMNO_1">
       <position>
-        <left>30</left>
+        <left>10</left>
         <top>133</top>
         <width>50</width>
         <height>50</height>
@@ -734,12 +734,12 @@ wykorzystania obiektu o numerze:</value>
         <lineColor>#000000</lineColor>
       </border>
       <value>${DESTFARMNO[0]}</value>
-        <style ref="USERDEF"/>
+      <style ref="USERDEF"/>
     </text>
 
     <text label="DEST_FARMNO_2">
       <position>
-        <left>96</left>
+        <left>76</left>
         <top>133</top>
         <width>50</width>
         <height>50</height>
@@ -749,12 +749,12 @@ wykorzystania obiektu o numerze:</value>
         <lineColor>#000000</lineColor>
       </border>
       <value>${DESTFARMNO[1]}</value>
-        <style ref="USERDEF"/>
+      <style ref="USERDEF"/>
     </text>
 
     <text label="DEST_FARMNO_3">
       <position>
-        <left>161</left>
+        <left>141</left>
         <top>133</top>
         <width>50</width>
         <height>50</height>
@@ -764,12 +764,12 @@ wykorzystania obiektu o numerze:</value>
         <lineColor>#000000</lineColor>
       </border>
       <value>${DESTFARMNO[2]}</value>
-                  <style ref="USERDEF"/>
+      <style ref="USERDEF"/>
     </text>
 
     <text label="DEST_FARMNO_4">
       <position>
-        <left>231</left>
+        <left>211</left>
         <top>133</top>
         <width>50</width>
         <height>50</height>
@@ -784,7 +784,7 @@ wykorzystania obiektu o numerze:</value>
 
     <text label="DEST_FARMNO_5">
       <position>
-        <left>304</left>
+        <left>284</left>
         <top>133</top>
         <width>50</width>
         <height>50</height>
@@ -799,7 +799,7 @@ wykorzystania obiektu o numerze:</value>
 
     <text label="DEST_FARMNO_6">
       <position>
-        <left>372</left>
+        <left>352</left>
         <top>133</top>
         <width>50</width>
         <height>50</height>
@@ -814,7 +814,7 @@ wykorzystania obiektu o numerze:</value>
 
     <text label="DEST_FARMNO_7">
       <position>
-        <left>442</left>
+        <left>422</left>
         <top>133</top>
         <width>50</width>
         <height>50</height>
@@ -829,7 +829,7 @@ wykorzystania obiektu o numerze:</value>
 
     <text label="DEST_FARMNO_8">
       <position>
-        <left>508</left>
+        <left>488</left>
         <top>133</top>
         <width>50</width>
         <height>50</height>
@@ -844,7 +844,7 @@ wykorzystania obiektu o numerze:</value>
 
     <text label="DEST_FARMNO_9">
       <position>
-        <left>574</left>
+        <left>554</left>
         <top>133</top>
         <width>50</width>
         <height>50</height>
@@ -859,7 +859,7 @@ wykorzystania obiektu o numerze:</value>
 
     <text label="DEST_FARMNO_10">
       <position>
-        <left>645</left>
+        <left>625</left>
         <top>133</top>
         <width>50</width>
         <height>50</height>
@@ -874,7 +874,7 @@ wykorzystania obiektu o numerze:</value>
 
     <text label="DEST_FARMNO_11">
       <position>
-        <left>719</left>
+        <left>699</left>
         <top>133</top>
         <width>50</width>
         <height>50</height>
@@ -889,7 +889,7 @@ wykorzystania obiektu o numerze:</value>
 
     <text label="DEST_FARMNO_12">
       <position>
-        <left>789</left>
+        <left>769</left>
         <top>133</top>
         <width>50</width>
         <height>50</height>
@@ -904,7 +904,7 @@ wykorzystania obiektu o numerze:</value>
 
     <text label="DEST_FARMNO_13">
       <position>
-        <left>861</left>
+        <left>841</left>
         <top>133</top>
         <width>50</width>
         <height>50</height>
@@ -919,7 +919,7 @@ wykorzystania obiektu o numerze:</value>
 
     <text label="DEST_FARMNO_14">
       <position>
-        <left>936</left>
+        <left>916</left>
         <top>133</top>
         <width>50</width>
         <height>50</height>
@@ -932,32 +932,32 @@ wykorzystania obiektu o numerze:</value>
       <style ref="USERDEF"/>
     </text>
 
-   <text label="EVENT_TYPE_LBL">
-         <position>
-           <left>30</left>
-           <top>178</top>
-           <width>250</width>
-           <height>56</height>
-         </position>
-         <value>Typ zdarzenia**:</value>
-         <ownstyle>
-           <textColor>#000000</textColor>
-           <horAlign>LEFT</horAlign>
-           <verAlign>CENTER</verAlign>
-           <font>
-             <height>-22</height>
-             <face>Arial</face>
-             <bold>true</bold>
-             <italic>false</italic>
-             <underline>false</underline>
-             <strikeout>false</strikeout>
-           </font>
-         </ownstyle>
-       </text>
+    <text label="EVENT_TYPE_LBL">
+      <position>
+        <left>10</left>
+        <top>178</top>
+        <width>250</width>
+        <height>56</height>
+      </position>
+      <value>Typ zdarzenia**:</value>
+      <ownstyle>
+        <textColor>#000000</textColor>
+        <horAlign>LEFT</horAlign>
+        <verAlign>CENTER</verAlign>
+        <font>
+          <height>-22</height>
+          <face>Arial</face>
+          <bold>true</bold>
+          <italic>false</italic>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+        </font>
+      </ownstyle>
+    </text>
 
     <text label="EVENT_BUY_BOX">
       <position>
-        <left>55</left>
+        <left>35</left>
         <top>228</top>
         <width>50</width>
         <height>50</height>
@@ -970,21 +970,21 @@ wykorzystania obiektu o numerze:</value>
       <style ref="USERDEF"/>
     </text>
 
-   <text label="EVENT_BUY_LBL">
-     <position>
-       <left>113</left>
-       <top>232</top>
-       <width>115</width>
-       <height>45</height>
-     </position>
-     <value>KUPNO</value>
-     <style ref="EVENTSTYLE"/>
-   </text>
+    <text label="EVENT_BUY_LBL">
+      <position>
+        <left>93</left>
+        <top>232</top>
+        <width>115</width>
+        <height>45</height>
+      </position>
+      <value>KUPNO</value>
+      <style ref="EVENTSTYLE"/>
+    </text>
 
     <text label="EVENT_SELL_BOX">
       <position>
-        <left>334</left>
-        <top>216</top>
+        <left>314</left>
+        <top>228</top>
         <width>50</width>
         <height>50</height>
       </position>
@@ -996,10 +996,10 @@ wykorzystania obiektu o numerze:</value>
       <style ref="USERDEF"/>
     </text>
 
-   <text label="EVENT_SELL_LBL">
+    <text label="EVENT_SELL_LBL">
       <position>
-        <left>392</left>
-        <top>228</top>
+        <left>372</left>
+        <top>232</top>
         <width>173</width>
         <height>45</height>
       </position>
@@ -1007,10 +1007,10 @@ wykorzystania obiektu o numerze:</value>
       <style ref="EVENTSTYLE"/>
     </text>
 
-   <text label="EVENT_BUY_AND_SELL_BOX">
+    <text label="EVENT_BUY_AND_SELL_BOX">
       <position>
-        <left>609</left>
-        <top>218</top>
+        <left>589</left>
+        <top>228</top>
         <width>50</width>
         <height>50</height>
       </position>
@@ -1022,20 +1022,20 @@ wykorzystania obiektu o numerze:</value>
       <style ref="USERDEF"/>
     </text>
 
-   <text label="EVENT_BUY_AND_SELL_LBL">
-    <position>
-      <left>666</left>
-      <top>230</top>
-      <width>320</width>
-      <height>45</height>
-    </position>
-    <value>KUPNO/SPRZEDAŻ***</value>
-    <style ref="EVENTSTYLE"/>
-  </text>
+    <text label="EVENT_BUY_AND_SELL_LBL">
+      <position>
+        <left>646</left>
+        <top>232</top>
+        <width>320</width>
+        <height>45</height>
+      </position>
+      <value>KUPNO/SPRZEDAŻ***</value>
+      <style ref="EVENTSTYLE"/>
+    </text>
 
     <text label="EVENT_EXPORT_TO_EU_BOX">
       <position>
-        <left>55</left>
+        <left>35</left>
         <top>297</top>
         <width>50</width>
         <height>50</height>
@@ -1049,9 +1049,9 @@ wykorzystania obiektu o numerze:</value>
 
     </text>
 
-   <text label="EVENT_EXPORT_TO_EU_LBL">
+    <text label="EVENT_EXPORT_TO_EU_LBL">
       <position>
-        <left>113</left>
+        <left>93</left>
         <top>306</top>
         <width>541</width>
         <height>45</height>
@@ -1062,7 +1062,7 @@ wykorzystania obiektu o numerze:</value>
 
     <text label="EVENT_EXPORT_NOT_TO_EU_BOX">
       <position>
-        <left>55</left>
+        <left>35</left>
         <top>355</top>
         <width>50</width>
         <height>50</height>
@@ -1075,45 +1075,45 @@ wykorzystania obiektu o numerze:</value>
       <style ref="USERDEF"/>
     </text>
 
-   <text label="EVENT_EXPORT_NOT_TO_EU_LBL">
-     <position>
-       <left>113</left>
-       <top>355</top>
-       <width>600</width>
-       <height>50</height>
-     </position>
-     <value>WYWÓZ do państwa niebędącego członkiem UE</value>
-     <style ref="EVENTSTYLE"/>
-   </text>
+    <text label="EVENT_EXPORT_NOT_TO_EU_LBL">
+      <position>
+        <left>93</left>
+        <top>355</top>
+        <width>600</width>
+        <height>50</height>
+      </position>
+      <value>WYWÓZ do państwa niebędącego członkiem UE</value>
+      <style ref="EVENTSTYLE"/>
+    </text>
 
-   <text label="EXPORT_COUNTRY_NAME_LBL">
-    <position>
-      <left>684</left>
-      <top>305</top>
-      <width>130</width>
-      <height>91</height>
-    </position>
-    <value>Nazwa
+    <text label="EXPORT_COUNTRY_NAME_LBL">
+      <position>
+        <left>664</left>
+        <top>305</top>
+        <width>130</width>
+        <height>91</height>
+      </position>
+      <value>Nazwa
 kraju:</value>
-    <ownstyle>
-      <textColor>#000000</textColor>
-      <horAlign>CENTER</horAlign>
-      <verAlign>CENTER</verAlign>
-      <font>
-        <height>-25</height>
-        <face>Arial CE</face>
-        <bold>false</bold>
-        <italic>false</italic>
-        <underline>false</underline>
-        <strikeout>false</strikeout>
-      </font>
-    </ownstyle>
-  </text>
+      <ownstyle>
+        <textColor>#000000</textColor>
+        <horAlign>CENTER</horAlign>
+        <verAlign>CENTER</verAlign>
+        <font>
+          <height>-25</height>
+          <face>Arial CE</face>
+          <bold>false</bold>
+          <italic>false</italic>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+        </font>
+      </ownstyle>
+    </text>
 
-   <text label="EXPORT_COUNTRY">
+    <text label="EXPORT_COUNTRY">
 
       <position>
-        <left>799</left>
+        <left>779</left>
         <top>327</top>
         <width>164</width>
         <height>50</height>
@@ -1124,85 +1124,85 @@ kraju:</value>
       </border>
       <value>${EXPORTCOUNTRY}</value>
       <ownstyle>
-            <textColor>#000000</textColor>
-            <horAlign>CENTER</horAlign>
-            <verAlign>CENTER</verAlign>
-            <font>
-              <height>-25</height>
-              <face>Arial</face>
-              <bold>false</bold>
-              <italic>false</italic>
-              <underline>false</underline>
-              <strikeout>false</strikeout>
-            </font>
-       </ownstyle>
+        <textColor>#000000</textColor>
+        <horAlign>CENTER</horAlign>
+        <verAlign>CENTER</verAlign>
+        <font>
+          <height>-25</height>
+          <face>Arial</face>
+          <bold>false</bold>
+          <italic>false</italic>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+        </font>
+      </ownstyle>
     </text>
 
-     <text label="EXHIBITION_LBL">
-       <position>
-         <left>730</left>
-         <top>400</top>
-         <width>130</width>
-         <height>50</height>
-       </position>
-       <value>Wystawa</value>
-       <ownstyle>
-         <textColor>#000000</textColor>
-         <horAlign>CENTER</horAlign>
-         <verAlign>CENTER</verAlign>
-         <font>
-           <height>-25</height>
-           <face>Arial CE</face>
-           <bold>false</bold>
-           <italic>false</italic>
-           <underline>false</underline>
-           <strikeout>false</strikeout>
-         </font>
-       </ownstyle>
-     </text>
+    <text label="EXHIBITION_LBL">
+      <position>
+        <left>710</left>
+        <top>400</top>
+        <width>130</width>
+        <height>50</height>
+      </position>
+      <value>Wystawa</value>
+      <ownstyle>
+        <textColor>#000000</textColor>
+        <horAlign>CENTER</horAlign>
+        <verAlign>CENTER</verAlign>
+        <font>
+          <height>-25</height>
+          <face>Arial CE</face>
+          <bold>false</bold>
+          <italic>false</italic>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+        </font>
+      </ownstyle>
+    </text>
 
-     <text label="EXHIBITION_INDEXES_LBL">
-       <position>
-         <left>860</left>
-         <top>390</top>
-         <width>50</width>
-         <height>50</height>
-       </position>
-       <value>1)2)</value>
-       <ownstyle>
-         <textColor>#000000</textColor>
-         <horAlign>CENTER</horAlign>
-         <verAlign>CENTER</verAlign>
-         <font>
-           <height>-15</height>
-           <face>Arial CE</face>
-           <bold>false</bold>
-           <italic>false</italic>
-           <underline>false</underline>
-           <strikeout>false</strikeout>
-         </font>
-       </ownstyle>
-     </text>
+    <text label="EXHIBITION_INDEXES_LBL">
+      <position>
+        <left>840</left>
+        <top>390</top>
+        <width>50</width>
+        <height>50</height>
+      </position>
+      <value>1)2)</value>
+      <ownstyle>
+        <textColor>#000000</textColor>
+        <horAlign>CENTER</horAlign>
+        <verAlign>CENTER</verAlign>
+        <font>
+          <height>-15</height>
+          <face>Arial CE</face>
+          <bold>false</bold>
+          <italic>false</italic>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+        </font>
+      </ownstyle>
+    </text>
 
 
-     <shape label="EXHIBITION">
-       <type>RECTANGLE</type>
-       <position>
-         <left>913</left>
-         <top>400</top>
-         <width>50</width>
-         <height>50</height>
-       </position>
-       <border>
-         <lineWidth>1</lineWidth>
-         <lineColor>#000000</lineColor>
-       </border>
-     </shape>
-
-   <shape label="EXPORT_EVENT_TYPE_RECT">
+    <shape label="EXHIBITION">
       <type>RECTANGLE</type>
       <position>
-        <left>30</left>
+        <left>893</left>
+        <top>400</top>
+        <width>50</width>
+        <height>50</height>
+      </position>
+      <border>
+        <lineWidth>1</lineWidth>
+        <lineColor>#000000</lineColor>
+      </border>
+    </shape>
+
+    <shape label="EXPORT_EVENT_TYPE_RECT">
+      <type>RECTANGLE</type>
+      <position>
+        <left>10</left>
         <top>290</top>
         <width>958</width>
         <height>175</height>
@@ -1216,7 +1216,7 @@ kraju:</value>
 
     <text label="EVENT_OTHER_BOX">
       <position>
-        <left>55</left>
+        <left>35</left>
         <top>480</top>
         <width>50</width>
         <height>50</height>
@@ -1231,7 +1231,7 @@ kraju:</value>
 
     <text label="EVENT_OTHER_LBL">
       <position>
-        <left>113</left>
+        <left>93</left>
         <top>470</top>
         <width>650</width>
         <height>70</height>
@@ -1241,9 +1241,9 @@ z lub do siedziby stada</value>
       <style ref="EVENTSTYLE"/>
     </text>
 
-   <text label="EVENT_DATE_LBL">
+    <text label="EVENT_DATE_LBL">
       <position>
-        <left>28</left>
+        <left>8</left>
         <top>575</top>
         <width>530</width>
         <height>47</height>
@@ -1254,7 +1254,7 @@ z lub do siedziby stada</value>
 
     <text label="EVENT_DATE_DAY1">
       <position>
-        <left>28</left>
+        <left>8</left>
         <top>625</top>
         <width>50</width>
         <height>50</height>
@@ -1269,7 +1269,7 @@ z lub do siedziby stada</value>
 
     <text label="EVENT_DATE_DAY2">
       <position>
-        <left>92</left>
+        <left>72</left>
         <top>625</top>
         <width>50</width>
         <height>50</height>
@@ -1282,20 +1282,20 @@ z lub do siedziby stada</value>
       <style ref="USERDEF"/>
     </text>
 
-   <text label="EVENT_DATE_DAY_LBL">
-     <position>
-       <left>43</left>
-       <top>675</top>
-       <width>87</width>
-       <height>37</height>
-     </position>
-     <value>Dzień</value>
-     <style ref="DATESTYLE"/>
-   </text>
+    <text label="EVENT_DATE_DAY_LBL">
+      <position>
+        <left>23</left>
+        <top>675</top>
+        <width>87</width>
+        <height>37</height>
+      </position>
+      <value>Dzień</value>
+      <style ref="DATESTYLE"/>
+    </text>
 
     <text label="EVENT_DATE_MONTH1">
       <position>
-        <left>174</left>
+        <left>154</left>
         <top>625</top>
         <width>50</width>
         <height>50</height>
@@ -1310,7 +1310,7 @@ z lub do siedziby stada</value>
 
     <text label="EVENT_DATE_MONTH2">
       <position>
-        <left>236</left>
+        <left>216</left>
         <top>625</top>
         <width>50</width>
         <height>50</height>
@@ -1323,9 +1323,9 @@ z lub do siedziby stada</value>
       <style ref="USERDEF"/>
     </text>
 
-   <text label="EVENT_DATE_MONTH_LBL">
+    <text label="EVENT_DATE_MONTH_LBL">
       <position>
-        <left>174</left>
+        <left>154</left>
         <top>675</top>
         <width>112</width>
         <height>37</height>
@@ -1336,7 +1336,7 @@ z lub do siedziby stada</value>
 
     <text label="EVENT_DATE_YEAR1">
       <position>
-        <left>327</left>
+        <left>307</left>
         <top>625</top>
         <width>50</width>
         <height>50</height>
@@ -1351,7 +1351,7 @@ z lub do siedziby stada</value>
 
     <text label="EVENT_DATE_YEAR2">
       <position>
-        <left>387</left>
+        <left>367</left>
         <top>625</top>
         <width>50</width>
         <height>50</height>
@@ -1366,7 +1366,7 @@ z lub do siedziby stada</value>
 
     <text label="EVENT_DATE_YEAR3">
       <position>
-        <left>448</left>
+        <left>428</left>
         <top>625</top>
         <width>50</width>
         <height>50</height>
@@ -1381,7 +1381,7 @@ z lub do siedziby stada</value>
 
     <text label="EVENT_DATE_YEAR4">
       <position>
-        <left>508</left>
+        <left>488</left>
         <top>625</top>
         <width>50</width>
         <height>50</height>
@@ -1396,7 +1396,7 @@ z lub do siedziby stada</value>
 
     <text label="EVENT_DATE_YEAR_LBL">
       <position>
-        <left>401</left>
+        <left>381</left>
         <top>675</top>
         <width>87</width>
         <height>37</height>
@@ -1406,16 +1406,16 @@ z lub do siedziby stada</value>
     </text>
 
 
-   <text label="BUYER_INSTRUCTION">
+    <text label="BUYER_INSTRUCTION">
       <position>
-        <left>582</left>
+        <left>562</left>
         <top>500</top>
         <width>465</width>
-        <height>60</height>
+        <height>65</height>
       </position>
       <value>Uprzedzony o odpowiedzialności karnej z art. 297 k.k.
 potwierdzam własnoręcznym podpisem zgodność
-danych zamieszczonych w zgłoszeniu. buyer</value>
+danych zamieszczonych w zgłoszeniu.</value>
       <ownstyle>
         <textColor>#000000</textColor>
         <horAlign>LEFT</horAlign>
@@ -1431,10 +1431,10 @@ danych zamieszczonych w zgłoszeniu. buyer</value>
       </ownstyle>
     </text>
 
-   <shape label="BUYER_SIGNATURE_BOX">
+    <shape label="BUYER_SIGNATURE_BOX">
       <type>RECTANGLE</type>
       <position>
-        <left>581</left>
+        <left>561</left>
         <top>575</top>
         <width>442</width>
         <height>113</height>
@@ -1447,7 +1447,7 @@ danych zamieszczonych w zgłoszeniu. buyer</value>
 
     <text label="BUYER_SIGNATURE_LBL">
       <position>
-        <left>593</left>
+        <left>573</left>
         <top>685</top>
         <width>405</width>
         <height>47</height>
@@ -1456,201 +1456,201 @@ danych zamieszczonych w zgłoszeniu. buyer</value>
       <style ref="DATESTYLE"/>
     </text>
 
-      <text label="PRINT_DATE_LBL">
-          <position>
-            <left>28</left>
-            <top>750</top>
-            <width>530</width>
-            <height>47</height>
-          </position>
-          <value>Data wystawienia zgłoszenia</value>
-          <style ref="AVG_SIZE"/>
-       </text>
+    <text label="PRINT_DATE_LBL">
+      <position>
+        <left>8</left>
+        <top>750</top>
+        <width>530</width>
+        <height>47</height>
+      </position>
+      <value>Data wystawienia zgłoszenia</value>
+      <style ref="AVG_SIZE"/>
+    </text>
 
-     <text label="PRINT_DATE_DAY1">
-       <position>
-         <left>28</left>
-         <top>800</top>
-         <width>50</width>
-         <height>50</height>
-       </position>
-       <border>
-         <lineWidth>1</lineWidth>
-         <lineColor>#000000</lineColor>
-       </border>
-       <value>${PRINTDATEDAY[0]}</value>
-       <style ref="USERDEF"/>
-     </text>
+    <text label="PRINT_DATE_DAY1">
+      <position>
+        <left>8</left>
+        <top>800</top>
+        <width>50</width>
+        <height>50</height>
+      </position>
+      <border>
+        <lineWidth>1</lineWidth>
+        <lineColor>#000000</lineColor>
+      </border>
+      <value>${PRINTDATEDAY[0]}</value>
+      <style ref="USERDEF"/>
+    </text>
 
-     <text label="PRINT_DATE_DAY2">
-       <position>
-         <left>92</left>
-         <top>800</top>
-         <width>50</width>
-         <height>50</height>
-       </position>
-       <border>
-         <lineWidth>1</lineWidth>
-         <lineColor>#000000</lineColor>
-       </border>
-       <value>${PRINTDATEDAY[1]}</value>
-       <style ref="USERDEF"/>
-     </text>
+    <text label="PRINT_DATE_DAY2">
+      <position>
+        <left>72</left>
+        <top>800</top>
+        <width>50</width>
+        <height>50</height>
+      </position>
+      <border>
+        <lineWidth>1</lineWidth>
+        <lineColor>#000000</lineColor>
+      </border>
+      <value>${PRINTDATEDAY[1]}</value>
+      <style ref="USERDEF"/>
+    </text>
 
     <text label="PRINT_DATE_DAY_LBL">
-       <position>
-         <left>45</left>
-         <top>850</top>
-         <width>87</width>
-         <height>37</height>
-       </position>
-       <value>Dzień</value>
-       <style ref="DATESTYLE"/>
-     </text>
+      <position>
+        <left>25</left>
+        <top>850</top>
+        <width>87</width>
+        <height>37</height>
+      </position>
+      <value>Dzień</value>
+      <style ref="DATESTYLE"/>
+    </text>
 
-     <text label="PRINT_DATE_MONTH1">
-       <position>
-         <left>174</left>
-         <top>800</top>
-         <width>50</width>
-         <height>50</height>
-       </position>
-       <border>
-         <lineWidth>1</lineWidth>
-         <lineColor>#000000</lineColor>
-       </border>
-       <value>${PRINTDATEMON[0]}</value>
-       <style ref="USERDEF"/>
-     </text>
+    <text label="PRINT_DATE_MONTH1">
+      <position>
+        <left>154</left>
+        <top>800</top>
+        <width>50</width>
+        <height>50</height>
+      </position>
+      <border>
+        <lineWidth>1</lineWidth>
+        <lineColor>#000000</lineColor>
+      </border>
+      <value>${PRINTDATEMON[0]}</value>
+      <style ref="USERDEF"/>
+    </text>
 
-     <text label="PRINT_DATE_MONTH2">
-       <position>
-         <left>236</left>
-         <top>800</top>
-         <width>50</width>
-         <height>50</height>
-       </position>
-       <border>
-         <lineWidth>1</lineWidth>
-         <lineColor>#000000</lineColor>
-       </border>
-       <value>${PRINTDATEMON[1]}</value>
-       <style ref="USERDEF"/>
-     </text>
+    <text label="PRINT_DATE_MONTH2">
+      <position>
+        <left>216</left>
+        <top>800</top>
+        <width>50</width>
+        <height>50</height>
+      </position>
+      <border>
+        <lineWidth>1</lineWidth>
+        <lineColor>#000000</lineColor>
+      </border>
+      <value>${PRINTDATEMON[1]}</value>
+      <style ref="USERDEF"/>
+    </text>
 
     <text label="PRINT_DATE_MONTH_LBL">
-       <position>
-         <left>174</left>
-         <top>850</top>
-         <width>112</width>
-         <height>37</height>
-       </position>
-       <value>Miesiąc</value>
-       <style ref="DATESTYLE"/>
-     </text>
+      <position>
+        <left>154</left>
+        <top>850</top>
+        <width>112</width>
+        <height>37</height>
+      </position>
+      <value>Miesiąc</value>
+      <style ref="DATESTYLE"/>
+    </text>
 
-     <text label="PRINT_DATE_YEAR1">
-       <position>
-         <left>327</left>
-         <top>800</top>
-         <width>50</width>
-         <height>50</height>
-       </position>
-       <border>
-         <lineWidth>1</lineWidth>
-         <lineColor>#000000</lineColor>
-       </border>
-       <value>${PRINTDATEYEAR[0]}</value>
-       <style ref="USERDEF"/>
-     </text>
+    <text label="PRINT_DATE_YEAR1">
+      <position>
+        <left>307</left>
+        <top>800</top>
+        <width>50</width>
+        <height>50</height>
+      </position>
+      <border>
+        <lineWidth>1</lineWidth>
+        <lineColor>#000000</lineColor>
+      </border>
+      <value>${PRINTDATEYEAR[0]}</value>
+      <style ref="USERDEF"/>
+    </text>
 
-     <text label="PRINT_DATE_YEAR2">
-       <position>
-         <left>387</left>
-         <top>800</top>
-         <width>50</width>
-         <height>50</height>
-       </position>
-       <border>
-         <lineWidth>1</lineWidth>
-         <lineColor>#000000</lineColor>
-       </border>
-       <value>${PRINTDATEYEAR[1]}</value>
-       <style ref="USERDEF"/>
-     </text>
+    <text label="PRINT_DATE_YEAR2">
+      <position>
+        <left>367</left>
+        <top>800</top>
+        <width>50</width>
+        <height>50</height>
+      </position>
+      <border>
+        <lineWidth>1</lineWidth>
+        <lineColor>#000000</lineColor>
+      </border>
+      <value>${PRINTDATEYEAR[1]}</value>
+      <style ref="USERDEF"/>
+    </text>
 
-     <text label="PRINT_DATE_YEAR3">
-       <position>
-         <left>448</left>
-         <top>800</top>
-         <width>50</width>
-         <height>50</height>
-       </position>
-       <border>
-         <lineWidth>1</lineWidth>
-         <lineColor>#000000</lineColor>
-       </border>
-       <value>${PRINTDATEYEAR[2]}</value>
-       <style ref="USERDEF"/>
-     </text>
+    <text label="PRINT_DATE_YEAR3">
+      <position>
+        <left>428</left>
+        <top>800</top>
+        <width>50</width>
+        <height>50</height>
+      </position>
+      <border>
+        <lineWidth>1</lineWidth>
+        <lineColor>#000000</lineColor>
+      </border>
+      <value>${PRINTDATEYEAR[2]}</value>
+      <style ref="USERDEF"/>
+    </text>
 
-     <text label="PRINT_DATE_YEAR4">
-       <position>
-         <left>508</left>
-         <top>800</top>
-         <width>50</width>
-         <height>50</height>
-       </position>
-       <border>
-         <lineWidth>1</lineWidth>
-         <lineColor>#000000</lineColor>
-       </border>
-       <value>${PRINTDATEYEAR[3]}</value>
-       <style ref="USERDEF"/>
-     </text>
+    <text label="PRINT_DATE_YEAR4">
+      <position>
+        <left>488</left>
+        <top>800</top>
+        <width>50</width>
+        <height>50</height>
+      </position>
+      <border>
+        <lineWidth>1</lineWidth>
+        <lineColor>#000000</lineColor>
+      </border>
+      <value>${PRINTDATEYEAR[3]}</value>
+      <style ref="USERDEF"/>
+    </text>
 
-     <text label="PRINT_DATE_YEAR_LBL">
-       <position>
-         <left>403</left>
-         <top>850</top>
-         <width>87</width>
-         <height>37</height>
-       </position>
-       <value>Rok</value>
-       <style ref="DATESTYLE"/>
-     </text>
+    <text label="PRINT_DATE_YEAR_LBL">
+      <position>
+        <left>383</left>
+        <top>850</top>
+        <width>87</width>
+        <height>37</height>
+      </position>
+      <value>Rok</value>
+      <style ref="DATESTYLE"/>
+    </text>
 
 
-   <text label="SELLER_INSTRUCTION">
-    <position>
-      <left>582</left>
-      <top>725</top>
-      <width>465</width>
-      <height>60</height>
-    </position>
-    <value>Uprzedzony o odpowiedzialności karnej z art. 297 k.k.
+    <text label="SELLER_INSTRUCTION">
+      <position>
+        <left>562</left>
+        <top>725</top>
+        <width>465</width>
+        <height>65</height>
+      </position>
+      <value>Uprzedzony o odpowiedzialności karnej z art. 297 k.k.
 potwierdzam własnoręcznym podpisem zgodność
-danych zamieszczonych w zgłoszeniu. seller</value>
-    <ownstyle>
-      <textColor>#000000</textColor>
-      <horAlign>LEFT</horAlign>
-      <verAlign>CENTER</verAlign>
-      <font>
-        <height>-15</height>
-        <face>Arial CE</face>
-        <bold>false</bold>
-        <italic>false</italic>
-        <underline>false</underline>
-        <strikeout>false</strikeout>
-      </font>
-    </ownstyle>
-  </text>
+danych zamieszczonych w zgłoszeniu.</value>
+      <ownstyle>
+        <textColor>#000000</textColor>
+        <horAlign>LEFT</horAlign>
+        <verAlign>CENTER</verAlign>
+        <font>
+          <height>-15</height>
+          <face>Arial CE</face>
+          <bold>false</bold>
+          <italic>false</italic>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+        </font>
+      </ownstyle>
+    </text>
 
-   <shape label="SELLER_SIGNATURE_BOX">
+    <shape label="SELLER_SIGNATURE_BOX">
       <type>RECTANGLE</type>
       <position>
-        <left>581</left>
-        <top>790</top>
+        <left>561</left>
+        <top>800</top>
         <width>442</width>
         <height>116</height>
       </position>
@@ -1663,8 +1663,8 @@ danych zamieszczonych w zgłoszeniu. seller</value>
 
     <text label="SELLER_SIGNATURE_LBL">
       <position>
-        <left>573</left>
-        <top>900</top>
+        <left>553</left>
+        <top>910</top>
         <width>429</width>
         <height>47</height>
       </position>
@@ -1673,45 +1673,45 @@ danych zamieszczonych w zgłoszeniu. seller</value>
     </text>
 
 
-     <text label="1_INSTRUCTION">
-       <position>
-         <left>10</left>
-         <top>920</top>
-         <width>1030</width>
-         <height>25</height>
-       </position>
-       <value>1) dotyczy gatunku bydło</value>
-       <style ref="INSTRUCTION"/>
-     </text>
+    <text label="1_INSTRUCTION">
+      <position>
+        <left>0</left>
+        <top>920</top>
+        <width>1030</width>
+        <height>25</height>
+      </position>
+      <value>1) dotyczy gatunku bydło</value>
+      <style ref="INSTRUCTION"/>
+    </text>
 
-     <text label="2_INSTRUCTION">
-       <position>
-         <left>10</left>
-         <top>945</top>
-         <width>1030</width>
-         <height>25</height>
-       </position>
-       <value>2) lub pokaz lub konkurs zwierząt</value>
-       <style ref="INSTRUCTION"/>
-     </text>
+    <text label="2_INSTRUCTION">
+      <position>
+        <left>0</left>
+        <top>945</top>
+        <width>1030</width>
+        <height>25</height>
+      </position>
+      <value>2) lub pokaz lub konkurs zwierząt</value>
+      <style ref="INSTRUCTION"/>
+    </text>
 
 
-   <text label="1_ASTERISK_INSTRUCTION">
-     <position>
-       <left>10</left>
-       <top>970</top>
-       <width>1030</width>
-       <height>75</height>
-     </position>
-   <value>*   lub stwierdzenia zwierzęcia w trakcie kontroli siedziby stada z wyjątkiem przypadków urodzenia i wwozu na
-     terytorium Rzeczypospolitej Polskiej lub stwierdzenia braku zwierzęcia w trakcie kontroli z wyjątkiem przypadków
-     padnięcia, zabicia, uboju</value>
-     <style ref="INSTRUCTION"/>
-   </text>
+    <text label="1_ASTERISK_INSTRUCTION">
+      <position>
+        <left>0</left>
+        <top>970</top>
+        <width>1030</width>
+        <height>75</height>
+      </position>
+      <value>*   lub stwierdzenia zwierzęcia w trakcie kontroli siedziby stada z wyjątkiem przypadków urodzenia i wwozu na
+    terytorium Rzeczypospolitej Polskiej lub stwierdzenia braku zwierzęcia w trakcie kontroli z wyjątkiem przypadków
+    padnięcia, zabicia, uboju</value>
+      <style ref="INSTRUCTION"/>
+    </text>
 
     <text label="2_ASTERISK_INSTRUCTION">
       <position>
-        <left>10</left>
+        <left>0</left>
         <top>1045</top>
         <width>637</width>
         <height>25</height>
@@ -1722,7 +1722,7 @@ danych zamieszczonych w zgłoszeniu. seller</value>
 
     <text label="3_ASTERISK_INSTRUCTION">
       <position>
-        <left>10</left>
+        <left>-10</left>
         <top>1070</top>
         <width>865</width>
         <height>25</height>
@@ -1731,6 +1731,6 @@ danych zamieszczonych w zgłoszeniu. seller</value>
       <style ref="INSTRUCTION"/>
     </text>
 
-   </footer>
+  </footer>
 
 </template>

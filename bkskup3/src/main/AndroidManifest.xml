@@ -284,8 +284,6 @@
             </intent-filter>
         </service>
 
-
-
         <service
             android:name="com.bk.print.service.PrintService"
             android:enabled="true"
@@ -297,16 +295,6 @@
             </intent-filter>
         </service>
 
-
-        <service
-            android:exported="false"
-            android:name=".repo.purchases.PurchaseUploadService"
-            android:permission="android.permission.BIND_JOB_SERVICE">
-
-            <intent-filter>
-                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
-            </intent-filter>
-        </service>
 
         <service
             android:name="com.bk.bkskup3.work.service.InvoiceService"

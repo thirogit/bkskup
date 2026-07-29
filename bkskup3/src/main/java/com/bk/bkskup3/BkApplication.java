@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 
 import androidx.annotation.NonNull;
 import androidx.work.BackoffPolicy;
+import androidx.work.Configuration;
 import androidx.work.Constraints;
 import androidx.work.ExistingPeriodicWorkPolicy;
 import androidx.work.NetworkType;
@@ -186,6 +187,12 @@ public class BkApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
+//        Configuration workManagerConfig = new Configuration.Builder()
+//                .setMinimumLoggingLevel(android.util.Log.INFO)
+//                .build();
+//
+//        WorkManager.initialize(this, workManagerConfig);
+
         CouchbaseLite.init(this);
         Stetho.initializeWithDefaults(this);
 
@@ -224,9 +231,9 @@ public class BkApplication extends Application {
                         .setConstraints(constraints)
                         .build();
 
-        WorkManager
-                .getInstance(this)
-                .enqueueUniquePeriodicWork("hent-synch", ExistingPeriodicWorkPolicy.KEEP, hentSyncWorkRequest);
+//        WorkManager
+//                .getInstance(this)
+//                .enqueueUniquePeriodicWork("hent-synch", ExistingPeriodicWorkPolicy.KEEP, hentSyncWorkRequest);
 
 
 

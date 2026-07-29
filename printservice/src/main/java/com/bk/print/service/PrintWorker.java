@@ -18,6 +18,8 @@ import com.bk.print.service.drivers.SeikoPrinterDriver;
 import com.google.common.base.Strings;
 import com.google.common.util.concurrent.AbstractExecutionThreadService;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -445,8 +447,28 @@ public class PrintWorker extends AbstractExecutionThreadService {
             if (work.image == null) {
                 DocumentBean document = job.getDocument();
                 BitmapPaper paper = new BitmapPaper(208, document.getSize());
+//                BitmapPaper paper = new BitmapPaper(208, new Dimension(1000,100));
+
+//                paper.drawRectangle(new Rectangle(0,0,500,10),
+//                        new Border(0, Color.BLACK));
+
                 document.print(paper);
                 work.image = paper.getBitmap();
+
+//                File bkskupDirectory = new File(filesDir, "bkskup");
+//
+//                if(!bkskupDirectory.exists())
+//                    bkskupDirectory.mkdirs();
+//
+//                File targetFile = new File(bkskupDirectory, "print_" + jobId.toString() + ".png");
+//                try (FileOutputStream targetFileOS = new FileOutputStream(targetFile)) {
+//                    work.image.compress(Bitmap.CompressFormat.PNG, 100, targetFileOS);
+//                    Log.e(TAG, "saved bitmap to " + targetFile.getAbsolutePath());
+//                } catch (IOException e) {
+//                    Log.e(TAG, "failed to save bitmap", e);
+//                }
+
+
                 work.currentLine = 0;
                 mSignaller.fireJobStarted(jobId);
             }
@@ -463,6 +485,24 @@ public class PrintWorker extends AbstractExecutionThreadService {
             work.image.getPixels(bitmapRows, 0, xDots, 0, work.currentLine, xDots, nextStripHeight);
 
             ImageStrip strip = new ImageStrip(xDots,nextStripHeight,bitmapRows);
+
+//            for(int j = 0;j < strip.getHeight();j++) {
+//                int[] bitmapLine = strip.getLine(j);
+//                String lineStr = "";
+//                for(int i = 0;i < strip.getWidth();i++) {
+//
+//                    if((bitmapLine[i] & 0x00FFFFFF) < 250)
+//                    {
+//                        lineStr+= 'X';
+//                    }else {
+//                        lineStr+= 'O';
+//                    }
+//                }
+//                Log.i(TAG,lineStr);
+//
+//            }
+
+
             sendStrip(strip);
 
             work.currentLine+=nextStripHeight;

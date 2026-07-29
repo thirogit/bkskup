@@ -12,6 +12,14 @@ public class Border implements Serializable {
     private int lineWidth;
     private Color lineColor;
 
+    public Border() {
+    }
+
+    public Border(int lineWidth, Color lineColor) {
+        this.lineWidth = lineWidth;
+        this.lineColor = lineColor;
+    }
+
     public int getLineWidth() {
         return lineWidth;
     }

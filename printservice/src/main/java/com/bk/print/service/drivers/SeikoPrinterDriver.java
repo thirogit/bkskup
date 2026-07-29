@@ -73,7 +73,8 @@ public class SeikoPrinterDriver implements PrinterDriver {
                 for(int jj = 0;jj < xDots && jj < PRINTER_MAX_X_RESOLUTION;jj++)
                 {
                     int bit = jj%8;
-                    if((bitmapLine[jj] & 0x00FFFFFF) < 180)
+                    int rgb = (bitmapLine[jj] & 0x00FFFFFF);
+                    if((0x00FFFFFF - rgb) > 0)
                     {
                         lineDots[jj/8] |= (1 << bit);
                     }

@@ -83,6 +83,12 @@
           <theme>@style/Theme.mTheme</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-land/purchase_history_list_item.xml">
+        <config>
+          <state>Landscape</state>
+          <theme>@style/Theme.mTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/bkskup3/src/main/res/layout-land/repo.xml">
         <config>
           <state>Landscape</state>
@@ -540,25 +546,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="883182f0-1c87-42e8-8a71-4b7d69048ea7" name="Default" comment="migracja do najnowszego androida - podglad wydruku">
-      <change afterPath="$PROJECT_DIR$/.idea/AndroidProjectSystem.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deviceManager.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/migrations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/dao/PurchaseUploadLogStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/repo/purchases/PurchaseUploadWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bkskup3/src/main/res/raw/schema2.sql" afterDir="false" />
+    <list default="true" id="883182f0-1c87-42e8-8a71-4b7d69048ea7" name="Default" comment="migracja do najnowszego androida - problem deserilizaji plci">
+      <change afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkbands/src/main/java/com/bk/bands/paper/BitmapPaper.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkbands/src/main/java/com/bk/bands/paper/BitmapPaper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkbands/src/main/java/com/bk/bands/properties/Border.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkbands/src/main/java/com/bk/bands/properties/Border.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bkskup3/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/BkApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/BkApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/repo/hents/FetchHentsUpdateChunkTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/repo/hents/HentsSyncService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/repo/hents/HentsSyncWorker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/repo/purchases/PurchaseUploadService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/repo/purchases/UploadPurchaseTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/tasks/TaskResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/tasks/TaskResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/fragment/ClosePurchaseActivityFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/fragment/ClosePurchaseActivityFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bluetoothcommon/src/main/java/com/bk/btcommon/ChooseDeviceActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/bluetoothcommon/src/main/java/com/bk/btcommon/ChooseDeviceActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bkskup3/src/main/res/raw/zgloszenie_pocztowka.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bkskup3/src/main/res/raw/zgloszenie_pocztowka.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/printservice/src/main/java/com/bk/print/service/PrintService.java" beforeDir="false" afterPath="$PROJECT_DIR$/printservice/src/main/java/com/bk/print/service/PrintService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/printservice/src/main/java/com/bk/print/service/PrintWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/printservice/src/main/java/com/bk/print/service/PrintWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/printservice/src/main/java/com/bk/print/service/drivers/SeikoPrinterDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/printservice/src/main/java/com/bk/print/service/drivers/SeikoPrinterDriver.java" afterDir="false" />
     </list>
     <list id="0fb91eea-005f-44d2-b29d-68e5df9e35cd" name="ignore" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1174,7 +1172,23 @@
       <option name="project" value="LOCAL" />
       <updated>1783024073378</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="migracja do najnowszego androida - wysylanie skupow i automatyczne pobieranie kontrahentow">
+      <option name="closed" value="true" />
+      <created>1784475706190</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1784475706190</updated>
+    </task>
+    <task id="LOCAL-00024" summary="migracja do najnowszego androida - problem deserilizaji plci">
+      <option name="closed" value="true" />
+      <created>1784477786723</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1784477786723</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1234,7 +1248,9 @@
     <MESSAGE value="migracja do najnowszego androida - activity  kontrahenta" />
     <MESSAGE value="migracja do najnowszego androida - wyrownanie rozmiaru pola numer gospodarstwa , poprawki w print activity aby wszysko bylo widac" />
     <MESSAGE value="migracja do najnowszego androida - podglad wydruku" />
-    <option name="LAST_COMMIT_MESSAGE" value="migracja do najnowszego androida - podglad wydruku" />
+    <MESSAGE value="migracja do najnowszego androida - wysylanie skupow i automatyczne pobieranie kontrahentow" />
+    <MESSAGE value="migracja do najnowszego androida - problem deserilizaji plci" />
+    <option name="LAST_COMMIT_MESSAGE" value="migracja do najnowszego androida - problem deserilizaji plci" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1258,6 +1274,16 @@
           <url>file://$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/work/fragment/PurchaseInvoicesFragment.java</url>
           <line>64</line>
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bkskup3/src/main/java/com/bk/bkskup3/repo/purchases/PurchaseUploadWorker.java</url>
+          <line>170</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/printservice/src/main/java/com/bk/print/service/PrintWorker.java</url>
+          <line>495</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1302,17 +1328,17 @@
         </entry>
         <entry key="com.bk.bkskup3">
           <value>
-            <CheckInfo lastCheckTimestamp="1784473513672" />
+            <CheckInfo lastCheckTimestamp="1785355057144" />
           </value>
         </entry>
         <entry key="com.bk.bkskup3.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1784473513674" />
+            <CheckInfo lastCheckTimestamp="1785355057144" />
           </value>
         </entry>
         <entry key="com.bk.btcommon.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1782937885681" />
+            <CheckInfo lastCheckTimestamp="1785355064559" />
           </value>
         </entry>
         <entry key="com.bk.countries.test">

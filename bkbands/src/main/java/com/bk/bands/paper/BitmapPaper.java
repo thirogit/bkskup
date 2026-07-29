@@ -54,7 +54,7 @@ public class BitmapPaper implements Paper {
     }
 
     private Bitmap createPaperImage(Dimension pixelSize) {
-        return Bitmap.createBitmap(pixelSize.width, pixelSize.height, Bitmap.Config.RGB_565);
+        return Bitmap.createBitmap(pixelSize.width, pixelSize.height, Bitmap.Config.ARGB_8888);
     }
 
     private int toPaperDots(int mm10) {
@@ -115,6 +115,8 @@ public class BitmapPaper implements Paper {
         canvas.drawRect(new Rect(l, t, r, b), pen);
 
     }
+
+
 
     private int getTypefaceStyleForFont(Font font) {
         if (font.isBold() && font.isItalic()) {
